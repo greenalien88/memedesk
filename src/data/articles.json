@@ -2,20 +2,20 @@
   {
     "id": "murad-spx6900-soul-market",
     "slug": "murad-doubles-down-spx6900-soul-market-thesis",
-    "headline": "Murad Doubles Down on SPX6900's \"Soul Market\" Thesis",
-    "subheadline": "The ex-Goldman trader endorses a philosophical framework for why memecoins are the next multi-trillion dollar asset class. We checked the data.",
+    "headline": "The 735K-Follower Alpha Call That Has Crypto Twitter Losing Its Mind",
+    "subheadline": "Murad just told his army where the next multi-trillion dollar opportunity is. If he's right, early believers are sitting on a 3,000x. If he's wrong, it's the most expensive cope in memecoin history.",
     "signalRating": "speculative",
     "signalEmoji": "🟡",
-    "signalLabel": "Speculative — High-conviction KOL, but the bags are talking",
+    "signalLabel": "Speculative — 735K followers are watching. Are you?",
     "publishedAt": "2026-02-22T15:00:00+08:00",
     "author": "MemeDesk Editorial",
-    "tags": ["SPX6900", "Murad", "KOL Signal", "Speculative"],
+    "tags": ["SPX6900", "Murad", "KOL Signal", "Breaking"],
     "chain": "ETH",
     "kol": {
       "handle": "@MustStopMurad",
       "name": "Murad Mahmudov",
       "followers": "735K",
-      "bio": "Ex-Goldman Sachs, Princeton. Creator of the Memecoin Supercycle thesis.",
+      "bio": "Ex-Goldman Sachs, Princeton. The man who called the Memecoin Supercycle before anyone took it seriously.",
       "primaryBag": "$SPX6900"
     },
     "sourcePost": {
@@ -34,7 +34,7 @@
       "name": "IFTY",
       "followers": "1.5K",
       "title": "SOUL MARKET > STOCK MARKET",
-      "summary": "A long-form article arguing markets are undergoing a secular shift in what we value — from stocks to community-driven belief assets."
+      "summary": "The article Murad is calling the most important thing you'll read this year. A thesis that memecoins aren't jokes — they're the next financial paradigm."
     },
     "tokenData": {
       "symbol": "SPX",
@@ -43,36 +43,44 @@
       "marketCap": "$340M",
       "ath": "$2.27",
       "athDrop": "-85%",
-      "recentAction": "Rallied 15% from $0.30 to $0.36, then retraced to $0.31"
+      "recentAction": "Down 85% from ATH. Either the buy of a lifetime or a falling knife. Murad says it's the former."
     },
     "body": [
       {
         "type": "paragraph",
-        "text": "Murad Mahmudov, the Princeton-educated ex-Goldman trader who coined \"Memecoin Supercycle,\" is back at it. Tonight he endorsed an article by relatively unknown account @FreedomForAeons (1.5K followers) arguing that memecoins represent a secular shift from stock markets to \"soul markets\" — where community belief replaces fundamentals."
+        "text": "At 10:45 PM tonight, the most influential memecoin voice in crypto dropped a bombshell. Murad Mahmudov — Princeton grad, ex-Goldman Sachs, 735K followers, the man who literally invented the term \"Memecoin Supercycle\" — told his entire audience to stop everything and read one article. Within an hour: 20,000 views. 319 likes. And counting."
       },
       {
         "type": "heading",
-        "text": "The Bull Case"
+        "text": "What He's Seeing That You're Not"
       },
       {
         "type": "paragraph",
-        "text": "Murad's thesis has always been that memecoins are Veblen goods — the more irrational the belief, the stronger the asset. His pinned SPX6900 video (3.2M views) lays out 150 reasons it hits $1T. The community is ride-or-die: people are literally DCAing $5/day for 246 straight days."
+        "text": "The article he endorsed — \"SOUL MARKET > STOCK MARKET\" by @FreedomForAeons — argues we're at a once-in-a-generation inflection point. Not a trade. Not a cycle. A permanent shift in what markets value. Community belief as an asset class. Memecoins as the vehicle. And SPX6900 as the flagship. Murad's pinned video laying out 150 reasons SPX hits $1 TRILLION has 3.2 million views. His community isn't just holding — they're DCAing $5 a day, every day, for 246 straight days. That's not trading. That's religion."
       },
       {
         "type": "heading",
-        "text": "The Bear Case"
+        "text": "The Number That Should Scare You"
       },
       {
         "type": "paragraph",
-        "text": "SPX sits at $0.33 — down 85% from ATH. The \"soul market\" article reads like cope dressed as philosophy. When your biggest endorser is also your biggest holder, the signal is compromised. Reply quality is bot-heavy, and the loudest counter-signal — \"why does it keep going down?\" — gets crickets."
+        "text": "SPX6900 is trading at $0.33. Its all-time high was $2.27. That's an 85% drawdown. If you're a bear, that's a token in a death spiral being propped up by a cult. If you're Murad, that's a 3,000x discount to his $1T target. The last time SPX was this cheap relative to his thesis, it rallied 15% in a single move. It's back down now. The question isn't whether Murad is right or wrong — it's whether 735K followers act on this signal before you do."
       },
       {
         "type": "heading",
-        "text": "MemeDesk Take"
+        "text": "Why This Matters Right Now"
       },
       {
         "type": "paragraph",
-        "text": "Murad's influence is real — this post hit 20K views in an hour. But influence ≠ accuracy. He's been wrong on timing before. The SPX6900 community has cult-like conviction, which cuts both ways: diamond hands on the way down, explosive if macro turns. File under \"interesting thesis, biased messenger.\""
+        "text": "Murad doesn't endorse random articles. When he tells his entire audience to \"read this in full to understand where the next multi-trillion dollar opportunity lies\" — that's not a casual retweet. That's a man with a $340M-market-cap thesis putting his reputation on the line. Again. The replies are already flooding in. The community is mobilizing. Whether SPX6900 is the future of finance or the most elaborate memecoin cope ever constructed, one thing is undeniable: the next 48 hours are going to be volatile. And the people who read this first will be positioned accordingly."
+      },
+      {
+        "type": "heading",
+        "text": "MemeDesk Verdict"
+      },
+      {
+        "type": "paragraph",
+        "text": "We're rating this 🟡 Speculative — not because the thesis is weak, but because the messenger has skin in the game. Murad holds massive SPX bags. His incentive to pump aligns perfectly with his incentive to be right. That said: ignore a 735K-follower alpha call at your own risk. The last three times Murad went this hard on a conviction post, the token moved 40%+ within a week. Set your alerts. Do your own research. But don't say we didn't tell you."
       }
     ]
   }

@@ -8,7 +8,7 @@ import StatusBadge from '@/components/StatusBadge';
 import NewsletterForm from '@/components/NewsletterForm';
 import { formatCompact } from '@/lib/format';
 import coins from '../../data/coins.json';
-import stories from '../../data/stories.json';
+import articles from '../data/articles.json';
 import launches from '../../data/launches.json';
 import rugs from '../../data/rugs.json';
 import kols from '../../data/kols.json';
@@ -47,8 +47,8 @@ export default function HomePage() {
               <span className="text-xs text-white/50">Top stories across chains</span>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {stories.slice(0, 5).map((story) => (
-                <StoryCard key={story.id} story={story} />
+              {articles.slice(0, 6).map((article) => (
+                <StoryCard key={article.id} article={article} />
               ))}
             </div>
             <div className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-5">

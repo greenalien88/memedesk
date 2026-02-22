@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import articles from '../../../../data/articles.json';
+import articles from '@/data/articles.json';
 
 type Article = (typeof articles)[number];
 

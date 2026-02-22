@@ -1,0 +1,79 @@
+[
+  {
+    "id": "murad-spx6900-soul-market",
+    "slug": "murad-doubles-down-spx6900-soul-market-thesis",
+    "headline": "Murad Doubles Down on SPX6900's \"Soul Market\" Thesis",
+    "subheadline": "The ex-Goldman trader endorses a philosophical framework for why memecoins are the next multi-trillion dollar asset class. We checked the data.",
+    "signalRating": "speculative",
+    "signalEmoji": "🟡",
+    "signalLabel": "Speculative — High-conviction KOL, but the bags are talking",
+    "publishedAt": "2026-02-22T15:00:00+08:00",
+    "author": "MemeDesk Editorial",
+    "tags": ["SPX6900", "Murad", "KOL Signal", "Speculative"],
+    "chain": "ETH",
+    "kol": {
+      "handle": "@MustStopMurad",
+      "name": "Murad Mahmudov",
+      "followers": "735K",
+      "bio": "Ex-Goldman Sachs, Princeton. Creator of the Memecoin Supercycle thesis.",
+      "primaryBag": "$SPX6900"
+    },
+    "sourcePost": {
+      "url": "https://x.com/MustStopMurad/status/2025582628079071565",
+      "text": "Read this in full to understand where the next multi-trillion dollar opportunity lies.",
+      "timestamp": "2026-02-22T22:45:00+08:00",
+      "engagement": {
+        "replies": 59,
+        "reposts": 77,
+        "likes": 319,
+        "views": 20700
+      }
+    },
+    "quotedPost": {
+      "handle": "@FreedomForAeons",
+      "name": "IFTY",
+      "followers": "1.5K",
+      "title": "SOUL MARKET > STOCK MARKET",
+      "summary": "A long-form article arguing markets are undergoing a secular shift in what we value — from stocks to community-driven belief assets."
+    },
+    "tokenData": {
+      "symbol": "SPX",
+      "name": "SPX6900",
+      "price": "$0.33",
+      "marketCap": "$340M",
+      "ath": "$2.27",
+      "athDrop": "-85%",
+      "recentAction": "Rallied 15% from $0.30 to $0.36, then retraced to $0.31"
+    },
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Murad Mahmudov, the Princeton-educated ex-Goldman trader who coined \"Memecoin Supercycle,\" is back at it. Tonight he endorsed an article by relatively unknown account @FreedomForAeons (1.5K followers) arguing that memecoins represent a secular shift from stock markets to \"soul markets\" — where community belief replaces fundamentals."
+      },
+      {
+        "type": "heading",
+        "text": "The Bull Case"
+      },
+      {
+        "type": "paragraph",
+        "text": "Murad's thesis has always been that memecoins are Veblen goods — the more irrational the belief, the stronger the asset. His pinned SPX6900 video (3.2M views) lays out 150 reasons it hits $1T. The community is ride-or-die: people are literally DCAing $5/day for 246 straight days."
+      },
+      {
+        "type": "heading",
+        "text": "The Bear Case"
+      },
+      {
+        "type": "paragraph",
+        "text": "SPX sits at $0.33 — down 85% from ATH. The \"soul market\" article reads like cope dressed as philosophy. When your biggest endorser is also your biggest holder, the signal is compromised. Reply quality is bot-heavy, and the loudest counter-signal — \"why does it keep going down?\" — gets crickets."
+      },
+      {
+        "type": "heading",
+        "text": "MemeDesk Take"
+      },
+      {
+        "type": "paragraph",
+        "text": "Murad's influence is real — this post hit 20K views in an hour. But influence ≠ accuracy. He's been wrong on timing before. The SPX6900 community has cult-like conviction, which cuts both ways: diamond hands on the way down, explosive if macro turns. File under \"interesting thesis, biased messenger.\""
+      }
+    ]
+  }
+]

@@ -6,6 +6,7 @@ import NewsletterModal from '@/components/NewsletterModal';
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/articles/murad-doubles-down-spx6900-soul-market-thesis', label: 'Latest Article' },
   { href: '/kol-tracker', label: 'KOL Tracker' },
   { href: '/launches', label: 'Launches' },
   { href: '/rug-watch', label: 'Rug Watch' }

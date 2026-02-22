@@ -1,0 +1,82 @@
+[
+  {
+    "id": "s1",
+    "headline": "WIF breaks $2 as SOL memecoins rip",
+    "summary": "Dogwifhat leads a fresh SOL rotation after exchange listings and whale bids.",
+    "timestamp": "2026-02-22T07:00:00Z",
+    "chain": "SOL",
+    "emoji": "\ud83e\udde2"
+  },
+  {
+    "id": "s2",
+    "headline": "PEPE options flow spikes into Friday close",
+    "summary": "Derivatives desks pile into short-dated PEPE calls; skew turns bullish.",
+    "timestamp": "2026-02-22T05:00:00Z",
+    "chain": "ETH",
+    "emoji": "\ud83d\udc38"
+  },
+  {
+    "id": "s3",
+    "headline": "BASE memes reclaim mindshare",
+    "summary": "DEGEN and BRETT reclaim volume share as BASE fees cool off.",
+    "timestamp": "2026-02-22T03:00:00Z",
+    "chain": "BASE",
+    "emoji": "\ud83d\udfe6"
+  },
+  {
+    "id": "s4",
+    "headline": "BONK treasury unveils community buyback",
+    "summary": "A new on-chain program targets weekly burns tied to BONK merch revenue.",
+    "timestamp": "2026-02-22T00:00:00Z",
+    "chain": "SOL",
+    "emoji": "\ud83d\udd25"
+  },
+  {
+    "id": "s5",
+    "headline": "SHIB devs tease L2 liquidity incentives",
+    "summary": "Rumors point to a liquidity mining pilot with meme-specific pools.",
+    "timestamp": "2026-02-21T21:00:00Z",
+    "chain": "ETH",
+    "emoji": "\ud83d\udc36"
+  },
+  {
+    "id": "s6",
+    "headline": "FARTCOIN becomes top gainer on pump.fun",
+    "summary": "Low float and viral memes push the token to the top of the launchboard.",
+    "timestamp": "2026-02-21T19:00:00Z",
+    "chain": "SOL",
+    "emoji": "\ud83d\udca8"
+  },
+  {
+    "id": "s7",
+    "headline": "MOG community funds market-making vault",
+    "summary": "Liquidity vault opens to community deposits with rev-share mechanics.",
+    "timestamp": "2026-02-21T15:00:00Z",
+    "chain": "ETH",
+    "emoji": "\ud83e\udde0"
+  },
+  {
+    "id": "s8",
+    "headline": "SPX6900 trend hits TikTok finance",
+    "summary": "Creator wave drives new inflows as memes spill outside crypto Twitter.",
+    "timestamp": "2026-02-21T13:00:00Z",
+    "chain": "ETH",
+    "emoji": "\ud83d\udcc8"
+  },
+  {
+    "id": "s9",
+    "headline": "POPCAT whales rotate to GIGA",
+    "summary": "Wallet clusters show capital moving into BASE meme plays.",
+    "timestamp": "2026-02-21T11:00:00Z",
+    "chain": "BASE",
+    "emoji": "\ud83e\ude90"
+  },
+  {
+    "id": "s10",
+    "headline": "Community DAO launches meme index",
+    "summary": "A new on-chain index fund aggregates top meme names for passive exposure.",
+    "timestamp": "2026-02-21T07:00:00Z",
+    "chain": "MULTI",
+    "emoji": "\ud83e\uddfa"
+  }
+]

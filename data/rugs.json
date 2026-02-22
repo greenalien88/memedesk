@@ -1,0 +1,93 @@
+[
+  {
+    "name": "MoonBunny",
+    "chain": "SOL",
+    "redFlags": [
+      "Dev holds 80%",
+      "Liquidity not locked",
+      "Sudden 3x tax"
+    ],
+    "riskScore": 9,
+    "status": "Danger",
+    "summary": "Wallet clustering shows dev wallets consolidating."
+  },
+  {
+    "name": "PepePouch",
+    "chain": "ETH",
+    "redFlags": [
+      "Honeypot detected",
+      "No renounce",
+      "Proxy upgrades"
+    ],
+    "riskScore": 10,
+    "status": "Rugged",
+    "summary": "Buys succeed but sells revert for most holders."
+  },
+  {
+    "name": "BaseBruh",
+    "chain": "BASE",
+    "redFlags": [
+      "Liquidity thin",
+      "Owner can pause trading"
+    ],
+    "riskScore": 7,
+    "status": "Caution",
+    "summary": "Liquidity depth < $25k with admin pause rights."
+  },
+  {
+    "name": "SolShark",
+    "chain": "SOL",
+    "redFlags": [
+      "Bundled launches",
+      "Whale controls 55%"
+    ],
+    "riskScore": 8,
+    "status": "Danger",
+    "summary": "Top 3 wallets control majority of supply."
+  },
+  {
+    "name": "EthEcho",
+    "chain": "ETH",
+    "redFlags": [
+      "Copy of existing token",
+      "Fake audit badge"
+    ],
+    "riskScore": 6,
+    "status": "Caution",
+    "summary": "Bytecode matches previous rug from 2024."
+  },
+  {
+    "name": "RibbitRush",
+    "chain": "BASE",
+    "redFlags": [
+      "Liquidity unlocked",
+      "Dev wallet active"
+    ],
+    "riskScore": 7,
+    "status": "Danger",
+    "summary": "Team wallet still moving tokens."
+  },
+  {
+    "name": "WifWallet",
+    "chain": "SOL",
+    "redFlags": [
+      "Sell tax 18%",
+      "No liquidity lock"
+    ],
+    "riskScore": 8,
+    "status": "Danger",
+    "summary": "Tax escalates after 100 wallets."
+  },
+  {
+    "name": "GigaGhost",
+    "chain": "ETH",
+    "redFlags": [
+      "Contract renounced",
+      "No social presence",
+      "Fresh deployer"
+    ],
+    "riskScore": 5,
+    "status": "Caution",
+    "summary": "Low transparency but no active exploit detected."
+  }
+]

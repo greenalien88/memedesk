@@ -1,0 +1,167 @@
+[
+  {
+    "name": "MoonMarmot",
+    "symbol": "MARMOT",
+    "chain": "SOL",
+    "ageHours": 6,
+    "mcap": 180000,
+    "holders": 420,
+    "liquidity": 90000,
+    "devWalletPct": 7.5,
+    "status": "Safe"
+  },
+  {
+    "name": "BaseBaboon",
+    "symbol": "BABOON",
+    "chain": "BASE",
+    "ageHours": 12,
+    "mcap": 340000,
+    "holders": 620,
+    "liquidity": 140000,
+    "devWalletPct": 9.8,
+    "status": "Caution"
+  },
+  {
+    "name": "EtherEel",
+    "symbol": "EEL",
+    "chain": "ETH",
+    "ageHours": 4,
+    "mcap": 220000,
+    "holders": 280,
+    "liquidity": 60000,
+    "devWalletPct": 12.1,
+    "status": "Danger"
+  },
+  {
+    "name": "SolSphinx",
+    "symbol": "SPHINX",
+    "chain": "SOL",
+    "ageHours": 18,
+    "mcap": 510000,
+    "holders": 980,
+    "liquidity": 210000,
+    "devWalletPct": 6.0,
+    "status": "Safe"
+  },
+  {
+    "name": "FrogFuel",
+    "symbol": "FFUEL",
+    "chain": "ETH",
+    "ageHours": 8,
+    "mcap": 460000,
+    "holders": 530,
+    "liquidity": 150000,
+    "devWalletPct": 14.7,
+    "status": "Caution"
+  },
+  {
+    "name": "GigaGuppy",
+    "symbol": "GUPPY",
+    "chain": "BASE",
+    "ageHours": 22,
+    "mcap": 290000,
+    "holders": 410,
+    "liquidity": 98000,
+    "devWalletPct": 5.3,
+    "status": "Safe"
+  },
+  {
+    "name": "PepePolar",
+    "symbol": "PPOLAR",
+    "chain": "ETH",
+    "ageHours": 2,
+    "mcap": 120000,
+    "holders": 150,
+    "liquidity": 42000,
+    "devWalletPct": 18.9,
+    "status": "Danger"
+  },
+  {
+    "name": "WifWhale",
+    "symbol": "WWHALE",
+    "chain": "SOL",
+    "ageHours": 9,
+    "mcap": 610000,
+    "holders": 760,
+    "liquidity": 240000,
+    "devWalletPct": 8.2,
+    "status": "Safe"
+  },
+  {
+    "name": "BaseBuns",
+    "symbol": "BUNS",
+    "chain": "BASE",
+    "ageHours": 15,
+    "mcap": 140000,
+    "holders": 360,
+    "liquidity": 70000,
+    "devWalletPct": 11.4,
+    "status": "Caution"
+  },
+  {
+    "name": "RugRover",
+    "symbol": "ROVER",
+    "chain": "ETH",
+    "ageHours": 3,
+    "mcap": 80000,
+    "holders": 90,
+    "liquidity": 18000,
+    "devWalletPct": 24.0,
+    "status": "Danger"
+  },
+  {
+    "name": "SolSushi",
+    "symbol": "SUSHI",
+    "chain": "SOL",
+    "ageHours": 30,
+    "mcap": 720000,
+    "holders": 1320,
+    "liquidity": 290000,
+    "devWalletPct": 4.7,
+    "status": "Safe"
+  },
+  {
+    "name": "DegenDingo",
+    "symbol": "DINGO",
+    "chain": "BASE",
+    "ageHours": 20,
+    "mcap": 260000,
+    "holders": 520,
+    "liquidity": 110000,
+    "devWalletPct": 10.6,
+    "status": "Caution"
+  },
+  {
+    "name": "EthEmber",
+    "symbol": "EMBER",
+    "chain": "ETH",
+    "ageHours": 26,
+    "mcap": 310000,
+    "holders": 610,
+    "liquidity": 120000,
+    "devWalletPct": 7.9,
+    "status": "Safe"
+  },
+  {
+    "name": "PumpPanda",
+    "symbol": "PANDA",
+    "chain": "SOL",
+    "ageHours": 5,
+    "mcap": 190000,
+    "holders": 240,
+    "liquidity": 55000,
+    "devWalletPct": 16.2,
+    "status": "Caution"
+  },
+  {
+    "name": "BaseBasilisk",
+    "symbol": "BASIL",
+    "chain": "BASE",
+    "ageHours": 28,
+    "mcap": 240000,
+    "holders": 480,
+    "liquidity": 100000,
+    "devWalletPct": 6.6,
+    "status": "Safe"
+  }
+]

@@ -1,0 +1,1052 @@
+[
+  {
+    "rank": 1,
+    "handle": "@meme_lord",
+    "avatar": "🐸",
+    "followers": 56700,
+    "tier": 1,
+    "chainFocus": "SOL",
+    "hitRate": 52,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 2,
+    "handle": "@sol_ape",
+    "avatar": "🧢",
+    "followers": 61400,
+    "tier": 2,
+    "chainFocus": "ETH",
+    "hitRate": 50,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.05",
+      "Alerted $MOG liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 3,
+    "handle": "@eth_memez",
+    "avatar": "🧑‍🚀",
+    "followers": 66100,
+    "tier": 3,
+    "chainFocus": "BASE",
+    "hitRate": 54,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 4,
+    "handle": "@base_brewer",
+    "avatar": "🐸",
+    "followers": 70800,
+    "tier": 4,
+    "chainFocus": "SOL",
+    "hitRate": 58,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.00002",
+      "Alerted $MOG liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 5,
+    "handle": "@pump_scout",
+    "avatar": "🧢",
+    "followers": 69500,
+    "tier": 1,
+    "chainFocus": "ETH",
+    "hitRate": 68,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.00002",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 6,
+    "handle": "@frogfather",
+    "avatar": "🧑‍🚀",
+    "followers": 74200,
+    "tier": 2,
+    "chainFocus": "BASE",
+    "hitRate": 66,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.05",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 7,
+    "handle": "@bonk_baron",
+    "avatar": "🐸",
+    "followers": 78900,
+    "tier": 3,
+    "chainFocus": "SOL",
+    "hitRate": 42,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $1.12",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 8,
+    "handle": "@wif_wizard",
+    "avatar": "🧢",
+    "followers": 83600,
+    "tier": 4,
+    "chainFocus": "ETH",
+    "hitRate": 46,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.05",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 9,
+    "handle": "@pepe_alpha",
+    "avatar": "🧑‍🚀",
+    "followers": 88300,
+    "tier": 1,
+    "chainFocus": "BASE",
+    "hitRate": 56,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.008",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 10,
+    "handle": "@degenerate_desk",
+    "avatar": "🐸",
+    "followers": 87000,
+    "tier": 2,
+    "chainFocus": "SOL",
+    "hitRate": 54,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.008",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 11,
+    "handle": "@chain_clown",
+    "avatar": "🧢",
+    "followers": 91700,
+    "tier": 3,
+    "chainFocus": "ETH",
+    "hitRate": 58,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.05",
+      "Alerted $MOG liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 12,
+    "handle": "@floki_fiend",
+    "avatar": "🧑‍🚀",
+    "followers": 96400,
+    "tier": 4,
+    "chainFocus": "BASE",
+    "hitRate": 62,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.05",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 13,
+    "handle": "@moonshot_monk",
+    "avatar": "🐸",
+    "followers": 101100,
+    "tier": 1,
+    "chainFocus": "SOL",
+    "hitRate": 72,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $0.05",
+      "Alerted $MOG liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 14,
+    "handle": "@crypto_chaos",
+    "avatar": "🧢",
+    "followers": 105800,
+    "tier": 2,
+    "chainFocus": "ETH",
+    "hitRate": 42,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.0007",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 15,
+    "handle": "@rugproof",
+    "avatar": "🧑‍🚀",
+    "followers": 104500,
+    "tier": 3,
+    "chainFocus": "BASE",
+    "hitRate": 46,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.008",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 16,
+    "handle": "@liquidity_leo",
+    "avatar": "🐸",
+    "followers": 109200,
+    "tier": 4,
+    "chainFocus": "SOL",
+    "hitRate": 50,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.05",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 17,
+    "handle": "@chart_goblin",
+    "avatar": "🧢",
+    "followers": 113900,
+    "tier": 1,
+    "chainFocus": "ETH",
+    "hitRate": 60,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $1.12",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 18,
+    "handle": "@mcap_magnet",
+    "avatar": "🧑‍🚀",
+    "followers": 118600,
+    "tier": 2,
+    "chainFocus": "BASE",
+    "hitRate": 58,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.0007",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 19,
+    "handle": "@token_tactician",
+    "avatar": "🐸",
+    "followers": 123300,
+    "tier": 3,
+    "chainFocus": "SOL",
+    "hitRate": 62,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.00002",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 20,
+    "handle": "@alpha_kermit",
+    "avatar": "🧢",
+    "followers": 122000,
+    "tier": 4,
+    "chainFocus": "ETH",
+    "hitRate": 66,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $0.05",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 21,
+    "handle": "@hodl_hydra",
+    "avatar": "🧑‍🚀",
+    "followers": 126700,
+    "tier": 1,
+    "chainFocus": "BASE",
+    "hitRate": 48,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.05",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 22,
+    "handle": "@ape_archivist",
+    "avatar": "🐸",
+    "followers": 131400,
+    "tier": 2,
+    "chainFocus": "SOL",
+    "hitRate": 46,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.0007",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 23,
+    "handle": "@meme_maven",
+    "avatar": "🧢",
+    "followers": 136100,
+    "tier": 3,
+    "chainFocus": "ETH",
+    "hitRate": 50,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.05",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 24,
+    "handle": "@callout_corgi",
+    "avatar": "🧑‍🚀",
+    "followers": 140800,
+    "tier": 4,
+    "chainFocus": "BASE",
+    "hitRate": 54,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 25,
+    "handle": "@base_bandit",
+    "avatar": "🐸",
+    "followers": 139500,
+    "tier": 1,
+    "chainFocus": "SOL",
+    "hitRate": 64,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $1.12",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 26,
+    "handle": "@sol_sherpa",
+    "avatar": "🧢",
+    "followers": 144200,
+    "tier": 2,
+    "chainFocus": "ETH",
+    "hitRate": 62,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $1.12",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 27,
+    "handle": "@eth_eclipse",
+    "avatar": "🧑‍🚀",
+    "followers": 148900,
+    "tier": 3,
+    "chainFocus": "BASE",
+    "hitRate": 66,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.00002",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 28,
+    "handle": "@dank_delta",
+    "avatar": "🐸",
+    "followers": 153600,
+    "tier": 4,
+    "chainFocus": "SOL",
+    "hitRate": 42,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.008",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 29,
+    "handle": "@ticker_toad",
+    "avatar": "🧢",
+    "followers": 158300,
+    "tier": 1,
+    "chainFocus": "ETH",
+    "hitRate": 52,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.0007",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 30,
+    "handle": "@launch_lurker",
+    "avatar": "🧑‍🚀",
+    "followers": 157000,
+    "tier": 2,
+    "chainFocus": "BASE",
+    "hitRate": 50,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.008",
+      "Alerted $MOG liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 31,
+    "handle": "@kol_karen",
+    "avatar": "🐸",
+    "followers": 161700,
+    "tier": 3,
+    "chainFocus": "SOL",
+    "hitRate": 54,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.05",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 32,
+    "handle": "@giga_guru",
+    "avatar": "🧢",
+    "followers": 166400,
+    "tier": 4,
+    "chainFocus": "ETH",
+    "hitRate": 58,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.008",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 33,
+    "handle": "@bonk_boss",
+    "avatar": "🧑‍🚀",
+    "followers": 171100,
+    "tier": 1,
+    "chainFocus": "BASE",
+    "hitRate": 68,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.008",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 34,
+    "handle": "@pepe_pilot",
+    "avatar": "🐸",
+    "followers": 175800,
+    "tier": 2,
+    "chainFocus": "SOL",
+    "hitRate": 66,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.05",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 35,
+    "handle": "@trend_tuna",
+    "avatar": "🧢",
+    "followers": 174500,
+    "tier": 3,
+    "chainFocus": "ETH",
+    "hitRate": 42,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.008",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 36,
+    "handle": "@vol_trapper",
+    "avatar": "🧑‍🚀",
+    "followers": 179200,
+    "tier": 4,
+    "chainFocus": "BASE",
+    "hitRate": 46,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.05",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 37,
+    "handle": "@pump_priest",
+    "avatar": "🐸",
+    "followers": 183900,
+    "tier": 1,
+    "chainFocus": "SOL",
+    "hitRate": 56,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.008",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 38,
+    "handle": "@degen_dolly",
+    "avatar": "🧢",
+    "followers": 188600,
+    "tier": 2,
+    "chainFocus": "ETH",
+    "hitRate": 54,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.05",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 39,
+    "handle": "@sniper_simon",
+    "avatar": "🧑‍🚀",
+    "followers": 193300,
+    "tier": 3,
+    "chainFocus": "BASE",
+    "hitRate": 58,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $0.00002",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 40,
+    "handle": "@meme_marco",
+    "avatar": "🐸",
+    "followers": 192000,
+    "tier": 4,
+    "chainFocus": "SOL",
+    "hitRate": 62,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.00002",
+      "Alerted $FARTCOIN liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 41,
+    "handle": "@fart_futures",
+    "avatar": "🧢",
+    "followers": 196700,
+    "tier": 1,
+    "chainFocus": "ETH",
+    "hitRate": 72,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 42,
+    "handle": "@rugwatch_ryu",
+    "avatar": "🧑‍🚀",
+    "followers": 201400,
+    "tier": 2,
+    "chainFocus": "BASE",
+    "hitRate": 42,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $WIF breakout at $0.05",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 43,
+    "handle": "@liquid_loki",
+    "avatar": "🐸",
+    "followers": 206100,
+    "tier": 3,
+    "chainFocus": "SOL",
+    "hitRate": 46,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $1.12",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 44,
+    "handle": "@alpha_amber",
+    "avatar": "🧢",
+    "followers": 210800,
+    "tier": 4,
+    "chainFocus": "ETH",
+    "hitRate": 50,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $DEGEN breakout at $0.00002",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 45,
+    "handle": "@call_me_cap",
+    "avatar": "🧑‍🚀",
+    "followers": 209500,
+    "tier": 1,
+    "chainFocus": "BASE",
+    "hitRate": 60,
+    "lastActive": "1h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 46,
+    "handle": "@meme_marshal",
+    "avatar": "🐸",
+    "followers": 214200,
+    "tier": 2,
+    "chainFocus": "SOL",
+    "hitRate": 58,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $1.12",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 47,
+    "handle": "@xray_xeno",
+    "avatar": "🧢",
+    "followers": 218900,
+    "tier": 3,
+    "chainFocus": "ETH",
+    "hitRate": 62,
+    "lastActive": "3h ago",
+    "bio": "Meme analyst focused on ETH degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $1.12",
+      "Alerted $SPX6900 liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 48,
+    "handle": "@whale_wanda",
+    "avatar": "🧑‍🚀",
+    "followers": 223600,
+    "tier": 4,
+    "chainFocus": "BASE",
+    "hitRate": 66,
+    "lastActive": "4h ago",
+    "bio": "Meme analyst focused on BASE degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $PEPE breakout at $0.0007",
+      "Alerted $POPCAT liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 49,
+    "handle": "@serum_sage",
+    "avatar": "🐸",
+    "followers": 228300,
+    "tier": 1,
+    "chainFocus": "SOL",
+    "hitRate": 48,
+    "lastActive": "5h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BRETT breakout at $0.0007",
+      "Alerted $GIGA liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  },
+  {
+    "rank": 50,
+    "handle": "@meme_samurai",
+    "avatar": "🧩",
+    "followers": 227000,
+    "tier": 2,
+    "chainFocus": "SOL",
+    "hitRate": 58.4,
+    "lastActive": "2h ago",
+    "bio": "Meme analyst focused on SOL degen rotations. Tracks volume shifts and whale flows.",
+    "recentCalls": [
+      "Called $BONK breakout at $0.00002",
+      "Alerted $WIF liquidity spike",
+      "Warned on thin liquidity before dump"
+    ],
+    "performance": [
+      "Called $PEPE at $0.0001 → now $0.001 = 10x ✅",
+      "Sniped $WIF pre-listing → 6x ✅",
+      "Avoided $RUGX after honeypot alert ✅"
+    ]
+  }
+]

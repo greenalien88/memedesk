@@ -8,19 +8,19 @@ import { formatCompact, formatPercent } from '@/lib/format';
 interface Launch {
   name: string;
   symbol: string;
-  chain: 'SOL' | 'ETH' | 'BASE';
+  chain: string;
   ageHours: number;
   mcap: number;
   holders: number;
   liquidity: number;
   devWalletPct: number;
-  status: 'Safe' | 'Caution' | 'Danger' | 'Rugged';
+  status: string;
 }
 
 type SortKey = 'ageHours' | 'mcap' | 'holders';
 
 export default function LaunchTable({ launches }: { launches: Launch[] }) {
-  const [chainFilter, setChainFilter] = useState<'ALL' | 'SOL' | 'ETH' | 'BASE'>('ALL');
+  const [chainFilter, setChainFilter] = useState<'ALL' | string>('ALL');
   const [sortKey, setSortKey] = useState<SortKey>('ageHours');
 
   const filtered = useMemo(() => {

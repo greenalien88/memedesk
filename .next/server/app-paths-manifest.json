@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/api/newsletter/route": "app/api/newsletter/route.js",
+  "/about/page": "app/about/page.js",
+  "/kol-tracker/page": "app/kol-tracker/page.js",
+  "/rug-watch/page": "app/rug-watch/page.js",
+  "/launches/page": "app/launches/page.js",
+  "/page": "app/page.js"
+}

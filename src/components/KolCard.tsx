@@ -5,7 +5,7 @@ interface Kol {
   avatar: string;
   followers: number;
   tier: number;
-  chainFocus: 'SOL' | 'ETH' | 'BASE';
+  chainFocus: string;
   hitRate: number;
   lastActive: string;
   bio: string;

@@ -8,7 +8,7 @@ interface Coin {
   id: string;
   name: string;
   symbol: string;
-  chain: 'SOL' | 'ETH' | 'BASE';
+  chain: string;
   price: number;
   change24h: number;
   mcap: number;

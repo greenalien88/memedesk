@@ -10,7 +10,7 @@ interface Kol {
   avatar: string;
   followers: number;
   tier: number;
-  chainFocus: 'SOL' | 'ETH' | 'BASE';
+  chainFocus: string;
   hitRate: number;
   lastActive: string;
   bio: string;
@@ -21,7 +21,7 @@ interface Kol {
 type SortKey = 'followers' | 'hitRate';
 
 export default function KolTable({ kols }: { kols: Kol[] }) {
-  const [chainFilter, setChainFilter] = useState<'ALL' | 'SOL' | 'ETH' | 'BASE'>('ALL');
+  const [chainFilter, setChainFilter] = useState<string>('ALL');
   const [tierFilter, setTierFilter] = useState<'ALL' | 1 | 2 | 3 | 4>('ALL');
   const [sortKey, setSortKey] = useState<SortKey>('followers');
   const [expanded, setExpanded] = useState<string | null>(null);

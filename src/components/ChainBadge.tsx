@@ -1,4 +1,4 @@
-type Chain = 'SOL' | 'ETH' | 'BASE' | 'MULTI';
+type Chain = string;
 
 const chainStyles: Record<Chain, string> = {
   SOL: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',

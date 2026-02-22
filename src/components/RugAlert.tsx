@@ -3,10 +3,10 @@ import StatusBadge from '@/components/StatusBadge';
 
 interface Rug {
   name: string;
-  chain: 'SOL' | 'ETH' | 'BASE';
+  chain: string;
   redFlags: string[];
   riskScore: number;
-  status: 'Safe' | 'Caution' | 'Danger' | 'Rugged';
+  status: string;
   summary: string;
 }
 

@@ -1,4 +1,4 @@
-type Status = 'Safe' | 'Caution' | 'Danger' | 'Rugged';
+type Status = string;
 
 const statusStyles: Record<Status, string> = {
   Safe: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/40',

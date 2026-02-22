@@ -6,7 +6,7 @@ interface Story {
   headline: string;
   summary: string;
   timestamp: string;
-  chain: 'SOL' | 'ETH' | 'BASE' | 'MULTI';
+  chain: string;
   emoji: string;
 }
 

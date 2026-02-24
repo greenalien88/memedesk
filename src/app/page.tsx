@@ -84,7 +84,28 @@ export default function HomePage() {
               </div>
               <span className="text-xs text-white/50">Updated hourly</span>
             </div>
-            <div className="overflow-x-auto">
+            {/* Mobile: card layout */}
+            <div className="divide-y divide-white/10 md:hidden">
+              {launches.slice(0, 5).map((launch) => (
+                <div key={launch.symbol} className="px-4 py-4 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <span className="font-semibold">{launch.name}</span>
+                      <span className="ml-2 text-xs text-white/60">{launch.symbol}</span>
+                    </div>
+                    <StatusBadge status={launch.status} />
+                  </div>
+                  <div className="flex items-center gap-3 text-xs text-white/60">
+                    <ChainBadge chain={launch.chain} />
+                    <span>{launch.ageHours}h old</span>
+                    <span>{formatCompact(launch.mcap)} mcap</span>
+                    <span>{launch.holders} holders</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Desktop: table layout */}
+            <div className="hidden md:block overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead className="bg-white/5 text-xs uppercase text-white/50">
                   <tr>

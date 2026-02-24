@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import TickerBar from '@/components/TickerBar';
 import StoryCard from '@/components/StoryCard';
 import CoinTable from '@/components/CoinTable';
@@ -11,7 +12,7 @@ import coins from '../../data/coins.json';
 import articles from '../data/articles.json';
 import launches from '../../data/launches.json';
 import rugs from '../../data/rugs.json';
-import kols from '../../data/kols.json';
+
 
 export default function HomePage() {
   const today = new Date();
@@ -44,7 +45,9 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-semibold">Today&apos;s Briefing</h2>
-              <span className="text-xs text-white/50">Top stories across chains</span>
+              <Link href="/articles" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
+                View all articles →
+              </Link>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
               {articles.slice(0, 6).map((article) => (
@@ -105,31 +108,6 @@ export default function HomePage() {
             <div className="grid gap-4">
               {rugs.slice(0, 3).map((rug) => (
                 <RugAlert key={rug.name} rug={rug} />
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold">📡 KOL Radar</h3>
-              <span className="text-xs text-white/50">What top influencers are calling</span>
-            </div>
-            <div className="grid gap-4 md:grid-cols-3">
-              {kols.slice(0, 3).map((kol) => (
-                <div key={kol.handle} className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="text-2xl">{kol.avatar}</div>
-                    <div>
-                      <div className="font-semibold">{kol.handle}</div>
-                      <div className="text-xs text-white/60">Tier {kol.tier} · {kol.chainFocus}</div>
-                    </div>
-                  </div>
-                  <div className="mt-3 text-sm text-white/70">{kol.recentCalls[0]}</div>
-                  <div className="mt-3 flex items-center justify-between text-xs text-white/50">
-                    <span>Engagement</span>
-                    <span className="text-emerald-300">{kol.hitRate}% hit rate</span>
-                  </div>
-                </div>
               ))}
             </div>
           </div>

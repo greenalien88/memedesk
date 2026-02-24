@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import articles from '@/data/articles.json';
 
 type Article = (typeof articles)[number];
@@ -145,9 +146,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         ))}
       </div>
 
-      {/* KOL + Source side by side on desktop */}
-      <div className="mb-8 grid gap-4 md:grid-cols-2">
-        <KolCard kol={article.kol} />
+      {/* Hero Image */}
+      {(article as any).heroImage && (
+        <div className="relative mb-8 aspect-[3/2] w-full overflow-hidden rounded-xl border border-white/10">
+          <Image
+            src={(article as any).heroImage}
+            alt={article.headline}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
+
+      {/* Source Post */}
+      <div className="mb-8">
         <SourcePost post={article.sourcePost} quoted={article.quotedPost} />
       </div>
 

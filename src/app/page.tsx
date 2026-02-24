@@ -44,7 +44,7 @@ export default function HomePage() {
 
       <section className="grid gap-8 md:grid-cols-[1.7fr_1fr]">
         <div className="space-y-8">
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-emerald-500/5 to-transparent p-8">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-white/40">MemeDesk</p>

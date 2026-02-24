@@ -29,7 +29,7 @@ export default function Sidebar({ coins }: { coins: Coin[] }) {
         </div>
       </div>
 
-      <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-emerald-500/10 via-white/5 to-transparent p-5">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
         <h3 className="text-lg font-semibold">Newsletter</h3>
         <p className="text-sm text-white/60">Get the daily memecoin briefing.</p>
         <div className="mt-4">

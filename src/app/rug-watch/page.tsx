@@ -5,7 +5,7 @@ import rugs from '../../../data/rugs.json';
 export const metadata: Metadata = {
   title: 'Rug Watch',
   description: 'High-risk memecoin alerts and investigative signals.',
-  alternates: { canonical: 'https://memedesk.vercel.app/rug-watch' },
+  alternates: { canonical: 'https://memedesk.co/rug-watch' },
 };
 
 export default function RugWatchPage() {

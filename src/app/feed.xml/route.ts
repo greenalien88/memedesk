@@ -1,7 +1,7 @@
 import articles from '@/data/articles.json';
 
 export async function GET() {
-  const baseUrl = 'https://memedesk.vercel.app';
+  const baseUrl = 'https://memedesk.co';
   const sorted = [...articles].sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );

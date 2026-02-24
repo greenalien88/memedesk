@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s | MemeDesk',
   },
   description: 'CoinDesk for memecoins. Editorial-quality coverage of degen markets.',
-  alternates: { canonical: 'https://memedesk.vercel.app' },
+  alternates: { canonical: 'https://memedesk.co' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

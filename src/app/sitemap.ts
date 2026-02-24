@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import articles from '@/data/articles.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://memedesk.vercel.app';
+  const base = 'https://memedesk.co';
 
   const articleEntries = articles.map((a) => ({
     url: `${base}/articles/${a.slug}`,

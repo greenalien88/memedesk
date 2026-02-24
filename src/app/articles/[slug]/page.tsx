@@ -9,14 +9,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = articles.find((a) => a.slug === slug);
   if (!article) return { title: 'Not Found | MemeDesk' };
 
-  const imageUrl = `https://memedesk.vercel.app/images/articles/${slug}.webp`;
+  const imageUrl = `https://memedesk.co/images/articles/${slug}.webp`;
 
-  const ogImageUrl = `https://memedesk.vercel.app/images/og/${slug}-og.webp`;
+  const ogImageUrl = `https://memedesk.co/images/og/${slug}-og.webp`;
 
   return {
     title: article.headline,
     description: article.subheadline,
-    alternates: { canonical: `https://memedesk.vercel.app/articles/${slug}` },
+    alternates: { canonical: `https://memedesk.co/articles/${slug}` },
     openGraph: {
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
@@ -182,11 +182,11 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     description: article.subheadline,
     datePublished: article.publishedAt,
     author: { '@type': 'Person', name: 'MemeDesk Editorial' },
-    image: `https://memedesk.vercel.app/images/og/${slug}-og.webp`,
+    image: `https://memedesk.co/images/og/${slug}-og.webp`,
     publisher: {
       '@type': 'Organization',
       name: 'MemeDesk',
-      logo: { '@type': 'ImageObject', url: 'https://memedesk.vercel.app/icon.png' },
+      logo: { '@type': 'ImageObject', url: 'https://memedesk.co/icon.png' },
     },
   };
 

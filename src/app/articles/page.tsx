@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'All Articles',
   description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
-  alternates: { canonical: 'https://memedesk.vercel.app/articles' },
+  alternates: { canonical: 'https://memedesk.co/articles' },
   openGraph: {
     title: 'All Articles | MemeDesk',
     description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',

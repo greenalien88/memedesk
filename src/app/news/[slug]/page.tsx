@@ -132,7 +132,7 @@ function SourcePost({ post, quoted }: { post: Article['sourcePost']; quoted: Art
 }
 
 function getRelatedArticles(current: Article, allArticles: typeof articles, count = 3) {
-  const others = allArticles.filter((a) => a.slug !== current.slug);
+  const others = allArticles.filter((a) => a.slug !== current.slug && a.category !== 'autopsy');
   const scored = others.map((a) => {
     const sharedTags = a.tags.filter((t) => current.tags.includes(t)).length;
     const sameChain = a.chain === current.chain ? 1 : 0;

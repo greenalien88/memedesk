@@ -8,7 +8,7 @@ interface Coin {
   volume24h: number;
 }
 
-export default function Sidebar({ coins }: { coins: Coin[] }) {
+export default function Sidebar({ coins, hidePro }: { coins: Coin[]; hidePro?: boolean }) {
   const topCoins = [...coins].sort((a, b) => b.volume24h - a.volume24h).slice(0, 10);
 
   return (
@@ -37,13 +37,15 @@ export default function Sidebar({ coins }: { coins: Coin[] }) {
         </div>
       </div>
 
-      <div className="rounded-2xl border border-emerald-400/30 bg-black/60 p-5">
-        <h3 className="text-lg font-semibold">Go Pro ⚡</h3>
-        <p className="text-sm text-white/60">Unlock whale alerts, real-time signals, and portfolio intel.</p>
-        <button className="mt-4 w-full rounded-xl bg-emerald-400 px-4 py-2 text-sm font-semibold text-black hover:bg-emerald-300">
-          Upgrade
-        </button>
-      </div>
+      {!hidePro && (
+        <div className="rounded-2xl border border-emerald-400/30 bg-black/60 p-5">
+          <h3 className="text-lg font-semibold">Go Pro ⚡</h3>
+          <p className="text-sm text-white/60">Unlock whale alerts, real-time signals, and portfolio intel.</p>
+          <button className="mt-4 w-full rounded-xl bg-emerald-400 px-4 py-2 text-sm font-semibold text-black hover:bg-emerald-300">
+            Upgrade
+          </button>
+        </div>
+      )}
     </aside>
   );
 }

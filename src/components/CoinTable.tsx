@@ -49,12 +49,12 @@ export default function CoinTable({ coins }: { coins: Coin[] }) {
       </div>
       <div className="divide-y divide-white/10">
         {sorted.slice(0, 5).map((coin) => (
-          <div key={coin.id} className="grid grid-cols-5 items-center gap-4 px-5 py-4 text-sm">
-            <div className="col-span-2">
+          <div key={coin.id} className="grid grid-cols-3 items-center gap-3 px-4 py-4 text-sm sm:grid-cols-5 sm:gap-4 sm:px-5">
+            <div className="col-span-1 sm:col-span-2">
               <div className="font-semibold">{coin.name}</div>
               <div className="text-xs text-white/60">{coin.symbol}</div>
             </div>
-            <ChainBadge chain={coin.chain} />
+            <div className="hidden sm:block"><ChainBadge chain={coin.chain} /></div>
             <div className="text-right text-white/80">{formatCurrency(coin.price, { maximumFractionDigits: 6 })}</div>
             <div className={`text-right font-semibold ${coin.change24h >= 0 ? 'text-emerald-400' : 'text-red-400'}`}>
               {formatPercent(coin.change24h)}

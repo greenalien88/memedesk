@@ -223,13 +223,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <p className="mb-4 text-lg text-white/60">{article.subheadline}</p>
 
         {/* Meta */}
-        <div className="mb-8 flex flex-wrap gap-4 text-sm text-white/40">
+        <div className="mb-8 flex flex-wrap gap-x-4 gap-y-1 text-sm text-white/40">
           <time dateTime={isoDate}>{published}</time>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span>{article.author}</span>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span className="uppercase">{article.chain}</span>
-          <span>·</span>
+          <span className="hidden sm:inline">·</span>
           <span>{readingTime} min read</span>
         </div>
 
@@ -301,13 +301,17 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 {block.calls?.length > 0 ? (
                   <div className="space-y-2">
                     {block.calls.map((call: any, j: number) => (
-                      <div key={j} className="flex items-center justify-between rounded-lg border border-white/5 bg-white/5 px-4 py-2 text-sm">
-                        <span className="font-semibold text-white">{call.token}</span>
-                        <span className="text-white/50">{call.date}</span>
-                        <span className="text-white/50">{call.priceThen} → {call.priceNow}</span>
-                        <span className={call.result === 'hit' ? 'text-emerald-400' : call.result === 'miss' ? 'text-red-400' : 'text-yellow-400'}>
-                          {call.result === 'hit' ? '✅' : call.result === 'miss' ? '❌' : '⏳'} {call.result}
-                        </span>
+                      <div key={j} className="rounded-lg border border-white/5 bg-white/5 px-4 py-3 text-sm">
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-white">{call.token}</span>
+                          <span className={call.result === 'hit' ? 'text-emerald-400' : call.result === 'miss' ? 'text-red-400' : 'text-yellow-400'}>
+                            {call.result === 'hit' ? '✅' : call.result === 'miss' ? '❌' : '⏳'} {call.result}
+                          </span>
+                        </div>
+                        <div className="mt-1 flex flex-wrap gap-x-3 text-xs text-white/50">
+                          <span>{call.date}</span>
+                          <span>{call.priceThen} → {call.priceNow}</span>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -359,12 +363,16 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">📊 Token Overview</div>
                 <div className="space-y-2">
                   {(block.tokens || []).map((t: any, j: number) => (
-                    <div key={j} className="flex items-center justify-between rounded-lg border border-white/5 bg-white/5 px-4 py-2 text-sm">
-                      <span className="font-semibold text-white">${t.symbol}</span>
-                      <span className="text-white/60">{t.price}</span>
-                      <span className="text-white/50">{t.mcap}</span>
-                      <span className={t.change?.startsWith('+') ? 'text-emerald-400' : 'text-red-400'}>{t.change}</span>
-                      {t.narrative && <span className="rounded-full bg-white/10 px-2 py-0.5 text-xs text-white/50">{t.narrative}</span>}
+                    <div key={j} className="rounded-lg border border-white/5 bg-white/5 px-4 py-3 text-sm">
+                      <div className="flex items-center justify-between">
+                        <span className="font-semibold text-white">${t.symbol}</span>
+                        <span className={t.change?.startsWith('+') ? 'text-emerald-400' : 'text-red-400'}>{t.change}</span>
+                      </div>
+                      <div className="mt-1 flex flex-wrap gap-x-3 text-xs text-white/50">
+                        <span>{t.price}</span>
+                        <span>{t.mcap}</span>
+                        {t.narrative && <span className="rounded-full bg-white/10 px-2 py-0.5">{t.narrative}</span>}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -440,13 +448,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {/* Token ticker footer */}
       {article.tokenData && (
         <div className="mt-8 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-sm">
-          <span className="font-bold text-white">${article.tokenData.symbol}</span>
-          <span className="mx-2 text-white/30">·</span>
-          <span className="text-white/70">{article.tokenData.price}</span>
-          <span className="mx-2 text-white/30">·</span>
-          <span className="text-white/70">MC {article.tokenData.marketCap}</span>
-          <span className="mx-2 text-white/30">·</span>
-          <span className="text-red-400">{article.tokenData.athDrop} from ATH</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+            <span className="font-bold text-white">${article.tokenData.symbol}</span>
+            <span className="text-white/30">·</span>
+            <span className="text-white/70">{article.tokenData.price}</span>
+            <span className="text-white/30">·</span>
+            <span className="text-white/70">MC {article.tokenData.marketCap}</span>
+            <span className="text-white/30">·</span>
+            <span className="text-red-400">{article.tokenData.athDrop} from ATH</span>
+          </div>
         </div>
       )}
     </article>

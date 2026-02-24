@@ -13,8 +13,8 @@ export async function GET() {
       (a) => `    <item>
       <title>${escXml(a.headline)}</title>
       <description>${escXml(a.subheadline)}</description>
-      <link>${baseUrl}/articles/${a.slug}</link>
-      <guid isPermaLink="true">${baseUrl}/articles/${a.slug}</guid>
+      <link>${baseUrl}/news/${a.slug}</link>
+      <guid isPermaLink="true">${baseUrl}/news/${a.slug}</guid>
       <pubDate>${new Date(a.publishedAt).toUTCString()}</pubDate>
     </item>`
     )

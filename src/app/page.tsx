@@ -60,8 +60,8 @@ export default function HomePage() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-semibold">Today&apos;s Briefing</h2>
-              <Link href="/articles" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
-                View all articles →
+              <Link href="/news" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
+                View all news →
               </Link>
             </div>
             <div className="grid gap-4 md:grid-cols-2">

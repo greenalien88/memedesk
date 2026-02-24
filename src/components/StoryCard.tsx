@@ -19,7 +19,7 @@ interface Article {
 
 export default function StoryCard({ article }: { article: Article }) {
   return (
-    <Link href={`/articles/${article.slug}`}>
+    <Link href={`/news/${article.slug}`}>
       <article className="group flex h-full flex-col gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
         <div className="flex items-start justify-between">
           <span className="text-2xl">{article.signalEmoji}</span>

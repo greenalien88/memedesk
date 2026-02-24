@@ -6,7 +6,7 @@ import NewsletterModal from '@/components/NewsletterModal';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/articles', label: 'Articles' },
+  { href: '/news', label: 'News' },
   { href: '/launches', label: 'Launches' },
   { href: '/rug-watch', label: 'Rug Watch' }
 ];

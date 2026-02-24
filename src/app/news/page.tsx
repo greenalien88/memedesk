@@ -5,18 +5,18 @@ import articles from '@/data/articles.json';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'All Articles',
-  description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
-  alternates: { canonical: 'https://memedesk.co/articles' },
+  title: 'All News',
+  description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
+  alternates: { canonical: 'https://memedesk.co/news' },
   openGraph: {
-    title: 'All Articles | MemeDesk',
-    description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
+    title: 'All News | MemeDesk',
+    description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'All Articles | MemeDesk',
-    description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
+    title: 'All News | MemeDesk',
+    description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
   },
 };
 
@@ -34,7 +34,7 @@ export default function ArticlesPage() {
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
       <div>
-        <h1 className="text-3xl font-bold">All Articles</h1>
+        <h1 className="text-3xl font-bold">All News</h1>
         <p className="mt-1 text-sm text-white/50">{sorted.length} reports published</p>
       </div>
 
@@ -42,7 +42,7 @@ export default function ArticlesPage() {
         {sorted.map((article) => (
           <Link
             key={article.id}
-            href={`/articles/${article.slug}`}
+            href={`/news/${article.slug}`}
             className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
             {(article as any).heroImage && (

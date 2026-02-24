@@ -228,7 +228,7 @@ async function main() {
   console.log('------------------------');
   console.log(`Article ID: ${id}`);
   console.log(`Slug: ${slug}`);
-  console.log(`Preview: http://localhost:3000/articles/${slug}`);
+  console.log(`Preview: http://localhost:3000/news/${slug}`);
   console.log('');
   if (dex.ok) {
     console.log('Token Data');

@@ -9,14 +9,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = articles.find((a) => a.slug === slug);
   if (!article) return { title: 'Not Found | MemeDesk' };
 
-  const imageUrl = `https://memedesk.co/images/articles/${slug}.webp`;
+  const imageUrl = `https://memedesk.co/images/news/${slug}.webp`;
 
   const ogImageUrl = `https://memedesk.co/images/og/${slug}-og.webp`;
 
   return {
     title: article.headline,
     description: article.subheadline,
-    alternates: { canonical: `https://memedesk.co/articles/${slug}` },
+    alternates: { canonical: `https://memedesk.co/news/${slug}` },
     openGraph: {
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
@@ -270,7 +270,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       )}
 
-      {/* Article Body */}
+      {/* News Body */}
       <section className="prose-invert space-y-5">
         {article.body.map((block: any, i: number) => {
           if (block.type === 'heading') {
@@ -416,15 +416,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         })}
       </section>
 
-      {/* Related Articles */}
+      {/* Related News */}
       {related.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-4 text-xl font-bold text-white">Related Articles</h2>
+          <h2 className="mb-4 text-xl font-bold text-white">Related News</h2>
           <div className="grid gap-4 sm:grid-cols-3">
             {related.map((rel) => (
               <Link
                 key={rel.slug}
-                href={`/articles/${rel.slug}`}
+                href={`/news/${rel.slug}`}
                 className="rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/[0.07]"
               >
                 <div className={`mb-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-semibold ${signalColors[rel.signalRating] || signalColors.speculative}`}>

@@ -165,7 +165,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     shill: 'border-red-400/60 bg-red-400/10 text-red-300',
   };
 
-  const jsonLd = {
+  const faqBlock = article.body.find((b: any) => b.type === 'faq') as any;
+  const jsonLd: any = {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: article.headline,
@@ -180,9 +181,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     },
   };
 
+  // Add FAQ schema if present (gets rich snippets in Google)
+  const faqJsonLd = faqBlock?.items?.length ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqBlock.items.map((faq: any) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
   return (
     <article className="mx-auto max-w-3xl py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       {/* Back */}
       <Link href="/" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
         ← Back to MemeDesk
@@ -246,12 +259,84 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {/* Article Body */}
       <section className="prose-invert space-y-5">
-        {article.body.map((block, i) => {
+        {article.body.map((block: any, i: number) => {
           if (block.type === 'heading') {
             return (
               <h2 key={i} className="mt-8 text-xl font-bold text-emerald-300">
                 {block.text}
               </h2>
+            );
+          }
+          if (block.type === 'quickTake') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-emerald-400/30 bg-emerald-400/5 p-5">
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-emerald-400">⚡ Quick Take</div>
+                <ul className="space-y-2">
+                  {(block.bullets || []).map((b: string, j: number) => (
+                    <li key={j} className="flex items-start gap-2 text-sm text-white/80">
+                      <span className="mt-1 text-emerald-400">→</span> {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          }
+          if (block.type === 'trackRecord') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">📊 KOL Track Record</div>
+                {block.calls?.length > 0 ? (
+                  <div className="space-y-2">
+                    {block.calls.map((call: any, j: number) => (
+                      <div key={j} className="flex items-center justify-between rounded-lg border border-white/5 bg-white/5 px-4 py-2 text-sm">
+                        <span className="font-semibold text-white">{call.token}</span>
+                        <span className="text-white/50">{call.date}</span>
+                        <span className="text-white/50">{call.priceThen} → {call.priceNow}</span>
+                        <span className={call.result === 'hit' ? 'text-emerald-400' : call.result === 'miss' ? 'text-red-400' : 'text-yellow-400'}>
+                          {call.result === 'hit' ? '✅' : call.result === 'miss' ? '❌' : '⏳'} {call.result}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-white/50 italic">Track record data limited — treat all signals with caution.</p>
+                )}
+              </div>
+            );
+          }
+          if (block.type === 'communityReactions') {
+            return (
+              <div key={i} className="my-6 space-y-3">
+                <div className="text-xs font-semibold uppercase tracking-wider text-white/40">💬 What the Community Is Saying</div>
+                {(block.reactions || []).map((r: any, j: number) => (
+                  <div key={j} className={`rounded-xl border p-4 ${
+                    r.sentiment === 'bull' ? 'border-emerald-400/20 bg-emerald-400/5' :
+                    r.sentiment === 'bear' ? 'border-red-400/20 bg-red-400/5' :
+                    'border-white/10 bg-white/5'
+                  }`}>
+                    <div className="mb-1 text-xs text-white/40">
+                      {r.handle} {r.followers && `· ${r.followers} followers`}
+                      {r.sentiment && <span className="ml-2">{r.sentiment === 'bull' ? '🟢' : r.sentiment === 'bear' ? '🔴' : '⚪'}</span>}
+                    </div>
+                    <p className="text-sm text-white/80 italic">&ldquo;{r.text}&rdquo;</p>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          if (block.type === 'faq') {
+            return (
+              <div key={i} className="my-6">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">❓ Frequently Asked Questions</div>
+                <div className="space-y-4">
+                  {(block.items || []).map((faq: any, j: number) => (
+                    <div key={j} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <h3 className="mb-2 text-sm font-bold text-white">{faq.question}</h3>
+                      <p className="text-sm leading-relaxed text-white/70">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             );
           }
           return (

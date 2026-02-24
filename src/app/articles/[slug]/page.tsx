@@ -330,6 +330,54 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
+          if (block.type === 'timeline') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">🕐 Timeline</div>
+                <div className="space-y-3 border-l-2 border-white/10 pl-4">
+                  {(block.events || []).map((evt: any, j: number) => (
+                    <div key={j} className="relative">
+                      <div className="absolute -left-[21px] top-1.5 h-2 w-2 rounded-full bg-emerald-400"></div>
+                      <div className="text-xs font-semibold text-emerald-400">{evt.time}</div>
+                      <div className="text-sm text-white/80">{evt.event}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          if (block.type === 'tokenTable') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">📊 Token Overview</div>
+                <div className="space-y-2">
+                  {(block.tokens || []).map((t: any, j: number) => (
+                    <div key={j} className="flex items-center justify-between rounded-lg border border-white/5 bg-white/5 px-4 py-2 text-sm">
+                      <span className="font-semibold text-white">${t.symbol}</span>
+                      <span className="text-white/60">{t.price}</span>
+                      <span className="text-white/50">{t.mcap}</span>
+                      <span className={t.change?.startsWith('+') ? 'text-emerald-400' : 'text-red-400'}>{t.change}</span>
+                      {t.narrative && <span className="rounded-full bg-white/10 px-2 py-0.5 text-xs text-white/50">{t.narrative}</span>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          if (block.type === 'redFlags') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-red-400/30 bg-red-400/5 p-5">
+                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-red-400">🚩 Red Flags</div>
+                <ul className="space-y-2">
+                  {(block.flags || []).map((flag: string, j: number) => (
+                    <li key={j} className="flex items-start gap-2 text-sm text-white/80">
+                      <span className="mt-0.5 text-red-400">⚠️</span> {flag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          }
           if (block.type === 'faq') {
             return (
               <div key={i} className="my-6">

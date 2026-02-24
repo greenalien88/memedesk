@@ -8,8 +8,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/news', label: 'News' },
   { href: '/autopsy', label: 'Autopsy' },
-  { href: '/launches', label: 'Launches' },
-  { href: '/rug-watch', label: 'Rug Watch' }
 ];
 
 export default function Header() {

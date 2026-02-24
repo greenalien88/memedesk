@@ -24,8 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/autopsy`, lastModified: new Date() },
     ...newsEntries,
     ...autopsyEntries,
-    { url: `${base}/launches`, lastModified: new Date() },
-    { url: `${base}/rug-watch`, lastModified: new Date() },
     { url: `${base}/about`, lastModified: new Date() },
   ];
 }

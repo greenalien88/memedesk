@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import NewsletterForm from '@/components/NewsletterForm';
+
+export const metadata: Metadata = {
+  title: 'About',
+  description: 'About MemeDesk — editorial-quality memecoin coverage.',
+  alternates: { canonical: 'https://memedesk.vercel.app/about' },
+};
 
 export default function AboutPage() {
   return (

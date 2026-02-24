@@ -11,21 +11,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const imageUrl = `https://memedesk.vercel.app/images/articles/${slug}.webp`;
 
+  const ogImageUrl = `https://memedesk.vercel.app/images/og/${slug}-og.webp`;
+
   return {
-    title: `${article.headline} | MemeDesk`,
+    title: article.headline,
     description: article.subheadline,
+    alternates: { canonical: `https://memedesk.vercel.app/articles/${slug}` },
     openGraph: {
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
       type: 'article',
       publishedTime: article.publishedAt,
-      images: [imageUrl],
+      images: [{ url: ogImageUrl, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
-      images: [imageUrl],
+      images: [ogImageUrl],
     },
   };
 }
@@ -125,6 +128,22 @@ function SourcePost({ post, quoted }: { post: Article['sourcePost']; quoted: Art
   );
 }
 
+function getRelatedArticles(current: Article, allArticles: typeof articles, count = 3) {
+  const others = allArticles.filter((a) => a.slug !== current.slug);
+  const scored = others.map((a) => {
+    const sharedTags = a.tags.filter((t) => current.tags.includes(t)).length;
+    const sameChain = a.chain === current.chain ? 1 : 0;
+    return { article: a, score: sharedTags * 2 + sameChain };
+  });
+  scored.sort((a, b) => b.score - a.score || new Date(b.article.publishedAt).getTime() - new Date(a.article.publishedAt).getTime());
+  return scored.slice(0, count).map((s) => s.article);
+}
+
+function getReadingTime(body: Article['body']): number {
+  const words = body.reduce((sum, block) => sum + block.text.split(/\s+/).length, 0);
+  return Math.max(1, Math.ceil(words / 200));
+}
+
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = articles.find((a) => a.slug === slug);
@@ -136,6 +155,15 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     month: 'long',
     day: 'numeric',
   });
+  const isoDate = new Date(article.publishedAt).toISOString();
+  const readingTime = getReadingTime(article.body);
+  const related = getRelatedArticles(article, articles);
+
+  const signalColors: Record<string, string> = {
+    legit: 'border-emerald-400/60 bg-emerald-400/10 text-emerald-300',
+    speculative: 'border-yellow-400/60 bg-yellow-400/10 text-yellow-300',
+    shill: 'border-red-400/60 bg-red-400/10 text-red-300',
+  };
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -144,7 +172,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     description: article.subheadline,
     datePublished: article.publishedAt,
     author: { '@type': 'Person', name: 'MemeDesk Editorial' },
-    image: `https://memedesk.vercel.app/images/articles/${slug}.webp`,
+    image: `https://memedesk.vercel.app/images/og/${slug}-og.webp`,
     publisher: {
       '@type': 'Organization',
       name: 'MemeDesk',
@@ -153,41 +181,45 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   };
 
   return (
-    <div className="mx-auto max-w-3xl py-8">
+    <article className="mx-auto max-w-3xl py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Back */}
       <Link href="/" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
         ← Back to MemeDesk
       </Link>
 
-      {/* Signal Rating */}
-      <div className="mb-4">
-        <SignalBadge rating={article.signalRating} emoji={article.signalEmoji} label={article.signalLabel} />
-      </div>
+      <header>
+        {/* Signal Rating */}
+        <div className="mb-4">
+          <SignalBadge rating={article.signalRating} emoji={article.signalEmoji} label={article.signalLabel} />
+        </div>
 
-      {/* Headline */}
-      <h1 className="mb-2 text-3xl font-bold leading-tight text-white sm:text-4xl">
-        {article.headline}
-      </h1>
-      <p className="mb-4 text-lg text-white/60">{article.subheadline}</p>
+        {/* Headline */}
+        <h1 className="mb-2 text-3xl font-bold leading-tight text-white sm:text-4xl">
+          {article.headline}
+        </h1>
+        <p className="mb-4 text-lg text-white/60">{article.subheadline}</p>
 
-      {/* Meta */}
-      <div className="mb-8 flex flex-wrap gap-4 text-sm text-white/40">
-        <span>{published}</span>
-        <span>·</span>
-        <span>{article.author}</span>
-        <span>·</span>
-        <span className="uppercase">{article.chain}</span>
-      </div>
+        {/* Meta */}
+        <div className="mb-8 flex flex-wrap gap-4 text-sm text-white/40">
+          <time dateTime={isoDate}>{published}</time>
+          <span>·</span>
+          <span>{article.author}</span>
+          <span>·</span>
+          <span className="uppercase">{article.chain}</span>
+          <span>·</span>
+          <span>{readingTime} min read</span>
+        </div>
 
-      {/* Tags */}
-      <div className="mb-8 flex flex-wrap gap-2">
-        {article.tags.map((tag) => (
-          <span key={tag} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50">
-            #{tag}
-          </span>
-        ))}
-      </div>
+        {/* Tags */}
+        <div className="mb-8 flex flex-wrap gap-2">
+          {article.tags.map((tag) => (
+            <span key={tag} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      </header>
 
       {/* Hero Image */}
       {(article as any).heroImage && (
@@ -213,7 +245,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </div>
 
       {/* Article Body */}
-      <div className="prose-invert space-y-5">
+      <section className="prose-invert space-y-5">
         {article.body.map((block, i) => {
           if (block.type === 'heading') {
             return (
@@ -228,7 +260,28 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             </p>
           );
         })}
-      </div>
+      </section>
+
+      {/* Related Articles */}
+      {related.length > 0 && (
+        <section className="mt-12">
+          <h2 className="mb-4 text-xl font-bold text-white">Related Articles</h2>
+          <div className="grid gap-4 sm:grid-cols-3">
+            {related.map((rel) => (
+              <Link
+                key={rel.slug}
+                href={`/articles/${rel.slug}`}
+                className="rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/[0.07]"
+              >
+                <div className={`mb-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-semibold ${signalColors[rel.signalRating] || signalColors.speculative}`}>
+                  {rel.signalEmoji} {rel.signalRating}
+                </div>
+                <h3 className="text-sm font-semibold leading-snug text-white line-clamp-3">{rel.headline}</h3>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Footer CTA */}
       <div className="mt-12 rounded-xl border border-emerald-400/20 bg-emerald-400/5 p-6 text-center">
@@ -248,7 +301,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <span className="mx-2 text-white/30">·</span>
         <span className="text-red-400">{article.tokenData.athDrop} from ATH</span>
       </div>
-    </div>
+    </article>
   );
 }
 

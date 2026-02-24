@@ -1,5 +1,206 @@
 [
   {
+    "id": "120-hours-dying-dev-rug-pull-pump-fun",
+    "slug": "120-hours-dying-dev-rug-pull-pump-fun-solana",
+    "articleType": "post-mortem",
+    "heroImage": "/images/articles/120-hours-dying-dev-rug-pull-pump-fun-solana.webp",
+    "headline": "A 'Dying' Developer Promised His Family Would Get the Fees — Then He Rugged $480K and Vanished",
+    "subheadline": "The 120 Hours ($120) Pump.fun scam is the most emotionally manipulative rug pull Solana has ever seen",
+    "signalRating": "shill",
+    "signalEmoji": "🔴",
+    "signalLabel": "Confirmed Rug Pull",
+    "publishedAt": "2026-02-24T21:45:00+08:00",
+    "author": "MemeDesk Editorial",
+    "tags": [
+      "$120",
+      "Rug Pull",
+      "Pump.fun",
+      "Solana",
+      "Post-Mortem"
+    ],
+    "chain": "SOL",
+    "tokenData": {
+      "symbol": "120",
+      "name": "120 Hours",
+      "price": "$0.00",
+      "marketCap": "$0 (dead)",
+      "ath": "$500K mcap",
+      "athDrop": "-100%",
+      "recentAction": "Launched on Pump.fun Sep 16 2025, hit $500K market cap, rugged to zero within hours"
+    },
+    "walletData": {
+      "address": "Gd3GkHW1jzwZa4UPmTELG97xzP82ZGmq5Q78d9eCpump",
+      "label": "120 Hours Creator (Evecoins)",
+      "action": "Drained all liquidity + $14K creator fees",
+      "txHash": null,
+      "value": "$480K+"
+    },
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "On September 16, 2025, a developer appeared on a Pump.fun livestream in a wheelchair. He told the audience he had 120 hours to live. He said his family needed money. He launched a token called 120 Hours ($120) and promised — on camera, to a live audience — that he would never rug pull. The token hit a $500,000 market cap. Then the stream went dark. The wallets drained. The developer disappeared. Every single buyer lost everything."
+      },
+      {
+        "type": "quickTake",
+        "bullets": [
+          "Developer 'Evecoins' faked a terminal illness on Pump.fun livestream to manipulate buyers into aping a sympathy token",
+          "$480K+ drained from buyers plus $14K in creator fees — total loss: ~$494K stolen via emotional manipulation",
+          "Token went from $500K market cap to zero in minutes. Dubbed 'Rug Pull of the Year' on Crypto Twitter"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How It Went Down"
+      },
+      {
+        "type": "timeline",
+        "events": [
+          {
+            "time": "Sep 16, ~afternoon",
+            "event": "Developer 'Evecoins' goes live on Pump.fun stream, appears in wheelchair, claims he has 120 hours to live"
+          },
+          {
+            "time": "During stream",
+            "event": "Launches $120 token on Pump.fun, says all creator fees will go to his family"
+          },
+          {
+            "time": "Minutes later",
+            "event": "Viewers ape in — sympathy buying drives token to $500K market cap"
+          },
+          {
+            "time": "At peak",
+            "event": "Developer promises on camera: 'I will never rug pull this'"
+          },
+          {
+            "time": "Shortly after peak",
+            "event": "Stream goes black. Developer vanishes. Liquidity drained."
+          },
+          {
+            "time": "Sep 17",
+            "event": "Token confirmed dead at $0. All social accounts scrubbed. Community outrage erupts on X"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Red Flags Everyone Missed"
+      },
+      {
+        "type": "paragraph",
+        "text": "Look, we get it. A guy says he's dying. You feel something. Maybe you toss in a few SOL because even if the token goes to zero, it felt like the right thing. That's exactly what the developer counted on. Emotional manipulation is the oldest play in the book — it just usually comes wrapped in a fake charity, not a Pump.fun livestream."
+      },
+      {
+        "type": "redFlags",
+        "flags": [
+          "Anonymous developer with no verifiable identity — 'Evecoins' was a throwaway persona",
+          "Unverifiable medical claims — no documentation, no proof of illness, just a wheelchair and a camera",
+          "Pump.fun launch with no liquidity lock, no contract renouncement, no audit",
+          "Explicit on-camera promise of 'no rug pull' — the single biggest tell in meme coin history",
+          "No team, no roadmap, no utility — pure narrative token built on a sympathy story",
+          "Creator fees structured to extract maximum value ($14K in fees alone on top of LP drain)"
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "The Receipts"
+      },
+      {
+        "type": "paragraph",
+        "text": "The token contract (Gd3GkHW1jzwZa4UPmTELG97xzP82ZGmq5Q78d9eCpump) tells the whole story. $120 launched on Pump.fun's bonding curve, reached roughly $500K in market cap as stream viewers piled in, then the creator systematically drained the pool. On-chain analysis shows approximately $480,000 extracted from buyers, plus $14,000 in Pump.fun creator fees that went directly to the developer's wallet. The total haul: just under half a million dollars, stolen via a fake terminal illness."
+      },
+      {
+        "type": "paragraph",
+        "text": "After the rug, all social media accounts associated with 'Evecoins' were scrubbed. The Pump.fun stream recording vanished. The only evidence that remains lives on-chain and in the screenshots and screen recordings that outraged community members preserved before the cleanup."
+      },
+      {
+        "type": "heading",
+        "text": "Why This One Hit Different"
+      },
+      {
+        "type": "paragraph",
+        "text": "Crypto Twitter has seen thousands of rug pulls. Most of them blend together — another anonymous dev, another drained LP pool, another zero on DexScreener. But $120 crossed a line that even the most hardened degens couldn't laugh off. This wasn't a meme gone wrong. This was a person fabricating a terminal illness to weaponize human empathy for half a million dollars."
+      },
+      {
+        "type": "paragraph",
+        "text": "The reaction on X was immediate and brutal. Threads calling it the 'Scam of the Year' and 'Rug Pull of the Year' went viral. Some users pointed out the dark irony — in a space where everyone says 'don't trust, verify,' the one time people trusted their hearts instead of their wallets, they got exactly what the space always warns about. Others noted it exposed a fundamental flaw in Pump.fun's model: when anyone can launch a token with a livestream and zero accountability, the platform becomes a stage for sociopaths."
+      },
+      {
+        "type": "heading",
+        "text": "The Pump.fun Problem"
+      },
+      {
+        "type": "paragraph",
+        "text": "120 Hours is a symptom of a much bigger disease. Pump.fun has enabled the creation of millions of tokens on Solana, and by some estimates, 90-95% of tokens launched on the platform either rug pull or die within 48 hours. The platform's bonding curve mechanism offers some baseline protection — it's harder to pull a traditional liquidity rug compared to a raw contract deploy — but creator fees and bundled trading strategies give bad actors plenty of extraction vectors."
+      },
+      {
+        "type": "paragraph",
+        "text": "The $120 case specifically exploited the livestream feature. Pump.fun's built-in streaming turned token launches into performances, and performances can be faked. A wheelchair, a sad story, and a camera were all it took to bypass every rational filter that crypto traders supposedly have. The platform has since seen increased scrutiny, but the fundamental problem remains: zero-barrier token creation means zero-barrier scams."
+      },
+      {
+        "type": "heading",
+        "text": "Lessons for Degens"
+      },
+      {
+        "type": "paragraph",
+        "text": "Every rug pull teaches the same lessons. Most people ignore them. But if you're going to survive in the Solana meme trenches, tattoo these on your trading arm:"
+      },
+      {
+        "type": "paragraph",
+        "text": "First: emotional narratives are not investment theses. If the primary reason to buy a token is a feeling — sympathy, outrage, FOMO, patriotism — that feeling is being manufactured to extract your money. Every single time. Second: livestream presence means nothing. A face on camera is not KYC. A sad story is not due diligence. Third: when someone explicitly says 'I will never rug pull,' run. That sentence has preceded more rugs than any other in crypto history. Fourth: Pump.fun tokens are high-risk by default. The barrier to create one is effectively zero. Treat every new launch as guilty until proven innocent."
+      },
+      {
+        "type": "communityReactions",
+        "reactions": [
+          {
+            "handle": "@CryptoTrader",
+            "followers": "Unknown",
+            "text": "Just got rugged by a disabled dev. $120 is the scam of the year. Used sympathy to drain half a million.",
+            "sentiment": "bear"
+          },
+          {
+            "handle": "@CT_Community",
+            "followers": "Unknown",
+            "text": "The irony of getting rugged by someone who said 'I'll never rug' ON CAMERA is peak Solana.",
+            "sentiment": "bear"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Verdict"
+      },
+      {
+        "type": "paragraph",
+        "text": "🔴 Confirmed rug pull. $120 is dead. The developer known as 'Evecoins' fabricated a terminal illness, weaponized a Pump.fun livestream to generate sympathy buys, extracted approximately $494,000 in total (liquidity drain plus creator fees), and scrubbed all traces of their identity. This isn't a cautionary tale about meme coins — it's a cautionary tale about trusting strangers on the internet with your money, no matter how convincing the story. The token is at zero. It will stay at zero. If you lost money on this, the only recovery is the lesson."
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "What was 120 Hours ($120)?",
+            "answer": "120 Hours was a Solana memecoin launched on Pump.fun on September 16, 2025, by a developer using the alias 'Evecoins.' The developer claimed to be terminally ill with 120 hours to live and promised to direct token creator fees to his family. It reached a $500K market cap before the developer drained all liquidity and vanished."
+          },
+          {
+            "question": "How much money was stolen in the $120 rug pull?",
+            "answer": "Approximately $494,000 in total — roughly $480,000 from liquidity extraction plus $14,000 in Pump.fun creator fees. Every buyer lost their entire investment as the token went to zero."
+          },
+          {
+            "question": "Who was behind the 120 Hours scam?",
+            "answer": "The developer used the alias 'Evecoins' and appeared on a Pump.fun livestream in a wheelchair claiming a terminal illness. After the rug pull, all social media accounts were scrubbed and the identity remains unknown. The scam was linked to an entity called 'Creator Capital Markets.'"
+          },
+          {
+            "question": "Is Pump.fun safe for buying meme coins?",
+            "answer": "Pump.fun's bonding curve offers some basic protections compared to raw contract deploys, but the platform has extremely low barriers to token creation. By some estimates, 90-95% of tokens launched on Pump.fun either rug pull or die within 48 hours. Always verify liquidity locks, check dev wallet holdings, and never invest based on emotional narratives alone."
+          },
+          {
+            "question": "Can the 120 Hours developer be identified or prosecuted?",
+            "answer": "As of now, the developer remains anonymous. All social accounts were scrubbed post-rug. While on-chain data preserves the wallet addresses and transaction history, connecting these to a real identity requires law enforcement cooperation with exchanges where funds may have been off-ramped. In practice, most Pump.fun rug pulls go unpunished."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "lobstar-wilde-ai-bot-250k-blunder",
     "slug": "ai-bot-lobstar-wilde-accidentally-sends-250k-memecoin-stranger",
     "articleType": "culture-moment",

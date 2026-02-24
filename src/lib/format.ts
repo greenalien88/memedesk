@@ -21,7 +21,8 @@ export const formatPercent = (value: number) =>
 export const timeAgo = (iso: string) => {
   const now = new Date();
   const then = new Date(iso);
-  const diff = Math.max(0, now.getTime() - then.getTime());
+  const diff = now.getTime() - then.getTime();
+  if (diff <= 0) return 'just now';
   const minutes = Math.floor(diff / 60000);
   if (minutes < 60) return `${minutes}m ago`;
   const hours = Math.floor(minutes / 60);

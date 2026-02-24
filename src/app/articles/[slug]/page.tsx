@@ -140,7 +140,13 @@ function getRelatedArticles(current: Article, allArticles: typeof articles, coun
 }
 
 function getReadingTime(body: Article['body']): number {
-  const words = body.reduce((sum, block) => sum + block.text.split(/\s+/).length, 0);
+  const words = body.reduce((sum, block: any) => {
+    if (block.text) return sum + block.text.split(/\s+/).length;
+    if (block.bullets) return sum + block.bullets.join(' ').split(/\s+/).length;
+    if (block.items) return sum + block.items.map((i: any) => `${i.question} ${i.answer}`).join(' ').split(/\s+/).length;
+    if (block.reactions) return sum + block.reactions.map((r: any) => r.text).join(' ').split(/\s+/).length;
+    return sum;
+  }, 0);
   return Math.max(1, Math.ceil(words / 200));
 }
 

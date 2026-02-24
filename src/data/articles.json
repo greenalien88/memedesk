@@ -207,10 +207,10 @@
       "text": "When 500 MILLION white-collar workers lose their jobs, which assets will they bid, support and spread as a \"middle-finger\" to the System that caused them to lose everything? SPX6900. Flip the Stock Market.",
       "timestamp": "2026-02-23T22:00:00+08:00",
       "engagement": {
-        "replies": 214,
-        "reposts": 184,
-        "likes": 734,
-        "views": 56338
+        "replies": 313,
+        "reposts": 289,
+        "likes": 1172,
+        "views": 115499
       }
     },
     "quotedPost": {
@@ -232,7 +232,15 @@
     "body": [
       {
         "type": "paragraph",
-        "text": "At 10 PM tonight, Murad — Princeton grad, ex-Goldman, 735K followers, and the man who turned \"memecoin supercycle\" from a joke into a thesis — posted what might be his most provocative take yet. Not another \"HODL\" sermon. Not another chart. A macro argument: that the coming AI-driven mass unemployment event will funnel hundreds of millions of angry, displaced workers into a single memecoin as an act of financial rebellion. Within three hours: 56,000 views. 734 likes. 214 replies. And the replies aren't laughing."
+        "text": "At 10 PM tonight, Murad — Princeton grad, ex-Goldman, 735K followers, and the man who turned \"memecoin supercycle\" from a joke into a thesis — posted what might be his most provocative take yet. Not another \"HODL\" sermon. Not another chart. A macro argument: that the coming AI-driven mass unemployment event will funnel hundreds of millions of angry, displaced workers into a single memecoin as an act of financial rebellion. Within sixteen hours: 115,000 views. 1,172 likes. 313 replies. And the replies aren't laughing."
+      },
+      {
+        "type": "quickTake",
+        "bullets": [
+          "Murad is calling SPX6900 the \"middle finger\" trade for 500 million workers who lose their jobs to AI",
+          "Token is down 87% from ATH at $0.29 — either a death spiral or the most asymmetric entry since sub-penny",
+          "His 735K followers are already mobilizing: 246 consecutive days of community DCA, Amsterdam conference planned for May"
+        ]
       },
       {
         "type": "heading",
@@ -240,11 +248,15 @@
       },
       {
         "type": "paragraph",
-        "text": "Murad is quoting Citrini — a well-followed macro researcher — who just published a chillingly detailed scenario for 2028: the S&P 500 down 38% from highs, unemployment printing 10.2%, private credit unraveling, and prime mortgages cracking. The twist? AI didn't disappoint. It exceeded every expectation. The technology worked perfectly. The economy didn't."
+        "text": "Murad is quoting Citrini — a well-followed macro researcher with 71K followers — who just published a chillingly detailed scenario for 2028: the S&P 500 down 38% from highs, unemployment printing 10.2%, private credit unraveling, and prime mortgages cracking. The twist? AI didn't disappoint. It exceeded every expectation. The technology worked perfectly. The economy didn't."
       },
       {
         "type": "paragraph",
         "text": "Most people read that piece and feel dread. Murad read it and saw a customer acquisition funnel. His argument: when 500 million white-collar workers lose their jobs to AI, they won't quietly pivot to \"prompt engineering.\" They'll look for a symbol. A middle finger. A way to express that the system failed them. And SPX6900 — literally named as a parody of the S&P 500 — becomes that symbol. Not because of fundamentals. Because of rage."
+      },
+      {
+        "type": "paragraph",
+        "text": "This is the evolution of Murad's thesis. In 2024, he called it the \"memecoin supercycle\" — the idea that culture-driven tokens would outperform utility plays. Now he's grafting macroeconomics onto that framework. The supercycle isn't just about internet culture anymore. It's about economic displacement creating a new class of buyer who treats memecoins as protest art."
       },
       {
         "type": "heading",
@@ -253,6 +265,10 @@
       {
         "type": "paragraph",
         "text": "SPX6900 is trading at $0.29. Its all-time high was $2.27 in July 2025. That's an 87% drawdown. If you're a bear, this is a token bleeding out in slow motion while its biggest promoter pivots from price action to apocalypse narratives. If you're Murad, this is a 7x discount from ATH with a thesis that hasn't even started playing out. The macro trigger he's betting on — mass AI displacement — is a 2027-2028 event. He's positioning now."
+      },
+      {
+        "type": "paragraph",
+        "text": "For context: Murad's wallet was publicly tracked holding $70M in memecoins at SPX's peak in July 2025, with $66M of that in SPX6900 alone — a 10,500% gain from his $0.01 entry. At today's $0.29, that position is worth roughly $1.9M. He hasn't sold. He's either the most patient investor in crypto or the most committed bag holder. The line between those two things is the next 18 months."
       },
       {
         "type": "paragraph",
@@ -272,6 +288,85 @@
       },
       {
         "type": "heading",
+        "text": "KOL Track Record"
+      },
+      {
+        "type": "trackRecord",
+        "calls": [
+          {
+            "token": "SPX6900",
+            "date": "Oct 2024",
+            "priceThen": "$0.01",
+            "priceNow": "$0.29",
+            "result": "hit"
+          },
+          {
+            "token": "GIGA",
+            "date": "Oct 2024",
+            "priceThen": "$0.02",
+            "priceNow": "Down 9% from call",
+            "result": "pending"
+          },
+          {
+            "token": "MOG",
+            "date": "Oct 2024",
+            "priceThen": "$0.0000005",
+            "priceNow": "Small decline",
+            "result": "pending"
+          },
+          {
+            "token": "POPCAT",
+            "date": "Oct 2024",
+            "priceThen": "$0.80",
+            "priceNow": "Below $1",
+            "result": "miss"
+          },
+          {
+            "token": "Supercycle Thesis",
+            "date": "Sep 2024",
+            "priceThen": "Concept",
+            "priceNow": "$70M peak portfolio",
+            "result": "hit"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Murad's public wallet showed $70M in memecoin holdings at peak (July 2025), with SPX6900 delivering a verified 10,500% return. His broader \"cult coins\" thesis — that memecoins with diamond-hand communities outperform hype-driven pumps — has been directionally correct, even if individual picks like POPCAT have underperformed. The track record leans bullish, but every position is now deep underwater from 2025 highs."
+      },
+      {
+        "type": "heading",
+        "text": "What the Community Is Saying"
+      },
+      {
+        "type": "communityReactions",
+        "reactions": [
+          {
+            "handle": "@tokencycle",
+            "followers": null,
+            "text": "You were right, really right, and you're still right now. The SPX 6900 narrative is exactly the one. Even Dagestan would envy your eagle eye.",
+            "sentiment": "bull"
+          },
+          {
+            "handle": "@CVREToken",
+            "followers": null,
+            "text": "Wrong. When 500 million white collar workers lose their jobs, they won't be thinking about flipping anything, they'll be thinking about survival. The average US household has less than $1,000 in savings.",
+            "sentiment": "bear"
+          },
+          {
+            "handle": "@heardintrenches",
+            "followers": null,
+            "text": "They'll ape whatever feels most disrespectful to suits. Probably meme index.",
+            "sentiment": "data"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The replies are split but telling. The bulls aren't arguing price — they're arguing identity. SPX6900 isn't a trade to them, it's a movement. The bears raise a valid point: displaced workers won't have capital to deploy. But that misses Murad's actual thesis — it's not about the unemployed buying SPX. It's about the narrative of unemployment driving speculative capital from people who still have money but want to express outrage."
+      },
+      {
+        "type": "heading",
         "text": "MemeDesk Verdict"
       },
       {
@@ -281,6 +376,31 @@
       {
         "type": "paragraph",
         "text": "That said — dismissing a 735K-follower conviction play while the token trades at 87% off ATH has its own risks. The last time Murad went silent for weeks and then came back swinging, SPX moved 40% in 72 hours. This isn't a fundamentals game. It's a belief game. And right now, the congregation is listening. Set your alerts. Do your own research. But don't say we didn't tell you."
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "What is SPX6900?",
+            "answer": "SPX6900 is an Ethereum-based memecoin created as a parody of the S&P 500 stock index. It has no utility or yield — its value is driven entirely by community conviction and narrative. It peaked at $2.27 in July 2025 and currently trades around $0.29."
+          },
+          {
+            "question": "Who is Murad Mahmudov?",
+            "answer": "Murad Mahmudov is a Princeton-educated, ex-Goldman Sachs crypto investor with 735K followers on X. He coined the \"memecoin supercycle\" thesis in 2024 and is the most prominent public advocate for SPX6900. His tracked wallet held $70M in memecoins at peak."
+          },
+          {
+            "question": "Is SPX6900 a good investment?",
+            "answer": "SPX6900 is an extremely high-risk speculative asset. It is down 87% from its all-time high. Its value depends entirely on community growth and narrative momentum, not fundamentals. Only invest what you can afford to lose completely."
+          },
+          {
+            "question": "What is the memecoin supercycle theory?",
+            "answer": "The memecoin supercycle is Murad's thesis that culture-driven tokens will outperform utility-based crypto projects in this market cycle. He argues that communities with \"diamond hand\" conviction create self-reinforcing value loops that traditional tokenomics cannot replicate."
+          },
+          {
+            "question": "Why is Murad connecting AI job losses to SPX6900?",
+            "answer": "Murad argues that mass AI-driven unemployment (projected by some analysts for 2027-2028) will create a wave of financially displaced workers seeking protest assets. SPX6900, named as a parody of the S&P 500, positions itself as a \"middle finger\" to the traditional financial system — making it a natural magnet for anti-establishment sentiment."
+          }
+        ]
       }
     ],
     "heroImage": "/images/articles/murad-500m-jobs-spx6900.webp"

@@ -263,12 +263,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       )}
 
-      {/* Token Data */}
-      {article.tokenData && (
-        <div className="mb-8">
-          <TokenCard data={article.tokenData} />
-        </div>
-      )}
+      {/* Token Data — removed: static prices are misleading */}
 
       {/* News Body */}
       <section className="prose-invert space-y-5">
@@ -445,20 +440,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
 
-      {/* Token ticker footer */}
-      {article.tokenData && (
-        <div className="mt-8 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-center text-sm">
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
-            <span className="font-bold text-white">${article.tokenData.symbol}</span>
-            <span className="text-white/30">·</span>
-            <span className="text-white/70">{article.tokenData.price}</span>
-            <span className="text-white/30">·</span>
-            <span className="text-white/70">MC {article.tokenData.marketCap}</span>
-            <span className="text-white/30">·</span>
-            <span className="text-red-400">{article.tokenData.athDrop} from ATH</span>
-          </div>
-        </div>
-      )}
+      {/* Token ticker footer — removed: static prices are misleading */}
     </article>
   );
 }

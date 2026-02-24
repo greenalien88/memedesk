@@ -2,9 +2,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import articles from '@/data/articles.json';
 
-export const metadata = {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
   title: 'All Articles | MemeDesk',
   description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
+  openGraph: {
+    title: 'All Articles | MemeDesk',
+    description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'All Articles | MemeDesk',
+    description: 'Every MemeDesk article — KOL calls, meme coin analysis, and degen signal reports.',
+  },
 };
 
 export default function ArticlesPage() {

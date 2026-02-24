@@ -1,7 +1,34 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import articles from '@/data/articles.json';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = articles.find((a) => a.slug === slug);
+  if (!article) return { title: 'Not Found | MemeDesk' };
+
+  const imageUrl = `https://memedesk.vercel.app/images/articles/${slug}.webp`;
+
+  return {
+    title: `${article.headline} | MemeDesk`,
+    description: article.subheadline,
+    openGraph: {
+      title: `${article.headline} | MemeDesk`,
+      description: article.subheadline,
+      type: 'article',
+      publishedTime: article.publishedAt,
+      images: [imageUrl],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${article.headline} | MemeDesk`,
+      description: article.subheadline,
+      images: [imageUrl],
+    },
+  };
+}
 
 type Article = (typeof articles)[number];
 
@@ -110,8 +137,24 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     day: 'numeric',
   });
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'NewsArticle',
+    headline: article.headline,
+    description: article.subheadline,
+    datePublished: article.publishedAt,
+    author: { '@type': 'Person', name: 'MemeDesk Editorial' },
+    image: `https://memedesk.vercel.app/images/articles/${slug}.webp`,
+    publisher: {
+      '@type': 'Organization',
+      name: 'MemeDesk',
+      logo: { '@type': 'ImageObject', url: 'https://memedesk.vercel.app/icon.png' },
+    },
+  };
+
   return (
     <div className="mx-auto max-w-3xl py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Back */}
       <Link href="/" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
         ← Back to MemeDesk

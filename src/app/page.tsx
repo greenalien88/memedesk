@@ -1,4 +1,20 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'MemeDesk — The Signal in the Noise',
+  description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports. No shills, no cope — just the data.',
+  openGraph: {
+    title: 'MemeDesk — The Signal in the Noise',
+    description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'MemeDesk — The Signal in the Noise',
+    description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports.',
+  },
+};
 import TickerBar from '@/components/TickerBar';
 import StoryCard from '@/components/StoryCard';
 import CoinTable from '@/components/CoinTable';

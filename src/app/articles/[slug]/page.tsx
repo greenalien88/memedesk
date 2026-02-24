@@ -49,6 +49,7 @@ function SignalBadge({ rating, emoji, label }: { rating: string; emoji: string; 
 }
 
 function TokenCard({ data }: { data: Article['tokenData'] }) {
+  if (!data) return null;
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-5">
       <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">Token Data</div>
@@ -78,6 +79,7 @@ function TokenCard({ data }: { data: Article['tokenData'] }) {
 }
 
 function KolCard({ kol }: { kol: Article['kol'] }) {
+  if (!kol) return null;
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-5">
       <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">KOL Profile</div>
@@ -97,6 +99,7 @@ function KolCard({ kol }: { kol: Article['kol'] }) {
 }
 
 function SourcePost({ post, quoted }: { post: Article['sourcePost']; quoted: Article['quotedPost'] }) {
+  if (!post) return null;
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-5">
       <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">Source Post</div>

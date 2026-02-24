@@ -35,11 +35,12 @@ async function fetchFearGreed(): Promise<{ value: number; label: string }> {
 }
 
 function sentimentStyle(value: number) {
-  if (value <= 25) return { color: 'text-red-400', border: 'border-red-400/30', bg: 'bg-red-400/5', emoji: '🔴' };
-  if (value <= 45) return { color: 'text-orange-400', border: 'border-orange-400/30', bg: 'bg-orange-400/5', emoji: '🟠' };
-  if (value <= 55) return { color: 'text-yellow-400', border: 'border-yellow-400/30', bg: 'bg-yellow-400/5', emoji: '🟡' };
-  if (value <= 75) return { color: 'text-emerald-300', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🟢' };
-  return { color: 'text-emerald-400', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🟢' };
+  if (value <= 10) return { color: 'text-red-400', border: 'border-red-400/30', bg: 'bg-red-400/5', emoji: '💀', label: 'NGMI', quip: 'Your portfolio called. It\'s not coming home.' };
+  if (value <= 25) return { color: 'text-red-400', border: 'border-red-400/30', bg: 'bg-red-400/5', emoji: '💀', label: 'Max Cope', quip: 'Ser, this is a Wendy\'s.' };
+  if (value <= 45) return { color: 'text-orange-400', border: 'border-orange-400/30', bg: 'bg-orange-400/5', emoji: '😰', label: 'Paper Hands', quip: 'Weak hands getting shaken out.' };
+  if (value <= 55) return { color: 'text-yellow-400', border: 'border-yellow-400/30', bg: 'bg-yellow-400/5', emoji: '🦀', label: 'Crab Mode', quip: 'Sideways until further notice.' };
+  if (value <= 75) return { color: 'text-emerald-300', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🐂', label: 'Aping In', quip: 'Few understand.' };
+  return { color: 'text-emerald-400', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🚀', label: 'Full Degen', quip: 'Number go up technology activated.' };
 }
 
 export const revalidate = 60; // ISR: revalidate every 60s
@@ -69,9 +70,18 @@ export default async function HomePage() {
                 <h1 className="text-3xl font-semibold md:text-4xl">The Signal in the Noise</h1>
                 <p className="mt-2 text-sm text-white/60">{dateString} · 🟢 Degen Mode: ON</p>
               </div>
-              <div className={`rounded-2xl border ${style.border} bg-black/60 px-4 py-3 text-sm ${style.color}`}>
-                {style.emoji} Market Sentiment: <span className="font-semibold">{fearGreed.label}</span>
-                <div className="mt-1 text-xs opacity-60">Fear &amp; Greed: {fearGreed.value}/100</div>
+              <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl animate-pulse">{style.emoji}</span>
+                  <div>
+                    <div className="font-bold text-base tracking-wide">{style.label}</div>
+                    <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+                  </div>
+                </div>
+                <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                  <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+                </div>
+                <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
               </div>
             </div>
           </div>

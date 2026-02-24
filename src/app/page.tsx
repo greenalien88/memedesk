@@ -23,13 +23,17 @@ import ChainBadge from '@/components/ChainBadge';
 import StatusBadge from '@/components/StatusBadge';
 import NewsletterForm from '@/components/NewsletterForm';
 import { formatCompact } from '@/lib/format';
-import coins from '../../data/coins.json';
+import staticCoins from '../../data/coins.json';
 import articles from '../data/articles.json';
 import launches from '../../data/launches.json';
 import rugs from '../../data/rugs.json';
+import { fetchLiveCoins } from '@/lib/coingecko';
 
+export const revalidate = 60; // ISR: revalidate every 60s
 
-export default function HomePage() {
+export default async function HomePage() {
+  const liveCoins = await fetchLiveCoins();
+  const coins = liveCoins.length > 0 ? liveCoins : staticCoins;
   const today = new Date();
   const dateString = today.toLocaleDateString('en-US', {
     weekday: 'long',

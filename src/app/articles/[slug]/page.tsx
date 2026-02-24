@@ -242,7 +242,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       {/* Hero Image */}
       {(article as any).heroImage && (
-        <div className="relative mb-8 aspect-[3/2] w-full overflow-hidden rounded-xl border border-white/10">
+        <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-xl border border-white/10">
           <Image
             src={(article as any).heroImage}
             alt={article.headline}

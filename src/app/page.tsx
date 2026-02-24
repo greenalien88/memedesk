@@ -22,11 +22,32 @@ import staticCoins from '../../data/coins.json';
 import articles from '../data/articles.json';
 import { fetchLiveCoins } from '@/lib/coingecko';
 
+async function fetchFearGreed(): Promise<{ value: number; label: string }> {
+  try {
+    const res = await fetch('https://api.alternative.me/fng/', { next: { revalidate: 3600 } });
+    const json = await res.json();
+    const value = parseInt(json.data?.[0]?.value ?? '50', 10);
+    const label = json.data?.[0]?.value_classification ?? 'Neutral';
+    return { value, label };
+  } catch {
+    return { value: 50, label: 'Neutral' };
+  }
+}
+
+function sentimentStyle(value: number) {
+  if (value <= 25) return { color: 'text-red-400', border: 'border-red-400/30', bg: 'bg-red-400/5', emoji: '🔴' };
+  if (value <= 45) return { color: 'text-orange-400', border: 'border-orange-400/30', bg: 'bg-orange-400/5', emoji: '🟠' };
+  if (value <= 55) return { color: 'text-yellow-400', border: 'border-yellow-400/30', bg: 'bg-yellow-400/5', emoji: '🟡' };
+  if (value <= 75) return { color: 'text-emerald-300', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🟢' };
+  return { color: 'text-emerald-400', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🟢' };
+}
+
 export const revalidate = 60; // ISR: revalidate every 60s
 
 export default async function HomePage() {
-  const liveCoins = await fetchLiveCoins();
+  const [liveCoins, fearGreed] = await Promise.all([fetchLiveCoins(), fetchFearGreed()]);
   const coins = liveCoins.length > 0 ? liveCoins : staticCoins;
+  const style = sentimentStyle(fearGreed.value);
   const today = new Date();
   const dateString = today.toLocaleDateString('en-US', {
     weekday: 'long',
@@ -48,8 +69,9 @@ export default async function HomePage() {
                 <h1 className="text-3xl font-semibold md:text-4xl">The Signal in the Noise</h1>
                 <p className="mt-2 text-sm text-white/60">{dateString} · 🟢 Degen Mode: ON</p>
               </div>
-              <div className="rounded-2xl border border-emerald-400/30 bg-black/60 px-4 py-3 text-sm text-emerald-200">
-                Market Sentiment: <span className="font-semibold">Bullish</span>
+              <div className={`rounded-2xl border ${style.border} bg-black/60 px-4 py-3 text-sm ${style.color}`}>
+                {style.emoji} Market Sentiment: <span className="font-semibold">{fearGreed.label}</span>
+                <div className="mt-1 text-xs opacity-60">Fear &amp; Greed: {fearGreed.value}/100</div>
               </div>
             </div>
           </div>

@@ -21,9 +21,9 @@ export const metadata: Metadata = {
 };
 
 export default function ArticlesPage() {
-  const sorted = [...articles].sort(
-    (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
+  const sorted = [...articles]
+    .filter((a: any) => a.category !== 'autopsy')
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const signalColors: Record<string, string> = {
     legit: 'border-emerald-400/60 bg-emerald-400/10 text-emerald-300',

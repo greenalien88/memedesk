@@ -65,7 +65,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {articles.slice(0, 6).map((article) => (
+              {articles.filter((a: any) => a.category !== 'autopsy').slice(0, 6).map((article) => (
                 <StoryCard key={article.id} article={article} />
               ))}
             </div>

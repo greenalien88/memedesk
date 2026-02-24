@@ -198,7 +198,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "autopsy"
   },
   {
     "id": "lobstar-wilde-ai-bot-250k-blunder",
@@ -402,7 +403,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "news"
   },
   {
     "id": "extreme-fear-meme-coins-defying-gravity",
@@ -591,7 +593,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "news"
   },
   {
     "id": "murad-spx6900-soul-market",
@@ -682,7 +685,8 @@
         "text": "We're rating this 🟡 Speculative — not because the thesis is weak, but because the messenger has skin in the game. Murad holds massive SPX bags. His incentive to pump aligns perfectly with his incentive to be right. That said: ignore a 735K-follower alpha call at your own risk. The last three times Murad went this hard on a conviction post, the token moved 40%+ within a week. Set your alerts. Do your own research. But don't say we didn't tell you."
       }
     ],
-    "heroImage": "/images/articles/murad-spx6900.webp"
+    "heroImage": "/images/articles/murad-spx6900.webp",
+    "category": "news"
   },
   {
     "id": "punch-baby-monkey-moodeng-2026",
@@ -769,7 +773,8 @@
         "text": "We're rating this 🔴 Shill Alert — and we don't use that rating lightly. The viral narrative is real. The Washington Post coverage is real. The 80,000% surge is real. But the on-chain evidence of coordinated insider distribution is also real, and it's exactly the pattern we've seen before every major rug pull in the animal-coin meta. 10% of supply flowing through a single intermediary wallet days after launch is not how organic community tokens work. The MOODENG comparison cuts both ways: MOODENG hit $600M, but dozens of MOODENG copycats hit zero. Smart money is exiting while public figures are entering. That's not a bullish signal — that's a distribution pattern with better marketing. If you're already in profit, consider taking some off the table. If you're thinking about entering: the monkey is cute, but the wallet traces are not. Set your alerts. Do your own research. But don't say we didn't warn you."
       }
     ],
-    "heroImage": "/images/articles/baby-monkey-moodeng.webp"
+    "heroImage": "/images/articles/baby-monkey-moodeng.webp",
+    "category": "news"
   },
   {
     "id": "murad-spx6900-500m-job-apocalypse",
@@ -997,6 +1002,7 @@
         ]
       }
     ],
-    "heroImage": "/images/articles/murad-500m-jobs-spx6900.webp"
+    "heroImage": "/images/articles/murad-500m-jobs-spx6900.webp",
+    "category": "news"
   }
 ]

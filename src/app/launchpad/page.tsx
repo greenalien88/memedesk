@@ -60,7 +60,7 @@ export default function LaunchPadPage() {
               className="group block overflow-hidden rounded-2xl border border-emerald-400/10 bg-white/5 transition hover:border-emerald-400/30 hover:bg-white/[0.07]"
             >
               {article.heroImage && (
-                <div className="relative aspect-[3/1] w-full overflow-hidden">
+                <div className="relative aspect-[3/2] w-full overflow-hidden">
                   <Image src={article.heroImage} alt={article.headline} fill className="object-cover transition group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                   <div className="absolute bottom-4 left-5">

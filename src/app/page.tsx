@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 import TickerBar from '@/components/TickerBar';
 import StoryCard from '@/components/StoryCard';
 import Sidebar from '@/components/Sidebar';
-import NewsletterForm from '@/components/NewsletterForm';
 import staticCoins from '../../data/coins.json';
 import { getAllArticles } from '@/lib/articles';
 import { fetchLiveCoins } from '@/lib/coingecko';
@@ -112,9 +111,6 @@ export default async function HomePage() {
               {getAllArticles().slice(0, 8).map((article) => (
                 <StoryCard key={article.id} article={article} />
               ))}
-            </div>
-            <div className="rounded-2xl border border-emerald-400/20 bg-emerald-500/10 p-5">
-              <NewsletterForm />
             </div>
           </div>
 

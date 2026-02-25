@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import NewsletterForm from '@/components/NewsletterForm';
 
 export const metadata: Metadata = {
   title: 'About',
@@ -18,14 +17,6 @@ export default function AboutPage() {
         <p className="mt-3 text-sm text-white/70">
           Mission: Bringing editorial quality to memecoin coverage while keeping the pulse of the trenches.
         </p>
-      </div>
-
-      <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-xl font-semibold">Newsletter</h2>
-        <p className="text-sm text-white/60">Get the daily memecoin briefing. Free.</p>
-        <div className="mt-4">
-          <NewsletterForm />
-        </div>
       </div>
 
       <div className="rounded-3xl border border-white/10 bg-white/5 p-8">

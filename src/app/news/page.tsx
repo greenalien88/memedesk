@@ -101,7 +101,7 @@ export default function NewsPage() {
                 <h2 className="mt-2 text-lg font-semibold leading-snug group-hover:text-red-300">{article.headline}</h2>
                 <p className="mt-1 text-sm text-white/50 line-clamp-2">{article.subheadline}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  {article.tags?.slice(0, 4).map((tag) => (
+                  {article.tags?.slice(0, 4).map((tag: string) => (
                     <span key={tag} className="rounded-full bg-white/10 px-2.5 py-0.5 text-xs text-white/50">
                       {tag}
                     </span>

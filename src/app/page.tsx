@@ -87,14 +87,29 @@ export default async function HomePage() {
           </div>
 
           <div className="space-y-4">
+            <div className="flex flex-wrap gap-2">
+              {[
+                { href: '/news', label: '🔴 News', color: 'border-red-400/30 hover:border-red-400/60 text-red-300' },
+                { href: '/alpha', label: '🔮 Alpha', color: 'border-violet-400/30 hover:border-violet-400/60 text-violet-300' },
+                { href: '/launchpad', label: '🚀 Launch Pad', color: 'border-emerald-400/30 hover:border-emerald-400/60 text-emerald-300' },
+                { href: '/autopsy', label: '🪦 Autopsy', color: 'border-gray-400/30 hover:border-gray-400/60 text-gray-300' },
+                { href: '/kol-watch', label: '👁️ KOL Watch', color: 'border-amber-400/30 hover:border-amber-400/60 text-amber-300' },
+                { href: '/market-pulse', label: '📊 Market Pulse', color: 'border-blue-400/30 hover:border-blue-400/60 text-blue-300' },
+                { href: '/academy', label: '🎓 Academy', color: 'border-cyan-400/30 hover:border-cyan-400/60 text-cyan-300' },
+              ].map((cat) => (
+                <Link key={cat.href} href={cat.href} className={`rounded-full border bg-white/5 px-3 py-1.5 text-xs font-medium transition hover:bg-white/10 ${cat.color}`}>
+                  {cat.label}
+                </Link>
+              ))}
+            </div>
             <div className="flex items-center justify-between">
-              <h2 className="text-xl font-semibold">Today&apos;s Briefing</h2>
+              <h2 className="text-xl font-semibold">Latest</h2>
               <Link href="/news" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
-                View all news →
+                View all →
               </Link>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {articles.filter((a: any) => a.category !== 'autopsy').slice(0, 6).map((article) => (
+              {[...articles].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0, 8).map((article) => (
                 <StoryCard key={article.id} article={article} />
               ))}
             </div>

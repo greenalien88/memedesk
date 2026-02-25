@@ -166,7 +166,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "news"
   },
   {
     "id": "buttcoin-solana-community-takeover-revenge-rally",
@@ -306,7 +307,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "news"
   },
   {
     "id": "pippin-ai-unicorn-surges-350-percent-while-crypto-burns",
@@ -451,7 +453,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "news"
   },
   {
     "id": "pepe-smart-money-accumulation-exchange-supply-drops",
@@ -583,7 +586,8 @@
           }
         ]
       }
-    ]
+    ],
+    "category": "alpha"
   },
   {
     "id": "trump-melania-insiders-4-billion-retail-loss",

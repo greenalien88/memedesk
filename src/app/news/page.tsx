@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function ArticlesPage() {
   const sorted = [...articles]
-    .filter((a: any) => a.category !== 'autopsy')
+    .filter((a: any) => a.category === 'news' || !a.category)
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 
   const signalColors: Record<string, string> = {

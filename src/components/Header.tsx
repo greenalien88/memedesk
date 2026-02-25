@@ -7,7 +7,12 @@ import NewsletterModal from '@/components/NewsletterModal';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/news', label: 'News' },
+  { href: '/alpha', label: 'Alpha' },
+  { href: '/launchpad', label: 'Launch Pad' },
   { href: '/autopsy', label: 'Autopsy' },
+  { href: '/kol-watch', label: 'KOL Watch' },
+  { href: '/market-pulse', label: 'Market Pulse' },
+  { href: '/academy', label: 'Academy' },
 ];
 
 export default function Header() {

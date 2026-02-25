@@ -46,7 +46,7 @@ export default function ArticlesPage() {
             className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
             {(article as any).heroImage && (
-              <div className="relative aspect-[3/2] w-full overflow-hidden">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src={(article as any).heroImage}
                   alt={article.headline}

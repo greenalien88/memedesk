@@ -60,7 +60,7 @@ export default function AutopsyPage() {
               className="group block overflow-hidden rounded-2xl border border-red-400/10 bg-white/5 transition hover:border-red-400/30 hover:bg-white/[0.07]"
             >
               {article.heroImage && (
-                <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
                   <Image
                     src={article.heroImage}
                     alt={article.headline}

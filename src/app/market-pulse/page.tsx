@@ -60,7 +60,7 @@ export default function MarketPulsePage() {
               className="group block overflow-hidden rounded-2xl border border-blue-400/10 bg-white/5 transition hover:border-blue-400/30 hover:bg-white/[0.07]"
             >
               {article.heroImage && (
-                <div className="relative aspect-[3/2] w-full overflow-hidden">
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
                   <Image src={article.heroImage} alt={article.headline} fill className="object-cover transition group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                   <div className="absolute bottom-4 left-5">

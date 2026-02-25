@@ -1,5 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import TickerBar from '@/components/TickerBar';
+import StoryCard from '@/components/StoryCard';
+import ChainBadge from '@/components/ChainBadge';
+import staticCoins from '../../data/coins.json';
+import { getAllArticles } from '@/lib/articles';
+import { fetchLiveCoins } from '@/lib/coingecko';
+import { timeAgo } from '@/lib/format';
 
 export const metadata: Metadata = {
   description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports. No shills, no cope — just the data.',
@@ -14,12 +22,6 @@ export const metadata: Metadata = {
     description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports.',
   },
 };
-import TickerBar from '@/components/TickerBar';
-import StoryCard from '@/components/StoryCard';
-import Sidebar from '@/components/Sidebar';
-import staticCoins from '../../data/coins.json';
-import { getAllArticles } from '@/lib/articles';
-import { fetchLiveCoins } from '@/lib/coingecko';
 
 async function fetchFearGreed(): Promise<{ value: number; label: string }> {
   try {
@@ -42,82 +44,156 @@ function sentimentStyle(value: number) {
   return { color: 'text-emerald-400', border: 'border-emerald-400/30', bg: 'bg-emerald-400/5', emoji: '🚀', label: 'Full Degen', quip: 'Number go up technology activated.' };
 }
 
-export const revalidate = 60; // ISR: revalidate every 60s
+const categoryMeta: Record<string, { label: string; color: string; path: string }> = {
+  news: { label: 'News', color: 'border-red-400/40 bg-red-400/10 text-red-300', path: '/news' },
+  alpha: { label: 'Alpha', color: 'border-violet-400/40 bg-violet-400/10 text-violet-300', path: '/alpha' },
+  launchpad: { label: 'Launch Pad', color: 'border-emerald-400/40 bg-emerald-400/10 text-emerald-300', path: '/launchpad' },
+  autopsy: { label: 'Autopsy', color: 'border-gray-400/40 bg-gray-400/10 text-gray-300', path: '/autopsy' },
+  'kol-watch': { label: 'KOL Watch', color: 'border-amber-400/40 bg-amber-400/10 text-amber-300', path: '/kol-watch' },
+  'market-pulse': { label: 'Market Pulse', color: 'border-blue-400/40 bg-blue-400/10 text-blue-300', path: '/market-pulse' },
+  academy: { label: 'Academy', color: 'border-cyan-400/40 bg-cyan-400/10 text-cyan-300', path: '/academy' },
+};
+
+const categories = [
+  { href: '/news', label: '🔴 News', color: 'border-red-400/30 hover:border-red-400/60 text-red-300' },
+  { href: '/alpha', label: '🔮 Alpha', color: 'border-violet-400/30 hover:border-violet-400/60 text-violet-300' },
+  { href: '/launchpad', label: '🚀 Launch Pad', color: 'border-emerald-400/30 hover:border-emerald-400/60 text-emerald-300' },
+  { href: '/autopsy', label: '🪦 Autopsy', color: 'border-gray-400/30 hover:border-gray-400/60 text-gray-300' },
+  { href: '/kol-watch', label: '👁️ KOL Watch', color: 'border-amber-400/30 hover:border-amber-400/60 text-amber-300' },
+  { href: '/market-pulse', label: '📊 Market Pulse', color: 'border-blue-400/30 hover:border-blue-400/60 text-blue-300' },
+  { href: '/academy', label: '🎓 Academy', color: 'border-cyan-400/30 hover:border-cyan-400/60 text-cyan-300' },
+];
+
+export const revalidate = 60;
 
 export default async function HomePage() {
   const [liveCoins, fearGreed] = await Promise.all([fetchLiveCoins(), fetchFearGreed()]);
   const coins = liveCoins.length > 0 ? liveCoins : staticCoins;
   const style = sentimentStyle(fearGreed.value);
-  const today = new Date();
-  const dateString = today.toLocaleDateString('en-US', {
-    weekday: 'long',
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric'
-  });
+  const articles = getAllArticles();
+  const featured = articles[0];
+  const secondary = articles.slice(1, 3);
+  const rest = articles.slice(3, 11);
+
+  const featuredCat = featured ? (categoryMeta[featured.category || 'news'] || categoryMeta.news) : categoryMeta.news;
+  const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/news';
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-6">
       <TickerBar coins={coins.slice(0, 10)} />
 
-      <section className="grid gap-8 md:grid-cols-[1.7fr_1fr]">
-        <div className="space-y-8">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-              <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-white/40">MemeDesk</p>
-                <h1 className="text-3xl font-semibold md:text-4xl">The Signal in the Noise</h1>
-                <p className="mt-2 text-sm text-white/60">{dateString} · 🟢 Degen Mode: ON</p>
-              </div>
-              <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl animate-pulse">{style.emoji}</span>
-                  <div>
-                    <div className="font-bold text-base tracking-wide">{style.label}</div>
-                    <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
-                  </div>
-                </div>
-                <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-                  <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
-                </div>
-                <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <div className="flex flex-wrap gap-2">
-              {[
-                { href: '/news', label: '🔴 News', color: 'border-red-400/30 hover:border-red-400/60 text-red-300' },
-                { href: '/alpha', label: '🔮 Alpha', color: 'border-violet-400/30 hover:border-violet-400/60 text-violet-300' },
-                { href: '/launchpad', label: '🚀 Launch Pad', color: 'border-emerald-400/30 hover:border-emerald-400/60 text-emerald-300' },
-                { href: '/autopsy', label: '🪦 Autopsy', color: 'border-gray-400/30 hover:border-gray-400/60 text-gray-300' },
-                { href: '/kol-watch', label: '👁️ KOL Watch', color: 'border-amber-400/30 hover:border-amber-400/60 text-amber-300' },
-                { href: '/market-pulse', label: '📊 Market Pulse', color: 'border-blue-400/30 hover:border-blue-400/60 text-blue-300' },
-                { href: '/academy', label: '🎓 Academy', color: 'border-cyan-400/30 hover:border-cyan-400/60 text-cyan-300' },
-              ].map((cat) => (
-                <Link key={cat.href} href={cat.href} className={`rounded-full border bg-white/5 px-3 py-1.5 text-xs font-medium transition hover:bg-white/10 ${cat.color}`}>
-                  {cat.label}
-                </Link>
-              ))}
-            </div>
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-semibold">Latest</h2>
-              <Link href="/news" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
-                View all →
-              </Link>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {getAllArticles().slice(0, 8).map((article) => (
-                <StoryCard key={article.id} article={article} />
-              ))}
-            </div>
-          </div>
-
+      {/* Fear & Greed + Category Pills row */}
+      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-wrap gap-2">
+          {categories.map((cat) => (
+            <Link key={cat.href} href={cat.href} className={`rounded-full border bg-white/5 px-3 py-1.5 text-xs font-medium transition hover:bg-white/10 ${cat.color}`}>
+              {cat.label}
+            </Link>
+          ))}
         </div>
+        <div className={`shrink-0 rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+          <div className="flex items-center gap-3">
+            <span className="text-2xl animate-pulse">{style.emoji}</span>
+            <div>
+              <div className="font-bold text-base tracking-wide">{style.label}</div>
+              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+            </div>
+          </div>
+          <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+            <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+          </div>
+          <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
+        </div>
+      </div>
 
-        <Sidebar hidePro />
-      </section>
+      {/* Featured + Secondary articles */}
+      {featured && (
+        <div className="grid gap-4 md:grid-cols-[1.4fr_1fr]">
+          {/* Featured article — large card with hero image */}
+          <Link href={featuredHref} className="group">
+            <article className="relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
+              {featured.heroImage && (
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <Image
+                    src={featured.heroImage}
+                    alt={featured.headline}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                </div>
+              )}
+              <div className="flex flex-1 flex-col gap-3 p-6">
+                <div className="flex items-center justify-between">
+                  <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-semibold ${featuredCat.color}`}>
+                    {featuredCat.label}
+                  </span>
+                  <ChainBadge chain={featured.chain} />
+                </div>
+                <h2 className="text-2xl font-bold leading-tight text-white group-hover:text-emerald-300 transition-colors">
+                  {featured.headline}
+                </h2>
+                {featured.subheadline && (
+                  <p className="text-sm text-white/60 line-clamp-3">{featured.subheadline}</p>
+                )}
+                <div className="mt-auto flex items-center justify-between text-xs text-white/40 pt-2">
+                  <span>{timeAgo(featured.publishedAt)}</span>
+                  <span>{featured.signalEmoji} {featured.signalRating}</span>
+                </div>
+              </div>
+            </article>
+          </Link>
+
+          {/* Secondary articles — stacked on the right */}
+          <div className="flex flex-col gap-4">
+            {secondary.map((article) => {
+              const cat = categoryMeta[article.category || 'news'] || categoryMeta.news;
+              const href = `${cat.path}/${article.slug}`;
+              return (
+                <Link key={article.id} href={href} className="group flex-1">
+                  <article className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
+                    <div className="flex items-center justify-between">
+                      <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-semibold ${cat.color}`}>
+                        {cat.label}
+                      </span>
+                      <ChainBadge chain={article.chain} />
+                    </div>
+                    <h3 className="text-lg font-semibold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                      {article.headline}
+                    </h3>
+                    {article.subheadline && (
+                      <p className="text-sm text-white/60 line-clamp-2">{article.subheadline}</p>
+                    )}
+                    <div className="mt-auto flex items-center justify-between text-xs text-white/40 pt-1">
+                      <span>{timeAgo(article.publishedAt)}</span>
+                      <span>{article.signalEmoji} {article.signalRating}</span>
+                    </div>
+                  </article>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* More articles grid */}
+      {rest.length > 0 && (
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-semibold">More Stories</h2>
+            <Link href="/news" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
+              View all →
+            </Link>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {rest.map((article) => (
+              <StoryCard key={article.id} article={article} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

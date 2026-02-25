@@ -17,6 +17,7 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
@@ -34,23 +35,50 @@ export default function Header() {
             ))}
             <Link href="/about" className="transition hover:text-emerald-300">About</Link>
           </nav>
-          <button
-            onClick={() => setOpen(true)}
-            className="rounded-xl border border-emerald-400/60 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-200 hover:bg-emerald-400/20"
-          >
-            Subscribe
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setOpen(true)}
+              className="rounded-xl border border-emerald-400/60 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-200 hover:bg-emerald-400/20"
+            >
+              Subscribe
+            </button>
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-white/70 transition hover:bg-white/10 md:hidden"
+              aria-label="Toggle menu"
+            >
+              {menuOpen ? (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              ) : (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+              )}
+            </button>
+          </div>
         </div>
-        <div className="mx-auto flex max-w-6xl gap-4 overflow-x-auto px-4 pb-3 text-xs text-white/60 md:hidden">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="whitespace-nowrap rounded-full border border-white/10 px-3 py-1">
-              {link.label}
-            </Link>
-          ))}
-          <Link href="/about" className="whitespace-nowrap rounded-full border border-white/10 px-3 py-1">
-            About
-          </Link>
-        </div>
+        {/* Mobile menu */}
+        {menuOpen && (
+          <div className="border-t border-white/10 bg-black/90 backdrop-blur md:hidden">
+            <nav className="mx-auto flex max-w-6xl flex-col px-4 py-3">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="border-b border-white/5 py-3 text-sm text-white/70 transition hover:text-emerald-300 last:border-0"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Link
+                href="/about"
+                onClick={() => setMenuOpen(false)}
+                className="py-3 text-sm text-white/70 transition hover:text-emerald-300"
+              >
+                About
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
       <NewsletterModal open={open} onClose={() => setOpen(false)} />
     </>

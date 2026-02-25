@@ -120,7 +120,7 @@ export default async function HomePage() {
 
         </div>
 
-        <Sidebar coins={coins} hidePro />
+        <Sidebar hidePro />
       </section>
     </div>
   );

@@ -1,5 +1,155 @@
 [
   {
+    "id": "clawcoin-pump-fun-88-percent-crash-7-hours",
+    "slug": "clawcoin-ai-currency-narrative-crashes-88-percent-7-hours",
+    "articleType": "post-mortem",
+    "category": "autopsy",
+    "heroImage": "/images/articles/clawcoin-ai-currency-narrative-crashes-88-percent-7-hours.webp",
+    "headline": "Clawcoin Promised to Be 'The Only Currency in an AI World' — It Lost 88% in 7 Hours",
+    "subheadline": "$277K in volume. 10,000 wallets touched it. Market cap: $3,500. Another pump.fun fever dream flatlines on arrival.",
+    "signalRating": "shill",
+    "signalEmoji": "🔴",
+    "signalLabel": "Dead on Arrival — $3.5K market cap with 10K wallets is a graveyard, not a project",
+    "publishedAt": "2026-02-25T15:44:45+08:00",
+    "author": "MemeDesk Editorial",
+    "tags": [
+      "Clawcoin",
+      "Pump.fun",
+      "Post-Mortem",
+      "Solana",
+      "AI Narrative",
+      "Rug"
+    ],
+    "chain": "SOL",
+    "tokenData": {
+      "symbol": "Clawcoin",
+      "name": "Clawcoin",
+      "price": "$0.0536",
+      "marketCap": "$3,500",
+      "ath": "~$0.45 (estimated from -88%)",
+      "athDrop": "-88%",
+      "recentAction": "Launched via Pump.fun, migrated to PumpSwap, peaked within first hour, collapsed 88% over 7 hours to $3.5K market cap"
+    },
+    "body": [
+      {
+        "type": "paragraph",
+        "text": "Seven hours. That's how long Clawcoin lasted as a viable trade before bleeding out on PumpSwap with a market cap that wouldn't cover a decent dinner in Manhattan. Launched via Pump.fun on Solana with the tagline 'the only currency in a world run by AI agents,' Clawcoin attracted over 10,000 unique wallets and generated $277K in trading volume — then cratered 88% to a $3,500 fully diluted valuation. The AI narrative didn't save it. Nothing was going to."
+      },
+      {
+        "type": "quickTake",
+        "bullets": [
+          "Clawcoin launched on Pump.fun, migrated to PumpSwap, and lost 88% of its value in under 7 hours",
+          "10,306 unique makers generated $277K in volume — but the pool now holds just $4.6K in liquidity",
+          "Market cap sits at $3,500 with 647M tokens pooled against 28.5 SOL. This one's done."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "How It Went Down"
+      },
+      {
+        "type": "timeline",
+        "events": [
+          {
+            "time": "~8:20 AM MYT",
+            "event": "Clawcoin launches on Pump.fun with AI-agent currency narrative"
+          },
+          {
+            "time": "~8:30 AM",
+            "event": "Initial buying frenzy — token migrates to PumpSwap as volume spikes"
+          },
+          {
+            "time": "~9:00 AM",
+            "event": "Peak price hit — estimated ~$0.45 per token based on subsequent 88% decline"
+          },
+          {
+            "time": "~10:00 AM",
+            "event": "Sell pressure intensifies — 6,321 sell transactions begin outnumbering buys in dollar terms"
+          },
+          {
+            "time": "~3:40 PM",
+            "event": "Token sits at $0.054, market cap $3,500, liquidity drained to $4.6K"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The buy/sell ratio tells the story in forensic detail: 10,813 buys against 6,321 sells. Sounds bullish until you look at the dollar volume — $136K bought versus $140K sold. More wallets buying, fewer wallets selling bigger bags. That's the textbook signature of a token where early entrants exit into retail liquidity. 8,101 buyers walked in. 3,429 sellers walked out with their money."
+      },
+      {
+        "type": "heading",
+        "text": "The Red Flags Everyone Missed"
+      },
+      {
+        "type": "redFlags",
+        "flags": [
+          "Pump.fun launch with zero team identity — no doxxed devs, no project history",
+          "AI narrative used as pure bait — 'the only currency in a world run by AI agents' is a slogan, not a product",
+          "No website, no whitepaper, no roadmap — the DexScreener description IS the entire project",
+          "Liquidity collapsed to $4.6K — anyone trying to sell more than a few dollars would crater the remaining price",
+          "10,000+ wallets in 7 hours on a Pump.fun token suggests bot-driven volume inflation"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The 'AI agents' angle deserves special attention because it's becoming the go-to narrative hijack for pump.fun tokens in early 2026. Legitimate AI agent projects — the ones actually building autonomous trading bots or on-chain AI infrastructure — have created real demand and real market caps. Clawcoin borrowed the language without building anything. The description 'Clawcoin will be the only currency in a world run by AI agents' isn't a thesis. It's a bumper sticker designed to trigger FOMO in anyone who's watched $GOAT, $VIRTUAL, or $AI16Z run."
+      },
+      {
+        "type": "heading",
+        "text": "The Receipts"
+      },
+      {
+        "type": "paragraph",
+        "text": "On-chain, the damage is visible in the pool composition. The PumpSwap pair holds 647,652,159 Clawcoin tokens worth $2,300 against 28.55 SOL ($2,300). Total liquidity: $4,600. For context, this means a $500 sell order would move the price roughly 10%. Anyone still holding meaningful bags is effectively locked in — the exit door is jammed shut with a $4.6K liquidity wall."
+      },
+      {
+        "type": "paragraph",
+        "text": "DexScreener's automated audit returned 'No issues' — which tells you everything about the limitations of automated audits. No issues with the contract doesn't mean no issues with the token. The contract can be clean while the play is dirty. When 10,000 wallets pile into a token with no product, no team, and no liquidity plan, the contract isn't the risk. The humans are."
+      },
+      {
+        "type": "heading",
+        "text": "Lessons for Degens"
+      },
+      {
+        "type": "paragraph",
+        "text": "Clawcoin is a masterclass in what to avoid, and it's a pattern repeating daily on Pump.fun. The playbook: borrow a hot narrative (AI agents), write a one-line description that sounds like a thesis, let bot-driven volume create the illusion of demand, and let retail provide exit liquidity for early wallets. Here's the checklist that would have saved every Clawcoin buyer:"
+      },
+      {
+        "type": "paragraph",
+        "text": "First: if the entire project fits in a DexScreener description, it's not a project. Second: 10,000 wallets in 7 hours on a token with no marketing is a red flag, not a bullish signal — that volume pattern is consistent with bot networks, not organic discovery. Third: check the dollar volume split, not just transaction counts. When sell volume exceeds buy volume despite fewer sellers, someone is distributing into your liquidity. Fourth: $4.6K in liquidity is not a market. It's a puddle. If you can't sell $1,000 without moving the price 20%, you're not investing — you're donating."
+      },
+      {
+        "type": "heading",
+        "text": "MemeDesk Verdict"
+      },
+      {
+        "type": "paragraph",
+        "text": "🔴 Dead on arrival. Clawcoin is the fourth 'AI currency' token to launch and die on Pump.fun this week alone. The AI agent narrative is real — the tokens hijacking it with zero substance are not. $3,500 market cap with $4,600 in liquidity and 10,000 wallets holding bags. This isn't a post-mortem. It's a time-of-death certificate."
+      },
+      {
+        "type": "faq",
+        "items": [
+          {
+            "question": "What happened to Clawcoin?",
+            "answer": "Clawcoin launched on Pump.fun on Solana, briefly attracted $277K in trading volume across 10,000+ wallets, then crashed 88% within 7 hours. The market cap fell to $3,500 with only $4.6K in remaining liquidity."
+          },
+          {
+            "question": "Is Clawcoin a rug pull?",
+            "answer": "While the automated contract audit shows no technical issues, the pattern — anonymous team, borrowed AI narrative, rapid volume spike followed by distribution into retail liquidity — is consistent with a coordinated pump-and-dump. The end result for buyers is the same regardless of classification."
+          },
+          {
+            "question": "Can Clawcoin recover?",
+            "answer": "With $4.6K in liquidity and a $3,500 market cap, Clawcoin would need a complete restart scenario (community takeover, new liquidity injection) to become tradeable again. The probability is extremely low given there's no underlying project, team, or community infrastructure."
+          },
+          {
+            "question": "How do I avoid tokens like Clawcoin?",
+            "answer": "Check liquidity depth before buying (under $10K is a warning sign). Verify the team has some identity or track record. Be skeptical of tokens that borrow hot narratives (AI agents, etc.) without any product or roadmap. And always check the buy/sell volume split — when sell dollar volume exceeds buy volume despite fewer sellers, insiders are distributing."
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "kol-wallets-beat-smart-money-meme-coin-financializes-influencer-alpha",
     "slug": "kol-wallets-beat-smart-money-meme-coin-financializes-influencer-alpha",
     "articleType": "culture-moment",

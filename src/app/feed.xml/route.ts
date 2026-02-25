@@ -1,8 +1,8 @@
-import articles from '@/data/articles.json';
+import { getAllArticles } from '@/lib/articles';
 
 export async function GET() {
   const baseUrl = 'https://memedesk.co';
-  const sorted = [...articles].sort(
+  const sorted = getAllArticles().sort(
     (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 

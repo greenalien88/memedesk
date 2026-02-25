@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next';
-import articles from '@/data/articles.json';
+import { getAllArticles } from '@/lib/articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://memedesk.co';
 
+  const articles = getAllArticles();
   const newsEntries = articles
     .filter((a: any) => a.category !== 'autopsy')
     .map((a) => ({

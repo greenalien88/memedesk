@@ -19,7 +19,7 @@ import StoryCard from '@/components/StoryCard';
 import Sidebar from '@/components/Sidebar';
 import NewsletterForm from '@/components/NewsletterForm';
 import staticCoins from '../../data/coins.json';
-import articles from '../data/articles.json';
+import { getAllArticles } from '@/lib/articles';
 import { fetchLiveCoins } from '@/lib/coingecko';
 
 async function fetchFearGreed(): Promise<{ value: number; label: string }> {
@@ -109,7 +109,7 @@ export default async function HomePage() {
               </Link>
             </div>
             <div className="grid gap-4 md:grid-cols-2">
-              {[...articles].sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()).slice(0, 8).map((article) => (
+              {getAllArticles().slice(0, 8).map((article) => (
                 <StoryCard key={article.id} article={article} />
               ))}
             </div>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import articles from '@/data/articles.json';
+import { getArticlesByCategory } from '@/lib/articles';
 
 import type { Metadata } from 'next';
 
@@ -21,9 +21,7 @@ export const metadata: Metadata = {
 };
 
 export default function AcademyPage() {
-  const filtered = articles
-    .filter((a: any) => a.category === 'academy')
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  const filtered = getArticlesByCategory('academy');
 
   const signalColors: Record<string, string> = {
     legit: 'border-emerald-400/60 bg-emerald-400/10 text-emerald-300',

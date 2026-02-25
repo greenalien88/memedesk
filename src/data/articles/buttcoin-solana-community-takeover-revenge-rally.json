@@ -1,0 +1,141 @@
+{
+  "id": "buttcoin-solana-community-takeover-revenge-rally",
+  "slug": "buttcoin-solana-community-takeover-revenge-rally",
+  "articleType": "launch-radar",
+  "heroImage": "/images/articles/buttcoin-solana-community-takeover-revenge-rally.webp",
+  "headline": "The Dev Rugged. The Community Came Back. Buttcoin Just Hit $14M.",
+  "subheadline": "A serial rugger abandoned Buttcoin at $300K. The community grabbed the keys, rebuilt from zero, and pushed it to a $29M ATH. Now at $14M, it's either the greatest CTO revenge story of 2026 — or exit liquidity for the next wave of believers.",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Speculative — Community-led revival with strong narrative, but CTO plays are coin flips",
+  "publishedAt": "2026-02-25T10:08:54+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "Buttcoin",
+    "Community Takeover",
+    "Solana",
+    "Launch Radar",
+    "CTO"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "Buttcoin",
+    "name": "Buttcoin",
+    "price": "$0.014",
+    "marketCap": "$14.2M",
+    "ath": "$29.9M mcap (~$0.03)",
+    "athDrop": "-52%",
+    "recentAction": "Surged 140% to $29M ATH in early Feb, now consolidating at $14M with $915K daily volume"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "At 2:00 AM on a random Tuesday in January, a dev wallet drained what was left of Buttcoin's liquidity and vanished. Market cap cratered from $3M to $300K in minutes. The Telegram went silent. The chart flatlined. Another Pump.fun casualty for the graveyard — except the community didn't get the memo."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "Buttcoin's original dev — linked to serial rugs including Fartcoin knock-offs and BUM — abandoned the project after draining liquidity",
+        "A community team executed a CTO (community takeover), set up multisig fee control, and rebuilt from $300K to a $29M ATH",
+        "Now consolidating at $14.2M with $915K daily volume, 4,000+ holders, and a narrative rooted in crypto's oldest joke: r/Buttcoin (est. 2011)"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What Makes This One Different"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most CTOs die within 48 hours. The new team shows up, posts a few hopium threads, and slowly bleeds out as the remaining holders dump into whatever liquidity is left. Buttcoin's CTO broke the pattern for one specific reason: the meme already existed. Since 2011, r/Buttcoin has been one of Reddit's longest-running satirical communities — a place where Bitcoin skeptics gathered to mock the entire industry. When a Solana dev tokenized the name via Pump.fun in early 2025, it wasn't just another dog-with-a-hat. It was tapping into 14 years of internet culture."
+    },
+    {
+      "type": "paragraph",
+      "text": "The original dev didn't care about any of that. They launched it, pumped it with standard Pump.fun playbook tactics, and rugged when the chart looked juicy enough. But the community that formed around Buttcoin wasn't the usual telegram fly-by-night crowd. They were people who actually got the joke — the meta-irony of a token that satirizes crypto existing as a crypto token. When the dev left, they saw an opportunity, not a death sentence."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers So Far"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the CTO in late January, Buttcoin has staged one of the more impressive community-led recoveries in recent Solana history. The token rallied from $300K to a $29.9M market cap in under three weeks — a roughly 100x move from the post-rug floor. It's since pulled back to $14.2M, which CTO bulls frame as 'healthy consolidation' and bears call 'the beginning of the end.' Daily volume sits at $915K across PumpSwap, with 2,696 buys against 2,473 sells in the last 24 hours — still active, but sell pressure is real."
+    },
+    {
+      "type": "paragraph",
+      "text": "The holder count has climbed past 4,000, with the community claiming most are 'diamond hands' who bought the post-rug dip. Liquidity stands at $573K — not deep enough for whales, but sufficient for retail-sized positions. The token trades on PumpSwap with SOL as the quote pair, and there's been growing chatter about potential CEX listings, though nothing confirmed."
+    },
+    {
+      "type": "heading",
+      "text": "The Villain Arc"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every good CTO story needs a villain, and Buttcoin's community has built an entire narrative around theirs. The original dev has been linked to multiple rug pulls on Pump.fun, including knock-off tokens that rode the Fartcoin wave and a project called BUM that followed the same playbook: launch, pump, drain, disappear. On-chain detectives in the Buttcoin Telegram have traced wallet connections between these projects, building what they call 'the receipts' — a timeline of serial rugging that gives the CTO a moral dimension beyond just 'we saved a dead token.'"
+    },
+    {
+      "type": "paragraph",
+      "text": "This matters because narrative is everything in meme coins. A random CTO is just bag-holding with extra steps. A CTO with a clear antagonist — a provably bad actor who screwed over real people — becomes a story. And stories are what get retweeted, screenshotted, and shared in group chats at 3 AM. The Buttcoin community has weaponized their origin story into marketing."
+    },
+    {
+      "type": "heading",
+      "text": "Red Flags Check"
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "CTO teams are anonymous — new management is still unverified strangers on the internet",
+        "Multisig fee structure is claimed but not independently audited",
+        "52% drawdown from ATH suggests early CTO buyers may be distributing",
+        "Pump.fun origin means no locked liquidity in the traditional sense",
+        "No utility beyond the meme — entirely narrative-dependent",
+        "Bitrue Alpha listing adds some legitimacy but is not a Tier 1 exchange"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Who's In"
+    },
+    {
+      "type": "paragraph",
+      "text": "The token has caught attention from the r/CryptoMoonShots crowd, where it consistently appears in 'top Reddit memecoin' comparison posts. Bitrue listed Buttcoin on their Alpha platform, giving it a semblance of CEX legitimacy. On CT, it remains a mid-tier talking point — not yet a Murad-level endorsement, but enough organic discussion to sustain interest. The community's own foundation website (buttcoinfoundation.org) and active X account (@buttcoin) suggest a team that's at least trying to build infrastructure, not just pump and dump the CTO bounce."
+    },
+    {
+      "type": "heading",
+      "text": "The Bear Case Nobody Wants to Hear"
+    },
+    {
+      "type": "paragraph",
+      "text": "For every successful CTO, there are fifty that slowly bled to zero after the initial revenge pump faded. The 52% drawdown from ATH is concerning — it suggests that early CTO buyers (the $300K floor gang) have been taking profits aggressively. If the narrative engine stalls and no new catalyst emerges, Buttcoin could follow the classic CTO arc: explosive recovery, distribution phase, then a slow grind to irrelevance. The $14M market cap also puts it in an awkward middle zone — too large for easy 10x potential, too small for institutional interest or major CEX listings."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "🟡 Speculative. Buttcoin has one of the better CTO stories in recent memory — a clear villain, a resilient community, and roots in genuine internet culture that predates the token by over a decade. The r/Buttcoin connection gives it a narrative moat that most Pump.fun tokens could never dream of. But CTO plays are inherently risky: anonymous teams, no locked liquidity, and the constant question of whether the recovery rally was the real move or just the setup for a more sophisticated distribution. The story is compelling. The chart needs to prove the story right."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is Buttcoin and why is it called that?",
+          "answer": "Buttcoin originates from the r/Buttcoin subreddit created in 2011, one of Reddit's oldest communities dedicated to satirizing Bitcoin and cryptocurrency. A Solana token was created under the name via Pump.fun in 2025, tapping into this 14-year history of crypto skepticism turned into a tradeable meme."
+        },
+        {
+          "question": "What is a CTO (Community Takeover) in crypto?",
+          "answer": "A CTO happens when a token's original developer abandons or rugs a project, and community members step in to take control. They typically set up new social channels, multisig wallets for fee management, and attempt to rebuild the project's value. Success rate is low — most CTOs fail within weeks."
+        },
+        {
+          "question": "Is Buttcoin a good investment?",
+          "answer": "Buttcoin is a meme coin with no utility beyond its narrative. It's traded on decentralized exchanges with limited liquidity ($573K). While the CTO story is compelling and the token has real cultural roots, it carries all standard meme coin risks: anonymous team, no locked liquidity, high volatility, and complete dependence on community sentiment."
+        },
+        {
+          "question": "Where can I buy Buttcoin?",
+          "answer": "Buttcoin trades primarily on PumpSwap (Solana DEX) and has an Alpha listing on Bitrue exchange. The contract address is Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump on Solana."
+        }
+      ]
+    }
+  ],
+  "category": "news"
+}

@@ -216,13 +216,13 @@ async function main() {
   const outputPath = path.join(outputDir, `article-${id}.json`);
   fs.writeFileSync(outputPath, JSON.stringify(article, null, 2));
 
-  const articlesPath = path.join(__dirname, '..', 'src', 'data', 'articles.json');
-  const existing = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
-  if (!Array.isArray(existing)) {
-    throw new Error('articles.json is not an array.');
+  const articlesDir = path.join(__dirname, '..', 'src', 'data', 'articles');
+  fs.mkdirSync(articlesDir, { recursive: true });
+  const articleFilePath = path.join(articlesDir, `${slug}.json`);
+  if (fs.existsSync(articleFilePath)) {
+    throw new Error(`Article with slug "${slug}" already exists!`);
   }
-  existing.push(article);
-  fs.writeFileSync(articlesPath, JSON.stringify(existing, null, 2));
+  fs.writeFileSync(articleFilePath, JSON.stringify(article, null, 2) + '\n');
 
   console.log('MemeDesk Publish Summary');
   console.log('------------------------');

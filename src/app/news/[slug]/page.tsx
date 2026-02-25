@@ -2,11 +2,11 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import articles from '@/data/articles.json';
+import { getAllArticles, getArticle, type Article } from '@/lib/articles';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const article = articles.find((a) => a.slug === slug);
+  const article = getArticle(slug);
   if (!article) return { title: 'Not Found | MemeDesk' };
 
   const imageUrl = `https://memedesk.co/images/news/${slug}.webp`;
@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-type Article = (typeof articles)[number];
 
 function SignalBadge({ rating, emoji, label }: { rating: string; emoji: string; label: string }) {
   const colors: Record<string, string> = {
@@ -131,7 +130,7 @@ function SourcePost({ post, quoted }: { post: Article['sourcePost']; quoted: Art
   );
 }
 
-function getRelatedArticles(current: Article, allArticles: typeof articles, count = 3) {
+function getRelatedArticles(current: Article, allArticles: Article[], count = 3) {
   const others = allArticles.filter((a) => a.slug !== current.slug && a.category !== 'autopsy');
   const scored = others.map((a) => {
     const sharedTags = a.tags.filter((t) => current.tags.includes(t)).length;
@@ -155,7 +154,7 @@ function getReadingTime(body: Article['body']): number {
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const article = articles.find((a) => a.slug === slug);
+  const article = getArticle(slug);
   if (!article) notFound();
 
   const published = new Date(article.publishedAt).toLocaleDateString('en-US', {
@@ -166,7 +165,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   });
   const isoDate = new Date(article.publishedAt).toISOString();
   const readingTime = getReadingTime(article.body);
-  const related = getRelatedArticles(article, articles);
+  const related = getRelatedArticles(article, getAllArticles());
 
   const signalColors: Record<string, string> = {
     legit: 'border-emerald-400/60 bg-emerald-400/10 text-emerald-300',
@@ -446,5 +445,5 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 }
 
 export async function generateStaticParams() {
-  return articles.map((a) => ({ slug: a.slug }));
+  return getAllArticles().map((a) => ({ slug: a.slug }));
 }

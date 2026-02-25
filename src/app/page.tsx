@@ -54,6 +54,12 @@ const categoryMeta: Record<string, { label: string; color: string; path: string 
   academy: { label: 'Academy', color: 'border-cyan-400/40 bg-cyan-400/10 text-cyan-300', path: '/academy' },
 };
 
+const signalStyles: Record<string, string> = {
+  legit: 'border-emerald-400/50 bg-emerald-400/10 text-emerald-300',
+  speculative: 'border-yellow-400/50 bg-yellow-400/10 text-yellow-300',
+  shill: 'border-red-400/50 bg-red-400/10 text-red-300',
+};
+
 const categories = [
   { href: '/news', label: '🔴 News', color: 'border-red-400/30 hover:border-red-400/60 text-red-300' },
   { href: '/alpha', label: '🔮 Alpha', color: 'border-violet-400/30 hover:border-violet-400/60 text-violet-300' },
@@ -77,6 +83,7 @@ export default async function HomePage() {
 
   const featuredCat = featured ? (categoryMeta[featured.category || 'news'] || categoryMeta.news) : categoryMeta.news;
   const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/news';
+  const featuredSignal = featured ? (signalStyles[featured.signalRating] || signalStyles.speculative) : signalStyles.speculative;
 
   return (
     <div className="space-y-6">
@@ -123,6 +130,10 @@ export default async function HomePage() {
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  {/* Signal badge on featured image */}
+                  <div className={`absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold backdrop-blur-sm ${featuredSignal}`}>
+                    {featured.signalEmoji} {featured.signalRating}
+                  </div>
                 </div>
               )}
               <div className="flex flex-1 flex-col gap-3 p-6">
@@ -138,37 +149,50 @@ export default async function HomePage() {
                 {featured.subheadline && (
                   <p className="text-sm text-white/60 line-clamp-3">{featured.subheadline}</p>
                 )}
-                <div className="mt-auto flex items-center justify-between text-xs text-white/40 pt-2">
+                <div className="mt-auto flex items-center text-xs text-white/40 pt-2">
                   <span>{timeAgo(featured.publishedAt)}</span>
-                  <span>{featured.signalEmoji} {featured.signalRating}</span>
                 </div>
               </div>
             </article>
           </Link>
 
-          {/* Secondary articles — stacked on the right */}
+          {/* Secondary articles — stacked on the right with thumbnails */}
           <div className="flex flex-col gap-4">
             {secondary.map((article) => {
               const cat = categoryMeta[article.category || 'news'] || categoryMeta.news;
               const href = `${cat.path}/${article.slug}`;
+              const signal = signalStyles[article.signalRating] || signalStyles.speculative;
               return (
                 <Link key={article.id} href={href} className="group flex-1">
-                  <article className="flex h-full flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
-                    <div className="flex items-center justify-between">
-                      <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-semibold ${cat.color}`}>
-                        {cat.label}
-                      </span>
-                      <ChainBadge chain={article.chain} />
-                    </div>
-                    <h3 className="text-lg font-semibold text-white group-hover:text-emerald-300 transition-colors leading-snug">
-                      {article.headline}
-                    </h3>
-                    {article.subheadline && (
-                      <p className="text-sm text-white/60 line-clamp-2">{article.subheadline}</p>
+                  <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
+                    {article.heroImage && (
+                      <div className="relative aspect-[3/1] w-full overflow-hidden">
+                        <Image
+                          src={article.heroImage}
+                          alt={article.headline}
+                          fill
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          sizes="(max-width: 768px) 100vw, 40vw"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                        <div className={`absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold backdrop-blur-sm ${signal}`}>
+                          {article.signalEmoji} {article.signalRating}
+                        </div>
+                      </div>
                     )}
-                    <div className="mt-auto flex items-center justify-between text-xs text-white/40 pt-1">
-                      <span>{timeAgo(article.publishedAt)}</span>
-                      <span>{article.signalEmoji} {article.signalRating}</span>
+                    <div className="flex flex-1 flex-col gap-2 p-4">
+                      <div className="flex items-center justify-between">
+                        <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-semibold ${cat.color}`}>
+                          {cat.label}
+                        </span>
+                        <ChainBadge chain={article.chain} />
+                      </div>
+                      <h3 className="text-base font-semibold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                        {article.headline}
+                      </h3>
+                      <div className="mt-auto text-[11px] text-white/40 pt-1">
+                        <span>{timeAgo(article.publishedAt)}</span>
+                      </div>
                     </div>
                   </article>
                 </Link>

@@ -1,0 +1,153 @@
+{
+  "id": "janestreet-meme-coin-solana-degens-troll-wall-street",
+  "slug": "janestreet-meme-coin-solana-degens-troll-wall-street",
+  "articleType": "culture-moment",
+  "category": "news",
+  "heroImage": "/images/articles/janestreet-meme-coin-solana-degens-troll-wall-street.webp",
+  "headline": "$JaneStreet Surges 500% on Solana as Degens Turn Wall Street's Biggest Lawsuit Into a Memecoin",
+  "subheadline": "A quant trading giant gets sued for alleged Bitcoin manipulation — and CT responds by launching a memecoin that outperforms the entire market",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Degens vs. the suits",
+  "publishedAt": "2026-02-26T14:05:53+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "JaneStreet",
+    "Jane Street",
+    "Solana",
+    "Culture Moment",
+    "TradFi",
+    "Terra",
+    "Lawsuit"
+  ],
+  "chain": "SOL",
+  "sourcePost": {
+    "url": "https://dexscreener.com/solana/3xcdzsuv2z2mjkjbajq5bcxsspmhqgrkpqi8qc5bpump",
+    "text": "Jane Street meme token launched on Solana via PumpSwap",
+    "timestamp": "2026-02-25T20:00:00Z",
+    "engagement": {
+      "replies": 0,
+      "reposts": 0,
+      "likes": 0,
+      "views": 0
+    }
+  },
+  "tokenData": {
+    "symbol": "JaneStreet",
+    "name": "Jane Street",
+    "price": "$0.0002",
+    "marketCap": "$212K",
+    "ath": "$0.0003",
+    "athDrop": "-30%",
+    "recentAction": "+513% in 24h with $956K volume and 15,507 transactions on Solana PumpSwap"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Jane Street — the $6.8 trillion-a-year trading firm that most retail investors only know from conspiracy theories about the '10 AM dump' — just became a Solana memecoin. And it's outperforming every token in the firm's probably-very-expensive quant models."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "Real-world Jane Street is being sued over alleged Bitcoin price manipulation tied to the 2022 Terra-Luna collapse — and CT responded by launching a memecoin",
+        "$JaneStreet surged 513% in 24 hours on Solana with $956K volume across 15,507 trades, reaching $212K market cap",
+        "The token's existence is peak degen commentary: retail turning the institutions they blame for market manipulation into speculative punchlines"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What Happened"
+    },
+    {
+      "type": "paragraph",
+      "text": "On February 25th, news broke that Jane Street — one of the world's most powerful quantitative trading firms — was named in a lawsuit alleging it used insider information during the 2022 Terra-Luna collapse to profit while UST holders lost everything. The allegations claim the firm front-ran Bitcoin trades using privileged access, a bombshell that sent shockwaves through Crypto Twitter."
+    },
+    {
+      "type": "paragraph",
+      "text": "But CT didn't reach for pitchforks. It reached for PumpSwap. Within hours of the lawsuit hitting headlines, $JaneStreet launched on Solana and immediately attracted nearly a million dollars in trading volume. Because nothing says 'we're angry about market manipulation' quite like gambling on a memecoin named after the alleged manipulator."
+    },
+    {
+      "type": "heading",
+      "text": "The Degen Translation"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is what happens when financial outrage meets meme culture at internet speed. For months, crypto traders had been complaining about a recurring pattern they called the '10 AM dump' — a suspicious daily selloff in Bitcoin around 10 AM US market hours that many attributed to algorithmic manipulation by large trading desks. Jane Street was the most commonly named suspect."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the lawsuit dropped, it felt like vindication. Threads across X erupted with screenshots of old '10 AM dump' charts, 'told you so' energy, and calls for regulatory action. But the most crypto response of all was turning the villain into a ticker symbol. $JaneStreet isn't a protest — it's a meme, a joke, and a trade all wrapped into one degenerate package."
+    },
+    {
+      "type": "paragraph",
+      "text": "The irony runs deep. Retail traders who feel exploited by institutional manipulation are now speculating on a token that exists solely because of that manipulation. The 58% buy ratio suggests more buyers than sellers are still rotating in, while the 15,507 transactions in 24 hours indicate active flipping rather than diamond-handing. This is a day-trade narrative play, not a conviction bet."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "$956K in 24-hour volume on a token with a $212K market cap means the entire supply has turned over roughly 4.5 times in a single day. Liquidity sits at $39K — thin enough that any whale exit would crater the chart, but deep enough that retail-sized positions can enter and exit without catastrophic slippage."
+    },
+    {
+      "type": "paragraph",
+      "text": "The +513% gain puts $JaneStreet among the day's top Solana performers. For a token that launched on PumpSwap with no team, no roadmap, and no product — just a name ripped from a lawsuit headline — that volume-to-mcap ratio tells you everything about how efficiently CT converts outrage into trades."
+    },
+    {
+      "type": "heading",
+      "text": "Is This Sustainable?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lawsuit-catalyst tokens have a surprisingly documented playbook. When SEC sued Ripple, XRP-adjacent memes spiked. When FTX collapsed, $FTX and $SBF tokens appeared within hours. The pattern is: initial surge → second wave if new legal developments drop → slow fade when the news cycle moves on."
+    },
+    {
+      "type": "paragraph",
+      "text": "$JaneStreet has one thing working in its favor: the lawsuit is just beginning. Every court filing, every deposition leak, every new allegation becomes a potential re-catalyst. If the '10 AM dump' pattern stops (and notably, it didn't appear today for the first time in weeks), that becomes its own meme moment. The narrative has chapters, not just a headline."
+    },
+    {
+      "type": "paragraph",
+      "text": "The bear case: $39K liquidity is tissue-paper thin. The token has no utility, no team, and no community beyond the initial pump crowd. Once the lawsuit becomes old news — which in crypto takes about 48 hours — there's nothing to anchor price. And any copycat $JaneStreet tokens splitting attention only dilute the already-thin liquidity further."
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "Only $39K liquidity — one moderate sell tanks the entire chart",
+        "No team, no roadmap, no utility — pure narrative speculation",
+        "58% buy ratio suggests early distribution is already underway",
+        "Lawsuit-meta tokens historically fade within 72 hours of peak hype",
+        "PumpSwap origin with no locked liquidity or renounced contract"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is CT doing what CT does best: turning financial drama into financial entertainment in real time. $JaneStreet isn't a bet on the token — it's a bet on how long the lawsuit stays in the news cycle. The narrative is genuinely compelling (institutional manipulation exposed → retail memes the institution), the volume is real ($956K doesn't lie), and the angle has shelf life as long as the legal proceedings continue. But $39K liquidity and no fundamentals make this a textbook high-conviction, low-size play. In other words: the exact kind of thing degens will ape anyway."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is the Jane Street lawsuit about?",
+          "answer": "Jane Street, a major quantitative trading firm, has been sued in connection with the 2022 Terra-Luna collapse. The lawsuit alleges the firm used insider information to profit during the UST crisis while retail holders lost billions. Separately, traders have long accused Jane Street of running the so-called '10 AM dump' — a recurring pattern of Bitcoin selling during US market hours."
+        },
+        {
+          "question": "Is $JaneStreet affiliated with the real Jane Street?",
+          "answer": "No. $JaneStreet is a community-created meme token on Solana with no connection to Jane Street the trading firm. It was launched via PumpSwap as a satirical response to the lawsuit news. The real Jane Street has not endorsed or acknowledged any cryptocurrency token."
+        },
+        {
+          "question": "How risky is trading $JaneStreet?",
+          "answer": "Extremely risky. The token has only $39K in liquidity, no team, no utility, and exists purely as a narrative play. These lawsuit-catalyst tokens typically see their biggest moves in the first 24-48 hours before fading. The 58% buy ratio suggests smart money may already be exiting into new buyer flow."
+        },
+        {
+          "question": "Could $JaneStreet pump again?",
+          "answer": "If new developments emerge in the Jane Street lawsuit — court filings, evidence of manipulation, or regulatory action — the token could see another wave. The '10 AM dump' pattern not appearing today has already fueled speculation. But without sustained catalysts, these narrative tokens historically bleed out within a week."
+        }
+      ]
+    }
+  ]
+}

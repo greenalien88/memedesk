@@ -1,0 +1,144 @@
+{
+  "id": "courage-cowardly-dog-solana-nostalgia-meme-mania",
+  "slug": "courage-cowardly-dog-solana-nostalgia-meme-mania",
+  "articleType": "culture-moment",
+  "category": "news",
+  "heroImage": null,
+  "headline": "$COURAGE Surges 303% as '90s Cartoon Nostalgia Takes Over Solana's Meme Scene",
+  "subheadline": "Courage the Cowardly Dog becomes the latest pop culture IP to get the memecoin treatment — 27,000 trades and counting",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Stupid dog! You made me rich!",
+  "publishedAt": "2026-02-26T15:59:21+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "COURAGE",
+    "Nostalgia",
+    "Cartoon",
+    "Solana",
+    "Culture Moment",
+    "90s"
+  ],
+  "chain": "SOL",
+  "sourcePost": {
+    "url": "https://dexscreener.com/solana/bvx8kkocuyrenxuf58jhhr4tt5mvnqfif3ncybtepump",
+    "text": "The Cowardly Dog token launched on Solana PumpSwap",
+    "timestamp": "2026-02-25T18:00:00Z",
+    "engagement": {
+      "replies": 0,
+      "reposts": 0,
+      "likes": 0,
+      "views": 0
+    }
+  },
+  "tokenData": {
+    "symbol": "COURAGE",
+    "name": "The Cowardly Dog",
+    "price": "$0.00017",
+    "marketCap": "$141K",
+    "ath": "$0.0003",
+    "athDrop": "-43%",
+    "recentAction": "+303% in 24h with $822K volume, 27,846 transactions, 70% buy ratio on Solana PumpSwap"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Somewhere in the middle of Nowhere, Kansas, a small pink dog is once again doing something incredibly brave for no rational reason. Except this time, it's not fighting Katz or escaping Freaky Fred — it's pumping 303% on a Solana DEX while 27,000 traders pile in on pure childhood nostalgia."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$COURAGE (The Cowardly Dog) surged 303% on Solana with $822K volume and 27,846 transactions — one of the highest trade counts for a nostalgia token this week",
+        "70% buy ratio signals overwhelming one-directional demand, with new buyers still entering despite the 3x move",
+        "The nostalgia-to-memecoin pipeline is accelerating: cartoon IPs from the '90s and 2000s are becoming a distinct Solana meta alongside frogs and AI tokens"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What Happened"
+    },
+    {
+      "type": "paragraph",
+      "text": "Courage the Cowardly Dog — Cartoon Network's cult horror-comedy that terrified an entire generation of kids between 1999 and 2002 — has been tokenized on Solana. The $COURAGE token launched via PumpSwap and immediately tapped into something that price charts alone can't explain: the millennial nostalgia trade."
+    },
+    {
+      "type": "paragraph",
+      "text": "Within 24 hours, the token attracted 27,846 individual transactions and $822K in volume. For a token with just $141K market cap and $31K liquidity, those numbers are staggering. The 70% buy ratio — significantly higher than the typical 55-60% for new Solana memes — suggests that buyers aren't flipping. They're holding, at least for now."
+    },
+    {
+      "type": "heading",
+      "text": "The Degen Translation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nostalgia tokens operate on different mechanics than pure speculation plays. When someone buys $COURAGE, they're not just buying a ticker — they're buying a memory. The show's bizarre aesthetic, its genuinely unsettling villains, and the universal experience of being scared as a kid watching it create an emotional anchor that pure number-go-up tokens can't replicate."
+    },
+    {
+      "type": "paragraph",
+      "text": "This emotional attachment translates into a measurable on-chain behavior: higher hold rates and stronger buy ratios. The 70% buy ratio on $COURAGE is among the highest of any new Solana meme this scan cycle. Traders who buy because they remember Eustace's \"Stupid dog!\" catchphrase are psychologically different from traders who buy because a chart has a green candle."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "$822K volume against $141K market cap means roughly 6x turnover in 24 hours — extremely high even by Solana meme standards. The 27,846 transactions suggest broad retail participation with small position sizes rather than whale-driven action. At $31K liquidity, the pool is thin but the flow is real."
+    },
+    {
+      "type": "paragraph",
+      "text": "The +303% surge from launch puts early buyers at healthy profits, but the sustained 70% buy ratio suggests the demand wave hasn't crested yet. For comparison, most Pump.fun graduates see their buy ratio drop below 55% within the first 12 hours as early holders take profits. $COURAGE maintaining 70% this deep into its run is genuinely unusual."
+    },
+    {
+      "type": "heading",
+      "text": "Is This Sustainable?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nostalgia tokens have a documented playbook: initial emotional pump → social media sharing (\"omg they made Courage a crypto\") → secondary wave from the shares → slow fade as the nostalgia hit wears off. The typical lifecycle is 3-5 days for the fun part, then a gradual bleed unless the community finds something new to rally around."
+    },
+    {
+      "type": "paragraph",
+      "text": "What $COURAGE has going for it: the show has enduring cultural relevance, meme templates are abundant (Eustace's mask, \"Return the slab,\" the creepy blue thing from \"Perfect\"), and the target demographic — millennials aged 25-35 — overlaps almost perfectly with crypto's core trading population. Every Courage meme shared on CT is free marketing."
+    },
+    {
+      "type": "paragraph",
+      "text": "What works against it: $31K liquidity is dangerously thin, no team or roadmap exists, and the nostalgia trade has a hard ceiling. Once everyone who recognizes Courage has either bought or decided not to, there's no new buyer pool. The 70% buy ratio will eventually flip, and when it does, $31K liquidity won't absorb the selling pressure gracefully."
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "Only $31K liquidity — extremely thin for a token with $822K daily volume",
+        "70% buy ratio is unsustainable — when it flips, exits will be painful",
+        "No team, roadmap, or utility beyond nostalgia-driven meme trading",
+        "Nostalgia tokens typically peak within 3-5 days of launch",
+        "PumpSwap origin with no locked liquidity or contract audit"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "$COURAGE is proof that the nostalgia-to-memecoin pipeline is alive and well. The transaction count and buy ratio are genuinely impressive for a sub-$200K market cap token, and the emotional resonance of the Courage IP gives it more staying power than random animal tokens. But $31K liquidity on a token that's already 3x'd means the risk-reward math is getting thinner by the hour. Like the show itself, $COURAGE is charming, slightly terrifying, and probably going to end in a way nobody fully expects. The things Courage does for love — and degens do for profit."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is $COURAGE?",
+          "answer": "$COURAGE (The Cowardly Dog) is a Solana meme token themed around the classic Cartoon Network show that aired from 1999-2002. It has no official connection to Cartoon Network, Warner Bros, or the show's creators. It's a community-created nostalgia token trading on PumpSwap."
+        },
+        {
+          "question": "Why are nostalgia tokens popular in crypto?",
+          "answer": "Nostalgia tokens tap into emotional connections that pure speculation can't replicate. When traders buy a token named after a childhood favorite, they're more likely to hold and share it on social media, creating organic marketing. The core crypto trading demographic (25-35 year olds) grew up with '90s and 2000s cartoons, creating a large built-in audience."
+        },
+        {
+          "question": "Is the 70% buy ratio a good sign?",
+          "answer": "A 70% buy ratio indicates strong one-directional demand, which is bullish short-term but unsustainable long-term. Eventually buyers run out and the ratio flips. With only $31K liquidity, the transition from buy-heavy to sell-heavy could be very sharp. Think of it as a coiled spring — great for momentum, risky for anyone who doesn't exit before the flip."
+        }
+      ]
+    }
+  ]
+}

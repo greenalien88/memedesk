@@ -100,8 +100,9 @@ export default async function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                   {/* Signal badge on featured image */}
-                  <div className={`absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold backdrop-blur-sm ${featuredSignal}`}>
-                    {featured.signalEmoji} {featured.signalRating}
+                  <div className={`absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-bold backdrop-blur-sm max-w-[200px] ${featuredSignal}`}>
+                    <span className="shrink-0">{featured.signalEmoji}</span>
+                    <span className="truncate">{featured.signalLabel || featured.signalRating}</span>
                   </div>
                 </div>
               )}
@@ -144,8 +145,9 @@ export default async function HomePage() {
                           sizes="(max-width: 768px) 100vw, 40vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                        <div className={`absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold backdrop-blur-sm ${signal}`}>
-                          {article.signalEmoji} {article.signalRating}
+                        <div className={`absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold backdrop-blur-sm max-w-[160px] ${signal}`}>
+                          <span className="shrink-0">{article.signalEmoji}</span>
+                          <span className="truncate">{article.signalLabel || article.signalRating}</span>
                         </div>
                       </div>
                     )}

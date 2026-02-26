@@ -41,8 +41,9 @@ export default function StoryCard({ article }: { article: Article }) {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             {/* Signal badge overlaid on image */}
-            <div className={`absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold backdrop-blur-sm ${signalStyle}`}>
-              {article.signalEmoji} {article.signalRating}
+            <div className={`absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[10px] font-bold backdrop-blur-sm max-w-[160px] ${signalStyle}`}>
+              <span className="shrink-0">{article.signalEmoji}</span>
+              <span className="truncate">{article.signalLabel || article.signalRating}</span>
             </div>
           </div>
         )}
@@ -62,8 +63,9 @@ export default function StoryCard({ article }: { article: Article }) {
           <div className="flex items-center justify-between text-[11px] text-white/40">
             <span>{timeAgo(article.publishedAt)}</span>
             {!article.heroImage && (
-              <span className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 font-bold ${signalStyle}`}>
-                {article.signalEmoji} {article.signalRating}
+              <span className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 font-bold max-w-[160px] ${signalStyle}`}>
+                <span className="shrink-0">{article.signalEmoji}</span>
+                <span className="truncate">{article.signalLabel || article.signalRating}</span>
               </span>
             )}
           </div>

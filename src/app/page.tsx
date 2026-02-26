@@ -172,7 +172,7 @@ export default async function HomePage() {
       )}
 
       {/* Fear & Greed */}
-      <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+      <div className={`max-w-sm rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
         <div className="flex items-center gap-3">
           <span className="text-2xl animate-pulse">{style.emoji}</span>
           <div>

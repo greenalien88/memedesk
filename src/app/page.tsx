@@ -82,21 +82,6 @@ export default async function HomePage() {
         <TickerBar coins={coins.slice(0, 10)} />
       </div>
 
-      {/* Fear & Greed */}
-      <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
-        <div className="flex items-center gap-3">
-          <span className="text-2xl animate-pulse">{style.emoji}</span>
-          <div>
-            <div className="font-bold text-base tracking-wide">{style.label}</div>
-            <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
-          </div>
-        </div>
-        <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-          <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
-        </div>
-        <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
-      </div>
-
       {/* Featured + Secondary articles */}
       {featured && (
         <div className="grid gap-4 md:grid-cols-[1.4fr_1fr]">
@@ -185,6 +170,21 @@ export default async function HomePage() {
           </div>
         </div>
       )}
+
+      {/* Fear & Greed */}
+      <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+        <div className="flex items-center gap-3">
+          <span className="text-2xl animate-pulse">{style.emoji}</span>
+          <div>
+            <div className="font-bold text-base tracking-wide">{style.label}</div>
+            <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+          </div>
+        </div>
+        <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+          <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+        </div>
+        <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
+      </div>
 
       {/* More articles grid */}
       {rest.length > 0 && (

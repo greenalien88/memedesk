@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About',
-  description: 'About MemeDesk — editorial-quality memecoin coverage.',
+  description: 'About MemeDesk — Maxxing profitable alpha from the meme trenches.',
   alternates: { canonical: 'https://memedesk.co/about' },
 };
 

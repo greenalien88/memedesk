@@ -24,7 +24,7 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MemeDesk</title>
-    <description>The Signal in the Noise — editorial-quality memecoin coverage</description>
+    <description>Maxxing Profitable Alpha from the Meme Trenches — editorial meme coin intelligence</description>
     <link>${baseUrl}</link>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>

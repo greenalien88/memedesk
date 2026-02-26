@@ -12,13 +12,13 @@ import { timeAgo } from '@/lib/format';
 export const metadata: Metadata = {
   description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports. No shills, no cope — just the data.',
   openGraph: {
-    title: 'MemeDesk — The Signal in the Noise',
+    title: 'MemeDesk — Maxxing Profitable Alpha from the Meme Trenches',
     description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'MemeDesk — The Signal in the Noise',
+    title: 'MemeDesk — Maxxing Profitable Alpha from the Meme Trenches',
     description: 'Daily memecoin intelligence: KOL calls, token analysis, rug alerts, and degen signal reports.',
   },
 };

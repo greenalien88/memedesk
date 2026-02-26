@@ -200,10 +200,21 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     })),
   } : null;
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://memedesk.co' },
+      { '@type': 'ListItem', position: 2, name: 'Alpha', item: 'https://memedesk.co/alpha' },
+      { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/alpha/${slug}` },
+    ],
+  };
+
   return (
     <article className="mx-auto max-w-3xl py-8">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Back */}
       <Link href="/autopsy" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
         ← Back to Alpha

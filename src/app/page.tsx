@@ -197,41 +197,26 @@ export default async function HomePage() {
           <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
         </div>
 
-        {/* Sponsored — Jupiter × Sushi */}
+        {/* Sponsored — Jupiter × Sushi video ad */}
         <a
           href="https://jup.ag"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex-1 w-full h-[250px] flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition"
-          style={{ background: 'linear-gradient(135deg, #0d1b3e 0%, #1a1040 50%, #0f2744 100%)' }}
+          className="group relative flex-1 w-full h-[250px] overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition block"
         >
-          {/* Glow */}
-          <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(ellipse at 30% 40%, #16a34a22, transparent 55%), radial-gradient(ellipse at 70% 60%, #7c3aed22, transparent 55%)' }} />
-
-          {/* Sponsored label */}
-          <span className="absolute top-2.5 right-3 text-[10px] text-white/25 tracking-widest uppercase">Sponsored</span>
-
-          {/* Logos + branding */}
-          <div className="relative flex flex-col items-center gap-4">
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl">🌀</span>
-                <span className="font-bold text-white text-xl tracking-tight">Jupiter</span>
-              </div>
-              <span className="text-white/30 text-lg">×</span>
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl">🍣</span>
-                <span className="font-bold text-white text-xl tracking-tight">Sushi</span>
-              </div>
-            </div>
-            <p className="text-white/50 text-xs text-center px-6">Welcome to Solana. Swap tokens with best-in-class routing.</p>
-            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 px-4 py-1.5 text-xs font-semibold text-emerald-300 group-hover:bg-emerald-500/30 transition">
-              Trade Now →
-            </span>
+          <video
+            src="/jupiter-sushi-ad.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
+          <div className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
+            <span className="text-white text-sm font-semibold">Jupiter × Sushi</span>
+            <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
           </div>
-
-          {/* 300×250 label (dev reference) — remove in prod */}
-          {/* <span className="absolute bottom-2 left-3 text-[9px] text-white/15">300×250</span> */}
         </a>
       </div>
 

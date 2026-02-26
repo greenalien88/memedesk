@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import { getAllArticles, getArticle, type Article } from '@/lib/articles';
+import { tagToSlug } from '@/lib/tags';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -246,9 +247,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         {/* Tags */}
         <div className="mb-8 flex flex-wrap gap-2">
           {article.tags.map((tag) => (
-            <span key={tag} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50">
+            <Link key={tag} href={`/tags/${tagToSlug(tag)}`} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/50 transition hover:border-emerald-400/30 hover:text-emerald-300">
               #{tag}
-            </span>
+            </Link>
           ))}
         </div>
       </header>

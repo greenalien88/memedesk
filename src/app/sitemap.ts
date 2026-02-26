@@ -1,30 +1,42 @@
 import type { MetadataRoute } from 'next';
 import { getAllArticles } from '@/lib/articles';
 
+// Maps category field → URL prefix
+const CATEGORY_PATH: Record<string, string> = {
+  news: 'news',
+  alpha: 'alpha',
+  autopsy: 'autopsy',
+  launchpad: 'launchpad',
+  'kol-watch': 'kol-watch',
+  'market-pulse': 'market-pulse',
+  academy: 'academy',
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://memedesk.co';
 
   const articles = getAllArticles();
-  const newsEntries = articles
-    .filter((a: any) => a.category !== 'autopsy')
-    .map((a) => ({
-      url: `${base}/news/${a.slug}`,
-      lastModified: new Date(a.publishedAt),
-    }));
 
-  const autopsyEntries = articles
-    .filter((a: any) => a.category === 'autopsy')
-    .map((a) => ({
-      url: `${base}/autopsy/${a.slug}`,
+  const articleEntries = articles.map((a) => {
+    const prefix = CATEGORY_PATH[a.category] ?? 'news';
+    return {
+      url: `${base}/${prefix}/${a.slug}`,
       lastModified: new Date(a.publishedAt),
-    }));
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    };
+  });
 
   return [
-    { url: base, lastModified: new Date() },
-    { url: `${base}/news`, lastModified: new Date() },
-    { url: `${base}/autopsy`, lastModified: new Date() },
-    ...newsEntries,
-    ...autopsyEntries,
-    { url: `${base}/about`, lastModified: new Date() },
+    { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
+    { url: `${base}/news`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${base}/alpha`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${base}/autopsy`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/launchpad`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${base}/kol-watch`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/market-pulse`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/academy`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    ...articleEntries,
   ];
 }

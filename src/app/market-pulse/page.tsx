@@ -5,17 +5,17 @@ import { getArticlesByCategory } from '@/lib/articles';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Market Pulse — Sentiment & Trends',
+  title: 'Runner Pulse — Sentiment & Trends',
   description: 'Market sentiment, trend analysis, and the vibe check on crypto markets. What\'s hot, what\'s not.',
   alternates: { canonical: 'https://memedesk.co/market-pulse' },
   openGraph: {
-    title: 'Market Pulse | MemeDesk',
+    title: 'Runner Pulse | MemeDesk',
     description: 'Market sentiment, trend analysis, and the vibe check on crypto markets.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Market Pulse | MemeDesk',
+    title: 'Runner Pulse | MemeDesk',
     description: 'Market sentiment, trend analysis, and the vibe check on crypto markets.',
   },
 };
@@ -32,7 +32,7 @@ export default function MarketPulsePage() {
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">📊 Market Pulse</h1>
+        <h1 className="text-2xl font-bold">📊 Runner Pulse</h1>
         <span className="text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 

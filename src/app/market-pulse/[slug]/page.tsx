@@ -285,7 +285,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://memedesk.co' },
-      { '@type': 'ListItem', position: 2, name: 'Market Pulse', item: 'https://memedesk.co/market-pulse' },
+      { '@type': 'ListItem', position: 2, name: 'Runner Pulse', item: 'https://memedesk.co/market-pulse' },
       { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/market-pulse/${slug}` },
     ],
   };
@@ -297,7 +297,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Back */}
       <Link href="/autopsy" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
-        ← Back to Market Pulse
+        ← Back to Runner Pulse
       </Link>
 
       <header>
@@ -638,7 +638,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       {/* Related News */}
       {related.length > 0 && (
         <section className="mt-12">
-          <h2 className="mb-4 text-xl font-bold text-white">More from Market Pulse</h2>
+          <h2 className="mb-4 text-xl font-bold text-white">More from Runner Pulse</h2>
           <div className="grid gap-4 sm:grid-cols-3">
             {related.map((rel) => (
               <Link

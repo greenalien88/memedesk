@@ -216,11 +216,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      {/* Back */}
-      <Link href="/autopsy" className="mb-6 inline-flex items-center gap-1 text-sm text-white/40 hover:text-white/70">
-        ← Back to KOL Watch
-      </Link>
-
       <header>
         {/* Signal Rating */}
         <div className="mb-4">

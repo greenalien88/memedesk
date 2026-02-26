@@ -31,8 +31,8 @@
   },
   "body": [
     {
-      "type": "text",
-      "content": "In the relentless content factory that is Solana's meme coin ecosystem, a hot dog has emerged as one of the top-performing assets of the last 24 hours. $wiener — yes, that's the actual ticker — has ripped 353% since launch, accumulated $1.5 million in trading volume, and drawn nearly 24,000 transactions from degens who apparently see something in a cartoon sausage that the rest of us are missing."
+      "type": "paragraph",
+      "text": "In the relentless content factory that is Solana's meme coin ecosystem, a hot dog has emerged as one of the top-performing assets of the last 24 hours. $wiener — yes, that's the actual ticker — has ripped 353% since launch, accumulated $1.5 million in trading volume, and drawn nearly 24,000 transactions from degens who apparently see something in a cartoon sausage that the rest of us are missing."
     },
     {
       "type": "callout",
@@ -42,19 +42,19 @@
     },
     {
       "type": "heading",
-      "content": "What Makes This One Different"
+      "text": "What Makes This One Different"
     },
     {
-      "type": "text",
-      "content": "Food meme coins have a surprisingly durable history in crypto. From $SUSHI to $BURGER to the various pizza tokens, the 'edible asset' category has proven that absurdist branding can build genuine communities. $wiener occupies the intersection of food memes and the innuendo-driven humor that CT thrives on — the name is the joke, the joke is the name, and apparently that's enough to generate seven figures in volume."
+      "type": "paragraph",
+      "text": "Food meme coins have a surprisingly durable history in crypto. From $SUSHI to $BURGER to the various pizza tokens, the 'edible asset' category has proven that absurdist branding can build genuine communities. $wiener occupies the intersection of food memes and the innuendo-driven humor that CT thrives on — the name is the joke, the joke is the name, and apparently that's enough to generate seven figures in volume."
     },
     {
-      "type": "text",
-      "content": "The token launched via Pump.fun and graduated to Raydium, now trading across 6 pairs on Solana DEXes. What's notable is the website — justahotdog.fun — which suggests at least some level of planning beyond a pure launch-and-dump. The X community page (created February 15) predates the token's major pump, giving it about 12 days of community building before this breakout."
+      "type": "paragraph",
+      "text": "The token launched via Pump.fun and graduated to Raydium, now trading across 6 pairs on Solana DEXes. What's notable is the website — justahotdog.fun — which suggests at least some level of planning beyond a pure launch-and-dump. The X community page (created February 15) predates the token's major pump, giving it about 12 days of community building before this breakout."
     },
     {
       "type": "heading",
-      "content": "The Numbers So Far"
+      "text": "The Numbers So Far"
     },
     {
       "type": "statGrid",
@@ -86,36 +86,36 @@
       ]
     },
     {
-      "type": "text",
-      "content": "The volume-to-mcap ratio of 9.1x is extraordinary. To put this in context, most healthy meme coins see 1-3x daily volume relative to their market cap. At 9.1x, every dollar of $wiener's market cap has been traded through nine times today. This level of churn typically indicates either massive organic interest or heavy bot/wash trading — and the transaction count of 23,838 spread across ~21 hours suggests real engagement rather than a few wallets cycling funds."
+      "type": "paragraph",
+      "text": "The volume-to-mcap ratio of 9.1x is extraordinary. To put this in context, most healthy meme coins see 1-3x daily volume relative to their market cap. At 9.1x, every dollar of $wiener's market cap has been traded through nine times today. This level of churn typically indicates either massive organic interest or heavy bot/wash trading — and the transaction count of 23,838 spread across ~21 hours suggests real engagement rather than a few wallets cycling funds."
     },
     {
       "type": "heading",
-      "content": "The Buy Ratio Problem"
+      "text": "The Buy Ratio Problem"
     },
     {
-      "type": "text",
-      "content": "Here's where it gets interesting: the buy ratio is 52.2%. That's almost perfectly balanced. In early-stage meme coins, you typically see either aggressive accumulation (65%+ buys) or distribution (below 45% buys). A 52.2% split after a 353% pump suggests the token has reached a temporary equilibrium — new money flowing in at roughly the same rate as profit-takers cashing out. This can either be a healthy base-building phase before the next leg up, or the calm before a sell cascade."
-    },
-    {
-      "type": "heading",
-      "content": "Red Flags Check"
-    },
-    {
-      "type": "text",
-      "content": "**Liquidity: $34.4K.** Against $1.5M daily volume, the liquidity pool is paper-thin. Any concentrated sell of $5K+ would cause significant slippage.\n\n**No verified KOL backing.** No major CT accounts detected calling $wiener as of press time. The volume appears driven by DexScreener trending visibility and organic community activity.\n\n**The WienerAI confusion factor.** Perplexity flagged that 'WienerAI' was a separate token from 2024 with a presale narrative. This $wiener is NOT the same token — it's a fresh Pump.fun launch. But the name similarity may cause confusion in search results, which could either help (inherited brand recognition) or hurt (inherited skepticism from the prior project)."
+      "type": "paragraph",
+      "text": "Here's where it gets interesting: the buy ratio is 52.2%. That's almost perfectly balanced. In early-stage meme coins, you typically see either aggressive accumulation (65%+ buys) or distribution (below 45% buys). A 52.2% split after a 353% pump suggests the token has reached a temporary equilibrium — new money flowing in at roughly the same rate as profit-takers cashing out. This can either be a healthy base-building phase before the next leg up, or the calm before a sell cascade."
     },
     {
       "type": "heading",
-      "content": "Who's Behind It"
+      "text": "Red Flags Check"
     },
     {
-      "type": "text",
-      "content": "The justahotdog.fun website and pre-existing X community suggest this isn't a pure anonymous launch. The community page was created 12 days before the major pump, indicating the team was building awareness before the breakout. That said, no doxxed team members have been identified, and the website appears to be a minimal landing page rather than a full project roadmap."
+      "type": "paragraph",
+      "text": "**Liquidity: $34.4K.** Against $1.5M daily volume, the liquidity pool is paper-thin. Any concentrated sell of $5K+ would cause significant slippage.\n\n**No verified KOL backing.** No major CT accounts detected calling $wiener as of press time. The volume appears driven by DexScreener trending visibility and organic community activity.\n\n**The WienerAI confusion factor.** Perplexity flagged that 'WienerAI' was a separate token from 2024 with a presale narrative. This $wiener is NOT the same token — it's a fresh Pump.fun launch. But the name similarity may cause confusion in search results, which could either help (inherited brand recognition) or hurt (inherited skepticism from the prior project)."
     },
     {
       "type": "heading",
-      "content": "Verdict"
+      "text": "Who's Behind It"
+    },
+    {
+      "type": "paragraph",
+      "text": "The justahotdog.fun website and pre-existing X community suggest this isn't a pure anonymous launch. The community page was created 12 days before the major pump, indicating the team was building awareness before the breakout. That said, no doxxed team members have been identified, and the website appears to be a minimal landing page rather than a full project roadmap."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
     },
     {
       "type": "verdict",
@@ -124,7 +124,7 @@
     },
     {
       "type": "heading",
-      "content": "FAQ"
+      "text": "FAQ"
     },
     {
       "type": "faq",

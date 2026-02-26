@@ -450,7 +450,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           }
           return (
             <p key={i} className="leading-relaxed text-white/80">
-              {block.text}
+              {block.text || block.content}
             </p>
           );
         })}

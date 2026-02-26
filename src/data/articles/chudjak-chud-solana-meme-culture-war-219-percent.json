@@ -32,8 +32,8 @@
   },
   "body": [
     {
-      "type": "text",
-      "content": "If you've spent any time in online discourse over the past five years, you've seen his face. The receding hairline. The patchy beard. The vacant, vaguely menacing stare. Chudjak — the wojak variant that became the internet's universal shorthand for 'this guy has bad opinions' — just became a Solana meme coin. And it's already up 219%."
+      "type": "paragraph",
+      "text": "If you've spent any time in online discourse over the past five years, you've seen his face. The receding hairline. The patchy beard. The vacant, vaguely menacing stare. Chudjak — the wojak variant that became the internet's universal shorthand for 'this guy has bad opinions' — just became a Solana meme coin. And it's already up 219%."
     },
     {
       "type": "callout",
@@ -43,31 +43,31 @@
     },
     {
       "type": "heading",
-      "content": "What Happened"
+      "text": "What Happened"
     },
     {
-      "type": "text",
-      "content": "Chudjak — alternatively spelled 'Chud' — is one of the most recognizable characters in the wojak meme universe. Originally emerging from 4chan boards, the character became weaponized across political Twitter as a way to caricature opponents. Left uses it to mock the right, the right reclaimed it as self-deprecating humor, and somewhere in the middle it became the universal face of 'terminally online discourse.' Now it's a token."
+      "type": "paragraph",
+      "text": "Chudjak — alternatively spelled 'Chud' — is one of the most recognizable characters in the wojak meme universe. Originally emerging from 4chan boards, the character became weaponized across political Twitter as a way to caricature opponents. Left uses it to mock the right, the right reclaimed it as self-deprecating humor, and somewhere in the middle it became the universal face of 'terminally online discourse.' Now it's a token."
     },
     {
-      "type": "text",
-      "content": "The $CHUD token launched on Pump.fun and graduated to Raydium within the last hour, already accumulating $282K in volume across 5 trading pairs. The team — or at least whoever's behind it — set up chudonsol.com and a dedicated Twitter account (@ChudjakOnX) before launch, suggesting this is a planned cultural play rather than a spontaneous pump."
-    },
-    {
-      "type": "heading",
-      "content": "The Degen Translation"
-    },
-    {
-      "type": "text",
-      "content": "CT has a pattern of financializing culture war moments, and Chudjak fits perfectly into the 'irony-as-investment-thesis' playbook. The logic goes: the more polarizing and recognizable a meme, the higher its chance of going viral — and virality is the only fundamental that matters in meme coins. Chudjak is arguably one of the top 5 most recognizable internet characters of the 2020s, alongside Pepe, Doge, Wojak, and the NPC face."
-    },
-    {
-      "type": "text",
-      "content": "Perplexity's analysis rated the narrative strength at 7/10, noting that $CHUD 'taps anti-elite Chud Face satire, embodying community resistance to crypto suits via ironic memes and polarization vibes.' The editorial angle practically writes itself — and that's both the bull case and the bear case."
+      "type": "paragraph",
+      "text": "The $CHUD token launched on Pump.fun and graduated to Raydium within the last hour, already accumulating $282K in volume across 5 trading pairs. The team — or at least whoever's behind it — set up chudonsol.com and a dedicated Twitter account (@ChudjakOnX) before launch, suggesting this is a planned cultural play rather than a spontaneous pump."
     },
     {
       "type": "heading",
-      "content": "The Numbers"
+      "text": "The Degen Translation"
+    },
+    {
+      "type": "paragraph",
+      "text": "CT has a pattern of financializing culture war moments, and Chudjak fits perfectly into the 'irony-as-investment-thesis' playbook. The logic goes: the more polarizing and recognizable a meme, the higher its chance of going viral — and virality is the only fundamental that matters in meme coins. Chudjak is arguably one of the top 5 most recognizable internet characters of the 2020s, alongside Pepe, Doge, Wojak, and the NPC face."
+    },
+    {
+      "type": "paragraph",
+      "text": "Perplexity's analysis rated the narrative strength at 7/10, noting that $CHUD 'taps anti-elite Chud Face satire, embodying community resistance to crypto suits via ironic memes and polarization vibes.' The editorial angle practically writes itself — and that's both the bull case and the bear case."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers"
     },
     {
       "type": "statGrid",
@@ -99,28 +99,28 @@
       ]
     },
     {
-      "type": "text",
-      "content": "The volume-to-mcap ratio of 2.4x is healthy for a sub-1-hour token. More notable is the transaction count — 6,315 trades in under an hour means roughly 105 transactions per minute, indicating genuine retail interest rather than a few bots cycling. The 54.8% buy ratio shows net accumulation, though less aggressive than you'd expect at the peak of initial euphoria."
+      "type": "paragraph",
+      "text": "The volume-to-mcap ratio of 2.4x is healthy for a sub-1-hour token. More notable is the transaction count — 6,315 trades in under an hour means roughly 105 transactions per minute, indicating genuine retail interest rather than a few bots cycling. The 54.8% buy ratio shows net accumulation, though less aggressive than you'd expect at the peak of initial euphoria."
     },
     {
       "type": "heading",
-      "content": "Is This Sustainable?"
+      "text": "Is This Sustainable?"
     },
     {
-      "type": "text",
-      "content": "Culture meme coins have a mixed track record. $PEPE proved that iconic internet characters can sustain multi-billion-dollar valuations. Political meme coins ($TRUMP, $MELANIA) showed that controversy drives volume. But most culture plays — the Harambe coins, the Grumpy Cat tokens, the dozens of NPC variants — pump on recognition and dump when the joke gets stale."
+      "type": "paragraph",
+      "text": "Culture meme coins have a mixed track record. $PEPE proved that iconic internet characters can sustain multi-billion-dollar valuations. Political meme coins ($TRUMP, $MELANIA) showed that controversy drives volume. But most culture plays — the Harambe coins, the Grumpy Cat tokens, the dozens of NPC variants — pump on recognition and dump when the joke gets stale."
     },
     {
-      "type": "text",
-      "content": "Chudjak's advantage is its evergreen relevance. Unlike tokens tied to a single event (celebrity tweet, news cycle), the Chudjak meme is regenerated daily across Twitter, Reddit, and 4chan. As long as culture wars exist online — so, forever — the meme stays relevant. The question isn't whether people will recognize the brand, but whether crypto degens specifically will rally around it as a community identity token."
+      "type": "paragraph",
+      "text": "Chudjak's advantage is its evergreen relevance. Unlike tokens tied to a single event (celebrity tweet, news cycle), the Chudjak meme is regenerated daily across Twitter, Reddit, and 4chan. As long as culture wars exist online — so, forever — the meme stays relevant. The question isn't whether people will recognize the brand, but whether crypto degens specifically will rally around it as a community identity token."
     },
     {
-      "type": "text",
-      "content": "The bear case: at $115K mcap with $27K liquidity, this is still micro-cap territory where a single motivated seller can destroy 20% of the price in one transaction. The one-hour pair age means we're watching the first act of a play that could be three acts or thirty seconds. And culture meme coins without a specific catalyst (like a celebrity endorsement or viral moment) often struggle to find a second wave of buyers after the initial recognition pump fades."
+      "type": "paragraph",
+      "text": "The bear case: at $115K mcap with $27K liquidity, this is still micro-cap territory where a single motivated seller can destroy 20% of the price in one transaction. The one-hour pair age means we're watching the first act of a play that could be three acts or thirty seconds. And culture meme coins without a specific catalyst (like a celebrity endorsement or viral moment) often struggle to find a second wave of buyers after the initial recognition pump fades."
     },
     {
       "type": "heading",
-      "content": "Verdict"
+      "text": "Verdict"
     },
     {
       "type": "verdict",
@@ -129,7 +129,7 @@
     },
     {
       "type": "heading",
-      "content": "FAQ"
+      "text": "FAQ"
     },
     {
       "type": "faq",

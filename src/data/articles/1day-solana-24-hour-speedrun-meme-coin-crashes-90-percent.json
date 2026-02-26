@@ -1,0 +1,158 @@
+{
+  "id": "1day-solana-24-hour-speedrun-meme-coin-crashes-90-percent",
+  "slug": "1day-solana-24-hour-speedrun-meme-coin-crashes-90-percent",
+  "articleType": "post-mortem",
+  "category": "autopsy",
+  "heroImage": "/images/articles/1day-solana-24-hour-speedrun-meme-coin-crashes-90-percent.webp",
+  "headline": "$1DAY Promised to 'Change Your Life' in 24 Hours — It Took 80 Minutes to Crash 90%",
+  "subheadline": "The self-described speedrun token hit $212K volume before gravity did what gravity does. 1,468 sellers. $5.5K liquidity. One very expensive lesson.",
+  "signalRating": "shill",
+  "signalEmoji": "🔴",
+  "signalLabel": "Speedrun to Zero",
+  "publishedAt": "2026-02-26T10:37:23+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "1DAY",
+    "Solana",
+    "Post-Mortem",
+    "Rug Pull",
+    "Pump.fun",
+    "Speedrun"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "1day",
+    "name": "1 Day Can Change Your Life",
+    "price": "$0.000055",
+    "marketCap": "$4,700",
+    "ath": "$0.00055",
+    "athDrop": "-90%",
+    "recentAction": "Launched on Pump.fun/PumpSwap, peaked within first 30 minutes, then cratered 90% in under 80 minutes. 6,841 transactions, $212K volume."
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The pitch was almost poetic in its honesty: 'How high can a memecoin go in a single day? Can 1 coin change someone's life in just 1 day?' The answer, as of 2:30 AM UTC on February 26th, is a resounding no — unless your life needed changing in the downward direction. $1DAY launched on Solana's PumpSwap with a promise to survive exactly 24 hours and a roadmap of DexScreener boosts at every market cap milestone. It didn't make it 80 minutes before losing 90% of its value."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$212K in volume across 6,841 transactions — 1,645 unique makers, most of them now holding bags worth fractions of pennies",
+        "Liquidity collapsed to $5.5K with a fully diluted valuation of $4,700 — that's not a market cap, that's a dinner bill",
+        "The token's own website promised 100x DexScreener boosts at milestones it never reached. The speedrun was real — just in the wrong direction"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How It Went Down"
+    },
+    {
+      "type": "timeline",
+      "events": [
+        {
+          "time": "1:10 AM UTC",
+          "event": "$1DAY launches on PumpSwap via Pump.fun graduation. Website live at 1dayspeedrun.com with X community link."
+        },
+        {
+          "time": "1:15 AM UTC",
+          "event": "Early buyers pile in. Volume spikes as the 'speedrun' narrative catches attention on Solana degen channels."
+        },
+        {
+          "time": "1:25 AM UTC",
+          "event": "Token hits local peak. Buy ratio healthy at 57%. Momentum feels real."
+        },
+        {
+          "time": "1:40 AM UTC",
+          "event": "Selling pressure intensifies. Large wallets begin exiting. Buy/sell ratio flips."
+        },
+        {
+          "time": "2:00 AM UTC",
+          "event": "Price down 60% from peak. Panic selling accelerates. 2,939 sell transactions pile up."
+        },
+        {
+          "time": "2:30 AM UTC",
+          "event": "Token down 90%. Liquidity at $5.5K. Market cap: $4,700. The speedrun is over."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Red Flags Everyone Saw (And Bought Anyway)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This one didn't even try to hide what it was. The project's own description reads like a degen Mad Lib: 'This coin will only survive 24 hours.' The roadmap was DexScreener boosts — not product development, not community building, not even a decent meme. Just paid visibility on a chart-watching platform. The tokenomics screamed exit liquidity from the jump: a Pump.fun launch with no locked liquidity, no renounced contract, and a 'speedrun' framing that gave early wallets permission to dump guilt-free."
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "Token explicitly designed to last only 24 hours — 'speedrun' framing normalizes dumping",
+        "Entire roadmap was DexScreener boosts at milestones (100K, 250K, 500K, 1M) — no product, no utility",
+        "Pump.fun graduation with no locked liquidity — pool could be drained at any time",
+        "X presence was a Community page, not even a proper account — zero accountability",
+        "575M tokens pooled against just 31.5 SOL ($2,700 per side) — paper-thin liquidity"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Anatomy of a Disposable Token"
+    },
+    {
+      "type": "paragraph",
+      "text": "What makes $1DAY worth dissecting isn't the money lost — at $212K volume, this is a minnow by Solana rug standards. It's the brazenness of the model. The creator weaponized transparency: by announcing the token would die in 24 hours, they created a PvP arena where everyone thinks they'll be the one to time the exit. It's musical chairs with a timer, and the music stopped in 80 minutes instead of 24 hours."
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers tell the story: 1,461 buyers vs 1,468 sellers. Nearly perfect equilibrium in headcount, but the damage was asymmetric. Early buyers who got in and out during the first 15 minutes likely made money. The other 1,400+ wallets? They're splitting $4,700 in market cap. That's $3.35 per wallet if everyone got equal shares — which they obviously didn't."
+    },
+    {
+      "type": "heading",
+      "text": "The Speedrun Meta"
+    },
+    {
+      "type": "paragraph",
+      "text": "$1DAY isn't an isolated case — it's the logical endpoint of the 'honest rug' meta that's been building on Pump.fun throughout early 2026. Tokens that tell you upfront they're going to zero, betting that the thrill of the gamble outweighs the certainty of the outcome. It's meme coin nihilism distilled into a smart contract: no pretense of value, no roadmap beyond boost schedules, just pure speculative velocity with an expiration date."
+    },
+    {
+      "type": "paragraph",
+      "text": "The playbook is getting refined: launch with a catchy premise ('what if a coin could change your life in 1 day?'), promise DexScreener visibility to attract chart-watchers, let FOMO do the heavy lifting, and exit before the self-imposed deadline. The next iteration will probably promise to die in 12 hours. Then 6. Then 1. The speedrun is speedrunning itself."
+    },
+    {
+      "type": "heading",
+      "text": "Lessons for Degens"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a token tells you it's going to die, believe it. If the roadmap is 'we'll pay for DexScreener boosts,' there is no roadmap. If the X presence is a community page instead of an account, there's no one to hold accountable when the liquidity vanishes. And if 575 million tokens are pooled against 31 SOL, you're not trading — you're donating. The only thing $1DAY changed in 24 hours was the balance of 1,468 wallets. Downward."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "🔴 Shill Alert — $1DAY delivered exactly what it promised: a token that doesn't survive. The only surprise was how fast the clock ran out. 80 minutes, not 24 hours. At least it was efficient about it."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What was $1DAY?",
+          "answer": "A Solana meme token launched on Pump.fun that explicitly marketed itself as a 24-hour speedrun experiment. It asked 'can a coin change your life in 1 day?' and promised DexScreener boosts at market cap milestones. It crashed 90% in under 80 minutes."
+        },
+        {
+          "question": "Was $1DAY a rug pull?",
+          "answer": "In the traditional sense of devs draining liquidity — the data is still being analyzed. But functionally, yes: a token designed to die with paper-thin liquidity and no locked pool produced the same outcome as a rug pull for anyone who bought after the first 15 minutes."
+        },
+        {
+          "question": "How much money was lost?",
+          "answer": "Total volume was $212K across 6,841 transactions. With the current market cap at $4,700 and sell volume ($108K) slightly exceeding buy volume ($104K), the net loss to late buyers is likely in the $50K-$100K range — modest by Solana rug standards but painful for the individuals involved."
+        },
+        {
+          "question": "What is the 'honest rug' meta?",
+          "answer": "A growing trend on Pump.fun where tokens openly announce they have no long-term value proposition, betting that traders will participate anyway for the PvP thrill. The transparency doesn't prevent losses — it just shifts blame from the creator to the buyer."
+        }
+      ]
+    }
+  ]
+}

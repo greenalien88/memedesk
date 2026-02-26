@@ -31,18 +31,9 @@ export default function NewsPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
-      <div className="rounded-2xl border border-red-400/20 bg-red-400/5 p-8">
-        <div className="flex items-center gap-3">
-          <span className="text-4xl">🔴</span>
-          <div>
-            <h1 className="text-3xl font-bold">News</h1>
-            <p className="mt-1 text-sm text-white/60">
-              Breaking meme coin stories, KOL calls, exchange listings, and everything
-              moving the degen markets right now.
-            </p>
-          </div>
-        </div>
-        <p className="mt-4 text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''} published</p>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">🔴 News</h1>
+        <span className="text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 
       {filtered.length === 0 ? (

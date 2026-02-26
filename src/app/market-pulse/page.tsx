@@ -31,18 +31,9 @@ export default function MarketPulsePage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
-      <div className="rounded-2xl border border-blue-400/20 bg-blue-400/5 p-8">
-        <div className="flex items-center gap-3">
-          <span className="text-4xl">📊</span>
-          <div>
-            <h1 className="text-3xl font-bold">Market Pulse</h1>
-            <p className="mt-1 text-sm text-white/60">
-              Market sentiment, trend analysis, and the vibe check on crypto.
-              What&apos;s hot, what&apos;s not, and where the money&apos;s flowing.
-            </p>
-          </div>
-        </div>
-        <p className="mt-4 text-xs text-white/40">{filtered.length} pulse report{filtered.length !== 1 ? 's' : ''} published</p>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">📊 Market Pulse</h1>
+        <span className="text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 
       {filtered.length === 0 ? (

@@ -31,18 +31,9 @@ export default function KolWatchPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
-      <div className="rounded-2xl border border-amber-400/20 bg-amber-400/5 p-8">
-        <div className="flex items-center gap-3">
-          <span className="text-4xl">👁️</span>
-          <div>
-            <h1 className="text-3xl font-bold">KOL Watch</h1>
-            <p className="mt-1 text-sm text-white/60">
-              Tracking what crypto influencers are shilling, buying, and promoting.
-              Signal or noise? We break it down.
-            </p>
-          </div>
-        </div>
-        <p className="mt-4 text-xs text-white/40">{filtered.length} KOL report{filtered.length !== 1 ? 's' : ''} published</p>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">👁️ KOL Watch</h1>
+        <span className="text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 
       {filtered.length === 0 ? (

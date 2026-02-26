@@ -31,18 +31,9 @@ export default function AutopsyPage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
-      <div className="rounded-2xl border border-red-400/20 bg-red-400/5 p-8">
-        <div className="flex items-center gap-3">
-          <span className="text-4xl">🪦</span>
-          <div>
-            <h1 className="text-3xl font-bold">Autopsy</h1>
-            <p className="mt-1 text-sm text-white/60">
-              Forensic deep dives into dead coins, rug pulls, and project failures. 
-              Learn from the wreckage so you don&apos;t become the next victim.
-            </p>
-          </div>
-        </div>
-        <p className="mt-4 text-xs text-white/40">{autopsies.length} post-mortem{autopsies.length !== 1 ? 's' : ''} published</p>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">🪦 Autopsy</h1>
+        <span className="text-xs text-white/40">{autopsies.length} post-mortem{autopsies.length !== 1 ? 's' : ''}</span>
       </div>
 
       {autopsies.length === 0 ? (

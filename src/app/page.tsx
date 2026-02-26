@@ -265,7 +265,7 @@ export default async function HomePage() {
           <div className="flex items-center justify-center gap-6 text-xs text-white/40">
             <span className="text-white/20">← Prev</span>
             <span className="text-white/60">Page 1</span>
-            <a href=\"#\" className=\"text-emerald-400 hover:text-emerald-300 transition\">Next →</a>
+            <a href="#" className="text-emerald-400 hover:text-emerald-300 transition">Next →</a>
           </div>
         </div>
       </div>

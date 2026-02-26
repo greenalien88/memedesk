@@ -60,15 +60,6 @@ const signalStyles: Record<string, string> = {
   shill: 'border-red-400/50 bg-red-400/10 text-red-300',
 };
 
-const categories = [
-  { href: '/news', label: '🔴 News', color: 'border-red-400/30 hover:border-red-400/60 text-red-300' },
-  { href: '/alpha', label: '🔮 Alpha', color: 'border-violet-400/30 hover:border-violet-400/60 text-violet-300' },
-  { href: '/launchpad', label: '🚀 Launch Pad', color: 'border-emerald-400/30 hover:border-emerald-400/60 text-emerald-300' },
-  { href: '/autopsy', label: '🪦 Autopsy', color: 'border-gray-400/30 hover:border-gray-400/60 text-gray-300' },
-  { href: '/kol-watch', label: '👁️ KOL Watch', color: 'border-amber-400/30 hover:border-amber-400/60 text-amber-300' },
-  { href: '/market-pulse', label: '📊 Market Pulse', color: 'border-blue-400/30 hover:border-blue-400/60 text-blue-300' },
-  { href: '/academy', label: '🎓 Academy', color: 'border-cyan-400/30 hover:border-cyan-400/60 text-cyan-300' },
-];
 
 export const revalidate = 60;
 
@@ -89,28 +80,19 @@ export default async function HomePage() {
     <div className="space-y-6">
       <TickerBar coins={coins.slice(0, 10)} />
 
-      {/* Fear & Greed + Category Pills row */}
-      <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
-            <Link key={cat.href} href={cat.href} className={`rounded-full border bg-white/5 px-3 py-1.5 text-xs font-medium transition hover:bg-white/10 ${cat.color}`}>
-              {cat.label}
-            </Link>
-          ))}
-        </div>
-        <div className={`shrink-0 rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
-          <div className="flex items-center gap-3">
-            <span className="text-2xl animate-pulse">{style.emoji}</span>
-            <div>
-              <div className="font-bold text-base tracking-wide">{style.label}</div>
-              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
-            </div>
+      {/* Fear & Greed */}
+      <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+        <div className="flex items-center gap-3">
+          <span className="text-2xl animate-pulse">{style.emoji}</span>
+          <div>
+            <div className="font-bold text-base tracking-wide">{style.label}</div>
+            <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
           </div>
-          <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-            <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
-          </div>
-          <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
         </div>
+        <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+          <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+        </div>
+        <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
       </div>
 
       {/* Featured + Secondary articles */}

@@ -173,19 +173,58 @@ export default async function HomePage() {
         </div>
       )}
 
-      {/* Fear & Greed */}
-      <div className={`max-w-sm rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
-        <div className="flex items-center gap-3">
-          <span className="text-2xl animate-pulse">{style.emoji}</span>
-          <div>
-            <div className="font-bold text-base tracking-wide">{style.label}</div>
-            <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+      {/* Fear & Greed + Ad */}
+      <div className="flex flex-col sm:flex-row gap-4 items-stretch">
+        {/* Fear & Greed */}
+        <div className={`shrink-0 w-full sm:w-64 rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+          <div className="flex items-center gap-3">
+            <span className="text-2xl animate-pulse">{style.emoji}</span>
+            <div>
+              <div className="font-bold text-base tracking-wide">{style.label}</div>
+              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+            </div>
           </div>
+          <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+            <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+          </div>
+          <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
         </div>
-        <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-          <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
-        </div>
-        <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
+
+        {/* Sponsored — Jupiter × Sushi */}
+        <a
+          href="https://jup.ag"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition min-h-[80px]"
+          style={{ background: 'linear-gradient(135deg, #0d1b3e 0%, #1a1040 50%, #0f2744 100%)' }}
+        >
+          {/* Subtle radial glow */}
+          <div className="absolute inset-0 opacity-30" style={{ background: 'radial-gradient(ellipse at 30% 50%, #2d6a4f33, transparent 60%), radial-gradient(ellipse at 70% 50%, #6d28d933, transparent 60%)' }} />
+
+          {/* Sponsored label */}
+          <span className="absolute top-2 right-3 text-[10px] text-white/30 tracking-widest uppercase">Sponsored</span>
+
+          {/* Content */}
+          <div className="relative flex items-center gap-4 px-6">
+            {/* Jupiter logo */}
+            <div className="flex items-center gap-2">
+              {/* Jupiter green swirl approximation */}
+              <span className="text-3xl">🌀</span>
+              <span className="font-bold text-white text-lg tracking-tight">Jupiter</span>
+            </div>
+            <span className="text-white/40 text-xl font-light">×</span>
+            {/* Sushi */}
+            <div className="flex items-center gap-2">
+              <span className="text-3xl">🍣</span>
+              <span className="font-bold text-white text-lg tracking-tight">Sushi</span>
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="absolute bottom-2 right-3 text-[11px] text-white/40 group-hover:text-white/60 transition">
+            Trade on Solana →
+          </div>
+        </a>
       </div>
 
       {/* More articles grid */}

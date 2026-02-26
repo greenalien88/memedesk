@@ -242,5 +242,16 @@
         }
       ]
     }
-  ]
+  ],
+  "runnerStats": {
+    "mcap": "$1.69M",
+    "mcapRaw": 1685898,
+    "vol24h": "$2.5M",
+    "vol24hRaw": 2501007,
+    "holders": 3662,
+    "organicScore": 83.8,
+    "organicScoreLabel": "high",
+    "priceChange24h": "-43.6%",
+    "snapshotAt": "2026-02-26T17:30:05Z"
+  }
 }

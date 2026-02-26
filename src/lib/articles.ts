@@ -17,6 +17,17 @@ export interface Article {
   tags: string[];
   chain: string;
   tokenData?: Record<string, any>;
+  runnerStats?: {
+    mcap: string;
+    mcapRaw?: number;
+    vol24h: string;
+    vol24hRaw?: number;
+    holders: number;
+    organicScore: number;
+    organicScoreLabel: 'high' | 'medium' | 'low';
+    priceChange24h?: string;
+    snapshotAt?: string;
+  };
   kol?: Record<string, any>;
   sourcePost?: Record<string, any>;
   quotedPost?: Record<string, any>;

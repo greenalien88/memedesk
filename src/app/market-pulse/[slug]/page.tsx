@@ -78,6 +78,85 @@ function TokenCard({ data }: { data: Article['tokenData'] }) {
   );
 }
 
+function RunnerStatsTable({ stats }: { stats: NonNullable<Article['runnerStats']> }) {
+  const scoreColor =
+    stats.organicScore >= 80 ? 'text-emerald-400' :
+    stats.organicScore >= 50 ? 'text-yellow-400' :
+    'text-red-400';
+  const scoreBg =
+    stats.organicScore >= 80 ? 'bg-emerald-400' :
+    stats.organicScore >= 50 ? 'bg-yellow-400' :
+    'bg-red-400';
+  const scoreBorder =
+    stats.organicScore >= 80 ? 'border-emerald-400/30' :
+    stats.organicScore >= 50 ? 'border-yellow-400/30' :
+    'border-red-400/30';
+  const priceIsNeg = stats.priceChange24h?.startsWith('-');
+
+  return (
+    <div className="w-full overflow-hidden rounded-xl border border-cyan-400/20 bg-cyan-400/5">
+      {/* Header */}
+      <div className="flex items-center justify-between border-b border-cyan-400/10 px-5 py-3">
+        <div className="flex items-center gap-2">
+          <span className="text-sm">🏃</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-cyan-400">Runner Status</span>
+        </div>
+        <span className={`rounded-full border px-2.5 py-0.5 text-xs font-semibold capitalize ${scoreBorder} ${scoreColor} bg-black/20`}>
+          {stats.organicScoreLabel} organic
+        </span>
+      </div>
+
+      {/* Stats grid — 2×2 on mobile, 4-col on sm+ */}
+      <div className="grid grid-cols-2 divide-x divide-y divide-white/5 sm:grid-cols-4 sm:divide-y-0">
+        {/* MCAP */}
+        <div className="flex flex-col gap-1 px-5 py-4">
+          <span className="text-xs text-white/40">Market Cap</span>
+          <span className="text-xl font-bold text-white">{stats.mcap}</span>
+          {stats.priceChange24h && (
+            <span className={`text-xs font-semibold ${priceIsNeg ? 'text-red-400' : 'text-emerald-400'}`}>
+              {stats.priceChange24h} 24h
+            </span>
+          )}
+        </div>
+
+        {/* 24h Vol */}
+        <div className="flex flex-col gap-1 px-5 py-4">
+          <span className="text-xs text-white/40">24h Volume</span>
+          <span className="text-xl font-bold text-white">{stats.vol24h}</span>
+          {stats.mcapRaw && stats.vol24hRaw && (
+            <span className="text-xs text-white/30">
+              {(stats.vol24hRaw / stats.mcapRaw).toFixed(1)}× mcap
+            </span>
+          )}
+        </div>
+
+        {/* Holders */}
+        <div className="flex flex-col gap-1 px-5 py-4">
+          <span className="text-xs text-white/40">Holders</span>
+          <span className="text-xl font-bold text-white">{stats.holders.toLocaleString()}</span>
+        </div>
+
+        {/* Organic Score */}
+        <div className="flex flex-col gap-1 px-5 py-4">
+          <span className="text-xs text-white/40">Organic Score</span>
+          <span className={`text-xl font-bold ${scoreColor}`}>{Math.round(stats.organicScore)}<span className="text-sm font-normal text-white/30">/100</span></span>
+          {/* Progress bar */}
+          <div className="mt-1 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
+            <div className={`h-full rounded-full ${scoreBg}`} style={{ width: `${Math.min(stats.organicScore, 100)}%` }} />
+          </div>
+        </div>
+      </div>
+
+      {/* Snapshot timestamp */}
+      {stats.snapshotAt && (
+        <div className="border-t border-white/5 px-5 py-2 text-right text-xs text-white/20">
+          Data snapshot: {new Date(stats.snapshotAt).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'UTC' })} UTC
+        </div>
+      )}
+    </div>
+  );
+}
+
 function KolCard({ kol }: { kol: Article['kol'] }) {
   if (!kol) return null;
   return (
@@ -264,6 +343,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             className="object-cover"
             priority
           />
+        </div>
+      )}
+
+      {/* Runner Stats Table — runner-radar only */}
+      {article.articleType === 'runner-radar' && article.runnerStats && (
+        <div className="mb-8">
+          <RunnerStatsTable stats={article.runnerStats} />
         </div>
       )}
 

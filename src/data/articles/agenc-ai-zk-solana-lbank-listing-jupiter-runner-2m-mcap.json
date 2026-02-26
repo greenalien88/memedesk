@@ -55,52 +55,6 @@
       "text": "The graduation moved it from Pump.fun's bonding curve to Raydium via a `graduatedPool` address, unlocking open-market trading on Jupiter. The Runners list is Jupiter's curated view of tokens that have shown sustained momentum post-graduation — and $AgenC hit it on February 25 at 11:51 PM UTC, roughly 24 hours after launch. That's fast. It means it didn't dump immediately, which is the fate of most Pump.fun graduates."
     },
     {
-      "type": "statGrid",
-      "stats": [
-        {
-          "label": "Price",
-          "value": "$0.00203",
-          "note": "+11.4% (1h) / -45.4% (24h)",
-          "highlight": "red"
-        },
-        {
-          "label": "Market Cap",
-          "value": "$2.03M",
-          "note": "Peak: ~$4.9M"
-        },
-        {
-          "label": "24h Volume",
-          "value": "$3.72M",
-          "note": "$1.81M buy / $1.91M sell"
-        },
-        {
-          "label": "Liquidity",
-          "value": "$158.5K"
-        },
-        {
-          "label": "Holders",
-          "value": "3,828",
-          "note": "-10.5% in 24h"
-        },
-        {
-          "label": "Buy/Sell Ratio",
-          "value": "53.5% buys",
-          "note": "15,391 buys vs 13,375 sells"
-        },
-        {
-          "label": "Pair Age",
-          "value": "~2 days",
-          "note": "Launched Feb 24"
-        },
-        {
-          "label": "Organic Score",
-          "value": "75 / 100",
-          "note": "Medium — Jupiter rated",
-          "highlight": "green"
-        }
-      ]
-    },
-    {
       "type": "heading",
       "text": "Who's Calling It"
     },

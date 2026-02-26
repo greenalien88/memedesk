@@ -1,0 +1,163 @@
+{
+  "id": "agenc-ai-zk-solana-lbank-listing-jupiter-runner-2m-mcap",
+  "slug": "agenc-ai-zk-solana-lbank-listing-jupiter-runner-2m-mcap",
+  "articleType": "runner-radar",
+  "category": "market-pulse",
+  "heroImage": "/images/articles/agenc-ai-zk-solana-lbank-listing-jupiter-runner-2m-mcap.webp",
+  "headline": "$AgenC Just Hit Jupiter's Runners List — The AI Agent Coin With a LBank Listing and a 70x History",
+  "subheadline": "Launched Feb 24 on Pump.fun. Graduated in seconds. Listed on LBank within 24 hours. Now sitting on Jupiter's Runners list with $3.7M in volume. If the AI+ZK narrative holds, this is the next meta. If the 17% bot-holder count is the real story, degens are the exit liquidity.",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Speculative — LBank listing and AI narrative are real. The on-chain metrics aren't as clean.",
+  "publishedAt": "2026-02-26T19:38:03+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "AgenC",
+    "Solana",
+    "Runner Radar",
+    "AI Tokens",
+    "Jupiter Runners",
+    "LBank"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "AgenC",
+    "name": "AgenC",
+    "price": "$0.00203",
+    "marketCap": "$2.03M",
+    "ath": "~$4.9M",
+    "athDrop": "-59%",
+    "recentAction": "Launched on Pump.fun Feb 24, graduated almost instantly. LBank World Premiere listing Feb 25 drove it from $2.35K → $163.5K launch MC, peaked near $4.9M. Now down 45% in 24h to $2.03M with 3,828 holders and $3.72M daily volume."
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "On February 25, 2026 at 11:51 PM UTC, $AgenC appeared on Jupiter's Runners list — a graduation badge that means a Pump.fun token has done something most never do: reach real volume, real liquidity, and real trading activity on Solana's biggest DEX aggregator. But $AgenC's story starts 24 hours earlier, on a night that saw this AI-themed token go from a $2,350 market cap to a six-figure launch in minutes."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$AgenC graduated from Pump.fun within seconds of launch on Feb 24, then got a LBank 'World Premiere' exchange listing on Feb 25 — a dual catalyst that drove it from $2.35K to near $4.9M peak market cap.",
+        "Now sitting at $2.03M market cap with $3.72M in 24h volume and 3,828 holders — but down 45% from its peak, with organic buyers making up only 262 of 5,261 daily traders.",
+        "Jupiter's organic score: 75/100 (medium). The AI + ZK privacy narrative is real. The 17.2% bot holder count and 40.6% top-holder concentration are the yellow flags you need to see before touching this."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "From Pump.fun to Runners in Seconds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most Pump.fun tokens take hours to graduate. They need to hit a bonding curve threshold, generate enough volume, and get enough eyes to move. $AgenC did it in under a minute. According to on-chain data, the token was created at 11:49:48 PM UTC on February 24 — and graduated to Jupiter at 11:49:49 PM UTC. One second. Whatever momentum this token launched with, it was already there before it hit the open market."
+    },
+    {
+      "type": "paragraph",
+      "text": "The graduation moved it from Pump.fun's bonding curve to Raydium via a `graduatedPool` address, unlocking open-market trading on Jupiter. The Runners list is Jupiter's curated view of tokens that have shown sustained momentum post-graduation — and $AgenC hit it on February 25 at 11:51 PM UTC, roughly 24 hours after launch. That's fast. It means it didn't dump immediately, which is the fate of most Pump.fun graduates."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Calling It"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CT signal on $AgenC is coming almost entirely from Chinese crypto Twitter — specifically from GMGN chain scanner communities that specialize in catching Pump.fun graduates early. Here's who's been posting:"
+    },
+    {
+      "type": "paragraph",
+      "text": "**@LBankUpdates (LBank Exchange — verified):** The biggest catalyst. On February 25, LBank announced a 'World Premiere' listing of $AGENC on their exchange, tagging the project account @a_g_e_n_c and describing it as a 'privacy-preserving AI agent coordination protocol with ZK proofs on Solana.' Exchange listings on CEXs — even mid-tier ones — are classic pump catalysts for meme tokens. LBank is a Seychelles-based exchange that ranks in the top 30 globally by volume. This call had reach."
+    },
+    {
+      "type": "paragraph",
+      "text": "**@LQP2021 (棚哥说加密 — 'Peng Crypto'):** A Chinese CT account running an AI-powered chain scanner for Solana tokens. Called $AgenC from $2.35K market cap and tracked it to $163.5K. A later post documented the move from $350K to $4.9M — a 14x. Using GMGN's chain-scanning tools and the OKX wallet explorer. Low engagement on individual posts (under 200 views) but part of a larger Chinese degen ecosystem that moves in coordinated waves."
+    },
+    {
+      "type": "paragraph",
+      "text": "**@MadeshiaPramod (哈希猎人 — 'Hash Hunter'):** Another Chinese CT scanner account. Called $AgenC at $2.1M market cap, noting it was 'precisely identified by an AI coin selection system.' Documented a $1.96K → $65K run. 67 views on the post. Small account, but consistent with the GMGN community playbook."
+    },
+    {
+      "type": "paragraph",
+      "text": "**The CT verdict:** No major English-language KOLs are calling $AgenC yet. The CT activity is almost entirely in Chinese, from chain-scanner communities, not influential traders with large followings. The LBank listing is the only institutional-level signal. If an English CT name picks this up, expect a second wave. If not, this stays in the Chinese degen orbit."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Behind It"
+    },
+    {
+      "type": "paragraph",
+      "text": "The official Twitter account is @tetsuoai. The website is agenc.tech. The project is positioning as a 'privacy-preserving AI agent coordination protocol with ZK proofs' on Solana — a project that sits at the intersection of two hot 2026 metas: AI agents and ZK privacy. That's a compelling narrative on paper. AI agent tokens were one of the dominant themes of late 2025, and ZK technology gives it a technical credibility layer that most meme coins don't bother with."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether the tech is real is a different question. The project has a website, a Telegram community at t.me/agenc_community, and a token that graduated from Pump.fun on its launch day. That's more than most. But a ZK AI protocol built on top of a Pump.fun launch is unusual — most legitimate ZK projects launch differently. The dev wallet still holds 10.3% of supply, and there have been 2 dev migrations and 2 dev mints noted on-chain, which warrants caution."
+    },
+    {
+      "type": "heading",
+      "text": "Red Flags Check"
+    },
+    {
+      "type": "paragraph",
+      "text": "The good news first: mint authority is disabled ✅ and freeze authority is disabled ✅ — meaning the dev can't print new tokens or freeze your wallet. Those are the two most important trust signals for any Solana token."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now the rest:"
+    },
+    {
+      "type": "paragraph",
+      "text": "• **Top holders: 40.6%** — The top wallets collectively control nearly half the supply. Jupiter flags this as `highSingleOwnership`. That's a significant concentration risk. If one of those wallets exits, the chart feels it immediately. • **Dev balance: 10.3%** — The developer still holds over a tenth of the total supply. On a $2M cap, that's ~$210K worth. Dev wallets dumping is the most common death event for Pump.fun graduates. • **Snipers: 13.2%** — Snipers bought in at launch before most retail could get a position. They're now sitting on profit at almost any price above the opening seconds. They will sell. • **Bot holders: 572 wallets (17.2%)** — Over one in six holders is classified as a bot by Jupiter's analysis. The organic buyer count in the last 24h was only 262 out of 5,261 total traders. That's 5% organic activity. The volume looks big; the human participation behind it is much smaller. • **Dev migrations: 2, Dev mints: 2** — These are on-chain footprints that show the developer moved funds and minted tokens after launch. Worth watching."
+    },
+    {
+      "type": "heading",
+      "text": "The Organic Signal"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jupiter's organic score for $AgenC is 75/100 — classified as 'medium.' This is not a bot farm. It's not a wash-trading operation designed purely to inflate volume metrics. There is real human activity here. But 75 also means it's not in the 'high organic' tier (80+) that would make it a cleaner long thesis."
+    },
+    {
+      "type": "paragraph",
+      "text": "What does medium organic actually mean in practice? It means some portion of the trading volume is genuine price discovery and position-taking by real humans — and some portion is automated or suspicious. The 17.2% bot-holder count is the clearest evidence that this isn't a purely organic market. The real story is that the LBank listing and the AI narrative brought real eyes, but the Pump.fun launch mechanics also brought the usual sniper and bot activity that follows any token with early momentum."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 1-hour chart is showing +11.4% and the 5-minute chart is +5.3% as of the time of writing — so there's active buying happening even after the 45% 24h drawdown. Whether that's the base forming or retail catching a falling knife is the $2M question."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "🟡 **Speculative.** $AgenC has three things most Pump.fun runners don't: a real narrative (AI + ZK privacy on Solana), a legitimate exchange listing catalyst (LBank), and enough volume to still be on Jupiter's Runners list 24 hours later. Those are real signals."
+    },
+    {
+      "type": "paragraph",
+      "text": "What makes this a 🟡 and not a 🟢: the 45% drop from peak says the first wave of buyers has already exited. The dev still holds 10.3%. Top wallets control 40.6% of supply. Only 262 of 5,261 daily traders were organic buyers. The Chinese CT community is active, but there's no English-language KOL amplification yet. This token needs a second catalyst — either a known CT name picking it up or the AI narrative catching a broader market tailwind. Until then, it's a wait-and-watch at current levels."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is $AgenC?",
+          "answer": "$AgenC is a Solana meme token launched on Pump.fun on February 24, 2026. It positions itself as a 'privacy-preserving AI agent coordination protocol with ZK proofs.' It graduated from Pump.fun almost instantly and appeared on Jupiter's Runners list on February 25."
+        },
+        {
+          "question": "Why did $AgenC pump?",
+          "answer": "Two main catalysts: a near-instant graduation from Pump.fun creating early momentum, and a 'World Premiere' listing announcement on LBank Exchange on February 25. Chinese CT scanner communities (GMGN-based) caught the early move and documented 14x+ returns from the launch price."
+        },
+        {
+          "question": "Is $AgenC safe to buy?",
+          "answer": "Mint and freeze authorities are disabled, which are baseline safety checks. However, the dev wallet holds 10.3% of supply, top holders control 40.6%, and 13.2% of holders are classified as snipers. The 45% 24h price drop means the first wave already exited. DYOR and size appropriately."
+        },
+        {
+          "question": "What is Jupiter's Runners list?",
+          "answer": "Jupiter's Runners is a curated list of Solana tokens that have graduated from launchpads like Pump.fun and shown sustained trading volume and organic activity. Appearing on the list signals a token has survived the initial launch phase — most don't."
+        },
+        {
+          "question": "What is $AgenC's contract address?",
+          "answer": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump on Solana."
+        }
+      ]
+    }
+  ]
+}

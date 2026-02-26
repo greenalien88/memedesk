@@ -1,0 +1,139 @@
+{
+  "id": "nire-notinretardeducation-102k-txns-coingecko",
+  "slug": "nire-notinretardeducation-102k-txns-coingecko",
+  "articleType": "launch-radar",
+  "category": "launchpad",
+  "heroImage": "/images/articles/nire-notinretardeducation-102k-txns-coingecko.webp",
+  "headline": "$NIRE Hits 102K Transactions in 24 Hours as NotInRetardEducation Eyes CoinGecko Listing",
+  "subheadline": "A satirical meme token just did more volume than most mid-cap alts — and it's barely a day old.",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Irony-fueled volume monster",
+  "publishedAt": "2026-02-26T18:55:09+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "NIRE",
+    "Solana",
+    "Launch Radar",
+    "Meme Token"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "NIRE",
+    "name": "NotInRetardEducation",
+    "price": "$0.00188",
+    "marketCap": "$1.87M",
+    "ath": "N/A",
+    "athDrop": "N/A",
+    "recentAction": "+1,131% in 24h with $24.6M volume and 102K transactions on Solana"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "In a market where most meme launches fade before their first birthday candle, NotInRetardEducation ($NIRE) just posted numbers that would make DeFi blue chips jealous: $24.6 million in 24-hour volume, 102,103 transactions, and an 1,131% price surge — all within its first day of active trading on Solana."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$24.6M in 24h volume with 102K+ transactions — that's institutional-grade activity on a meme token that launched yesterday",
+        "Buy ratio sitting at 57.8% with $183K liquidity — buyers still slightly outpacing sellers despite the 11x move",
+        "CoinGecko listing application submitted — the legitimacy play has begun"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What Makes This One Different"
+    },
+    {
+      "type": "paragraph",
+      "text": "The name is the thesis. NotInRetardEducation leans fully into the self-deprecating degen culture that Crypto Twitter thrives on — the idea that being 'not in retard education' is somehow a badge of honor in a market where the most sophisticated analysis often amounts to 'chart looks bullish bro.' It's satirical, it's uncomfortable, and it's resonating hard enough to generate more daily transactions than most Solana DEX pairs see in a week."
+    },
+    {
+      "type": "paragraph",
+      "text": "The community has organized fast. A dedicated X community with growing membership, a Telegram group at t.me/NotInRetardEducation0, and a website at notinretardeducation.com — all standing up within the first 24 hours. That kind of infrastructure speed typically signals either a well-funded operation or a genuinely motivated community. Given the satirical angle, the latter seems more likely."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers So Far"
+    },
+    {
+      "type": "paragraph",
+      "text": "At time of writing, $NIRE trades at $0.00188 with a market cap of $1.87M. That ratio of volume-to-market-cap is absurd — the token is doing roughly 13x its market cap in daily volume. For context, even hyper-liquid meme tokens like BONK typically run 0.5-2x their mcap in daily volume during peak activity."
+    },
+    {
+      "type": "paragraph",
+      "text": "The pair is roughly 24 hours old with 7 active trading pairs across Solana DEXs. Liquidity sits at $183K — thin enough to make large positions dangerous, but deep enough that this isn't a pure zero-liquidity honeypot. The buy/sell ratio of 57.8% suggests organic accumulation rather than coordinated pump mechanics. 59,046 buys against 43,057 sells is the kind of organic-looking flow that sustains momentum."
+    },
+    {
+      "type": "heading",
+      "text": "Red Flags Check"
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "Token is on a pump.fun address — standard for Solana meme launches, but inherently higher risk",
+        "Only 24 hours old — no track record, no proven team, no audit",
+        "$183K liquidity supporting a $1.87M mcap — a 10:1 mcap-to-liquidity ratio means a large sell could crater the price",
+        "Satirical name limits mainstream CEX listing potential — Binance and Coinbase won't touch this branding",
+        "No verified team — community-driven is appealing until it means nobody's accountable"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The CoinGecko Angle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The community has already submitted a CoinGecko listing application, which is the first step in the legitimacy ladder for Solana meme tokens. A CoinGecko listing brings price tracking, portfolio integration, and visibility to the normie crypto audience that doesn't spend its days on DexScreener. It's also a prerequisite for many portfolio trackers and aggregators — getting listed there often triggers a secondary wave of volume from users who discover tokens through CoinGecko's trending page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether CoinGecko approves the listing with that name is another question entirely. But the application itself shows the community is thinking beyond the initial pump — they want stickiness."
+    },
+    {
+      "type": "heading",
+      "text": "Who's In"
+    },
+    {
+      "type": "paragraph",
+      "text": "No major KOL callouts have been confirmed at time of writing. The 102K transaction count suggests broad-based retail participation rather than whale-driven accumulation. The X community is growing organically, and the Telegram group appears active with real discussion rather than bot spam. This is currently a grassroots play — which is either the beginning of a PEPE-style organic movement or the peak of a 24-hour flash in the pan."
+    },
+    {
+      "type": "heading",
+      "text": "The Bear Case"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's be honest: the name alone disqualifies this from most institutional radar. The satirical angle that drives community engagement also caps the ceiling — there's only so far 'retard education' branding can go in a market increasingly under regulatory scrutiny. The 24-hour-old pair means all this volume could evaporate as fast as it appeared. And pump.fun tokens have a survival rate measured in single-digit percentages past their first week."
+    },
+    {
+      "type": "paragraph",
+      "text": "That $183K liquidity is a double-edged sword. It's enough to trade small positions, but any whale deciding to take profit on a meaningful bag would send the chart through the floor. At 13x volume-to-mcap ratios, a lot of that transaction count is likely rapid-fire trading rather than conviction holds."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "🟡 SPECULATIVE — $NIRE is doing things that most meme tokens never achieve: six-figure transaction counts, eight-figure volume, and genuine community infrastructure — all in day one. The satirical angle is either its greatest strength (CT loves self-deprecating humor) or its fatal flaw (no serious exchange will list this name). The CoinGecko application shows forward-thinking, but this is still a pump.fun token less than 48 hours old. Watch the volume trend over the next 24 hours — if it sustains above $10M daily, the community thesis has legs. If it drops 80%, you got a classic day-one pump."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is NotInRetardEducation ($NIRE)?",
+          "answer": "NIRE is a satirical meme token on Solana that launched via pump.fun. It parodies degen trading culture with a self-deprecating name and has generated $24.6M in 24-hour trading volume with over 102,000 transactions."
+        },
+        {
+          "question": "Is $NIRE safe to trade?",
+          "answer": "NIRE is a pump.fun meme token less than 48 hours old with $183K in liquidity. While the transaction metrics are impressive, the token carries all standard meme token risks including low liquidity relative to market cap, no audit, and no verified team. Only risk what you can afford to lose completely."
+        },
+        {
+          "question": "Where can I buy $NIRE?",
+          "answer": "NIRE trades on Solana DEXs including Jupiter and Raydium. The token contract address is 7nePAcJhg88s1KFJptgaBvzYgHaUDzddgU65Etvtpump. Always verify the contract address before trading to avoid scam tokens with similar names."
+        }
+      ]
+    }
+  ]
+}

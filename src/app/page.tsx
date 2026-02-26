@@ -78,7 +78,9 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-6">
-      <TickerBar coins={coins.slice(0, 10)} />
+      <div className="-mx-4">
+        <TickerBar coins={coins.slice(0, 10)} />
+      </div>
 
       {/* Fear & Greed */}
       <div className={`rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>

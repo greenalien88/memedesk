@@ -11,7 +11,7 @@ export default function TickerBar({ coins }: { coins: Coin[] }) {
   const tickerItems = [...coins, ...coins];
   return (
     <div className="w-full overflow-hidden border-y border-white/10 bg-black/60 backdrop-blur">
-      <div className="ticker-track flex w-max gap-8 px-6 py-3 text-sm">
+      <div className="ticker-track flex w-max gap-8 px-6 py-2 text-sm">
         {tickerItems.map((coin, index) => (
           <div key={`${coin.id}-${index}`} className="flex items-center gap-2 whitespace-nowrap">
             <span className="font-semibold text-white">{coin.symbol}</span>

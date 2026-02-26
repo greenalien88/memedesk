@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
+const GA_ID = 'G-0M41FD1JT5';
 
 const BASE_URL = 'https://memedesk.co';
 const OG_IMAGE = `${BASE_URL}/images/og/memedesk-og.webp`;
@@ -76,6 +79,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
         <Header />
         <main className="mx-auto min-h-screen w-full max-w-6xl px-4 py-8">{children}</main>
         <Footer />

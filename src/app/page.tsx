@@ -197,12 +197,12 @@ export default async function HomePage() {
           <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
         </div>
 
-        {/* Sponsored — Jupiter × Sushi — 300×250 Medium Rectangle */}
+        {/* Sponsored — Jupiter × Sushi */}
         <a
           href="https://jup.ag"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative w-full sm:w-[300px] h-[250px] shrink-0 flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition"
+          className="group relative flex-1 w-full h-[250px] flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition"
           style={{ background: 'linear-gradient(135deg, #0d1b3e 0%, #1a1040 50%, #0f2744 100%)' }}
         >
           {/* Glow */}

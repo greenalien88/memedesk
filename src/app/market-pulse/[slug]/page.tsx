@@ -385,6 +385,46 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
+          if (block.type === 'kolList') {
+            const badgeColors: Record<string, string> = {
+              blue: 'border-blue-400/40 bg-blue-400/10 text-blue-300',
+              purple: 'border-purple-400/40 bg-purple-400/10 text-purple-300',
+              emerald: 'border-emerald-400/40 bg-emerald-400/10 text-emerald-300',
+              yellow: 'border-yellow-400/40 bg-yellow-400/10 text-yellow-300',
+              red: 'border-red-400/40 bg-red-400/10 text-red-300',
+            };
+            return (
+              <div key={i} className="my-6 space-y-3">
+                <div className="text-xs font-semibold uppercase tracking-wider text-white/40">📣 Who&apos;s Calling It</div>
+                {(block.kols || []).map((kol: any, j: number) => {
+                  const badgeCls = badgeColors[kol.badgeColor] ?? badgeColors.purple;
+                  return (
+                    <div key={j} className="rounded-xl border border-white/10 bg-white/5 p-4">
+                      <div className="mb-2 flex flex-wrap items-center gap-2">
+                        <span className="font-mono text-sm font-bold text-cyan-400">{kol.handle}</span>
+                        {kol.name && <span className="text-sm text-white/50">{kol.name}</span>}
+                        {kol.badge && (
+                          <span className={`rounded-full border px-2 py-0.5 text-xs font-semibold ${badgeCls}`}>
+                            {kol.badge}
+                          </span>
+                        )}
+                        {kol.reach && <span className="ml-auto text-xs text-white/30">{kol.reach}</span>}
+                      </div>
+                      <p className="text-sm text-white/80">{kol.call}</p>
+                      {kol.result && (
+                        <div className="mt-2 text-xs font-semibold text-emerald-400">{kol.result}</div>
+                      )}
+                    </div>
+                  );
+                })}
+                {block.verdict && (
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-white/70 italic">
+                    {block.verdict}
+                  </div>
+                )}
+              </div>
+            );
+          }
           if (block.type === 'redFlags') {
             return (
               <div key={i} className="my-6 rounded-xl border border-red-400/30 bg-red-400/5 p-5">

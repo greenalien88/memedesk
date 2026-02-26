@@ -59,24 +59,37 @@
       "text": "Who's Calling It"
     },
     {
-      "type": "paragraph",
-      "text": "The CT signal on $AgenC is coming almost entirely from Chinese crypto Twitter — specifically from GMGN chain scanner communities that specialize in catching Pump.fun graduates early. Here's who's been posting:"
-    },
-    {
-      "type": "paragraph",
-      "text": "**@LBankUpdates (LBank Exchange — verified):** The biggest catalyst. On February 25, LBank announced a 'World Premiere' listing of $AGENC on their exchange, tagging the project account @a_g_e_n_c and describing it as a 'privacy-preserving AI agent coordination protocol with ZK proofs on Solana.' Exchange listings on CEXs — even mid-tier ones — are classic pump catalysts for meme tokens. LBank is a Seychelles-based exchange that ranks in the top 30 globally by volume. This call had reach."
-    },
-    {
-      "type": "paragraph",
-      "text": "**@LQP2021 (棚哥说加密 — 'Peng Crypto'):** A Chinese CT account running an AI-powered chain scanner for Solana tokens. Called $AgenC from $2.35K market cap and tracked it to $163.5K. A later post documented the move from $350K to $4.9M — a 14x. Using GMGN's chain-scanning tools and the OKX wallet explorer. Low engagement on individual posts (under 200 views) but part of a larger Chinese degen ecosystem that moves in coordinated waves."
-    },
-    {
-      "type": "paragraph",
-      "text": "**@MadeshiaPramod (哈希猎人 — 'Hash Hunter'):** Another Chinese CT scanner account. Called $AgenC at $2.1M market cap, noting it was 'precisely identified by an AI coin selection system.' Documented a $1.96K → $65K run. 67 views on the post. Small account, but consistent with the GMGN community playbook."
-    },
-    {
-      "type": "paragraph",
-      "text": "**The CT verdict:** No major English-language KOLs are calling $AgenC yet. The CT activity is almost entirely in Chinese, from chain-scanner communities, not influential traders with large followings. The LBank listing is the only institutional-level signal. If an English CT name picks this up, expect a second wave. If not, this stays in the Chinese degen orbit."
+      "type": "kolList",
+      "kols": [
+        {
+          "handle": "@LBankUpdates",
+          "name": "LBank Exchange",
+          "badge": "CEX",
+          "badgeColor": "blue",
+          "reach": "Top 30 exchange globally",
+          "call": "Announced a 'World Premiere' listing of $AGENC on Feb 25, tagging @a_g_e_n_c and describing it as a \"privacy-preserving AI agent coordination protocol with ZK proofs on Solana.\"",
+          "result": "🔥 Primary pump catalyst — drove the initial volume surge from launch"
+        },
+        {
+          "handle": "@LQP2021",
+          "name": "棚哥说加密 (Peng Crypto)",
+          "badge": "Chain Scanner",
+          "badgeColor": "purple",
+          "reach": "~107 views per post",
+          "call": "Caught $AgenC from $2.35K market cap and tracked it to $163.5K on launch day. Follow-up post documented the run from $350K → $4.9M using GMGN's chain tools and OKX wallet explorer.",
+          "result": "📈 14x documented — $350K → $4.9M"
+        },
+        {
+          "handle": "@MadeshiaPramod",
+          "name": "哈希猎人 (Hash Hunter)",
+          "badge": "Chain Scanner",
+          "badgeColor": "purple",
+          "reach": "~67 views per post",
+          "call": "Called $AgenC at $2.1M market cap, noting it was \"precisely identified by an AI coin selection system.\" Documented a $1.96K → $65K run.",
+          "result": "📈 $1.96K → $65K documented"
+        }
+      ],
+      "verdict": "⚠️ CT verdict: No major English-language KOLs are calling $AgenC yet. The signal is almost entirely from Chinese chain-scanner communities, not large-following traders. The LBank listing is the only institutional-level catalyst. If an English CT name picks this up, expect a second wave. Until then, it stays in the Chinese degen orbit."
     },
     {
       "type": "heading",

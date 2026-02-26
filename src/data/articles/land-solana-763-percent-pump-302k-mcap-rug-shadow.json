@@ -90,12 +90,13 @@
       "text": "Red Flags Check"
     },
     {
-      "type": "paragraph",
-      "text": "Let's be brutally honest about what we're looking at:"
-    },
-    {
-      "type": "paragraph",
-      "text": "**Pair age: 2.6 hours.** This token is younger than most people's morning commute. There is zero track record, zero history, and zero reason to believe the liquidity will hold.\n\n**Liquidity: $45.6K.** Against $302K market cap, that's a liquidity-to-mcap ratio of about 15%. Not terrible for a Pump.fun grad, but any whale holding 5%+ of supply could nuke this in a single sell.\n\n**No website.** The only social presence is an X community page created today. No Telegram, no Discord, no roadmap. This is pure meme momentum with no infrastructure behind it.\n\n**The Pump.fun graduation problem.** Perplexity's analysis notes that Solana meme coins launched through Pump.fun carry an estimated 98% rug-pull rate post-launch. That's not a typo. Ninety-eight percent."
+      "type": "redFlags",
+      "flags": [
+        "Pair age: 2.6 hours — zero track record, no reason to believe liquidity will hold",
+        "Liquidity: $45.6K against $302K mcap (15% ratio) — a 5%+ holder can nuke price in a single sell",
+        "No website, no Telegram, no Discord — only social presence is an X community page created today",
+        "Pump.fun-launched Solana meme coins carry an estimated 98% rug-pull rate post-launch"
+      ]
     },
     {
       "type": "heading",

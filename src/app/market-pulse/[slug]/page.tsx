@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -231,6 +232,26 @@ function getReadingTime(body: Article['body']): number {
   }, 0);
   return Math.max(1, Math.ceil(words / 200));
 }
+
+// Inline markdown renderer: handles **bold**, *italic*, newlines
+function renderMd(text: string) {
+  if (!text) return null;
+  const lines = text.split('\n');
+  return lines.map((line, li) => {
+    const parts: React.ReactNode[] = [];
+    const regex = /\*\*([^*]+)\*\*|\*([^*]+)\*/g;
+    let last = 0, m;
+    while ((m = regex.exec(line)) !== null) {
+      if (m.index > last) parts.push(line.slice(last, m.index));
+      if (m[1] !== undefined) parts.push(<strong key={m.index}>{m[1]}</strong>);
+      else if (m[2] !== undefined) parts.push(<em key={m.index}>{m[2]}</em>);
+      last = m.index + m[0].length;
+    }
+    if (last < line.length) parts.push(line.slice(last));
+    return <Fragment key={li}>{parts}{li < lines.length - 1 && <br />}</Fragment>;
+  });
+}
+
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -657,13 +678,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             return (
               <div key={i} className={`my-6 rounded-xl border border-${ratingColor}-400/30 bg-${ratingColor}-400/5 p-5`}>
                 <div className={`mb-2 text-xs font-semibold uppercase tracking-wider text-${ratingColor}-400`}>🎯 Verdict</div>
-                <p className="text-sm leading-relaxed text-white/80">{block.content || block.text}</p>
+                <p className="text-sm leading-relaxed text-white/80">{renderMd(block.content || block.text || '')}</p>
               </div>
             );
           }
           return (
             <p key={i} className="leading-relaxed text-white/80">
-              {block.text || block.content}
+              {renderMd(block.text || block.content || '')}
             </p>
           );
         })}

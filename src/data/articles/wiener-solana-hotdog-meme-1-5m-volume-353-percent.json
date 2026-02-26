@@ -102,8 +102,12 @@
       "text": "Red Flags Check"
     },
     {
-      "type": "paragraph",
-      "text": "**Liquidity: $34.4K.** Against $1.5M daily volume, the liquidity pool is paper-thin. Any concentrated sell of $5K+ would cause significant slippage.\n\n**No verified KOL backing.** No major CT accounts detected calling $wiener as of press time. The volume appears driven by DexScreener trending visibility and organic community activity.\n\n**The WienerAI confusion factor.** Perplexity flagged that 'WienerAI' was a separate token from 2024 with a presale narrative. This $wiener is NOT the same token — it's a fresh Pump.fun launch. But the name similarity may cause confusion in search results, which could either help (inherited brand recognition) or hurt (inherited skepticism from the prior project)."
+      "type": "redFlags",
+      "flags": [
+        "Liquidity: $34.4K against $1.5M daily volume — paper-thin pool, any $5K+ sell causes significant slippage",
+        "No verified KOL backing — volume appears driven by DexScreener trending, not CT calls",
+        "WienerAI name confusion — a separate 2024 token with a failed presale narrative; may inherit that skepticism in search results"
+      ]
     },
     {
       "type": "heading",

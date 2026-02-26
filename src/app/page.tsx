@@ -4,6 +4,7 @@ import Image from 'next/image';
 import TickerBar from '@/components/TickerBar';
 import StoryCard from '@/components/StoryCard';
 import ChainBadge from '@/components/ChainBadge';
+import CTFeed from '@/components/CTFeed';
 import staticCoins from '../../data/coins.json';
 import { getAllArticles } from '@/lib/articles';
 import { fetchLiveCoins } from '@/lib/coingecko';
@@ -70,7 +71,7 @@ export default async function HomePage() {
   const articles = getAllArticles();
   const featured = articles[0];
   const secondary = articles.slice(1, 3);
-  const rest = articles.slice(3, 11);
+  const rest = articles.slice(3, 12);
 
   const featuredCat = featured ? (categoryMeta[featured.category || 'news'] || categoryMeta.news) : categoryMeta.news;
   const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/news';
@@ -173,92 +174,100 @@ export default async function HomePage() {
         </div>
       )}
 
-      {/* Fear & Greed + Ad (300×250 Medium Rectangle) */}
-      <div className="flex flex-col sm:flex-row gap-4">
-        {/* Fear & Greed — matched to 300×250 */}
-        <div className={`w-full sm:w-[300px] h-[250px] shrink-0 rounded-2xl border ${style.border} bg-black/60 px-6 py-5 text-sm ${style.color} flex flex-col justify-between`}>
-          <div className="flex items-center gap-3">
-            <span className="text-3xl animate-pulse">{style.emoji}</span>
+      <div className="grid gap-6 lg:grid-cols-4">
+        {/* Sidebar col */}
+        <div className="lg:col-span-1 flex flex-col gap-6">
+          {/* Fear & Greed — matched to 300×250 */}
+          <div className={`w-full h-[250px] shrink-0 rounded-2xl border ${style.border} bg-black/60 px-6 py-5 text-sm ${style.color} flex flex-col justify-between`}>
+            <div className="flex items-center gap-3">
+              <span className="text-3xl animate-pulse">{style.emoji}</span>
+              <div>
+                <div className="font-bold text-lg tracking-wide">{style.label}</div>
+                <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed Index</div>
+              </div>
+            </div>
             <div>
-              <div className="font-bold text-lg tracking-wide">{style.label}</div>
-              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed Index</div>
+              <div className="flex justify-between text-xs opacity-40 mb-1">
+                <span>Extreme Fear</span>
+                <span className="font-bold opacity-80">{fearGreed.value}/100</span>
+                <span>Extreme Greed</span>
+              </div>
+              <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+                <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+              </div>
             </div>
+            <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
           </div>
-          <div>
-            <div className="flex justify-between text-xs opacity-40 mb-1">
-              <span>Extreme Fear</span>
-              <span className="font-bold opacity-80">{fearGreed.value}/100</span>
-              <span>Extreme Greed</span>
-            </div>
-            <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
-              <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
-            </div>
-          </div>
-          <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
+
+          <CTFeed />
         </div>
 
-        {/* Sponsored — Jupiter × Sushi video ad */}
-        <a
-          href="https://jup.ag"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative flex-1 w-full h-[250px] overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition block"
-        >
-          <video
-            src="/jupiter-sushi-ad.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          />
-          <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
-          <div className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
-            <span className="text-white text-sm font-semibold">Jupiter × Sushi</span>
-            <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
-          </div>
-        </a>
-      </div>
+        {/* Main content — 3 cols */}
+        <div className="lg:col-span-3 flex flex-col gap-6">
+          {/* Sponsored — Jupiter × Sushi video ad */}
+          <a
+            href="https://jup.ag"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full h-[250px] overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition block"
+          >
+            <video
+              src="/jupiter-sushi-ad.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+            />
+            <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
+            <div className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
+              <span className="text-white text-sm font-semibold">Jupiter × Sushi</span>
+              <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
+            </div>
+          </a>
 
-      {/* More articles grid */}
-      {rest.length > 0 && (
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-xl font-semibold">More Stories</h2>
-            <Link href="/news" className="text-xs text-emerald-400 hover:text-emerald-300 transition">
-              View all →
-            </Link>
+          {/* More articles grid */}
+          {rest.length > 0 && (
+            <div className="space-y-4">
+              <h2 className="text-xl font-semibold">More Stories</h2>
+              <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                {rest.map((article) => (
+                  <StoryCard key={article.id} article={article} />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Leaderboard ad (728×90) — below last article */}
+          <div className="flex justify-center">
+            <a
+              href="https://jup.ag"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full max-w-[728px] h-[90px] overflow-hidden rounded-xl border border-white/10 hover:border-white/20 transition block"
+            >
+              <video
+                src="/jupiter-sushi-ad.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-full object-cover"
+              />
+              <span className="absolute top-1.5 right-2 text-[9px] text-white/30 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
+              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
+                <span className="text-white text-xs font-semibold">Jupiter × Sushi</span>
+                <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
+              </div>
+            </a>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {rest.map((article) => (
-              <StoryCard key={article.id} article={article} />
-            ))}
+
+          <div className="flex items-center justify-center gap-6 text-xs text-white/40">
+            <span className="text-white/20">← Prev</span>
+            <span className="text-white/60">Page 1</span>
+            <a href=\"#\" className=\"text-emerald-400 hover:text-emerald-300 transition\">Next →</a>
           </div>
         </div>
-      )}
-
-      {/* Leaderboard ad (728×90) — below last article */}
-      <div className="flex justify-center">
-        <a
-          href="https://jup.ag"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative w-full max-w-[728px] h-[90px] overflow-hidden rounded-xl border border-white/10 hover:border-white/20 transition block"
-        >
-          <video
-            src="/jupiter-sushi-ad.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-          />
-          <span className="absolute top-1.5 right-2 text-[9px] text-white/30 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
-          <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
-            <span className="text-white text-xs font-semibold">Jupiter × Sushi</span>
-            <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
-          </div>
-        </a>
       </div>
     </div>
   );

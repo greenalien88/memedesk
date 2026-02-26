@@ -1,0 +1,128 @@
+{
+  "id": "sendy-solana-rug-pull-88-percent-crash-900k-volume",
+  "slug": "sendy-solana-rug-pull-88-percent-crash-900k-volume",
+  "articleType": "post-mortem",
+  "category": "autopsy",
+  "heroImage": "/images/articles/sendy-solana-rug-pull-88-percent-crash-900k-volume.webp",
+  "headline": "$SENDY Crashes 88% on $900K Volume — Another Day, Another Solana Rug in the Pump.fun Era",
+  "subheadline": "From $899K in trading volume to $4K market cap and $5K liquidity — how SENDY became exit liquidity in real time",
+  "signalRating": "shill",
+  "signalEmoji": "🔴",
+  "signalLabel": "Dead on arrival",
+  "publishedAt": "2026-02-26T18:09:38+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "SENDY",
+    "Rug Pull",
+    "Solana",
+    "Post-Mortem",
+    "Pump.fun"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "SENDY",
+    "name": "SENDY",
+    "price": "$0.000004",
+    "marketCap": "$4K",
+    "ath": "$0.00003",
+    "athDrop": "-88%",
+    "recentAction": "-88% crash from ATH with $899K volume, 17,713 transactions, $5K remaining liquidity on Solana PumpSwap"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "SENDY sent, alright. It sent $899,000 worth of volume through its Solana liquidity pool before crashing 88%, leaving behind a $4,000 market cap and $5,000 in liquidity — barely enough to buy a used laptop. Over 17,000 transactions later, most of those traders are holding bags worth less than the gas fees they paid to buy them."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$SENDY crashed 88% from its all-time high despite generating $899K in 24-hour volume and 17,713 transactions on Solana PumpSwap",
+        "Remaining liquidity is just $5K against $4K market cap — the pool is effectively drained",
+        "The 56% buy ratio during the crash suggests new buyers were still entering while the rug was being pulled — textbook exit liquidity farming"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How It Went Down"
+    },
+    {
+      "type": "paragraph",
+      "text": "SENDY followed the most common Pump.fun rug playbook: launch with hype, generate volume through a combination of bot activity and organic FOMO, attract enough buyers to build a tradeable liquidity pool, then systematically drain it. The timeline is brutally efficient — the token generated nearly $900K in volume before most traders realized the chart was a one-way elevator going down."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 17,713 transaction count tells the scale of participation. That's roughly 12 trades per minute sustained over 24 hours. Many of these were likely bots cycling volume to inflate activity metrics, but the sheer number also means real retail traders got caught in the flow. When you see a Solana token with five-figure transaction counts and six-figure volume, it looks legitimate — until it doesn't."
+    },
+    {
+      "type": "heading",
+      "text": "The Red Flags Everyone Missed"
+    },
+    {
+      "type": "paragraph",
+      "text": "In hindsight, the warning signs were visible to anyone looking at the data rather than the chart. The 56% buy ratio during an 88% crash is the most damning number. In a natural selloff, buy ratios typically drop below 40% as sellers overwhelm buyers. A 56% buy ratio during a crash means new money was still flowing in while insiders were dumping. Someone was actively attracting buyers to absorb their selling pressure."
+    },
+    {
+      "type": "paragraph",
+      "text": "The liquidity trajectory tells the story even more clearly. Going from a tradeable pool to just $5K means liquidity was removed — not merely traded away. When LP drains from hundreds of thousands to single-digit thousands, it's not organic selling. It's extraction."
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "$5K remaining liquidity from what was likely a much larger pool — classic LP drain",
+        "56% buy ratio during -88% crash means new buyers were being farmed as exit liquidity",
+        "17,713 transactions inflated by likely bot activity to create appearance of organic interest",
+        "PumpSwap origin with no locked liquidity, no verified team, no contract audit",
+        "$4K market cap means recovering to previous levels would require 8x from current price — statistically unlikely for rugged tokens"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Receipts"
+    },
+    {
+      "type": "paragraph",
+      "text": "The on-chain math is simple: $899K flowed through the token. $5K remains in the pool. The delta — roughly $894K — went somewhere. Without a detailed wallet trace (which we encourage any affected traders to perform), the most likely destination is the wallets that seeded the initial liquidity and accumulated tokens before the public pump. This is the Pump.fun business model operating exactly as designed: frictionless token creation enables frictionless value extraction."
+    },
+    {
+      "type": "heading",
+      "text": "Lessons for Degens"
+    },
+    {
+      "type": "paragraph",
+      "text": "SENDY is a textbook case study in what to watch for. First: liquidity depth matters more than volume. $899K in volume sounds impressive, but if liquidity can be pulled at any time, volume is just a measure of how many people got extracted. Second: buy ratios during price drops are more informative than buy ratios during pumps. A healthy correction sees buy ratios below 45%. If the ratio stays above 50% while price tanks, someone is manufacturing demand to exit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Third: on Pump.fun-originated tokens, assume liquidity is unlocked unless proven otherwise. The platform's entire value proposition is fast, permissionless token launches — which is exactly the feature set that makes rugs trivially easy. Not every Pump.fun token is a rug, but every rug on Solana started on Pump.fun."
+    },
+    {
+      "type": "heading",
+      "text": "The Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "SENDY is dead. $4K market cap and $5K liquidity mean there is no recovery path. The 17,713 traders who interacted with this token collectively contributed to $899K in volume, and the vast majority of that value is now in someone else's wallet. This isn't the first Pump.fun rug and it won't be the last, but the scale — nearly a million dollars in extracted volume — makes it worth documenting. If you were in SENDY: the lesson costs what it costs. If you weren't: screenshot this for the next time a Solana token with no locked LP shows you a pretty chart."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Is SENDY confirmed as a rug pull?",
+          "answer": "The on-chain evidence strongly suggests it: 88% price crash, liquidity drained from the pool to just $5K, and a 56% buy ratio during the crash indicating manufactured demand. While we can't definitively confirm intent without wallet analysis, the pattern is consistent with an intentional liquidity extraction."
+        },
+        {
+          "question": "Can SENDY recover?",
+          "answer": "Extremely unlikely. At $4K market cap with $5K liquidity, the token would need an 8x just to return to its recent high — and there's no catalyst, community, or liquidity to support such a move. Rugged tokens occasionally see small dead-cat bounces from bottom-fishers, but sustained recovery is virtually unheard of."
+        },
+        {
+          "question": "How much did traders lose?",
+          "answer": "With $899K in volume flowing through the token and only $5K remaining in liquidity, approximately $894K was extracted from the trading pool. Individual losses vary based on entry/exit timing, but the aggregate damage is substantial for a sub-$1M token."
+        },
+        {
+          "question": "How can I avoid tokens like SENDY?",
+          "answer": "Check liquidity lock status before buying — if LP isn't locked or burned, the deployer can pull it anytime. Watch for suspicious buy ratios during price drops (above 50% during a crash is a red flag). Verify the contract on Solana explorers. And on Pump.fun-originated tokens, treat any position as a pure gamble unless you've verified the LP situation yourself."
+        }
+      ]
+    }
+  ]
+}

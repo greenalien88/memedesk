@@ -173,57 +173,65 @@ export default async function HomePage() {
         </div>
       )}
 
-      {/* Fear & Greed + Ad */}
-      <div className="flex flex-col sm:flex-row gap-4 items-stretch">
-        {/* Fear & Greed */}
-        <div className={`shrink-0 w-full sm:w-64 rounded-2xl border ${style.border} bg-black/60 px-5 py-4 text-sm ${style.color}`}>
+      {/* Fear & Greed + Ad (300×250 Medium Rectangle) */}
+      <div className="flex flex-col sm:flex-row gap-4">
+        {/* Fear & Greed — matched to 300×250 */}
+        <div className={`w-full sm:w-[300px] h-[250px] shrink-0 rounded-2xl border ${style.border} bg-black/60 px-6 py-5 text-sm ${style.color} flex flex-col justify-between`}>
           <div className="flex items-center gap-3">
-            <span className="text-2xl animate-pulse">{style.emoji}</span>
+            <span className="text-3xl animate-pulse">{style.emoji}</span>
             <div>
-              <div className="font-bold text-base tracking-wide">{style.label}</div>
-              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed: {fearGreed.value}/100</div>
+              <div className="font-bold text-lg tracking-wide">{style.label}</div>
+              <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed Index</div>
             </div>
           </div>
-          <div className="mt-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-            <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+          <div>
+            <div className="flex justify-between text-xs opacity-40 mb-1">
+              <span>Extreme Fear</span>
+              <span className="font-bold opacity-80">{fearGreed.value}/100</span>
+              <span>Extreme Greed</span>
+            </div>
+            <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
+              <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
+            </div>
           </div>
-          <div className="mt-2 text-xs italic opacity-40">&ldquo;{style.quip}&rdquo;</div>
+          <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
         </div>
 
-        {/* Sponsored — Jupiter × Sushi */}
+        {/* Sponsored — Jupiter × Sushi — 300×250 Medium Rectangle */}
         <a
           href="https://jup.ag"
           target="_blank"
           rel="noopener noreferrer"
-          className="group relative flex-1 flex items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition min-h-[80px]"
+          className="group relative w-full sm:w-[300px] h-[250px] shrink-0 flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition"
           style={{ background: 'linear-gradient(135deg, #0d1b3e 0%, #1a1040 50%, #0f2744 100%)' }}
         >
-          {/* Subtle radial glow */}
-          <div className="absolute inset-0 opacity-30" style={{ background: 'radial-gradient(ellipse at 30% 50%, #2d6a4f33, transparent 60%), radial-gradient(ellipse at 70% 50%, #6d28d933, transparent 60%)' }} />
+          {/* Glow */}
+          <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(ellipse at 30% 40%, #16a34a22, transparent 55%), radial-gradient(ellipse at 70% 60%, #7c3aed22, transparent 55%)' }} />
 
           {/* Sponsored label */}
-          <span className="absolute top-2 right-3 text-[10px] text-white/30 tracking-widest uppercase">Sponsored</span>
+          <span className="absolute top-2.5 right-3 text-[10px] text-white/25 tracking-widest uppercase">Sponsored</span>
 
-          {/* Content */}
-          <div className="relative flex items-center gap-4 px-6">
-            {/* Jupiter logo */}
-            <div className="flex items-center gap-2">
-              {/* Jupiter green swirl approximation */}
-              <span className="text-3xl">🌀</span>
-              <span className="font-bold text-white text-lg tracking-tight">Jupiter</span>
+          {/* Logos + branding */}
+          <div className="relative flex flex-col items-center gap-4">
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-1.5">
+                <span className="text-2xl">🌀</span>
+                <span className="font-bold text-white text-xl tracking-tight">Jupiter</span>
+              </div>
+              <span className="text-white/30 text-lg">×</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-2xl">🍣</span>
+                <span className="font-bold text-white text-xl tracking-tight">Sushi</span>
+              </div>
             </div>
-            <span className="text-white/40 text-xl font-light">×</span>
-            {/* Sushi */}
-            <div className="flex items-center gap-2">
-              <span className="text-3xl">🍣</span>
-              <span className="font-bold text-white text-lg tracking-tight">Sushi</span>
-            </div>
+            <p className="text-white/50 text-xs text-center px-6">Welcome to Solana. Swap tokens with best-in-class routing.</p>
+            <span className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 border border-emerald-500/30 px-4 py-1.5 text-xs font-semibold text-emerald-300 group-hover:bg-emerald-500/30 transition">
+              Trade Now →
+            </span>
           </div>
 
-          {/* CTA */}
-          <div className="absolute bottom-2 right-3 text-[11px] text-white/40 group-hover:text-white/60 transition">
-            Trade on Solana →
-          </div>
+          {/* 300×250 label (dev reference) — remove in prod */}
+          {/* <span className="absolute bottom-2 left-3 text-[9px] text-white/15">300×250</span> */}
         </a>
       </div>
 

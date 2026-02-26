@@ -236,6 +236,28 @@ export default async function HomePage() {
           </div>
         </div>
       )}
+
+      {/* Leaderboard ad (728×90) — below last article */}
+      <div className="flex justify-center">
+        <a
+          href="https://jup.ag"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group relative w-full max-w-[728px] h-[90px] overflow-hidden rounded-xl border border-white/10 hover:border-white/20 transition flex items-center justify-center bg-black/40"
+        >
+          <span className="absolute top-1.5 right-2 text-[9px] text-white/30 tracking-widest uppercase">Sponsored</span>
+          <div className="flex items-center gap-4 px-6">
+            <span className="text-2xl">⚡</span>
+            <div>
+              <div className="text-white font-semibold text-sm">Trade Memecoins on Jupiter</div>
+              <div className="text-white/40 text-xs">Best prices. Zero slippage. Solana&apos;s #1 DEX aggregator.</div>
+            </div>
+            <span className="ml-4 shrink-0 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs font-semibold px-4 py-1.5 group-hover:bg-emerald-500/30 transition">
+              Trade Now →
+            </span>
+          </div>
+        </a>
+      </div>
     </div>
   );
 }

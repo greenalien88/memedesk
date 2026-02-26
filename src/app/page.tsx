@@ -5,6 +5,7 @@ import TickerBar from '@/components/TickerBar';
 import StoryCard from '@/components/StoryCard';
 import ChainBadge from '@/components/ChainBadge';
 import CTFeed from '@/components/CTFeed';
+import Pagination from '@/components/Pagination';
 import staticCoins from '../../data/coins.json';
 import { getAllArticles } from '@/lib/articles';
 import { fetchLiveCoins } from '@/lib/coingecko';
@@ -72,6 +73,8 @@ export default async function HomePage() {
   const featured = articles[0];
   const secondary = articles.slice(1, 3);
   const rest = articles.slice(3, 12);
+  const ARTICLES_PER_PAGE = 9;
+  const totalPages = 1 + Math.ceil(Math.max(0, articles.length - 12) / ARTICLES_PER_PAGE);
 
   const featuredCat = featured ? (categoryMeta[featured.category || 'news'] || categoryMeta.news) : categoryMeta.news;
   const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/news';
@@ -262,11 +265,7 @@ export default async function HomePage() {
             </a>
           </div>
 
-          <div className="flex items-center justify-center gap-6 text-xs text-white/40">
-            <span className="text-white/20">← Prev</span>
-            <span className="text-white/60">Page 1</span>
-            <a href="#" className="text-emerald-400 hover:text-emerald-300 transition">Next →</a>
-          </div>
+          <Pagination currentPage={1} totalPages={totalPages} />
         </div>
       </div>
     </div>

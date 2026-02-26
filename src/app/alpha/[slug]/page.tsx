@@ -409,6 +409,45 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
+          if (block.type === 'callout') {
+            const variants: Record<string, string> = {
+              warning: 'border-yellow-400/30 bg-yellow-400/5 text-yellow-400',
+              info: 'border-blue-400/30 bg-blue-400/5 text-blue-400',
+              success: 'border-emerald-400/30 bg-emerald-400/5 text-emerald-400',
+              danger: 'border-red-400/30 bg-red-400/5 text-red-400',
+            };
+            const style = variants[block.variant] || variants.info;
+            const [labelColor] = style.split(' ').slice(-1);
+            return (
+              <div key={i} className={`my-6 rounded-xl border p-5 ${style}`}>
+                {block.title && <div className={`mb-2 text-xs font-semibold uppercase tracking-wider ${labelColor}`}>⚡ {block.title}</div>}
+                {(block.content || '').split('\\n').filter(Boolean).map((line: string, j: number) => (
+                  <p key={j} className="text-sm text-white/80 leading-relaxed">{line.replace(/^•\\s*/, '')}</p>
+                ))}
+              </div>
+            );
+          }
+          if (block.type === 'statGrid') {
+            return (
+              <div key={i} className="my-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                {(block.stats || []).map((stat: any, j: number) => (
+                  <div key={j} className="rounded-xl border border-white/10 bg-white/5 p-3 text-center">
+                    <div className="text-lg font-bold text-white">{stat.value}</div>
+                    <div className="text-xs text-white/40 mt-0.5">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            );
+          }
+          if (block.type === 'verdict') {
+            const ratingColor = block.rating === 'legit' ? 'emerald' : block.rating === 'shill' ? 'red' : 'yellow';
+            return (
+              <div key={i} className={`my-6 rounded-xl border border-${ratingColor}-400/30 bg-${ratingColor}-400/5 p-5`}>
+                <div className={`mb-2 text-xs font-semibold uppercase tracking-wider text-${ratingColor}-400`}>🎯 Verdict</div>
+                <p className="text-sm leading-relaxed text-white/80">{block.content || block.text}</p>
+              </div>
+            );
+          }
           return (
             <p key={i} className="leading-relaxed text-white/80">
               {block.text}

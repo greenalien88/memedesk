@@ -55,6 +55,52 @@
       "text": "The graduation moved it from Pump.fun's bonding curve to Raydium via a `graduatedPool` address, unlocking open-market trading on Jupiter. The Runners list is Jupiter's curated view of tokens that have shown sustained momentum post-graduation — and $AgenC hit it on February 25 at 11:51 PM UTC, roughly 24 hours after launch. That's fast. It means it didn't dump immediately, which is the fate of most Pump.fun graduates."
     },
     {
+      "type": "statGrid",
+      "stats": [
+        {
+          "label": "Price",
+          "value": "$0.00203",
+          "note": "+11.4% (1h) / -45.4% (24h)",
+          "highlight": "red"
+        },
+        {
+          "label": "Market Cap",
+          "value": "$2.03M",
+          "note": "Peak: ~$4.9M"
+        },
+        {
+          "label": "24h Volume",
+          "value": "$3.72M",
+          "note": "$1.81M buy / $1.91M sell"
+        },
+        {
+          "label": "Liquidity",
+          "value": "$158.5K"
+        },
+        {
+          "label": "Holders",
+          "value": "3,828",
+          "note": "-10.5% in 24h"
+        },
+        {
+          "label": "Buy/Sell Ratio",
+          "value": "53.5% buys",
+          "note": "15,391 buys vs 13,375 sells"
+        },
+        {
+          "label": "Pair Age",
+          "value": "~2 days",
+          "note": "Launched Feb 24"
+        },
+        {
+          "label": "Organic Score",
+          "value": "75 / 100",
+          "note": "Medium — Jupiter rated",
+          "highlight": "green"
+        }
+      ]
+    },
+    {
       "type": "heading",
       "text": "Who's Calling It"
     },
@@ -96,28 +142,55 @@
       "text": "Who's Behind It"
     },
     {
-      "type": "paragraph",
-      "text": "The official Twitter account is @tetsuoai. The website is agenc.tech. The project is positioning as a 'privacy-preserving AI agent coordination protocol with ZK proofs' on Solana — a project that sits at the intersection of two hot 2026 metas: AI agents and ZK privacy. That's a compelling narrative on paper. AI agent tokens were one of the dominant themes of late 2025, and ZK technology gives it a technical credibility layer that most meme coins don't bother with."
-    },
-    {
-      "type": "paragraph",
-      "text": "Whether the tech is real is a different question. The project has a website, a Telegram community at t.me/agenc_community, and a token that graduated from Pump.fun on its launch day. That's more than most. But a ZK AI protocol built on top of a Pump.fun launch is unusual — most legitimate ZK projects launch differently. The dev wallet still holds 10.3% of supply, and there have been 2 dev migrations and 2 dev mints noted on-chain, which warrants caution."
+      "type": "projectCard",
+      "fields": [
+        {
+          "label": "Twitter",
+          "value": "@tetsuoai",
+          "url": "https://x.com/tetsuoai"
+        },
+        {
+          "label": "Telegram",
+          "value": "t.me/agenc_community",
+          "url": "https://t.me/agenc_community"
+        },
+        {
+          "label": "Website",
+          "value": "agenc.tech",
+          "url": "https://agenc.tech"
+        },
+        {
+          "label": "Chain",
+          "value": "Solana"
+        },
+        {
+          "label": "Launchpad",
+          "value": "Pump.fun"
+        },
+        {
+          "label": "Dev Wallet",
+          "value": "10.3% of supply"
+        }
+      ],
+      "note": "The ZK + AI agent narrative is compelling on paper. Whether the tech is real or purely a marketing angle is unverified — treat it as narrative, not confirmed infrastructure."
     },
     {
       "type": "heading",
       "text": "Red Flags Check"
     },
     {
-      "type": "paragraph",
-      "text": "The good news first: mint authority is disabled ✅ and freeze authority is disabled ✅ — meaning the dev can't print new tokens or freeze your wallet. Those are the two most important trust signals for any Solana token."
-    },
-    {
-      "type": "paragraph",
-      "text": "Now the rest:"
-    },
-    {
-      "type": "paragraph",
-      "text": "• **Top holders: 40.6%** — The top wallets collectively control nearly half the supply. Jupiter flags this as `highSingleOwnership`. That's a significant concentration risk. If one of those wallets exits, the chart feels it immediately. • **Dev balance: 10.3%** — The developer still holds over a tenth of the total supply. On a $2M cap, that's ~$210K worth. Dev wallets dumping is the most common death event for Pump.fun graduates. • **Snipers: 13.2%** — Snipers bought in at launch before most retail could get a position. They're now sitting on profit at almost any price above the opening seconds. They will sell. • **Bot holders: 572 wallets (17.2%)** — Over one in six holders is classified as a bot by Jupiter's analysis. The organic buyer count in the last 24h was only 262 out of 5,261 total traders. That's 5% organic activity. The volume looks big; the human participation behind it is much smaller. • **Dev migrations: 2, Dev mints: 2** — These are on-chain footprints that show the developer moved funds and minted tokens after launch. Worth watching."
+      "type": "redFlags",
+      "safe": [
+        "Mint authority disabled ✅ — dev cannot print new tokens",
+        "Freeze authority disabled ✅ — dev cannot freeze your wallet"
+      ],
+      "flags": [
+        "Top holders: 40.6% of supply — Jupiter flags highSingleOwnership. One big exit tanks the chart.",
+        "Dev balance: 10.3% (~$210K at current cap) — dev wallet dumping is the #1 death event for Pump.fun graduates.",
+        "Snipers: 13.2% — bought at launch before retail could enter. Already in profit. They will sell.",
+        "Bot holders: 572 wallets (17.2%) — only 262 of 5,261 daily traders were organic buyers. 5% genuine human activity behind the volume.",
+        "Dev migrations: 2, Dev mints: 2 — on-chain footprints showing the dev moved funds and minted tokens after launch."
+      ]
     },
     {
       "type": "heading",

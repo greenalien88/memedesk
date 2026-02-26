@@ -385,6 +385,42 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
+          if (block.type === 'statGrid') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">📊 The Numbers</div>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {(block.stats || []).map((s: any, j: number) => (
+                    <div key={j} className="rounded-lg border border-white/5 bg-white/5 p-3">
+                      <div className="text-xs text-white/40">{s.label}</div>
+                      <div className={`mt-1 text-sm font-bold ${s.highlight === 'green' ? 'text-emerald-400' : s.highlight === 'red' ? 'text-red-400' : 'text-white'}`}>{s.value}</div>
+                      {s.note && <div className="mt-0.5 text-xs text-white/30">{s.note}</div>}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+          if (block.type === 'projectCard') {
+            return (
+              <div key={i} className="my-6 rounded-xl border border-white/10 bg-white/5 p-5">
+                <div className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/40">🔍 Project Info</div>
+                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+                  {(block.fields || []).map((f: any, j: number) => (
+                    <div key={j} className="rounded-lg border border-white/5 bg-white/5 p-3">
+                      <div className="text-xs text-white/40">{f.label}</div>
+                      {f.url ? (
+                        <a href={f.url} target="_blank" rel="noopener noreferrer" className="mt-1 block truncate text-sm font-semibold text-cyan-400 hover:underline">{f.value}</a>
+                      ) : (
+                        <div className="mt-1 text-sm font-semibold text-white">{f.value}</div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                {block.note && <p className="mt-3 text-xs italic text-white/40">{block.note}</p>}
+              </div>
+            );
+          }
           if (block.type === 'kolList') {
             const badgeColors: Record<string, string> = {
               blue: 'border-blue-400/40 bg-blue-400/10 text-blue-300',
@@ -427,15 +463,29 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           }
           if (block.type === 'redFlags') {
             return (
-              <div key={i} className="my-6 rounded-xl border border-red-400/30 bg-red-400/5 p-5">
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-red-400">🚩 Red Flags</div>
-                <ul className="space-y-2">
-                  {(block.flags || []).map((flag: string, j: number) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-white/80">
-                      <span className="mt-0.5 text-red-400">⚠️</span> {flag}
-                    </li>
-                  ))}
-                </ul>
+              <div key={i} className="my-6 space-y-2">
+                {block.safe?.length > 0 && (
+                  <div className="rounded-xl border border-emerald-400/30 bg-emerald-400/5 p-4">
+                    <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-emerald-400">✅ Green Flags</div>
+                    <ul className="space-y-1">
+                      {(block.safe || []).map((flag: string, j: number) => (
+                        <li key={j} className="flex items-start gap-2 text-sm text-white/80">
+                          <span className="mt-0.5 text-emerald-400">✓</span> {flag}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                <div className="rounded-xl border border-red-400/30 bg-red-400/5 p-4">
+                  <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-red-400">🚩 Red Flags</div>
+                  <ul className="space-y-2">
+                    {(block.flags || []).map((flag: string, j: number) => (
+                      <li key={j} className="flex items-start gap-2 text-sm text-white/80">
+                        <span className="mt-0.5 text-red-400">⚠️</span> {flag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             );
           }

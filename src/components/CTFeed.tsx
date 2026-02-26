@@ -25,10 +25,12 @@ const CTFeed = () => {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/10"
+              className="group flex flex-col justify-between h-[200px] overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/10"
             >
-              <div className="text-white/50 text-xs">@{item.author}</div>
-              <div className="mt-2 text-white/80 text-sm line-clamp-4">{item.text}</div>
+              <div>
+                <div className="text-white/50 text-xs">@{item.author}</div>
+                <div className="mt-2 text-white/80 text-sm line-clamp-5">{item.text}</div>
+              </div>
               <div className="mt-3 text-white/40 text-xs">{timeAgo(item.publishedAt)}</div>
             </a>
           ))}

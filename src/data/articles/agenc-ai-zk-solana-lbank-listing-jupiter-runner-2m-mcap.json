@@ -209,16 +209,13 @@
       "text": "The 1-hour chart is showing +11.4% and the 5-minute chart is +5.3% as of the time of writing — so there's active buying happening even after the 45% 24h drawdown. Whether that's the base forming or retail catching a falling knife is the $2M question."
     },
     {
-      "type": "heading",
-      "text": "Verdict"
-    },
-    {
-      "type": "paragraph",
-      "text": "🟡 **Speculative.** $AgenC has three things most Pump.fun runners don't: a real narrative (AI + ZK privacy on Solana), a legitimate exchange listing catalyst (LBank), and enough volume to still be on Jupiter's Runners list 24 hours later. Those are real signals."
-    },
-    {
-      "type": "paragraph",
-      "text": "What makes this a 🟡 and not a 🟢: the 45% drop from peak says the first wave of buyers has already exited. The dev still holds 10.3%. Top wallets control 40.6% of supply. Only 262 of 5,261 daily traders were organic buyers. The Chinese CT community is active, but there's no English-language KOL amplification yet. This token needs a second catalyst — either a known CT name picking it up or the AI narrative catching a broader market tailwind. Until then, it's a wait-and-watch at current levels."
+      "type": "verdict",
+      "rating": "yellow",
+      "emoji": "🟡",
+      "label": "Speculative",
+      "bull": "$AgenC has three things most Pump.fun runners don't: a real narrative (AI + ZK privacy on Solana), a legitimate exchange listing catalyst (LBank), and enough volume to still be on Jupiter's Runners list 24 hours later. Those are real signals.",
+      "bear": "The 45% drop from peak says the first wave of buyers has already exited. The dev still holds 10.3%. Top wallets control 40.6% of supply. Only 262 of 5,261 daily traders were organic buyers. The Chinese CT community is active, but there's no English-language KOL amplification yet.",
+      "watch": "A known CT name picking this up — or the AI narrative catching a broader market tailwind. Without a second catalyst, this is wait-and-watch at current levels."
     },
     {
       "type": "faq",

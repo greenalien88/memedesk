@@ -489,6 +489,43 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
+          if (block.type === 'verdict') {
+            const ratingColors: Record<string, { border: string; bg: string; text: string; badge: string }> = {
+              green:  { border: 'border-emerald-400/40', bg: 'bg-emerald-400/5',  text: 'text-emerald-400', badge: 'bg-emerald-400/20 text-emerald-300' },
+              yellow: { border: 'border-yellow-400/40', bg: 'bg-yellow-400/5',   text: 'text-yellow-400',  badge: 'bg-yellow-400/20 text-yellow-300' },
+              red:    { border: 'border-red-400/40',    bg: 'bg-red-400/5',      text: 'text-red-400',     badge: 'bg-red-400/20 text-red-300' },
+            };
+            const c = ratingColors[block.rating ?? 'yellow'] ?? ratingColors.yellow;
+            return (
+              <div key={i} className={`my-6 rounded-xl border ${c.border} ${c.bg} p-5`}>
+                <div className="mb-4 flex items-center gap-3">
+                  <span className="text-2xl">{block.emoji ?? '🟡'}</span>
+                  <div>
+                    <div className="text-xs font-semibold uppercase tracking-wider text-white/40">Verdict</div>
+                    <div className={`text-base font-bold ${c.text}`}>{block.label ?? 'Speculative'}</div>
+                  </div>
+                </div>
+                {block.bull && (
+                  <div className="mb-3">
+                    <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-emerald-400">✅ Why it&apos;s {block.emoji}</div>
+                    <p className="text-sm leading-relaxed text-white/80">{block.bull}</p>
+                  </div>
+                )}
+                {block.bear && (
+                  <div className="mb-3">
+                    <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-red-400">⚠️ Why not 🟢</div>
+                    <p className="text-sm leading-relaxed text-white/80">{block.bear}</p>
+                  </div>
+                )}
+                {block.watch && (
+                  <div className={`mt-3 rounded-lg border ${c.border} bg-black/20 p-3`}>
+                    <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-white/40">👀 What to watch</div>
+                    <p className="text-sm text-white/70">{block.watch}</p>
+                  </div>
+                )}
+              </div>
+            );
+          }
           if (block.type === 'faq') {
             return (
               <div key={i} className="my-6">

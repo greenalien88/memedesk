@@ -136,7 +136,7 @@ export default async function HomePage() {
                 <Link key={article.id} href={href} className="group flex-1">
                   <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/10">
                     {article.heroImage && (
-                      <div className="relative aspect-[2/1] w-full overflow-hidden">
+                      <div className="relative aspect-[16/9] w-full overflow-hidden">
                         <Image
                           src={article.heroImage}
                           alt={article.headline}

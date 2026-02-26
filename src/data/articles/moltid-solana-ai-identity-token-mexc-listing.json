@@ -1,0 +1,121 @@
+{
+  "id": "moltid-solana-ai-identity-token-mexc-listing",
+  "slug": "moltid-solana-ai-identity-token-mexc-listing",
+  "articleType": "launch-radar",
+  "category": "launchpad",
+  "heroImage": "/images/articles/moltid-solana-ai-identity-token-mexc-listing.webp",
+  "headline": "$MOLTID Surges 183% as Solana's AI Identity Token Lands MEXC Listing",
+  "subheadline": "MoltID bridges AI agents and blockchain identity with Metaplex NFTs — and now a major exchange is paying attention",
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "AI meets identity on-chain",
+  "publishedAt": "2026-02-26T22:06:56+08:00",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "MOLTID",
+    "Solana",
+    "AI",
+    "MEXC",
+    "Launch Radar",
+    "Identity"
+  ],
+  "chain": "SOL",
+  "tokenData": {
+    "symbol": "MOLTID",
+    "name": "MoltID",
+    "price": "$0.001",
+    "marketCap": "$1M",
+    "ath": "$0.0015",
+    "athDrop": "-33%",
+    "recentAction": "+183% in 24h with $738K volume, 7,428 transactions, $124K liquidity, and 62% buy ratio on Solana. MEXC listing confirmed."
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "In a market drowning in animal tokens and political memes, MoltID is doing something almost radical: building an actual product. The Solana-native token — which surged 183% to a $1M market cap on $738K volume — positions itself as an AI agent identity layer, using Metaplex NFTs to give autonomous agents verifiable on-chain identities. And now MEXC, one of the world's largest crypto exchanges, has taken notice with a confirmed listing."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "$MOLTID surged 183% on Solana with $738K volume, 7,428 transactions, and a healthy 62% buy ratio — one of the strongest utility-backed launches this week",
+        "MEXC exchange listing confirmed, giving MoltID aggregator and CEX visibility that most meme tokens never achieve",
+        "The AI identity angle — using Metaplex NFTs as persistent identities for autonomous agents — taps into the 2026 AI agent boom with genuine technical substance"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What Makes This One Different"
+    },
+    {
+      "type": "paragraph",
+      "text": "MoltID's thesis is straightforward: as AI agents proliferate across DeFi, social media, and commerce, they need verifiable identities. Who built the agent? What's its track record? Can you trust its outputs? MoltID uses Metaplex NFTs as identity containers and autonomous wallets as the action layer — essentially giving AI agents a passport that lives on Solana."
+    },
+    {
+      "type": "paragraph",
+      "text": "Whether this becomes the standard or gets overtaken by a competitor is an open question. But the timing is impeccable. The AI agent narrative has been one of 2026's dominant crypto themes, and MoltID is one of the first tokens to tackle the identity infrastructure layer rather than just slapping 'AI' on a meme."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers So Far"
+    },
+    {
+      "type": "paragraph",
+      "text": "$738K in volume against $1M market cap is a reasonable 0.74x daily turnover — notably lower than the 2-12x ratios seen in pure speculation plays. This suggests more holding behavior than flipping, which aligns with a utility narrative where buyers are betting on the product rather than just riding momentum."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 62% buy ratio is the strongest demand signal in this scan cycle. Above 60% on a token that's already up 183% means new buyers are still entering with conviction. Liquidity at $124K is solid for a $1M cap — roughly 12% liquidity depth, which is healthy by Solana meme standards."
+    },
+    {
+      "type": "paragraph",
+      "text": "The MEXC listing is the headline catalyst. Exchange listings for sub-$5M tokens typically generate a 24-48 hour volume spike as CEX traders who don't use DEXs gain access for the first time. The listing also validates the token in the eyes of aggregators and tracking platforms, creating a discovery flywheel."
+    },
+    {
+      "type": "heading",
+      "text": "Red Flags Check"
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "AI identity is a nascent category — no proven demand for agent passports yet",
+        "The gap between 'utility narrative' and 'shipped utility' is often where meme tokens die",
+        "MEXC listings don't guarantee sustained volume — many listed tokens see post-listing dumps",
+        "7,428 transactions is modest compared to pure meme plays — could indicate limited retail awareness",
+        "Competition from established identity protocols (Worldcoin, ENS) could limit MoltID's niche"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Who's In"
+    },
+    {
+      "type": "paragraph",
+      "text": "The 62% buy ratio and moderate transaction count suggest MoltID is attracting a different crowd than typical meme tokens — likely AI-narrative traders and Solana DeFi participants who see the identity layer thesis as a legitimate bet. The MEXC listing will expose it to a broader audience, but whether retail CEX traders care about AI agent identity infrastructure remains to be seen."
+    },
+    {
+      "type": "heading",
+      "text": "The Verdict"
+    },
+    {
+      "type": "paragraph",
+      "text": "MoltID is one of the rare meme-adjacent tokens that actually has something to say. The AI identity layer thesis is technically interesting, the MEXC listing provides a near-term catalyst, and the on-chain data shows genuine demand rather than pure speculation. But 'interesting thesis' and 'successful token' are different things. The market is littered with good ideas that never shipped, and MoltID needs to deliver actual adoption — AI agents actually using its identity framework — to justify the current cap. For now, it's the most compelling 'utility meme' in this cycle. Whether that's enough depends on whether the product catches up to the narrative."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is MoltID?",
+          "answer": "MoltID is a Solana token that aims to provide verifiable on-chain identities for AI agents using Metaplex NFTs and autonomous wallets. Think of it as a digital passport system for AI bots operating in DeFi and other crypto applications."
+        },
+        {
+          "question": "What does the MEXC listing mean?",
+          "answer": "MEXC is a major centralized crypto exchange. A listing means MoltID becomes tradeable on MEXC's platform, exposing it to millions of CEX users who may not use Solana DEXs. Exchange listings typically generate short-term volume spikes and increase token visibility."
+        },
+        {
+          "question": "Is MoltID just another AI meme coin?",
+          "answer": "MoltID positions itself as utility-first rather than pure meme. The Metaplex NFT identity framework and autonomous wallet integration suggest genuine technical work. However, the gap between whitepaper promises and shipped product is where many tokens fail. The AI identity niche is real but unproven in terms of market demand."
+        }
+      ]
+    }
+  ]
+}

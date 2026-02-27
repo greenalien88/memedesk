@@ -8,7 +8,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/news', label: 'News' },
   { href: '/alpha', label: 'Alpha' },
-  { href: '/launchpad', label: 'Launch Pad' },
   { href: '/autopsy', label: 'Autopsy' },
   { href: '/kol-watch', label: 'KOL Watch' },
   { href: '/market-pulse', label: 'Runner Pulse' },

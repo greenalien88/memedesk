@@ -90,7 +90,6 @@ export const CATEGORY_PATH: Record<string, string> = {
   news: 'news',
   alpha: 'alpha',
   autopsy: 'autopsy',
-  launchpad: 'launchpad',
   'kol-watch': 'kol-watch',
   'market-pulse': 'market-pulse',
   academy: 'academy',

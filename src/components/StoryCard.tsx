@@ -8,7 +8,6 @@ import type { Article } from '@/lib/articles';
 const categoryMeta: Record<string, { label: string; color: string; path: string }> = {
   news: { label: 'News', color: 'border-red-400/40 bg-red-400/10 text-red-300', path: '/news' },
   alpha: { label: 'Alpha', color: 'border-violet-400/40 bg-violet-400/10 text-violet-300', path: '/alpha' },
-  launchpad: { label: 'Launch Pad', color: 'border-emerald-400/40 bg-emerald-400/10 text-emerald-300', path: '/launchpad' },
   autopsy: { label: 'Autopsy', color: 'border-gray-400/40 bg-gray-400/10 text-gray-300', path: '/autopsy' },
   'kol-watch': { label: 'KOL Watch', color: 'border-amber-400/40 bg-amber-400/10 text-amber-300', path: '/kol-watch' },
   'market-pulse': { label: 'Runner Pulse', color: 'border-blue-400/40 bg-blue-400/10 text-blue-300', path: '/market-pulse' },

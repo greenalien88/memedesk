@@ -1,13 +1,13 @@
 {
   "slug": "wiener-solana-hotdog-meme-1-5m-volume-353-percent",
-  "headline": "$wiener Does $1.5M Volume in 20 Hours — The Hot Dog Meme Coin Nobody Asked For",
+  "headline": "$wiener Does $1.5M Volume in 20 Hours \u2014 The Hot Dog Meme Coin Nobody Asked For",
   "subheadline": "A hot dog-themed Pump.fun graduate called 'wiener' is outperforming most of Solana's meme market with 23,800 transactions and a near-perfect buy/sell split.",
   "subtitle": "A hot dog-themed Pump.fun graduate called 'wiener' is outperforming most of Solana's meme market with 23,800 transactions and a near-perfect buy/sell split.",
   "articleType": "launch-radar",
-  "category": "launchpad",
+  "category": "alpha",
   "verdict": "speculative",
   "signalRating": "speculative",
-  "signalEmoji": "🟡",
+  "signalEmoji": "\ud83d\udfe1",
   "signalLabel": "Speculative",
   "heroImage": "/images/articles/wiener-solana-hotdog-meme-1-5m-volume-353-percent.webp",
   "publishedAt": "2026-02-27T06:08:03+08:00",
@@ -32,13 +32,13 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "In the relentless content factory that is Solana's meme coin ecosystem, a hot dog has emerged as one of the top-performing assets of the last 24 hours. $wiener — yes, that's the actual ticker — has ripped 353% since launch, accumulated $1.5 million in trading volume, and drawn nearly 24,000 transactions from degens who apparently see something in a cartoon sausage that the rest of us are missing."
+      "text": "In the relentless content factory that is Solana's meme coin ecosystem, a hot dog has emerged as one of the top-performing assets of the last 24 hours. $wiener \u2014 yes, that's the actual ticker \u2014 has ripped 353% since launch, accumulated $1.5 million in trading volume, and drawn nearly 24,000 transactions from degens who apparently see something in a cartoon sausage that the rest of us are missing."
     },
     {
       "type": "callout",
       "variant": "warning",
       "title": "Quick Take",
-      "content": "• $1.5M volume on a $166K market cap — that's a 9.1x volume-to-mcap ratio, absurdly high even by meme standards\\n• 23,838 transactions in ~20 hours with a 52.2% buy ratio — near equilibrium, suggesting active two-way trading\\n• Website exists: justahotdog.fun — self-aware branding that leans into the absurdity"
+      "content": "\u2022 $1.5M volume on a $166K market cap \u2014 that's a 9.1x volume-to-mcap ratio, absurdly high even by meme standards\\n\u2022 23,838 transactions in ~20 hours with a 52.2% buy ratio \u2014 near equilibrium, suggesting active two-way trading\\n\u2022 Website exists: justahotdog.fun \u2014 self-aware branding that leans into the absurdity"
     },
     {
       "type": "heading",
@@ -46,11 +46,11 @@
     },
     {
       "type": "paragraph",
-      "text": "Food meme coins have a surprisingly durable history in crypto. From $SUSHI to $BURGER to the various pizza tokens, the 'edible asset' category has proven that absurdist branding can build genuine communities. $wiener occupies the intersection of food memes and the innuendo-driven humor that CT thrives on — the name is the joke, the joke is the name, and apparently that's enough to generate seven figures in volume."
+      "text": "Food meme coins have a surprisingly durable history in crypto. From $SUSHI to $BURGER to the various pizza tokens, the 'edible asset' category has proven that absurdist branding can build genuine communities. $wiener occupies the intersection of food memes and the innuendo-driven humor that CT thrives on \u2014 the name is the joke, the joke is the name, and apparently that's enough to generate seven figures in volume."
     },
     {
       "type": "paragraph",
-      "text": "The token launched via Pump.fun and graduated to Raydium, now trading across 6 pairs on Solana DEXes. What's notable is the website — justahotdog.fun — which suggests at least some level of planning beyond a pure launch-and-dump. The X community page (created February 15) predates the token's major pump, giving it about 12 days of community building before this breakout."
+      "text": "The token launched via Pump.fun and graduated to Raydium, now trading across 6 pairs on Solana DEXes. What's notable is the website \u2014 justahotdog.fun \u2014 which suggests at least some level of planning beyond a pure launch-and-dump. The X community page (created February 15) predates the token's major pump, giving it about 12 days of community building before this breakout."
     },
     {
       "type": "heading",
@@ -87,7 +87,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The volume-to-mcap ratio of 9.1x is extraordinary. To put this in context, most healthy meme coins see 1-3x daily volume relative to their market cap. At 9.1x, every dollar of $wiener's market cap has been traded through nine times today. This level of churn typically indicates either massive organic interest or heavy bot/wash trading — and the transaction count of 23,838 spread across ~21 hours suggests real engagement rather than a few wallets cycling funds."
+      "text": "The volume-to-mcap ratio of 9.1x is extraordinary. To put this in context, most healthy meme coins see 1-3x daily volume relative to their market cap. At 9.1x, every dollar of $wiener's market cap has been traded through nine times today. This level of churn typically indicates either massive organic interest or heavy bot/wash trading \u2014 and the transaction count of 23,838 spread across ~21 hours suggests real engagement rather than a few wallets cycling funds."
     },
     {
       "type": "heading",
@@ -95,7 +95,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Here's where it gets interesting: the buy ratio is 52.2%. That's almost perfectly balanced. In early-stage meme coins, you typically see either aggressive accumulation (65%+ buys) or distribution (below 45% buys). A 52.2% split after a 353% pump suggests the token has reached a temporary equilibrium — new money flowing in at roughly the same rate as profit-takers cashing out. This can either be a healthy base-building phase before the next leg up, or the calm before a sell cascade."
+      "text": "Here's where it gets interesting: the buy ratio is 52.2%. That's almost perfectly balanced. In early-stage meme coins, you typically see either aggressive accumulation (65%+ buys) or distribution (below 45% buys). A 52.2% split after a 353% pump suggests the token has reached a temporary equilibrium \u2014 new money flowing in at roughly the same rate as profit-takers cashing out. This can either be a healthy base-building phase before the next leg up, or the calm before a sell cascade."
     },
     {
       "type": "heading",
@@ -104,9 +104,9 @@
     {
       "type": "redFlags",
       "flags": [
-        "Liquidity: $34.4K against $1.5M daily volume — paper-thin pool, any $5K+ sell causes significant slippage",
-        "No verified KOL backing — volume appears driven by DexScreener trending, not CT calls",
-        "WienerAI name confusion — a separate 2024 token with a failed presale narrative; may inherit that skepticism in search results"
+        "Liquidity: $34.4K against $1.5M daily volume \u2014 paper-thin pool, any $5K+ sell causes significant slippage",
+        "No verified KOL backing \u2014 volume appears driven by DexScreener trending, not CT calls",
+        "WienerAI name confusion \u2014 a separate 2024 token with a failed presale narrative; may inherit that skepticism in search results"
       ]
     },
     {
@@ -124,7 +124,7 @@
     {
       "type": "verdict",
       "rating": "speculative",
-      "content": "🟡 **Speculative** — $wiener has genuinely impressive volume metrics and the kind of self-aware branding that can sustain community interest beyond a single pump cycle. The pre-existing community, dedicated website, and balanced buy/sell ratio at +353% are all better signals than 90% of what Pump.fun produces. But the thin liquidity, lack of KOL backing, and confusion with the old WienerAI brand are real risks. This hot dog needs to prove it can hold above $100K mcap through a pullback before it earns anything more than a speculative rating."
+      "content": "\ud83d\udfe1 **Speculative** \u2014 $wiener has genuinely impressive volume metrics and the kind of self-aware branding that can sustain community interest beyond a single pump cycle. The pre-existing community, dedicated website, and balanced buy/sell ratio at +353% are all better signals than 90% of what Pump.fun produces. But the thin liquidity, lack of KOL backing, and confusion with the old WienerAI brand are real risks. This hot dog needs to prove it can hold above $100K mcap through a pullback before it earns anything more than a speculative rating."
     },
     {
       "type": "heading",
@@ -143,7 +143,7 @@
         },
         {
           "question": "Does $wiener have a website?",
-          "answer": "Yes — justahotdog.fun. It's a minimal landing page, but its existence suggests more planning than a typical Pump.fun quick-flip."
+          "answer": "Yes \u2014 justahotdog.fun. It's a minimal landing page, but its existence suggests more planning than a typical Pump.fun quick-flip."
         }
       ]
     }

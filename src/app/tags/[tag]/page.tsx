@@ -46,7 +46,6 @@ const categoryLabels: Record<string, string> = {
   news: 'News',
   alpha: 'Alpha',
   autopsy: 'Autopsy',
-  launchpad: 'Launchpad',
   'kol-watch': 'KOL Watch',
   'market-pulse': 'Runner Pulse',
   academy: 'Academy',

@@ -2,12 +2,12 @@
   "id": "moltid-solana-ai-identity-token-mexc-listing",
   "slug": "moltid-solana-ai-identity-token-mexc-listing",
   "articleType": "launch-radar",
-  "category": "launchpad",
+  "category": "alpha",
   "heroImage": "/images/articles/moltid-solana-ai-identity-token-mexc-listing.webp",
   "headline": "$MOLTID Surges 183% as Solana's AI Identity Token Lands MEXC Listing",
-  "subheadline": "MoltID bridges AI agents and blockchain identity with Metaplex NFTs — and now a major exchange is paying attention",
+  "subheadline": "MoltID bridges AI agents and blockchain identity with Metaplex NFTs \u2014 and now a major exchange is paying attention",
   "signalRating": "speculative",
-  "signalEmoji": "🟡",
+  "signalEmoji": "\ud83d\udfe1",
   "signalLabel": "AI meets identity on-chain",
   "publishedAt": "2026-02-26T22:06:56+08:00",
   "author": "MemeDesk Editorial",
@@ -32,14 +32,14 @@
   "body": [
     {
       "type": "paragraph",
-      "text": "In a market drowning in animal tokens and political memes, MoltID is doing something almost radical: building an actual product. The Solana-native token — which surged 183% to a $1M market cap on $738K volume — positions itself as an AI agent identity layer, using Metaplex NFTs to give autonomous agents verifiable on-chain identities. And now MEXC, one of the world's largest crypto exchanges, has taken notice with a confirmed listing."
+      "text": "In a market drowning in animal tokens and political memes, MoltID is doing something almost radical: building an actual product. The Solana-native token \u2014 which surged 183% to a $1M market cap on $738K volume \u2014 positions itself as an AI agent identity layer, using Metaplex NFTs to give autonomous agents verifiable on-chain identities. And now MEXC, one of the world's largest crypto exchanges, has taken notice with a confirmed listing."
     },
     {
       "type": "quickTake",
       "bullets": [
-        "$MOLTID surged 183% on Solana with $738K volume, 7,428 transactions, and a healthy 62% buy ratio — one of the strongest utility-backed launches this week",
+        "$MOLTID surged 183% on Solana with $738K volume, 7,428 transactions, and a healthy 62% buy ratio \u2014 one of the strongest utility-backed launches this week",
         "MEXC exchange listing confirmed, giving MoltID aggregator and CEX visibility that most meme tokens never achieve",
-        "The AI identity angle — using Metaplex NFTs as persistent identities for autonomous agents — taps into the 2026 AI agent boom with genuine technical substance"
+        "The AI identity angle \u2014 using Metaplex NFTs as persistent identities for autonomous agents \u2014 taps into the 2026 AI agent boom with genuine technical substance"
       ]
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "type": "paragraph",
-      "text": "MoltID's thesis is straightforward: as AI agents proliferate across DeFi, social media, and commerce, they need verifiable identities. Who built the agent? What's its track record? Can you trust its outputs? MoltID uses Metaplex NFTs as identity containers and autonomous wallets as the action layer — essentially giving AI agents a passport that lives on Solana."
+      "text": "MoltID's thesis is straightforward: as AI agents proliferate across DeFi, social media, and commerce, they need verifiable identities. Who built the agent? What's its track record? Can you trust its outputs? MoltID uses Metaplex NFTs as identity containers and autonomous wallets as the action layer \u2014 essentially giving AI agents a passport that lives on Solana."
     },
     {
       "type": "paragraph",
@@ -60,11 +60,11 @@
     },
     {
       "type": "paragraph",
-      "text": "$738K in volume against $1M market cap is a reasonable 0.74x daily turnover — notably lower than the 2-12x ratios seen in pure speculation plays. This suggests more holding behavior than flipping, which aligns with a utility narrative where buyers are betting on the product rather than just riding momentum."
+      "text": "$738K in volume against $1M market cap is a reasonable 0.74x daily turnover \u2014 notably lower than the 2-12x ratios seen in pure speculation plays. This suggests more holding behavior than flipping, which aligns with a utility narrative where buyers are betting on the product rather than just riding momentum."
     },
     {
       "type": "paragraph",
-      "text": "The 62% buy ratio is the strongest demand signal in this scan cycle. Above 60% on a token that's already up 183% means new buyers are still entering with conviction. Liquidity at $124K is solid for a $1M cap — roughly 12% liquidity depth, which is healthy by Solana meme standards."
+      "text": "The 62% buy ratio is the strongest demand signal in this scan cycle. Above 60% on a token that's already up 183% means new buyers are still entering with conviction. Liquidity at $124K is solid for a $1M cap \u2014 roughly 12% liquidity depth, which is healthy by Solana meme standards."
     },
     {
       "type": "paragraph",
@@ -77,10 +77,10 @@
     {
       "type": "redFlags",
       "flags": [
-        "AI identity is a nascent category — no proven demand for agent passports yet",
+        "AI identity is a nascent category \u2014 no proven demand for agent passports yet",
         "The gap between 'utility narrative' and 'shipped utility' is often where meme tokens die",
-        "MEXC listings don't guarantee sustained volume — many listed tokens see post-listing dumps",
-        "7,428 transactions is modest compared to pure meme plays — could indicate limited retail awareness",
+        "MEXC listings don't guarantee sustained volume \u2014 many listed tokens see post-listing dumps",
+        "7,428 transactions is modest compared to pure meme plays \u2014 could indicate limited retail awareness",
         "Competition from established identity protocols (Worldcoin, ENS) could limit MoltID's niche"
       ]
     },
@@ -90,7 +90,7 @@
     },
     {
       "type": "paragraph",
-      "text": "The 62% buy ratio and moderate transaction count suggest MoltID is attracting a different crowd than typical meme tokens — likely AI-narrative traders and Solana DeFi participants who see the identity layer thesis as a legitimate bet. The MEXC listing will expose it to a broader audience, but whether retail CEX traders care about AI agent identity infrastructure remains to be seen."
+      "text": "The 62% buy ratio and moderate transaction count suggest MoltID is attracting a different crowd than typical meme tokens \u2014 likely AI-narrative traders and Solana DeFi participants who see the identity layer thesis as a legitimate bet. The MEXC listing will expose it to a broader audience, but whether retail CEX traders care about AI agent identity infrastructure remains to be seen."
     },
     {
       "type": "heading",
@@ -98,7 +98,7 @@
     },
     {
       "type": "paragraph",
-      "text": "MoltID is one of the rare meme-adjacent tokens that actually has something to say. The AI identity layer thesis is technically interesting, the MEXC listing provides a near-term catalyst, and the on-chain data shows genuine demand rather than pure speculation. But 'interesting thesis' and 'successful token' are different things. The market is littered with good ideas that never shipped, and MoltID needs to deliver actual adoption — AI agents actually using its identity framework — to justify the current cap. For now, it's the most compelling 'utility meme' in this cycle. Whether that's enough depends on whether the product catches up to the narrative."
+      "text": "MoltID is one of the rare meme-adjacent tokens that actually has something to say. The AI identity layer thesis is technically interesting, the MEXC listing provides a near-term catalyst, and the on-chain data shows genuine demand rather than pure speculation. But 'interesting thesis' and 'successful token' are different things. The market is littered with good ideas that never shipped, and MoltID needs to deliver actual adoption \u2014 AI agents actually using its identity framework \u2014 to justify the current cap. For now, it's the most compelling 'utility meme' in this cycle. Whether that's enough depends on whether the product catches up to the narrative."
     },
     {
       "type": "faq",

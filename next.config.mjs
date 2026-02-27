@@ -18,6 +18,16 @@ const nextConfig = {
         destination: '/highlights/:slug*',
         permanent: true,
       },
+      {
+        source: '/market-pulse',
+        destination: '/runner-pulse',
+        permanent: true,
+      },
+      {
+        source: '/market-pulse/:slug*',
+        destination: '/runner-pulse/:slug*',
+        permanent: true,
+      },
     ];
   },
 };

@@ -4,11 +4,11 @@ import { getAllTags } from '@/lib/tags';
 
 // Maps category field → URL prefix
 const CATEGORY_PATH: Record<string, string> = {
-  news: 'news',
+  news: 'highlights',
   alpha: 'alpha',
   autopsy: 'autopsy',
   'kol-watch': 'kol-watch',
-  'market-pulse': 'market-pulse',
+  'market-pulse': 'runner-pulse',
   academy: 'academy',
 };
 
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/alpha`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${base}/autopsy`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/kol-watch`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
-    { url: `${base}/market-pulse`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/runner-pulse`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },
     { url: `${base}/academy`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/tags`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },

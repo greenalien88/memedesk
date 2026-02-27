@@ -10,7 +10,7 @@ const navLinks = [
   { href: '/alpha', label: 'Alpha' },
   { href: '/autopsy', label: 'Autopsy' },
   { href: '/kol-watch', label: 'KOL Watch' },
-  { href: '/market-pulse', label: 'Runner Pulse' },
+  { href: '/runner-pulse', label: 'Runner Pulse' },
   { href: '/academy', label: 'Academy' },
 ];
 

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: article.headline,
     description: article.subheadline,
-    alternates: { canonical: `https://memedesk.co/market-pulse/${slug}` },
+    alternates: { canonical: `https://memedesk.co/runner-pulse/${slug}` },
     openGraph: {
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
@@ -308,8 +308,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://memedesk.co' },
-      { '@type': 'ListItem', position: 2, name: 'Runner Pulse', item: 'https://memedesk.co/market-pulse' },
-      { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/market-pulse/${slug}` },
+      { '@type': 'ListItem', position: 2, name: 'Runner Pulse', item: 'https://memedesk.co/runner-pulse' },
+      { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/runner-pulse/${slug}` },
     ],
   };
 
@@ -700,7 +700,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {related.map((rel) => (
               <Link
                 key={rel.slug}
-                href={`/market-pulse/${rel.slug}`}
+                href={`/runner-pulse/${rel.slug}`}
                 className="rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/[0.07]"
               >
                 <div className={`mb-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-semibold ${signalColors[rel.signalRating] || signalColors.speculative}`}>

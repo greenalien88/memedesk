@@ -87,11 +87,11 @@ export function getArticlesByTag(slug: string): Article[] {
 
 /** Category slug → URL path mapping */
 export const CATEGORY_PATH: Record<string, string> = {
-  news: 'news',
+  news: 'highlights',
   alpha: 'alpha',
   autopsy: 'autopsy',
   'kol-watch': 'kol-watch',
-  'market-pulse': 'market-pulse',
+  'market-pulse': 'runner-pulse',
   academy: 'academy',
 };
 

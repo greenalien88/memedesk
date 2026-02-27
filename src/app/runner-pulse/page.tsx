@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Runner Pulse — Sentiment & Trends',
   description: 'Market sentiment, trend analysis, and the vibe check on crypto markets. What\'s hot, what\'s not.',
-  alternates: { canonical: 'https://memedesk.co/market-pulse' },
+  alternates: { canonical: 'https://memedesk.co/runner-pulse' },
   openGraph: {
     title: 'Runner Pulse | MemeDesk',
     description: 'Market sentiment, trend analysis, and the vibe check on crypto markets.',
@@ -45,7 +45,7 @@ export default function MarketPulsePage() {
           {filtered.map((article: any) => (
             <Link
               key={article.id}
-              href={`/market-pulse/${article.slug}`}
+              href={`/runner-pulse/${article.slug}`}
               className="group block overflow-hidden rounded-2xl border border-blue-400/10 bg-white/5 transition hover:border-blue-400/30 hover:bg-white/[0.07]"
             >
               {article.heroImage && (

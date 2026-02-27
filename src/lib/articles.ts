@@ -1,6 +1,21 @@
 import fs from 'fs';
 import path from 'path';
 
+export interface SourcePostEngagement {
+  replies: number;
+  reposts: number;
+  likes: number;
+  views: number;
+}
+
+export interface SourcePost {
+  platform?: string;
+  url: string;
+  text: string;
+  timestamp?: string;
+  engagement?: SourcePostEngagement;
+}
+
 export interface Article {
   id: string;
   slug: string;
@@ -29,7 +44,7 @@ export interface Article {
     snapshotAt?: string;
   };
   kol?: Record<string, any>;
-  sourcePost?: Record<string, any>;
+  sourcePost?: SourcePost;
   quotedPost?: Record<string, any>;
   tokens?: Array<Record<string, any>>;
   walletData?: Record<string, any>;

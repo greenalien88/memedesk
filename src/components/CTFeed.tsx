@@ -44,7 +44,6 @@ const CTFeed = () => {
           {displayItems.map((item) => {
             const kol = kolMap[item.author.toLowerCase()];
             const displayName = item.name || kol?.name || item.author;
-            const tier = kol?.tier;
             const followers = item.followers || kol?.followers;
             const avatarUrl = item.avatar || `https://unavatar.io/x/${item.author}`;
 
@@ -73,11 +72,6 @@ const CTFeed = () => {
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center gap-1.5 flex-wrap">
                       <span className="text-white text-xs font-semibold">{displayName}</span>
-                      {tier === 1 && (
-                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-[#00ff88]/20 text-[#00ff88] font-semibold flex-shrink-0">
-                          T1
-                        </span>
-                      )}
                     </div>
                     <div className="flex items-center gap-1.5 text-white/40 text-[11px] mt-0.5">
                       <span>@{item.author}</span>

@@ -43,7 +43,7 @@ const signalColors: Record<string, string> = {
 };
 
 const categoryLabels: Record<string, string> = {
-  news: 'News',
+  news: 'Highlights',
   alpha: 'Alpha',
   autopsy: 'Autopsy',
   'kol-watch': 'KOL Watch',

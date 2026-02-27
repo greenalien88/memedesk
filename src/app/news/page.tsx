@@ -5,18 +5,18 @@ import { getArticlesByCategory } from '@/lib/articles';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'News — Meme Coin Headlines & Signal Reports',
-  description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
+  title: 'Highlights — Meme Coin Headlines & Signal Reports',
+  description: 'Every MemeDesk highlight — KOL calls, meme coin analysis, and degen signal reports.',
   alternates: { canonical: 'https://memedesk.co/news' },
   openGraph: {
-    title: 'All News | MemeDesk',
-    description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
+    title: 'Highlights | MemeDesk',
+    description: 'Every MemeDesk highlight — KOL calls, meme coin analysis, and degen signal reports.',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'All News | MemeDesk',
-    description: 'Every MemeDesk news story — KOL calls, meme coin analysis, and degen signal reports.',
+    title: 'Highlights | MemeDesk',
+    description: 'Every MemeDesk highlight — KOL calls, meme coin analysis, and degen signal reports.',
   },
 };
 
@@ -32,7 +32,7 @@ export default function NewsPage() {
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-4 py-10">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold">🔴 News</h1>
+        <h1 className="text-2xl font-bold">🔴 Highlights</h1>
         <span className="text-xs text-white/40">{filtered.length} report{filtered.length !== 1 ? 's' : ''}</span>
       </div>
 

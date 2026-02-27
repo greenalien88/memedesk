@@ -28,7 +28,7 @@ export default function Header() {
             width={140}
             height={42}
             priority
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">

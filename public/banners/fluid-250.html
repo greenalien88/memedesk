@@ -2,305 +2,355 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MemeDesk Banner Fluid 250h</title>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 100%; height: 250px; overflow: hidden; background: #0a0a0a; }
+html, body { width: 100%; height: 250px; overflow: hidden; background: #070B0F; }
+
+:root {
+  --green: #1AFF6E;
+  --green-dim: rgba(26,255,110,0.18);
+  --green-glow: rgba(26,255,110,0.55);
+  --bg: #070B0F;
+  --teal: #00D4AA;
+}
 
 .banner {
   position: relative; width: 100%; height: 250px;
-  overflow: hidden; background: #0a0a0a;
+  overflow: hidden; background: var(--bg);
   font-family: 'Space Grotesk', 'Inter', sans-serif;
+  cursor: pointer;
 }
 
-#cvs { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Canvas for particles + orbital arcs */
+#cvs { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-.grid {
-  position: absolute; inset: 0; opacity: 0;
-  background-image:
-    linear-gradient(rgba(0,255,136,.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,255,136,.04) 1px, transparent 1px);
-  background-size: 32px 32px;
+/* Radial glow orb */
+.orb {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,255,110,0.13) 0%, transparent 68%);
+  pointer-events: none; opacity: 0;
 }
+.orb-l { width: 380px; height: 380px; top: 50%; left: 28%; transform: translate(-50%,-50%); }
+.orb-r { width: 260px; height: 260px; top: 50%; right: 8%; transform: translateY(-50%); }
 
-/* Two orbs — left and right for wider layout */
-.orb-l {
-  position: absolute; width: 400px; height: 400px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,136,.12) 0%, transparent 65%);
-  top: 50%; left: 25%; transform: translate(-50%,-50%);
-  opacity: 0;
-}
-.orb-r {
-  position: absolute; width: 300px; height: 300px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,136,.10) 0%, transparent 65%);
-  top: 50%; right: 10%; transform: translateY(-50%);
-  opacity: 0;
-}
-
-.corner { position: absolute; width: 16px; height: 16px; border-color: #00ff88; border-style: solid; opacity: 0; }
+/* Corner brackets */
+.corner { position: absolute; width: 14px; height: 14px; border-color: var(--green); border-style: solid; opacity: 0; }
 .tl { top: 10px; left: 10px; border-width: 2px 0 0 2px; }
 .tr { top: 10px; right: 10px; border-width: 2px 2px 0 0; }
 .bl { bottom: 10px; left: 10px; border-width: 0 0 2px 2px; }
 .br { bottom: 10px; right: 10px; border-width: 0 2px 2px 0; }
 
-/* ── TEXT LAYOUT: left side ── */
-.text-frame {
-  position: absolute; inset: 0;
-  display: flex; align-items: center;
-  padding: 0 5% 0 6%;
+/* ── SCENE WRAPPER ── */
+.scene { position: absolute; inset: 0; opacity: 0; pointer-events: none; display: flex; align-items: center; }
+
+/* ── SCENE 1: Headline ── */
+#s-headline {
+  padding: 0 6% 0 7%;
   gap: 0;
+  justify-content: space-between;
 }
-
-.text-left {
-  display: flex; flex-direction: column;
-  align-items: flex-start; gap: 6px;
-  flex: 1;
-}
-
-.line { overflow: hidden; display: block; }
+.hl-left { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.line-clip { overflow: hidden; display: block; }
 
 .w-maxxing {
-  font-size: clamp(42px, 6vw, 72px);
-  font-weight: 800; line-height: 1;
-  color: #00ff88; text-transform: uppercase;
-  letter-spacing: -0.03em;
-  text-shadow: 0 0 10px rgba(0,255,136,.55), 0 0 28px rgba(0,255,136,.22);
+  font-size: clamp(48px, 7vw, 80px); font-weight: 800; line-height: 1;
+  color: var(--green); text-transform: uppercase; letter-spacing: -0.03em;
+  text-shadow: 0 0 12px var(--green-glow), 0 0 32px rgba(26,255,110,0.2);
   display: block; transform: translateY(110%); white-space: nowrap;
 }
-
 .w-sub {
-  display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline;
+  display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline;
   transform: translateY(110%);
 }
-
-.w-profitable {
-  font-size: clamp(13px, 1.6vw, 20px); font-weight: 700;
-  color: #ffffff; text-transform: uppercase; letter-spacing: 0.18em;
-  white-space: nowrap;
+.w-alpha {
+  font-size: clamp(13px, 1.7vw, 20px); font-weight: 700;
+  color: #fff; text-transform: uppercase; letter-spacing: 0.16em; white-space: nowrap;
 }
-
 .w-from {
-  font-size: clamp(9px, 1.1vw, 13px); font-weight: 600;
-  color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: 0.2em;
-  white-space: nowrap;
+  font-size: clamp(9px, 1.1vw, 12px); font-weight: 600;
+  color: rgba(255,255,255,0.38); text-transform: uppercase; letter-spacing: 0.22em; white-space: nowrap;
 }
-
 .w-trenches {
-  font-size: clamp(13px, 1.6vw, 20px); font-weight: 700;
-  color: rgba(255,255,255,.8); text-transform: uppercase; letter-spacing: 0.1em;
-  white-space: nowrap;
+  font-size: clamp(13px, 1.7vw, 20px); font-weight: 700;
+  color: rgba(255,255,255,0.82); text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap;
 }
 
-/* Vertical divider */
-.vdiv {
-  width: 1px; height: 120px; background: rgba(0,255,136,.2);
-  margin: 0 5%;
-  opacity: 0; flex-shrink: 0;
-}
+.vdiv { width: 1px; height: 110px; background: rgba(26,255,110,0.18); margin: 0 5%; opacity: 0; flex-shrink: 0; }
 
-/* Right side: logo */
-.text-right {
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: 10px; flex: 0 0 auto;
+.hl-right { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; flex: 0 0 auto; opacity: 0; }
+.logo-img { height: clamp(40px, 5.5vw, 64px); width: auto; filter: drop-shadow(0 0 10px rgba(26,255,110,0.6)) drop-shadow(0 0 28px rgba(26,255,110,0.22)); }
+.tagline-sm { font-size: 9px; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: rgba(26,255,110,0.45); }
+
+/* ── SCENE 2: Value cards ── */
+#s-cards {
+  padding: 0 5%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+}
+.card {
+  flex: 1; max-width: 220px;
+  background: linear-gradient(135deg, rgba(26,255,110,0.10) 0%, rgba(0,212,170,0.06) 100%);
+  border: 1px solid rgba(26,255,110,0.22);
+  border-radius: 10px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 14px 12px; gap: 10px;
+  transform: translateY(20px); opacity: 0;
+}
+.card-icon { font-size: 26px; line-height: 1; }
+.card-title { font-size: clamp(11px, 1.4vw, 15px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #fff; text-align: center; }
+.card-sub { font-size: clamp(8px, 0.9vw, 10px); font-weight: 500; color: rgba(255,255,255,0.45); text-align: center; letter-spacing: 0.06em; }
+
+/* ── SCENE 3: CTA ── */
+#s-cta { justify-content: center; flex-direction: column; align-items: center; gap: 14px; }
+.cta-line {
+  font-size: clamp(20px, 3vw, 36px); font-weight: 800; text-transform: uppercase;
+  color: #fff; letter-spacing: -0.01em; text-align: center;
+  text-shadow: 0 0 20px rgba(26,255,110,0.4), 0 0 50px rgba(26,255,110,0.15);
+  opacity: 0; transform: translateY(14px);
+}
+.cta-btn {
+  font-size: clamp(8px, 1vw, 11px); font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--green);
+  border: 1px solid rgba(26,255,110,0.4); padding: 6px 18px;
   opacity: 0;
 }
 
-.logo-img {
-  height: clamp(44px, 6vw, 68px); width: auto;
-  filter: drop-shadow(0 0 10px rgba(0,255,136,.6)) drop-shadow(0 0 28px rgba(0,255,136,.25));
-}
+/* ── SCENE 4: Logo sting ── */
+#s-logo { justify-content: center; flex-direction: column; align-items: center; gap: 10px; }
+.sting-logo { height: clamp(48px, 6.5vw, 74px); width: auto; opacity: 0; transform: scale(0.85);
+  filter: drop-shadow(0 0 14px rgba(26,255,110,0.7)) drop-shadow(0 0 40px rgba(26,255,110,0.3)); }
+.sting-tagline { font-size: clamp(8px, 0.9vw, 10px); font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(26,255,110,0.5); opacity: 0; }
 
-.tagline-r {
-  font-size: clamp(7px, 0.9vw, 10px); font-weight: 600;
-  letter-spacing: 0.24em; text-transform: uppercase;
-  color: rgba(0,255,136,.5);
-}
-
-/* CTA pill */
-.cta {
-  position: absolute; bottom: 16px; right: 16px;
-  font-size: clamp(8px, 0.9vw, 10px); font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: #00ff88; border: 1px solid rgba(0,255,136,.35);
-  padding: 5px 12px; opacity: 0;
-}
-
-.flash { position: absolute; inset: 0; background: #00ff88; opacity: 0; pointer-events: none; }
-.scanlines {
-  position: absolute; inset: 0; pointer-events: none; opacity: 0.3;
-  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,.07) 3px, rgba(0,0,0,.07) 4px);
-}
-.border { position: absolute; inset: 0; border: 1px solid rgba(0,255,136,.12); pointer-events: none; }
+/* Flash + scanlines */
+.flash { position: absolute; inset: 0; background: #1AFF6E; opacity: 0; pointer-events: none; }
+.scanlines { position: absolute; inset: 0; pointer-events: none; opacity: 0.25; background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.08) 3px, rgba(0,0,0,0.08) 4px); }
+.border-frame { position: absolute; inset: 0; border: 1px solid rgba(26,255,110,0.10); pointer-events: none; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-<div class="banner">
+<div class="banner" onclick="window.open('https://memedesk.co','_blank')">
   <canvas id="cvs"></canvas>
-  <div class="grid" id="grid"></div>
-  <div class="orb-l" id="orbL"></div>
-  <div class="orb-r" id="orbR"></div>
+
+  <div class="orb orb-l" id="orbL"></div>
+  <div class="orb orb-r" id="orbR"></div>
 
   <div class="corner tl" id="c1"></div>
   <div class="corner tr" id="c2"></div>
   <div class="corner bl" id="c3"></div>
   <div class="corner br" id="c4"></div>
 
-  <div class="text-frame" id="textFrame">
-    <div class="text-left">
-      <div class="line"><span class="w-maxxing" id="w1">Maxxing</span></div>
-      <div class="line">
+  <!-- Scene 1: Headline -->
+  <div class="scene" id="s-headline" style="opacity:1">
+    <div class="hl-left">
+      <div class="line-clip"><span class="w-maxxing" id="w1">Maxxing</span></div>
+      <div class="line-clip">
         <div class="w-sub" id="w2">
-          <span class="w-profitable">Profitable Alpha</span>
+          <span class="w-alpha">Profitable Alpha</span>
           <span class="w-from">from the</span>
           <span class="w-trenches">Meme Trenches</span>
         </div>
       </div>
     </div>
     <div class="vdiv" id="vdiv"></div>
-    <div class="text-right" id="logoRight">
-      <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="logo-img" id="logoImg">
-      <div class="tagline-r">memedesk.co</div>
+    <div class="hl-right" id="hlRight">
+      <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="logo-img" id="hlLogo">
+      <div class="tagline-sm">memedesk.co</div>
     </div>
   </div>
 
-  <div class="cta" id="cta">Enter the Trenches →</div>
+  <!-- Scene 2: Cards -->
+  <div class="scene" id="s-cards">
+    <div class="card" id="card1">
+      <div class="card-icon">📡</div>
+      <div class="card-title">Early Signals</div>
+      <div class="card-sub">Before CT catches on</div>
+    </div>
+    <div class="card" id="card2">
+      <div class="card-icon">👑</div>
+      <div class="card-title">KOL Calls Tracked</div>
+      <div class="card-sub">Every alpha caller, mapped</div>
+    </div>
+    <div class="card" id="card3">
+      <div class="card-icon">⚠️</div>
+      <div class="card-title">Rug Alerts</div>
+      <div class="card-sub">Post-mortems & red flags</div>
+    </div>
+  </div>
+
+  <!-- Scene 3: CTA -->
+  <div class="scene" id="s-cta">
+    <div class="cta-line" id="ctaLine">Stay Ahead of the Market</div>
+    <div class="cta-btn" id="ctaBtn">Enter the Trenches →</div>
+  </div>
+
+  <!-- Scene 4: Logo sting -->
+  <div class="scene" id="s-logo">
+    <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="sting-logo" id="stingLogo">
+    <div class="sting-tagline" id="stingTag">Maxxing Profitable Alpha from the Meme Trenches</div>
+  </div>
+
   <div class="flash" id="flash"></div>
   <div class="scanlines"></div>
-  <div class="border"></div>
+  <div class="border-frame"></div>
 </div>
 
 <script>
-// Responsive canvas
-const canvas = document.getElementById('cvs');
-const ctx = canvas.getContext('2d');
-let W, H, pts;
+// ── Canvas: particles + orbital arcs ──────────────────────────────────────────
+const cvs = document.getElementById('cvs');
+const ctx = cvs.getContext('2d');
+let W, H, pts, arcs, tick = 0;
 
 function initCanvas() {
-  W = canvas.clientWidth || window.innerWidth;
+  W = cvs.clientWidth || window.innerWidth;
   H = 250;
-  canvas.width = W;
-  canvas.height = H;
-  pts = [];
-  const count = Math.floor(W / 12);
-  for (let i = 0; i < count; i++) {
-    pts.push({
-      x: Math.random() * W, y: Math.random() * H,
-      vx: (Math.random() - .5) * .38, vy: (Math.random() - .5) * .38,
-      r: Math.random() * 1.1 + .3, a: Math.random() * .32 + .07
-    });
-  }
+  cvs.width = W; cvs.height = H;
+
+  const count = Math.floor(W / 14);
+  pts = Array.from({length: count}, () => ({
+    x: Math.random()*W, y: Math.random()*H,
+    vx: (Math.random()-.5)*.35, vy: (Math.random()-.5)*.35,
+    r: Math.random()*1.0+.3, a: Math.random()*.28+.06
+  }));
+
+  arcs = [
+    { cx: W*.25, cy: H*.5, rx: W*.55, ry: H*.9,  startA: -30, sweep: 140, speed: .18 },
+    { cx: W*.72, cy: H*.5, rx: W*.45, ry: H*.75, startA: 160, sweep: 120, speed: -.14 },
+    { cx: W*.5,  cy: H*.5, rx: W*.65, ry: H*.6,  startA: 50,  sweep: 100, speed: .11 },
+  ];
+}
+initCanvas();
+window.addEventListener('resize', initCanvas);
+
+function drawArc(a) {
+  const rot = (a.startA + tick * a.speed) * Math.PI/180;
+  const end = rot + a.sweep * Math.PI/180;
+  ctx.save();
+  ctx.translate(a.cx, a.cy);
+  ctx.scale(1, a.ry/a.rx);
+  ctx.beginPath();
+  ctx.arc(0, 0, a.rx, rot, end);
+  ctx.restore();
+  ctx.strokeStyle = 'rgba(26,255,110,0.09)';
+  ctx.lineWidth = .8;
+  ctx.stroke();
 }
 
-initCanvas();
-
 (function draw() {
-  ctx.clearRect(0, 0, W, H);
-  if (!pts) { requestAnimationFrame(draw); return; }
+  tick++;
+  ctx.clearRect(0,0,W,H);
+  // Arcs
+  arcs.forEach(drawArc);
+  // Particles
   pts.forEach(p => {
     p.x += p.vx; p.y += p.vy;
     if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
     if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
-    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(0,255,136,${p.a})`; ctx.fill();
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle = `rgba(26,255,110,${p.a})`; ctx.fill();
   });
-  for (let i = 0; i < pts.length; i++) {
-    for (let j = i + 1; j < pts.length; j++) {
-      const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
-      const d = Math.sqrt(dx*dx + dy*dy);
-      if (d < 80) {
-        ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
-        ctx.strokeStyle = `rgba(0,255,136,${.07 * (1 - d/80)})`; ctx.lineWidth = .5; ctx.stroke();
-      }
-    }
+  // Connections
+  for (let i=0;i<pts.length;i++) for (let j=i+1;j<pts.length;j++) {
+    const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.hypot(dx,dy);
+    if (d<75) { ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y);
+      ctx.strokeStyle=`rgba(26,255,110,${.06*(1-d/75)})`; ctx.lineWidth=.4; ctx.stroke(); }
   }
   requestAnimationFrame(draw);
 })();
 
-// GSAP Timeline
-const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function flashCut(then, duration=0.10) {
+  gsap.to('#flash', { opacity:.55, duration:duration/2, onComplete: () => {
+    then();
+    gsap.to('#flash', { opacity:0, duration:duration });
+  }});
+}
+function hideScene(id) { gsap.set(id, {opacity:0}); }
+function showScene(id) { gsap.set(id, {opacity:1}); }
 
-// Intro env
-tl.to('#grid',   { opacity: 1, duration: .7 }, 0)
-  .to('#orbL',   { opacity: 1, duration: .9 }, 0)
-  .to(['#c1','#c2','#c3','#c4'], { opacity: 1, duration: .35, stagger: .08 }, .25);
+// ── Master Timeline ────────────────────────────────────────────────────────────
+function runAd() {
+  const tl = gsap.timeline({ onComplete: () => {
+    // Reset all scenes before loop
+    gsap.set(['#w1','#w2'], {translateY:'110%'});
+    gsap.set(['#vdiv','#hlRight'], {opacity:0});
+    gsap.set(['#card1','#card2','#card3'], {opacity:0, translateY:20});
+    gsap.set(['#ctaLine','#ctaBtn'], {opacity:0, translateY:14});
+    gsap.set(['#stingLogo','#stingTag'], {opacity:0});
+    gsap.set('#stingLogo', {scale:.85});
+    hideScene('#s-cards'); hideScene('#s-cta'); hideScene('#s-logo');
+    showScene('#s-headline');
+    gsap.set('#s-headline', {opacity:1});
+    setTimeout(runAd, 300);
+  }});
 
-// Text: left side kinetics
-tl.to('#w1', { translateY: 0, duration: .45, ease: 'power4.out' }, .6)
-  .to('#w2', { translateY: 0, duration: .4,  ease: 'power3.out' }, 1.1);
+  // 0s — Environment
+  tl.to(['#orbL','#orbR'], {opacity:1, duration:.8}, 0)
+    .to(['#c1','#c2','#c3','#c4'], {opacity:1, duration:.3, stagger:.07}, .2);
 
-// Divider slides in, logo fades alongside
-tl.to('#vdiv',     { opacity: 1, duration: .4, ease: 'power2.out' }, 1.6)
-  .to('#orbR',     { opacity: 1, duration: .5 }, 1.6)
-  .to('#logoRight',{ opacity: 1, duration: .5, ease: 'power2.out' }, 1.7)
-  .fromTo('#logoImg',
-    { scale: .85, opacity: 0 },
-    { scale: 1, opacity: 1, duration: .5, ease: 'back.out(1.5)' }, 1.7);
+  // 0.6s — Headline slam
+  tl.to('#w1', {translateY:0, duration:.45, ease:'power4.out'}, .6)
+    .to('#w2', {translateY:0, duration:.4, ease:'power3.out'}, 1.05);
 
-// Hold + pulse glow MAXXING
-tl.to('#w1', {
-  textShadow: '0 0 15px rgba(0,255,136,.95), 0 0 40px rgba(0,255,136,.5)',
-  duration: .55, yoyo: true, repeat: 1, ease: 'power1.inOut'
-}, 3.0);
+  // 1.7s — Divider + logo reveal
+  tl.to('#vdiv',   {opacity:1, duration:.4, ease:'power2.out'}, 1.7)
+    .to('#orbR',   {opacity:1, duration:.5}, 1.7)
+    .to('#hlRight',{opacity:1, duration:.5, ease:'power2.out'}, 1.8)
+    .fromTo('#hlLogo', {scale:.85,opacity:0}, {scale:1,opacity:1, duration:.5, ease:'back.out(1.6)'}, 1.8);
 
-// Flash wipe
-tl.to('#flash',     { opacity: .5, duration: .12 }, 4.4)
-  .to('#flash',     { opacity: 0,  duration: .22 }, 4.52)
-  .to('#textFrame', { opacity: 0,  duration: .2  }, 4.4);
+  // Glow pulse on MAXXING
+  tl.to('#w1', {
+    textShadow:'0 0 16px rgba(26,255,110,1), 0 0 44px rgba(26,255,110,0.55)',
+    duration:.5, yoyo:true, repeat:1, ease:'power1.inOut'
+  }, 3.1);
 
-// Full-width logo takeover
-tl.to('#textFrame', { opacity: 1, duration: .01 }, 4.6)
-  .set('#w1',       { translateY: '110%' },          4.6)
-  .set('#w2',       { translateY: '110%' },          4.6)
-  .set('#vdiv',     { opacity: 0 },                  4.6)
-  .set('#logoRight',{ opacity: 0 },                  4.6);
+  // 4.4s — Flash → Cards
+  tl.add(() => {
+    flashCut(() => {
+      hideScene('#s-headline');
+      showScene('#s-cards');
+      gsap.to(['#card1','#card2','#card3'], {opacity:1, translateY:0, duration:.4, stagger:.1, ease:'power3.out'});
+    });
+  }, 4.4);
 
-// New: centered logo moment (re-use logoRight but centered via JS)
-tl.to('#orbL',  { scale: 1.4, opacity: .7, duration: .5 }, 4.6)
-  .to('#orbR',  { scale: 1.6, opacity: .7, duration: .5 }, 4.6);
+  // 6.3s — Flash → CTA
+  tl.add(() => {
+    flashCut(() => {
+      hideScene('#s-cards');
+      showScene('#s-cta');
+      gsap.to('#ctaLine', {opacity:1, translateY:0, duration:.4, ease:'power3.out'});
+      gsap.to('#ctaBtn',  {opacity:1, duration:.4, delay:.3});
+    });
+  }, 6.3);
 
-// Make text-frame a centered flex for logo reveal
-tl.call(() => {
-  const tf = document.getElementById('textFrame');
-  tf.style.justifyContent = 'center';
-  tf.style.padding = '0';
-  const lr = document.getElementById('logoRight');
-  lr.style.flex = '0 0 auto';
-  lr.style.gap = '12px';
-}, [], 4.62);
+  // 8.0s — Flash → Logo sting
+  tl.add(() => {
+    flashCut(() => {
+      hideScene('#s-cta');
+      showScene('#s-logo');
+      gsap.to('#stingLogo', {opacity:1, scale:1, duration:.55, ease:'back.out(1.7)'});
+      gsap.to('#stingTag',  {opacity:1, duration:.5, delay:.4});
+      // Logo glow pulse
+      gsap.to('#stingLogo', {
+        filter:'drop-shadow(0 0 20px rgba(26,255,110,0.95)) drop-shadow(0 0 55px rgba(26,255,110,0.45))',
+        duration:.65, yoyo:true, repeat:1, ease:'power1.inOut', delay:.8
+      });
+    });
+  }, 8.0);
 
-tl.to('#logoRight', { opacity: 1, duration: .5, ease: 'power2.out' }, 4.65)
-  .fromTo('#logoImg',
-    { scale: .8, opacity: 0 },
-    { scale: 1.15, opacity: 1, duration: .55, ease: 'back.out(1.7)' }, 4.65)
-  .to('#cta', { opacity: 1, duration: .4 }, 5.2);
+  // 11.5s — hold then complete
+  tl.to({}, {duration:3.5}, 8.0);
+}
 
-// Logo glow pulse
-tl.to('#logoImg', {
-  filter: 'drop-shadow(0 0 18px rgba(0,255,136,.95)) drop-shadow(0 0 48px rgba(0,255,136,.45))',
-  duration: .7, yoyo: true, repeat: 1, ease: 'power1.inOut'
-}, 5.6);
-
-// Hold
-tl.to({}, { duration: 1.8 }, 7.5);
-
-// Reset
-tl.to(['#logoRight','#cta'], { opacity: 0, duration: .3 }, 9.3)
-  .to(['#orbL','#orbR'], { scale: 1, opacity: 0, duration: .3 }, 9.3)
-  .to(['#c1','#c2','#c3','#c4'], { opacity: 0, duration: .2 }, 9.3)
-  .call(() => {
-    const tf = document.getElementById('textFrame');
-    tf.style.justifyContent = '';
-    tf.style.padding = '';
-    const lr = document.getElementById('logoRight');
-    lr.style.flex = '';
-  }, [], 9.45)
-  .set(['#w1','#w2'], { translateY: '110%' })
-  .to('#textFrame', { opacity: 1, duration: .01 });
+// Kick off
+gsap.set('#s-cards', {opacity:0});
+gsap.set('#s-cta',   {opacity:0});
+gsap.set('#s-logo',  {opacity:0});
+runAd();
 </script>
 </body>
 </html>

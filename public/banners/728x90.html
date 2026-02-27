@@ -5,242 +5,304 @@
 <title>MemeDesk Banner 728×90</title>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { width: 728px; height: 90px; overflow: hidden; background: #0a0a0a; }
+html, body { width: 728px; height: 90px; overflow: hidden; background: #070B0F; }
+
+:root {
+  --green: #1AFF6E;
+  --green-glow: rgba(26,255,110,0.55);
+  --bg: #070B0F;
+}
 
 .banner {
   position: relative; width: 728px; height: 90px;
-  overflow: hidden; background: #0a0a0a;
+  overflow: hidden; background: var(--bg);
   font-family: 'Space Grotesk', 'Inter', sans-serif;
+  cursor: pointer;
 }
 
 #cvs { position: absolute; inset: 0; }
 
-.grid {
-  position: absolute; inset: 0; opacity: 0;
-  background-image:
-    linear-gradient(rgba(0,255,136,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,255,136,.035) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
+/* Corner brackets */
+.corner { position: absolute; width: 10px; height: 10px; border-color: var(--green); border-style: solid; opacity: 0; }
+.tl { top: 7px; left: 7px; border-width: 1.5px 0 0 1.5px; }
+.tr { top: 7px; right: 7px; border-width: 1.5px 1.5px 0 0; }
+.bl { bottom: 7px; left: 7px; border-width: 0 0 1.5px 1.5px; }
+.br { bottom: 7px; right: 7px; border-width: 0 1.5px 1.5px 0; }
 
-.orb-left {
-  position: absolute; width: 260px; height: 260px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,136,.15) 0%, transparent 65%);
-  top: 50%; left: 180px; transform: translate(-50%,-50%);
-  opacity: 0;
-}
-.orb-right {
-  position: absolute; width: 180px; height: 180px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,255,136,.18) 0%, transparent 65%);
-  top: 50%; right: 80px; transform: translateY(-50%);
-  opacity: 0;
-}
+/* Orb */
+.orb { position: absolute; border-radius: 50%; opacity: 0; pointer-events: none;
+  background: radial-gradient(circle, rgba(26,255,110,0.14) 0%, transparent 68%); }
+.orb-l { width: 200px; height: 200px; top: 50%; left: 20%; transform: translate(-50%,-50%); }
+.orb-r { width: 160px; height: 160px; top: 50%; right: 8%; transform: translateY(-50%); }
 
-.corner { position: absolute; width: 10px; height: 10px; border-color: #00ff88; border-style: solid; opacity: 0; }
-.tl { top: 5px; left: 5px; border-width: 2px 0 0 2px; }
-.tr { top: 5px; right: 5px; border-width: 2px 2px 0 0; }
-.bl { bottom: 5px; left: 5px; border-width: 0 0 2px 2px; }
-.br { bottom: 5px; right: 5px; border-width: 0 2px 2px 0; }
+/* Scene */
+.scene { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; }
 
-/* Text frame — left 60% */
-.text-frame {
-  position: absolute; left: 0; top: 0; width: 460px; height: 90px;
-  display: flex; align-items: center; padding-left: 28px; gap: 0; opacity: 1;
+/* ── Scene 1: Main headline ── */
+#s-headline {
+  padding: 0 18px 0 20px;
+  justify-content: space-between;
+  gap: 0;
 }
-
-.divider {
-  position: absolute; right: 0; top: 12px; bottom: 12px;
-  width: 1px; background: rgba(0,255,136,.2);
-}
-
-.line { overflow: hidden; display: inline-block; }
+.hl-l { display: flex; flex-direction: column; gap: 3px; flex: 1; overflow: hidden; }
+.line-clip { overflow: hidden; display: block; }
 
 .w-maxxing {
-  font-size: 36px; font-weight: 800; line-height: 1;
-  color: #00ff88; text-transform: uppercase; letter-spacing: -0.02em;
-  text-shadow: 0 0 8px rgba(0,255,136,.5), 0 0 20px rgba(0,255,136,.2);
-  display: block; transform: translateY(110%);
-  white-space: nowrap;
+  font-size: 30px; font-weight: 800; line-height: 1; color: var(--green);
+  text-transform: uppercase; letter-spacing: -0.03em;
+  text-shadow: 0 0 10px var(--green-glow), 0 0 28px rgba(26,255,110,0.2);
+  display: block; transform: translateY(110%); white-space: nowrap;
 }
-
-.text-right-col {
-  display: flex; flex-direction: column; justify-content: center;
-  padding-left: 14px; gap: 2px;
+.w-sub {
+  display: flex; gap: 8px; align-items: baseline;
+  transform: translateY(110%);
 }
+.w-alpha { font-size: 10px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.16em; white-space: nowrap; }
+.w-from  { font-size: 8px; font-weight: 600; color: rgba(255,255,255,0.38); text-transform: uppercase; letter-spacing: 0.2em; white-space: nowrap; }
+.w-trenches { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em; white-space: nowrap; }
 
-.w-profitable {
-  font-size: 13px; font-weight: 700; color: #ffffff;
-  text-transform: uppercase; letter-spacing: 0.16em;
-  display: block; transform: translateY(110%);
+.vdiv { width: 1px; height: 52px; background: rgba(26,255,110,0.18); margin: 0 20px; opacity: 0; flex-shrink: 0; }
+
+.hl-r { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; flex: 0 0 auto; opacity: 0; }
+.logo-img { height: 34px; width: auto; filter: drop-shadow(0 0 8px rgba(26,255,110,0.6)) drop-shadow(0 0 22px rgba(26,255,110,0.22)); }
+.cta-pill { font-size: 7.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--green); border: 1px solid rgba(26,255,110,0.4); padding: 3px 10px; }
+
+/* ── Scene 2: Value prop ticker ── */
+#s-props {
+  padding: 0 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
+.prop-wrap { flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; overflow: hidden; }
+.prop-icon { font-size: 22px; line-height: 1; opacity: 0; transform: translateX(-14px); }
+.prop-title { font-size: 22px; font-weight: 800; text-transform: uppercase; color: #fff; letter-spacing: -0.01em; white-space: nowrap; opacity: 0; transform: translateX(-16px); }
+.prop-sub { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); white-space: nowrap; opacity: 0; }
 
-.w-from {
-  font-size: 8.5px; font-weight: 600; color: rgba(255,255,255,.4);
-  text-transform: uppercase; letter-spacing: 0.2em;
-  display: block; transform: translateY(110%);
-}
+.prop-right { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex: 0 0 auto; opacity: 0; }
+.pr-logo { height: 30px; width: auto; filter: drop-shadow(0 0 7px rgba(26,255,110,0.55)); }
+.pr-enter { font-size: 8px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--green); border: 1px solid rgba(26,255,110,0.35); padding: 3px 9px; }
 
-.w-trenches {
-  font-size: 13px; font-weight: 700; color: rgba(255,255,255,.8);
-  text-transform: uppercase; letter-spacing: 0.1em;
-  display: block; transform: translateY(110%);
-}
+/* ── Scene 3: Logo close ── */
+#s-logo { justify-content: center; align-items: center; gap: 18px; }
+.s-logo-img { height: 40px; width: auto; opacity: 0; transform: scale(0.85);
+  filter: drop-shadow(0 0 12px rgba(26,255,110,0.7)) drop-shadow(0 0 36px rgba(26,255,110,0.3)); }
+.s-logo-tag { font-size: 8px; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; color: rgba(26,255,110,0.5); opacity: 0; white-space: nowrap; }
 
-/* Logo frame — right 40% */
-.logo-frame {
-  position: absolute; right: 0; top: 0; width: 268px; height: 90px;
-  display: flex; align-items: center; justify-content: center;
-  flex-direction: column; gap: 5px; opacity: 0;
-}
-
-.logo-frame img {
-  width: 190px;
-  filter: drop-shadow(0 0 10px rgba(0,255,136,.6)) drop-shadow(0 0 26px rgba(0,255,136,.25));
-}
-
-.sub {
-  font-size: 7px; font-weight: 600; letter-spacing: 0.22em;
-  text-transform: uppercase; color: rgba(0,255,136,.5);
-}
-
-.flash { position: absolute; inset: 0; background: #00ff88; opacity: 0; pointer-events: none; }
-
-.scanlines {
-  position: absolute; inset: 0; pointer-events: none; opacity: 0.3;
-  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.07) 2px, rgba(0,0,0,.07) 3px);
-}
-
-.border { position: absolute; inset: 0; border: 1px solid rgba(0,255,136,.1); pointer-events: none; }
-
-.cta {
-  position: absolute; right: 16px; bottom: 12px;
-  font-size: 8px; font-weight: 700; letter-spacing: 0.18em;
-  text-transform: uppercase; color: #00ff88;
-  border: 1px solid rgba(0,255,136,.35); padding: 3px 7px;
-  opacity: 0;
-}
+/* Flash */
+.flash { position: absolute; inset: 0; background: #1AFF6E; opacity: 0; pointer-events: none; }
+.scanlines { position: absolute; inset: 0; pointer-events: none; opacity: 0.2;
+  background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.07) 3px, rgba(0,0,0,0.07) 4px); }
+.border-frame { position: absolute; inset: 0; border: 1px solid rgba(26,255,110,0.10); pointer-events: none; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
-<div class="banner">
-  <canvas id="cvs" width="728" height="90"></canvas>
-  <div class="grid" id="grid"></div>
-  <div class="orb-left" id="orbL"></div>
-  <div class="orb-right" id="orbR"></div>
+<div class="banner" onclick="window.open('https://memedesk.co','_blank')">
+  <canvas id="cvs"></canvas>
+
+  <div class="orb orb-l" id="orbL"></div>
+  <div class="orb orb-r" id="orbR"></div>
 
   <div class="corner tl" id="c1"></div>
   <div class="corner tr" id="c2"></div>
   <div class="corner bl" id="c3"></div>
   <div class="corner br" id="c4"></div>
 
-  <div class="text-frame" id="textFrame">
-    <div class="line"><span class="w-maxxing" id="w1">Maxxing</span></div>
-    <div class="text-right-col">
-      <div class="line"><span class="w-profitable" id="w2">Profitable Alpha</span></div>
-      <div class="line"><span class="w-from" id="w3">from the</span></div>
-      <div class="line"><span class="w-trenches" id="w4">Meme Trenches</span></div>
+  <!-- Scene 1: Headline -->
+  <div class="scene" id="s-headline" style="opacity:1">
+    <div class="hl-l">
+      <div class="line-clip"><span class="w-maxxing" id="w1">Maxxing</span></div>
+      <div class="line-clip">
+        <div class="w-sub" id="w2">
+          <span class="w-alpha">Profitable Alpha</span>
+          <span class="w-from">from the</span>
+          <span class="w-trenches">Meme Trenches</span>
+        </div>
+      </div>
     </div>
-    <div class="divider" id="divider" style="opacity:0"></div>
+    <div class="vdiv" id="vdiv"></div>
+    <div class="hl-r" id="hlR">
+      <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="logo-img" id="hlLogo">
+      <div class="cta-pill">Enter →</div>
+    </div>
   </div>
 
-  <div class="logo-frame" id="logoFrame">
-    <img src="assets/memedesk-logo.webp" alt="MemeDesk" id="logoImg">
-    <div class="sub">Maxxing Profitable Alpha</div>
+  <!-- Scene 2: Value props (3 shown in sequence) -->
+  <div class="scene" id="s-props">
+    <div style="display:flex;align-items:center;gap:14px;flex:1">
+      <div class="prop-icon" id="pIcon">📡</div>
+      <div class="prop-wrap">
+        <div class="prop-title" id="pTitle">Early Signals</div>
+        <div class="prop-sub" id="pSub">Before CT catches on</div>
+      </div>
+    </div>
+    <div class="vdiv" id="pvdiv" style="opacity:0.6;margin:0 16px;height:46px"></div>
+    <div class="prop-right" id="pRight">
+      <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="pr-logo">
+      <div class="pr-enter">Enter →</div>
+    </div>
   </div>
 
-  <div class="cta" id="cta">Enter →</div>
+  <!-- Scene 3: Logo -->
+  <div class="scene" id="s-logo">
+    <img src="assets/memedesk-logo.webp" alt="MemeDesk" class="s-logo-img" id="sLogo">
+    <div class="s-logo-tag" id="sTag">memedesk.co</div>
+  </div>
+
   <div class="flash" id="flash"></div>
   <div class="scanlines"></div>
-  <div class="border"></div>
+  <div class="border-frame"></div>
 </div>
 
 <script>
-const canvas = document.getElementById('cvs');
-const ctx = canvas.getContext('2d');
+// ── Canvas ────────────────────────────────────────────────────────────────────
+const cvs = document.getElementById('cvs');
+const ctx = cvs.getContext('2d');
 const W = 728, H = 90;
-const pts = [];
+cvs.width = W; cvs.height = H;
 
-for (let i = 0; i < 70; i++) {
-  pts.push({
-    x: Math.random() * W, y: Math.random() * H,
-    vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4,
-    r: Math.random() * 1 + .3, a: Math.random() * .3 + .07
-  });
+const pts = Array.from({length: 40}, () => ({
+  x: Math.random()*W, y: Math.random()*H,
+  vx: (Math.random()-.5)*.3, vy: (Math.random()-.5)*.3,
+  r: Math.random()*.9+.3, a: Math.random()*.25+.06
+}));
+
+const arcs = [
+  {cx:W*.22, cy:H*.5, rx:260, ry:120, startA:-20, sweep:130, speed:.22},
+  {cx:W*.75, cy:H*.5, rx:200, ry: 90, startA:170, sweep:110, speed:-.17},
+];
+let tick = 0;
+
+function drawArc(a) {
+  const rot = (a.startA + tick*a.speed)*Math.PI/180;
+  ctx.save(); ctx.translate(a.cx,a.cy); ctx.scale(1, a.ry/a.rx);
+  ctx.beginPath(); ctx.arc(0,0,a.rx,rot,rot+a.sweep*Math.PI/180);
+  ctx.restore();
+  ctx.strokeStyle='rgba(26,255,110,0.08)'; ctx.lineWidth=.7; ctx.stroke();
 }
 
-(function draw() {
-  ctx.clearRect(0, 0, W, H);
+(function draw(){
+  tick++;
+  ctx.clearRect(0,0,W,H);
+  arcs.forEach(drawArc);
   pts.forEach(p => {
-    p.x += p.vx; p.y += p.vy;
-    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
-    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
-    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(0,255,136,${p.a})`; ctx.fill();
+    p.x+=p.vx; p.y+=p.vy;
+    if(p.x<0)p.x=W; if(p.x>W)p.x=0; if(p.y<0)p.y=H; if(p.y>H)p.y=0;
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle=`rgba(26,255,110,${p.a})`; ctx.fill();
   });
-  for (let i = 0; i < pts.length; i++) {
-    for (let j = i+1; j < pts.length; j++) {
-      const dx = pts[i].x-pts[j].x, dy = pts[i].y-pts[j].y;
-      const d = Math.sqrt(dx*dx+dy*dy);
-      if (d < 70) {
-        ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
-        ctx.strokeStyle = `rgba(0,255,136,${.06*(1-d/70)})`; ctx.lineWidth = .5; ctx.stroke();
-      }
-    }
+  for(let i=0;i<pts.length;i++) for(let j=i+1;j<pts.length;j++){
+    const dx=pts[i].x-pts[j].x, dy=pts[i].y-pts[j].y, d=Math.hypot(dx,dy);
+    if(d<60){ ctx.beginPath(); ctx.moveTo(pts[i].x,pts[i].y); ctx.lineTo(pts[j].x,pts[j].y);
+      ctx.strokeStyle=`rgba(26,255,110,${.05*(1-d/60)})`; ctx.lineWidth=.4; ctx.stroke(); }
   }
   requestAnimationFrame(draw);
 })();
 
-const tl = gsap.timeline({ repeat: -1, repeatDelay: .5 });
+// ── Props data ────────────────────────────────────────────────────────────────
+const props = [
+  { icon:'📡', title:'Early Signals',     sub:'Before CT catches on' },
+  { icon:'👑', title:'KOL Calls Tracked', sub:'Every alpha caller, mapped' },
+  { icon:'⚠️', title:'Rug Alerts',        sub:'Post-mortems & red flags' },
+];
 
-// Intro
-tl.to('#grid',   { opacity: 1, duration: .6 }, 0)
-  .to('#orbL',   { opacity: 1, duration: .8 }, 0)
-  .to(['#c1','#c2','#c3','#c4'], { opacity: 1, duration: .3, stagger: .07 }, .2);
+function flashCut(cb, dur=0.1) {
+  gsap.to('#flash', {opacity:.5, duration:dur/2, onComplete:()=>{ cb(); gsap.to('#flash',{opacity:0,duration:dur}); }});
+}
+function hide(id){ gsap.set(id,{opacity:0}); }
+function show(id){ gsap.set(id,{opacity:1}); }
 
-// Text
-tl.to('#w1', { translateY: 0, duration: .45, ease: 'power4.out' }, .6)
-  .to('#w2', { translateY: 0, duration: .38, ease: 'power3.out' }, 1.0)
-  .to('#w3', { translateY: 0, duration: .32, ease: 'power3.out' }, 1.3)
-  .to('#w4', { translateY: 0, duration: .38, ease: 'power3.out' }, 1.5)
-  .to('#divider', { opacity: 1, duration: .4 }, 1.8);
+function runProp(idx, onDone) {
+  const p = props[idx];
+  document.getElementById('pIcon').textContent  = p.icon;
+  document.getElementById('pTitle').textContent = p.title;
+  document.getElementById('pSub').textContent   = p.sub;
 
-// Hold + pulse
-tl.to('#w1', {
-  textShadow: '0 0 14px rgba(0,255,136,0.9), 0 0 35px rgba(0,255,136,0.5)',
-  duration: .5, yoyo: true, repeat: 1
-}, 2.6);
+  const tl = gsap.timeline({ onComplete: onDone });
+  tl.to(['#pIcon','#pTitle'], {opacity:1, translateX:0, duration:.35, stagger:.08, ease:'power3.out'}, 0)
+    .to('#pSub',   {opacity:1, duration:.3}, .3)
+    .to('#pRight', {opacity:1, duration:.35}, .2)
+    .to({}, {duration:1.4})
+    .to(['#pIcon','#pTitle','#pSub','#pRight'], {opacity:0, duration:.25});
+}
 
-// Flash
-tl.to('#flash',     { opacity: .5, duration: .11 }, 3.9)
-  .to('#flash',     { opacity: 0,  duration: .2  }, 4.01)
-  .to('#textFrame', { opacity: 0,  duration: .18 }, 3.9);
+function runAd() {
+  gsap.set(['#w1','#w2'],{translateY:'110%'});
+  gsap.set(['#vdiv','#hlR'],{opacity:0});
+  gsap.set(['#pIcon','#pTitle'],{opacity:0,translateX:'-14px'});
+  gsap.set(['#pSub','#pRight'],{opacity:0});
+  gsap.set(['#sLogo'],{opacity:0,scale:.85});
+  gsap.set(['#sTag'],{opacity:0});
+  hide('#s-props'); hide('#s-logo'); show('#s-headline');
 
-// Logo
-tl.to('#orbR',   { opacity: .9, duration: .4 }, 4.2)
-  .to('#logoFrame', { opacity: 1, duration: .45, ease: 'power2.out' }, 4.2)
-  .fromTo('#logoImg',
-    { scale: .82, opacity: 0 },
-    { scale: 1, opacity: 1, duration: .45, ease: 'back.out(1.7)' }, 4.2)
-  .to('#cta', { opacity: 1, duration: .35 }, 4.7);
+  const tl = gsap.timeline();
 
-// Logo pulse
-tl.to('#logoImg', {
-  filter: 'drop-shadow(0 0 14px rgba(0,255,136,0.95)) drop-shadow(0 0 38px rgba(0,255,136,0.4))',
-  duration: .7, yoyo: true, repeat: 1
-}, 5.1);
+  // Env
+  tl.to(['#orbL','#orbR'],{opacity:1,duration:.7},0)
+    .to(['#c1','#c2','#c3','#c4'],{opacity:1,duration:.25,stagger:.06},.15);
 
-// Hold
-tl.to({}, { duration: 2 }, 7.0);
+  // Headline
+  tl.to('#w1',{translateY:0,duration:.4,ease:'power4.out'},.55)
+    .to('#w2',{translateY:0,duration:.36,ease:'power3.out'},.95);
 
-// Reset
-tl.to(['#logoFrame','#cta'], { opacity: 0, duration: .3 }, 9.0)
-  .to(['#orbL','#orbR'], { opacity: 0, duration: .3 }, 9.0)
-  .to(['#c1','#c2','#c3','#c4','#divider'], { opacity: 0, duration: .2 }, 9.0)
-  .set(['#w1','#w2','#w3','#w4'], { translateY: '110%' })
-  .to('#textFrame', { opacity: 1, duration: .01 });
+  // Logo reveal
+  tl.to('#vdiv',{opacity:1,duration:.35,ease:'power2.out'},1.55)
+    .to('#hlR',{opacity:1,duration:.45,ease:'power2.out'},1.65)
+    .fromTo('#hlLogo',{scale:.88,opacity:0},{scale:1,opacity:1,duration:.45,ease:'back.out(1.6)'},1.65);
+
+  // MAXXING glow pulse
+  tl.to('#w1',{textShadow:'0 0 14px rgba(26,255,110,1), 0 0 38px rgba(26,255,110,0.6)',
+    duration:.45,yoyo:true,repeat:1,ease:'power1.inOut'},2.8);
+
+  // → Props: 3 sequential
+  tl.add(() => {
+    flashCut(() => {
+      hide('#s-headline'); show('#s-props');
+      runProp(0, () => {
+        flashCut(() => {
+          gsap.set(['#pIcon','#pTitle'],{translateX:'-14px'});
+          runProp(1, () => {
+            flashCut(() => {
+              gsap.set(['#pIcon','#pTitle'],{translateX:'-14px'});
+              runProp(2, () => {
+
+                // → Logo sting
+                flashCut(() => {
+                  hide('#s-props'); show('#s-logo');
+                  gsap.to('#sLogo',{opacity:1,scale:1,duration:.5,ease:'back.out(1.7)'});
+                  gsap.to('#sTag', {opacity:1,duration:.4,delay:.35});
+                  gsap.to('#sLogo',{
+                    filter:'drop-shadow(0 0 16px rgba(26,255,110,0.95)) drop-shadow(0 0 44px rgba(26,255,110,0.45))',
+                    duration:.6,yoyo:true,repeat:1,ease:'power1.inOut',delay:.7
+                  });
+                  // hold then reset
+                  gsap.delayedCall(3.2, () => {
+                    flashCut(() => {
+                      gsap.to(['#c1','#c2','#c3','#c4','#orbL','#orbR'],{opacity:0,duration:.3});
+                      gsap.delayedCall(.4, runAd);
+                    });
+                  });
+                });
+
+              });
+            });
+          });
+        });
+      });
+    });
+  }, 4.0);
+
+  // hold duration placeholder
+  tl.to({}, {duration:20}, 4.0);
+}
+
+gsap.set('#s-props',{opacity:0}); gsap.set('#s-logo',{opacity:0});
+runAd();
 </script>
 </body>
 </html>

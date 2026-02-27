@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Highlights — Meme Coin Headlines & Signal Reports',
   description: 'Every MemeDesk highlight — KOL calls, meme coin analysis, and degen signal reports.',
-  alternates: { canonical: 'https://memedesk.co/news' },
+  alternates: { canonical: 'https://memedesk.co/highlights' },
   openGraph: {
     title: 'Highlights | MemeDesk',
     description: 'Every MemeDesk highlight — KOL calls, meme coin analysis, and degen signal reports.',
@@ -45,7 +45,7 @@ export default function NewsPage() {
           {filtered.map((article: any) => (
             <Link
               key={article.id}
-              href={`/news/${article.slug}`}
+              href={`/highlights/${article.slug}`}
               className="group block overflow-hidden rounded-2xl border border-red-400/10 bg-white/5 transition hover:border-red-400/30 hover:bg-white/[0.07]"
             >
               {article.heroImage && (

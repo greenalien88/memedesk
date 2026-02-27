@@ -47,7 +47,7 @@ function sentimentStyle(value: number) {
 }
 
 const categoryMeta: Record<string, { label: string; color: string; path: string }> = {
-  news: { label: 'News', color: 'border-red-400/40 bg-red-400/10 text-red-300', path: '/news' },
+  news: { label: 'Highlights', color: 'border-red-400/40 bg-red-400/10 text-red-300', path: '/highlights' },
   alpha: { label: 'Alpha', color: 'border-violet-400/40 bg-violet-400/10 text-violet-300', path: '/alpha' },
   autopsy: { label: 'Autopsy', color: 'border-gray-400/40 bg-gray-400/10 text-gray-300', path: '/autopsy' },
   'kol-watch': { label: 'KOL Watch', color: 'border-amber-400/40 bg-amber-400/10 text-amber-300', path: '/kol-watch' },

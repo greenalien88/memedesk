@@ -48,7 +48,7 @@ const websiteJsonLd = {
   description: 'Editorial-quality memecoin intelligence — KOL calls, alpha plays, rug autopsies, and market signals.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/news?q={search_term_string}` },
+    target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/highlights?q={search_term_string}` },
     'query-input': 'required name=search_term_string',
   },
 };

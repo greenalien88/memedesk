@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: base, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-    { url: `${base}/news`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${base}/highlights`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${base}/alpha`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${base}/autopsy`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/kol-watch`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.8 },

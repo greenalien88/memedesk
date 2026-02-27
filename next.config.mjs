@@ -8,6 +8,16 @@ const nextConfig = {
         destination: '/alpha/:slug*',
         permanent: true,
       },
+      {
+        source: '/news',
+        destination: '/highlights',
+        permanent: true,
+      },
+      {
+        source: '/news/:slug*',
+        destination: '/highlights/:slug*',
+        permanent: true,
+      },
     ];
   },
 };

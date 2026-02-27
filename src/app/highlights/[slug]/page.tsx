@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: article.headline,
     description: article.subheadline,
-    alternates: { canonical: `https://memedesk.co/news/${slug}` },
+    alternates: { canonical: `https://memedesk.co/highlights/${slug}` },
     openGraph: {
       title: `${article.headline} | MemeDesk`,
       description: article.subheadline,
@@ -229,8 +229,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://memedesk.co' },
-      { '@type': 'ListItem', position: 2, name: 'News', item: 'https://memedesk.co/news' },
-      { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/news/${slug}` },
+      { '@type': 'ListItem', position: 2, name: 'Highlights', item: 'https://memedesk.co/highlights' },
+      { '@type': 'ListItem', position: 3, name: article.headline, item: `https://memedesk.co/highlights/${slug}` },
     ],
   };
 
@@ -487,7 +487,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
             {related.map((rel) => (
               <Link
                 key={rel.slug}
-                href={`/news/${rel.slug}`}
+                href={`/highlights/${rel.slug}`}
                 className="rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/20 hover:bg-white/[0.07]"
               >
                 <div className={`mb-2 inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-semibold ${signalColors[rel.signalRating] || signalColors.speculative}`}>

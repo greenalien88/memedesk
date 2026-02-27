@@ -180,25 +180,31 @@ export default async function HomePage() {
         {/* Sidebar col */}
         <div className="lg:col-span-1 flex flex-col gap-6">
           {/* Fear & Greed — matched to 300×250 */}
-          <div className={`w-full h-[250px] shrink-0 rounded-2xl border ${style.border} bg-black/60 px-6 py-5 text-sm ${style.color} flex flex-col justify-between`}>
-            <div className="flex items-center gap-3">
-              <span className="text-3xl animate-pulse">{style.emoji}</span>
+          <div className={`w-full h-[250px] shrink-0 rounded-2xl border ${style.border} bg-red-950 px-6 py-4 text-sm flex flex-col justify-between`}>
+            {/* Label — top, small grey */}
+            <div className="text-[10px] uppercase tracking-widest text-gray-400">Fear &amp; Greed Index</div>
+            {/* Main group: emoji + label + score */}
+            <div className={`flex items-center gap-4 ${style.color}`}>
+              <span className="text-4xl animate-pulse leading-none">{style.emoji}</span>
               <div>
-                <div className="font-bold text-lg tracking-wide">{style.label}</div>
-                <div className="mt-0.5 text-xs opacity-50">Fear &amp; Greed Index</div>
+                <div className="font-bold text-xl tracking-wide leading-tight">{style.label}</div>
+                <div className="text-3xl font-black leading-tight">
+                  {fearGreed.value}<span className="text-sm font-normal opacity-60">/100</span>
+                </div>
               </div>
             </div>
+            {/* Progress bar */}
             <div>
-              <div className="flex justify-between text-xs opacity-40 mb-1">
-                <span>Extreme Fear</span>
-                <span className="font-bold opacity-80">{fearGreed.value}/100</span>
-                <span>Extreme Greed</span>
+              <div className="flex justify-between text-xs text-white/40 mb-1.5">
+                <span>Fear</span>
+                <span>Greed</span>
               </div>
               <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
                 <div className={`h-full rounded-full transition-all ${fearGreed.value <= 25 ? 'bg-red-400' : fearGreed.value <= 45 ? 'bg-orange-400' : fearGreed.value <= 55 ? 'bg-yellow-400' : 'bg-emerald-400'}`} style={{ width: `${fearGreed.value}%` }} />
               </div>
             </div>
-            <div className="text-sm italic opacity-40 leading-snug">&ldquo;{style.quip}&rdquo;</div>
+            {/* Quip */}
+            <div className="text-xs italic text-white/70 leading-snug">&ldquo;{style.quip}&rdquo;</div>
           </div>
 
           <CTFeed />

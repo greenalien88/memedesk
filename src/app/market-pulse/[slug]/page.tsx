@@ -186,12 +186,14 @@ function SourcePost({ post, quoted }: { post: Article['sourcePost']; quoted: Art
       <blockquote className="border-l-2 border-emerald-400/40 pl-4 text-white/90 italic">
         &ldquo;{post.text}&rdquo;
       </blockquote>
+      {post.engagement && (
       <div className="mt-3 flex flex-wrap gap-4 text-xs text-white/50">
         <span>💬 {post.engagement.replies}</span>
         <span>🔁 {post.engagement.reposts}</span>
         <span>❤️ {post.engagement.likes}</span>
         <span>👁 {(post.engagement.views / 1000).toFixed(1)}K</span>
       </div>
+      )}
       {quoted && (
         <div className="mt-4 rounded-lg border border-white/5 bg-white/5 p-4">
           <div className="text-xs text-white/40">Quoting {quoted.handle} ({quoted.followers} followers)</div>

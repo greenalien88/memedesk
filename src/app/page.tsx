@@ -212,15 +212,15 @@ export default async function HomePage() {
 
         {/* Main content — 3 cols */}
         <div className="lg:col-span-3 flex flex-col gap-6">
-          {/* MemeDesk 300×250 Banner Ad */}
-          <div className="relative w-full h-[250px] flex items-center justify-center overflow-hidden rounded-2xl border border-white/10">
+          {/* MemeDesk Banner Ad — fluid width */}
+          <div className="relative w-full h-[250px] overflow-hidden rounded-2xl border border-white/10">
             <iframe
-              src="/banners/300x250.html"
-              width="300"
+              src="/banners/fluid-250.html"
+              width="100%"
               height="250"
               frameBorder="0"
               scrolling="no"
-              style={{ display: 'block', border: 'none', pointerEvents: 'none' }}
+              style={{ display: 'block', border: 'none', width: '100%', height: '250px', pointerEvents: 'none' }}
             />
             <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded z-10">Ad</span>
           </div>

@@ -212,27 +212,18 @@ export default async function HomePage() {
 
         {/* Main content — 3 cols */}
         <div className="lg:col-span-3 flex flex-col gap-6">
-          {/* Sponsored — Jupiter × Sushi video ad */}
-          <a
-            href="https://jup.ag"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative w-full h-[250px] overflow-hidden rounded-2xl border border-white/10 hover:border-white/20 transition block"
-          >
-            <video
-              src="/jupiter-sushi-ad.mp4"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
+          {/* MemeDesk 300×250 Banner Ad */}
+          <div className="relative w-full h-[250px] flex items-center justify-center overflow-hidden rounded-2xl border border-white/10">
+            <iframe
+              src="/banners/300x250.html"
+              width="300"
+              height="250"
+              frameBorder="0"
+              scrolling="no"
+              style={{ display: 'block', border: 'none', pointerEvents: 'none' }}
             />
-            <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
-            <div className="absolute bottom-0 left-0 right-0 px-4 py-3 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
-              <span className="text-white text-sm font-semibold">Jupiter × Sushi</span>
-              <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
-            </div>
-          </a>
+            <span className="absolute top-2.5 right-3 text-[10px] text-white/40 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded z-10">Ad</span>
+          </div>
 
           {/* More articles grid */}
           {rest.length > 0 && (
@@ -246,28 +237,19 @@ export default async function HomePage() {
             </div>
           )}
 
-          {/* Leaderboard ad (728×90) — below last article */}
+          {/* MemeDesk 728×90 Leaderboard Banner */}
           <div className="flex justify-center">
-            <a
-              href="https://jup.ag"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative w-full max-w-[728px] h-[90px] overflow-hidden rounded-xl border border-white/10 hover:border-white/20 transition block"
-            >
-              <video
-                src="/jupiter-sushi-ad.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
+            <div className="relative w-full max-w-[728px] h-[90px] overflow-hidden rounded-xl border border-white/10">
+              <iframe
+                src="/banners/728x90.html"
+                width="728"
+                height="90"
+                frameBorder="0"
+                scrolling="no"
+                style={{ display: 'block', border: 'none', width: '100%', height: '90px', pointerEvents: 'none' }}
               />
-              <span className="absolute top-1.5 right-2 text-[9px] text-white/30 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded">Sponsored</span>
-              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gradient-to-t from-black/70 to-transparent flex items-center justify-between opacity-0 group-hover:opacity-100 transition">
-                <span className="text-white text-xs font-semibold">Jupiter × Sushi</span>
-                <span className="text-emerald-300 text-xs font-semibold">Trade on Solana →</span>
-              </div>
-            </a>
+              <span className="absolute top-1.5 right-2 text-[9px] text-white/30 tracking-widest uppercase bg-black/40 px-1.5 py-0.5 rounded z-10">Ad</span>
+            </div>
           </div>
 
           <Pagination currentPage={1} totalPages={totalPages} />

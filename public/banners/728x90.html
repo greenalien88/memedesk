@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MemeDesk Banner 728×90</title>
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 728px; height: 90px; overflow: hidden; background: #0a0a0a; }
+
+.banner {
+  position: relative; width: 728px; height: 90px;
+  overflow: hidden; background: #0a0a0a;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+#cvs { position: absolute; inset: 0; }
+
+.grid {
+  position: absolute; inset: 0; opacity: 0;
+  background-image:
+    linear-gradient(rgba(0,255,136,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,136,.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.orb-left {
+  position: absolute; width: 260px; height: 260px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,255,136,.15) 0%, transparent 65%);
+  top: 50%; left: 180px; transform: translate(-50%,-50%);
+  opacity: 0;
+}
+.orb-right {
+  position: absolute; width: 180px; height: 180px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,255,136,.18) 0%, transparent 65%);
+  top: 50%; right: 80px; transform: translateY(-50%);
+  opacity: 0;
+}
+
+.corner { position: absolute; width: 10px; height: 10px; border-color: #00ff88; border-style: solid; opacity: 0; }
+.tl { top: 5px; left: 5px; border-width: 2px 0 0 2px; }
+.tr { top: 5px; right: 5px; border-width: 2px 2px 0 0; }
+.bl { bottom: 5px; left: 5px; border-width: 0 0 2px 2px; }
+.br { bottom: 5px; right: 5px; border-width: 0 2px 2px 0; }
+
+/* Text frame — left 60% */
+.text-frame {
+  position: absolute; left: 0; top: 0; width: 460px; height: 90px;
+  display: flex; align-items: center; padding-left: 28px; gap: 0; opacity: 1;
+}
+
+.divider {
+  position: absolute; right: 0; top: 12px; bottom: 12px;
+  width: 1px; background: rgba(0,255,136,.2);
+}
+
+.line { overflow: hidden; display: inline-block; }
+
+.w-maxxing {
+  font-size: 36px; font-weight: 800; line-height: 1;
+  color: #00ff88; text-transform: uppercase; letter-spacing: -0.02em;
+  text-shadow: 0 0 8px rgba(0,255,136,.5), 0 0 20px rgba(0,255,136,.2);
+  display: block; transform: translateY(110%);
+  white-space: nowrap;
+}
+
+.text-right-col {
+  display: flex; flex-direction: column; justify-content: center;
+  padding-left: 14px; gap: 2px;
+}
+
+.w-profitable {
+  font-size: 13px; font-weight: 700; color: #ffffff;
+  text-transform: uppercase; letter-spacing: 0.16em;
+  display: block; transform: translateY(110%);
+}
+
+.w-from {
+  font-size: 8.5px; font-weight: 600; color: rgba(255,255,255,.4);
+  text-transform: uppercase; letter-spacing: 0.2em;
+  display: block; transform: translateY(110%);
+}
+
+.w-trenches {
+  font-size: 13px; font-weight: 700; color: rgba(255,255,255,.8);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  display: block; transform: translateY(110%);
+}
+
+/* Logo frame — right 40% */
+.logo-frame {
+  position: absolute; right: 0; top: 0; width: 268px; height: 90px;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 5px; opacity: 0;
+}
+
+.logo-frame img {
+  width: 190px;
+  filter: drop-shadow(0 0 10px rgba(0,255,136,.6)) drop-shadow(0 0 26px rgba(0,255,136,.25));
+}
+
+.sub {
+  font-size: 7px; font-weight: 600; letter-spacing: 0.22em;
+  text-transform: uppercase; color: rgba(0,255,136,.5);
+}
+
+.flash { position: absolute; inset: 0; background: #00ff88; opacity: 0; pointer-events: none; }
+
+.scanlines {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.3;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.07) 2px, rgba(0,0,0,.07) 3px);
+}
+
+.border { position: absolute; inset: 0; border: 1px solid rgba(0,255,136,.1); pointer-events: none; }
+
+.cta {
+  position: absolute; right: 16px; bottom: 12px;
+  font-size: 8px; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #00ff88;
+  border: 1px solid rgba(0,255,136,.35); padding: 3px 7px;
+  opacity: 0;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<div class="banner">
+  <canvas id="cvs" width="728" height="90"></canvas>
+  <div class="grid" id="grid"></div>
+  <div class="orb-left" id="orbL"></div>
+  <div class="orb-right" id="orbR"></div>
+
+  <div class="corner tl" id="c1"></div>
+  <div class="corner tr" id="c2"></div>
+  <div class="corner bl" id="c3"></div>
+  <div class="corner br" id="c4"></div>
+
+  <div class="text-frame" id="textFrame">
+    <div class="line"><span class="w-maxxing" id="w1">Maxxing</span></div>
+    <div class="text-right-col">
+      <div class="line"><span class="w-profitable" id="w2">Profitable Alpha</span></div>
+      <div class="line"><span class="w-from" id="w3">from the</span></div>
+      <div class="line"><span class="w-trenches" id="w4">Meme Trenches</span></div>
+    </div>
+    <div class="divider" id="divider" style="opacity:0"></div>
+  </div>
+
+  <div class="logo-frame" id="logoFrame">
+    <img src="assets/memedesk-logo.webp" alt="MemeDesk" id="logoImg">
+    <div class="sub">Maxxing Profitable Alpha</div>
+  </div>
+
+  <div class="cta" id="cta">Enter →</div>
+  <div class="flash" id="flash"></div>
+  <div class="scanlines"></div>
+  <div class="border"></div>
+</div>
+
+<script>
+const canvas = document.getElementById('cvs');
+const ctx = canvas.getContext('2d');
+const W = 728, H = 90;
+const pts = [];
+
+for (let i = 0; i < 70; i++) {
+  pts.push({
+    x: Math.random() * W, y: Math.random() * H,
+    vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4,
+    r: Math.random() * 1 + .3, a: Math.random() * .3 + .07
+  });
+}
+
+(function draw() {
+  ctx.clearRect(0, 0, W, H);
+  pts.forEach(p => {
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+    if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+    ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(0,255,136,${p.a})`; ctx.fill();
+  });
+  for (let i = 0; i < pts.length; i++) {
+    for (let j = i+1; j < pts.length; j++) {
+      const dx = pts[i].x-pts[j].x, dy = pts[i].y-pts[j].y;
+      const d = Math.sqrt(dx*dx+dy*dy);
+      if (d < 70) {
+        ctx.beginPath(); ctx.moveTo(pts[i].x, pts[i].y); ctx.lineTo(pts[j].x, pts[j].y);
+        ctx.strokeStyle = `rgba(0,255,136,${.06*(1-d/70)})`; ctx.lineWidth = .5; ctx.stroke();
+      }
+    }
+  }
+  requestAnimationFrame(draw);
+})();
+
+const tl = gsap.timeline({ repeat: -1, repeatDelay: .5 });
+
+// Intro
+tl.to('#grid',   { opacity: 1, duration: .6 }, 0)
+  .to('#orbL',   { opacity: 1, duration: .8 }, 0)
+  .to(['#c1','#c2','#c3','#c4'], { opacity: 1, duration: .3, stagger: .07 }, .2);
+
+// Text
+tl.to('#w1', { translateY: 0, duration: .45, ease: 'power4.out' }, .6)
+  .to('#w2', { translateY: 0, duration: .38, ease: 'power3.out' }, 1.0)
+  .to('#w3', { translateY: 0, duration: .32, ease: 'power3.out' }, 1.3)
+  .to('#w4', { translateY: 0, duration: .38, ease: 'power3.out' }, 1.5)
+  .to('#divider', { opacity: 1, duration: .4 }, 1.8);
+
+// Hold + pulse
+tl.to('#w1', {
+  textShadow: '0 0 14px rgba(0,255,136,0.9), 0 0 35px rgba(0,255,136,0.5)',
+  duration: .5, yoyo: true, repeat: 1
+}, 2.6);
+
+// Flash
+tl.to('#flash',     { opacity: .5, duration: .11 }, 3.9)
+  .to('#flash',     { opacity: 0,  duration: .2  }, 4.01)
+  .to('#textFrame', { opacity: 0,  duration: .18 }, 3.9);
+
+// Logo
+tl.to('#orbR',   { opacity: .9, duration: .4 }, 4.2)
+  .to('#logoFrame', { opacity: 1, duration: .45, ease: 'power2.out' }, 4.2)
+  .fromTo('#logoImg',
+    { scale: .82, opacity: 0 },
+    { scale: 1, opacity: 1, duration: .45, ease: 'back.out(1.7)' }, 4.2)
+  .to('#cta', { opacity: 1, duration: .35 }, 4.7);
+
+// Logo pulse
+tl.to('#logoImg', {
+  filter: 'drop-shadow(0 0 14px rgba(0,255,136,0.95)) drop-shadow(0 0 38px rgba(0,255,136,0.4))',
+  duration: .7, yoyo: true, repeat: 1
+}, 5.1);
+
+// Hold
+tl.to({}, { duration: 2 }, 7.0);
+
+// Reset
+tl.to(['#logoFrame','#cta'], { opacity: 0, duration: .3 }, 9.0)
+  .to(['#orbL','#orbR'], { opacity: 0, duration: .3 }, 9.0)
+  .to(['#c1','#c2','#c3','#c4','#divider'], { opacity: 0, duration: .2 }, 9.0)
+  .set(['#w1','#w2','#w3','#w4'], { translateY: '110%' })
+  .to('#textFrame', { opacity: 1, duration: .01 });
+</script>
+</body>
+</html>

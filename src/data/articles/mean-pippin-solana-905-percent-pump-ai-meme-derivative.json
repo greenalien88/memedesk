@@ -30,6 +30,11 @@
     "priceChange24h": 905,
     "liquidity": 47409
   },
+  "sourcePost": {
+    "platform": "twitter",
+    "url": "https://twitter.com/meanpippin",
+    "text": "mean pippin is here. the evil twin. 905% and counting. $meanpippin on solana."
+  },
   "body": [
     {
       "type": "paragraph",

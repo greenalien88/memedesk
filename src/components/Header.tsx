@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 const navLinks = [
@@ -20,9 +21,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-black/60 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4">
-        <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-wide">
-          <span className="text-2xl">🐸</span>
-          MemeDesk
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/memedesk-logo.webp"
+            alt="MemeDesk"
+            width={140}
+            height={42}
+            priority
+            className="h-8 w-auto"
+          />
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-white/70 md:flex">
           {navLinks.map((link) => (

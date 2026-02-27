@@ -155,15 +155,17 @@
     },
     {
       "type": "redFlags",
+      "safe": [
+        "Mint authority disabled — no inflation risk",
+        "Freeze authority disabled — no wallet freezing",
+        "Organic score 86.3/100 — genuinely high for a sub-24h token",
+        "Top holders at 16.1% — not extreme concentration"
+      ],
       "flags": [
-        "✅ Mint authority disabled — no inflation risk",
-        "✅ Freeze authority disabled — no wallet freezing",
-        "✅ Organic score 86.3/100 — genuinely high for a sub-24h token",
-        "✅ Top holders at 16.1% — not extreme concentration",
-        "⚠️ Bot holders at 42% — nearly half of holders are automated wallets that will dump at predetermined targets",
-        "⚠️ 386 dev migrations — serial deployer, not a project builder",
-        "⚠️ No social infrastructure — no Telegram, website, or community management",
-        "⚠️ Liquidity-to-mcap ratio of 20.5% — decent but not deep enough for large sells without slippage"
+        "Bot holders at 42% — nearly half of holders are automated wallets that will dump at predetermined targets",
+        "386 dev migrations — serial deployer, not a project builder",
+        "No social infrastructure — no Telegram, website, or community management",
+        "Liquidity-to-mcap ratio of 20.5% — decent but not deep enough for large sells without slippage"
       ]
     },
     {

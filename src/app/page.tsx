@@ -76,7 +76,7 @@ export default async function HomePage() {
   const totalPages = 1 + Math.ceil(Math.max(0, articles.length - 12) / ARTICLES_PER_PAGE);
 
   const featuredCat = featured ? (categoryMeta[featured.category || 'news'] || categoryMeta.news) : categoryMeta.news;
-  const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/news';
+  const featuredHref = featured ? `${featuredCat.path}/${featured.slug}` : '/highlights';
   const featuredSignal = featured ? (signalStyles[featured.signalRating] || signalStyles.speculative) : signalStyles.speculative;
 
   return (

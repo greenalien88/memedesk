@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const articles = getAllArticles();
 
   const articleEntries = articles.map((a) => {
-    const prefix = CATEGORY_PATH[a.category] ?? 'news';
+    const prefix = CATEGORY_PATH[a.category] ?? 'highlights';
     return {
       url: `${base}/${prefix}/${a.slug}`,
       lastModified: new Date(a.publishedAt),

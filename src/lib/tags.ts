@@ -96,6 +96,6 @@ export const CATEGORY_PATH: Record<string, string> = {
 };
 
 export function articleUrl(article: Article): string {
-  const prefix = CATEGORY_PATH[article.category] ?? 'news';
+  const prefix = CATEGORY_PATH[article.category] ?? 'highlights';
   return `/${prefix}/${article.slug}`;
 }

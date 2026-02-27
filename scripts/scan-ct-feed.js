@@ -3,23 +3,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const ACCOUNTS = [
-  '0xansem',
-  'MustStopMurad',
-  'KookCapitalLLC',
-  'frankdegods',
-  'cobie',
-  'gainzy222',
-  'blknoiz06',
-  'loopifyyy',
-  'BasedKarbon',
-  'notthreadguy',
-  '0xSisyphus',
-  'GiganticRebirth',
-  'CryptoGodJohn',
-  'KingShawnn',
-  '9gagcrypto'
-];
+const KOL_ACCOUNTS_PATH = path.join(process.cwd(), 'src', 'data', 'kol-accounts.json');
+const KOL_ACCOUNTS = JSON.parse(fs.readFileSync(KOL_ACCOUNTS_PATH, 'utf8'));
+const ACCOUNTS = KOL_ACCOUNTS.map(a => a.handle);
 
 const NITTER_INSTANCES = [
   'nitter.poast.org',
@@ -76,6 +62,11 @@ function toXUrl(link, author) {
   }
 }
 
+function extractCashtags(text) {
+  const matches = [...(text || '').matchAll(/\$([A-Z]{2,10})\b/g)];
+  return [...new Set(matches.map(m => m[1]))];
+}
+
 function parseRss(xml, author) {
   const items = [];
   if (!xml) return items;
@@ -102,12 +93,16 @@ function parseRss(xml, author) {
       if (lowered.includes(keyword)) score += 2;
     }
 
+    const cashtags = extractCashtags(trimmedTitle);
+    score += cashtags.length * 3;
+
     items.push({
       author,
       text: trimmedTitle,
       url: toXUrl(link, author),
       publishedAt: published.toISOString(),
-      score
+      score,
+      cashtags
     });
   }
 
@@ -156,13 +151,17 @@ async function run() {
 
   const top = allItems
     .sort((a, b) => b.score - a.score)
-    .slice(0, 3)
+    .slice(0, 15)
     .map(({ score, ...item }) => item);
 
   const fetchedAt = new Date().toISOString();
-  const payload = top.map((item) => ({
-    ...item,
-    fetchedAt
+  const payload = top.map(({ author, text, url, publishedAt, cashtags }) => ({
+    author,
+    text,
+    url,
+    publishedAt,
+    fetchedAt,
+    cashtags
   }));
 
   try {

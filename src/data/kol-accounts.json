@@ -1,0 +1,17 @@
+[
+  { "handle": "MustStopMurad", "name": "Murad Mahmudov", "tier": 1, "weight": 10 },
+  { "handle": "blknoiz06",     "name": "Ansem",           "tier": 1, "weight": 10 },
+  { "handle": "0xansem",       "name": "0xAnsem",         "tier": 1, "weight": 10 },
+  { "handle": "KookCapitalLLC","name": "Kook Capital",    "tier": 1, "weight": 10 },
+  { "handle": "cobie",         "name": "Cobie",           "tier": 1, "weight": 9  },
+  { "handle": "frankdegods",   "name": "Frank DeGods",    "tier": 2, "weight": 7  },
+  { "handle": "gainzy222",     "name": "Gainzy",          "tier": 2, "weight": 7  },
+  { "handle": "loopifyyy",     "name": "Loopify",         "tier": 2, "weight": 7  },
+  { "handle": "BasedKarbon",   "name": "Based Karbon",    "tier": 2, "weight": 6  },
+  { "handle": "notthreadguy",  "name": "notthreadguy",    "tier": 2, "weight": 6  },
+  { "handle": "0xSisyphus",    "name": "0xSisyphus",      "tier": 2, "weight": 6  },
+  { "handle": "GiganticRebirth","name": "Gigantic Rebirth","tier": 2, "weight": 6 },
+  { "handle": "CryptoGodJohn", "name": "Crypto God John", "tier": 2, "weight": 6  },
+  { "handle": "KingShawnn",    "name": "King Shawnn",     "tier": 2, "weight": 5  },
+  { "handle": "9gagcrypto",    "name": "9gag Crypto",     "tier": 2, "weight": 5  }
+]

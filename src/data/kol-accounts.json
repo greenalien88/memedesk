@@ -12,6 +12,18 @@
   { "handle": "0xSisyphus",    "name": "0xSisyphus",      "tier": 2, "weight": 6  },
   { "handle": "GiganticRebirth","name": "Gigantic Rebirth","tier": 2, "weight": 6 },
   { "handle": "CryptoGodJohn", "name": "Crypto God John", "tier": 2, "weight": 6  },
-  { "handle": "KingShawnn",    "name": "King Shawnn",     "tier": 2, "weight": 5  },
-  { "handle": "9gagcrypto",    "name": "9gag Crypto",     "tier": 2, "weight": 5  }
+  { "handle": "KingShawnn",      "name": "King Shawnn",     "tier": 2, "weight": 5  },
+  { "handle": "9gagcrypto",      "name": "9gag Crypto",     "tier": 2, "weight": 5  },
+  { "handle": "CookerFlips",     "name": "CookerFlips",     "tier": 2, "weight": 6  },
+  { "handle": "XScharo",         "name": "XScharo",         "tier": 2, "weight": 6  },
+  { "handle": "patty_fi",        "name": "patty_fi",        "tier": 2, "weight": 6  },
+  { "handle": "iambroots",       "name": "iambroots",       "tier": 2, "weight": 6  },
+  { "handle": "CrashiusClay69",  "name": "Crashius Clay",   "tier": 2, "weight": 6  },
+  { "handle": "Solana_Emperor",  "name": "Solana Emperor",  "tier": 2, "weight": 6  },
+  { "handle": "LevanInSolana",   "name": "Levan In Solana", "tier": 2, "weight": 6  },
+  { "handle": "lynk0x",          "name": "lynk0x",          "tier": 2, "weight": 6  },
+  { "handle": "ramonos",         "name": "ramonos",         "tier": 2, "weight": 6  },
+  { "handle": "CryptoLucie",     "name": "Crypto Lucie",    "tier": 2, "weight": 6  },
+  { "handle": "atoms_res",       "name": "atoms_res",       "tier": 2, "weight": 6  },
+  { "handle": "JWanderKing",     "name": "JWanderKing",     "tier": 2, "weight": 6  }
 ]

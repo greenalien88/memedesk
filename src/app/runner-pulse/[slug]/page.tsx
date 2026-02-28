@@ -585,7 +585,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   <ul className="space-y-2">
                     {(block.flags || []).map((flag: string, j: number) => (
                       <li key={j} className="flex items-start gap-2 text-sm text-white/80">
-                        <span className="mt-0.5 text-red-400">⚠️</span> {flag}
+                        <span className={`mt-0.5 shrink-0 ${flag.includes('✅') ? 'text-emerald-400' : 'text-yellow-400'}`}>{flag.includes('✅') ? '✓' : '⚠️'}</span> {flag}
                       </li>
                     ))}
                   </ul>

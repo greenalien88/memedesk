@@ -163,8 +163,15 @@
       "text": "Red Flags Check"
     },
     {
-      "type": "paragraph",
-      "text": "{\"type\":\"bullets\",\"bullets\":[\"Audit status: DexScreener automated audit shows \\\"No issues\\\" — but this only checks basic contract mechanics (honeypot, mint authority), not code quality or team intentions\",\"Liquidity: $27K is dangerously thin. One whale exit could nuke the chart to zero. This is a one-large-sell-away-from-catastrophe situation\",\"Dev wallet: Unknown percentage. The GitHub lists a single developer (sepivip) with no doxxed identity, no previous crypto projects, and no linked social media\",\"Contract: Launched via Pump.fun with standardized token contracts and renounced mint authority — the baseline safety net that all pump.fun graduates share\",\"Age: Less than 4 hours old. Roughly 97% of pump.fun tokens that make it past the bonding curve still die within their first week\",\"Social presence: X Community instead of a dedicated project account. No Telegram group. No Discord. Website is just a GitHub link. This is the social footprint of a developer side-project, not a coordinated launch\"]}"
+      "type": "redFlags",
+      "flags": [
+        "Audit status: DexScreener automated audit shows \"No issues\" — but this only checks basic contract mechanics (honeypot, mint authority), not code quality or team intentions",
+        "Liquidity: $27K is dangerously thin. One whale exit could nuke the chart to zero. This is a one-large-sell-away-from-catastrophe situation",
+        "Dev wallet: Unknown percentage. The GitHub lists a single developer (sepivip) with no doxxed identity, no previous crypto projects, and no linked social media",
+        "Contract: Launched via Pump.fun with standardized token contracts and renounced mint authority — the baseline safety net that all pump.fun graduates share",
+        "Age: Less than 4 hours old. Roughly 97% of pump.fun tokens that make it past the bonding curve still die within their first week",
+        "Social presence: X Community instead of a dedicated project account. No Telegram group. No Discord. Website is just a GitHub link. This is the social footprint of a developer side-project, not a coordinated launch"
+      ]
     },
     {
       "type": "paragraph",

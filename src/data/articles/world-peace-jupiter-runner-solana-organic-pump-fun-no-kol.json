@@ -137,16 +137,18 @@
     },
     {
       "type": "redFlags",
+      "safe": [
+        "Mint authority disabled — no inflation risk",
+        "Freeze authority disabled — tokens can't be frozen",
+        "Dev wallet at 0.2% — one of the lowest we've tracked, minimal insider risk",
+        "Top holders at 12.4% — healthy distribution across the holder base",
+        "Sniper % at 0.2% — organic launch, no coordinated frontrunning"
+      ],
       "flags": [
-        "Mint authority: Disabled ✅ — no risk of infinite supply inflation",
-        "Freeze authority: Disabled ✅ — tokens cannot be frozen in holders' wallets",
-        "Dev wallet: 0.2% ✅ — one of the lowest we've tracked. Minimal insider risk",
-        "Top holders: 12.4% ✅ — healthy distribution across the holder base",
-        "Sniper %: 0.2% ✅ — very low, suggesting organic launch without coordinated frontrunning",
-        "Bot holders: 19.5% ⚠️ — moderate. Nearly 1 in 5 holders are flagged as bot wallets, though this is within normal range for Solana meme coins",
-        "Buy ratio: 47.2% ⚠️ — slightly sell-dominant, which could indicate early profit-taking or a natural correction forming after the initial pump",
-        "No Telegram/Discord: ⚠️ — limited community infrastructure for sustaining momentum",
-        "Single dev with no team visibility: ⚠️ — anonymous developer with minimal social presence"
+        "Bot holders at 19.5% — nearly 1 in 5 holders are flagged as automated wallets",
+        "Buy ratio at 47.2% — slightly sell-dominant, could signal early profit-taking",
+        "No Telegram or Discord — limited community infrastructure for sustaining momentum",
+        "Single dev with no team visibility — anonymous deployer with minimal social presence"
       ]
     },
     {

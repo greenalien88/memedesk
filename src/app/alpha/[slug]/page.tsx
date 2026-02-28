@@ -5,6 +5,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import { getAllArticles, getArticle, type Article } from '@/lib/articles';
 import { tagToSlug } from '@/lib/tags';
+import RedFlagsBlock from '@/components/RedFlagsBlock';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
@@ -403,20 +404,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
               </div>
             );
           }
-          if (block.type === 'redFlags') {
-            return (
-              <div key={i} className="my-6 rounded-xl border border-red-400/30 bg-red-400/5 p-5">
-                <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-red-400">🚩 Red Flags</div>
-                <ul className="space-y-2">
-                  {(block.flags || []).map((flag: string, j: number) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-white/80">
-                      <span className={`mt-0.5 shrink-0 ${flag.includes('✅') ? 'text-emerald-400' : 'text-yellow-400'}`}>{flag.includes('✅') ? '✓' : '⚠️'}</span> {flag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            );
-          }
+          if (block.type === 'redFlags') return <RedFlagsBlock block={block} />;
           if (block.type === 'faq') {
             return (
               <div key={i} className="my-6">

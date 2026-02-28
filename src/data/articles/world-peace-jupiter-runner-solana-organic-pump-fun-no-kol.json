@@ -1,0 +1,217 @@
+{
+  "headline": "World Peace Hits Jupiter's Runners: A $1.28M Meme With Clean Audit Scores and Zero KOL Support",
+  "subheadline": "A pump.fun peace-themed token graduated to Jupiter's Runners list with an 84.5 organic score, 0.2% dev wallet, and $2.4M volume in 4 hours — all without a single CT influencer calling it.",
+  "slug": "world-peace-jupiter-runner-solana-organic-pump-fun-no-kol",
+  "articleType": "runner-radar",
+  "category": "market-pulse",
+  "publishedAt": "2026-02-28T21:04:30+08:00",
+  "author": "MemeDesk",
+  "tags": [
+    "peace",
+    "solana",
+    "jupiter-runner",
+    "pump-fun",
+    "organic-launch"
+  ],
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Pure Organic Runner",
+  "heroImage": "/images/articles/world-peace-jupiter-runner-solana-organic-pump-fun-no-kol.webp",
+  "sourcePost": {
+    "platform": "twitter",
+    "url": "https://x.com/humanevolvd/status/2027661700636307514",
+    "text": "World Peace token launch announcement",
+    "timestamp": "2026-02-28T08:00:00Z"
+  },
+  "tokenData": {
+    "name": "World Peace",
+    "symbol": "Peace",
+    "chain": "solana",
+    "price": "$0.001288",
+    "marketCap": "$1.28M",
+    "volume24h": "$2.43M",
+    "priceChange24h": "+13,726%",
+    "liquidity": "$205K",
+    "holders": "3,811",
+    "pairAge": "4 hours",
+    "contractAddress": "atVjZ7uM8sVrLFi5Xe1JiLGW6mW9pvQdTCWzhNFpump",
+    "dexScreenerUrl": "https://dexscreener.com/solana/atvjz7um8svrlfi5xe1jilgw6mw9pvqdtcwzhnfpump"
+  },
+  "runnerStats": {
+    "mcap": "$1.28M",
+    "mcapRaw": 1282616,
+    "vol24h": "$2.43M",
+    "vol24hRaw": 2428041,
+    "holders": 3811,
+    "organicScore": 84.5,
+    "organicScoreLabel": "high",
+    "priceChange24h": "+13725.9%",
+    "snapshotAt": "2026-02-28T13:00:05Z"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "World Peace ($Peace) just hit Jupiter's Runners list — the Solana DEX aggregator's curated feed of tokens showing strong trading momentum after graduating from launchpads. In a market saturated with AI agents, war-themed tokens, and Pippin derivatives, a token literally named World Peace graduating with a $1.28M market cap and $2.43M in 24-hour volume is either the most ironic trade of the week or a genuine signal that the market's attention is rotating toward something different."
+    },
+    {
+      "type": "paragraph",
+      "text": "What makes this runner particularly interesting isn't the peace branding — it's the on-chain profile. An organic score of 84.5 (classified 'high' by Jupiter's algorithms), a dev wallet holding just 0.2% of supply, top holder concentration of only 12.4%, and a sniper percentage of 0.2%. These are some of the cleanest audit numbers we've seen on a Jupiter runner this month. And it's doing all of this with zero detectable KOL support — no mid-tier CT calls, no coordinated shill campaigns, no influencer threads. Just organic trading activity hitting thresholds that caught Jupiter's attention."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Quick Take",
+      "content": "• $1.28M market cap with $2.43M volume in roughly 4 hours — a 1.9x vol/mcap ratio suggesting active price discovery\n• Jupiter organic score: 84.5 (high) — meaning the trading activity is predominantly real users, not bots\n• Dev wallet: 0.2% — one of the lowest dev allocations we've tracked on a Jupiter runner\n• Zero confirmed KOL calls — this is a purely organic runner, which is rare and notable"
+    },
+    {
+      "type": "heading",
+      "text": "From Pump.fun to Runners"
+    },
+    {
+      "type": "paragraph",
+      "text": "World Peace launched on Pump.fun and graduated at approximately 8:29 AM UTC on February 28th, 2026. The graduation itself was unremarkable — thousands of tokens graduate from Pump.fun's bonding curve every day. What happened after graduation is the story: within roughly 4 hours, the token accumulated $2.43M in trading volume across 47,149 transactions, attracted 3,811 unique holders, and built a $205K liquidity pool."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the metrics that triggered Jupiter's Runners algorithm. The platform's system identifies tokens that demonstrate sustained organic trading activity post-graduation — not just a single pump, but consistent volume with a healthy mix of buyers and sellers. World Peace's current buy ratio sits at 47.2%, which is actually slightly sell-dominant — a counterintuitive signal that's often healthier than the 70%+ buy ratios seen in coordinated pumps, because it indicates genuine two-way price discovery rather than one-directional bot accumulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The token graduated to PumpSwap initially, then built liquidity on Jupiter's broader Solana DEX infrastructure. The $205K liquidity pool is substantial for a 4-hour-old token — enough to absorb mid-sized trades without catastrophic slippage, though still thin enough that a $20K+ sell would move the price noticeably."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "World Peace's on-chain data paints a picture of a token that's found genuine traction without the usual amplification mechanisms. The volume-to-market-cap ratio of 1.9x is elevated but not extreme — well below the 5-7x ratios seen in bot-driven pumps, suggesting real humans trading rather than volume manipulation scripts."
+    },
+    {
+      "type": "paragraph",
+      "text": "At $1.28M market cap, World Peace sits in the sweet spot for early-stage Solana meme coins — large enough to have passed the initial bonding curve gauntlet where 97%+ of pump.fun tokens die, but small enough that meaningful price discovery is still ahead. The 47,149 transactions in 4 hours represent roughly 11,787 trades per hour or 196 per minute — a level of activity that keeps the token visible on DexScreener trending feeds and Jupiter's discovery interfaces."
+    },
+    {
+      "type": "paragraph",
+      "text": "Holder distribution is healthy. At 3,811 holders in 4 hours, the token has achieved rapid distribution with no single whale dominating the supply. The top holders collectively control 12.4% — among the lowest concentration figures we've seen on a runner. For comparison, most runner-radar tokens we've covered had top holder concentrations between 20-35%. This distribution suggests that the initial buyers are either retail traders taking small positions or the dev intentionally avoided concentrating supply."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Calling It"
+    },
+    {
+      "type": "paragraph",
+      "text": "Nobody. And that's the most notable aspect of this runner."
+    },
+    {
+      "type": "paragraph",
+      "text": "Extensive searches across CT (Crypto Twitter), X, and meme coin communities turned up zero confirmed KOL endorsements for World Peace. No mid-tier callers, no alpha group mentions, no coordinated thread campaigns. The token's sole social presence appears to be a Twitter account (@humanevolvd) linked to the project, which posted a launch announcement — but the account has no significant following or engagement metrics that would explain the trading volume."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the Jupiter Runners context, this absence is significant. Most tokens that hit the Runners list have at least 2-3 detectable CT mentions from accounts with 10K+ followers. A runner with zero KOL support achieving $2.43M volume is either evidence of genuine grassroots discovery (Telegram groups, small Discord communities, DexScreener trending feeds) or sophisticated marketing that operates below the usual CT radar — perhaps through bot networks that Jupiter's organic score algorithm isn't catching."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 84.5 organic score argues against the bot theory. Jupiter's algorithm specifically penalizes tokens with high bot activity, and scores above 80 generally indicate that the majority of trading is from real wallets with genuine transaction histories. Combined with the 0.2% sniper rate (extremely low — most pump.fun tokens see 3-10% sniper activity), the data strongly suggests that World Peace's volume is coming from real traders discovering it through organic channels."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Behind It"
+    },
+    {
+      "type": "paragraph",
+      "text": "The dev profile is minimal but clean. The wallet holding 0.2% of supply indicates either a deliberate choice to minimize insider allocation or a developer who sold most of their initial position already. With 63 dev migrations tracked on-chain and 701 dev mints — standard numbers for a pump.fun launch — there's nothing anomalous in the deployment history."
+    },
+    {
+      "type": "paragraph",
+      "text": "The project's website field links to UNESCO's International Peace and Security page — clearly a tongue-in-cheek branding choice rather than a legitimate institutional affiliation. The token is positioning itself within the broader 'cause meme' category that includes $IRAN (which we covered earlier today) and various charity-themed tokens that have emerged on Pump.fun. The peace branding is broadly positive — it's hard to argue against world peace — which gives it a wider appeal window than tokens built around controversial or offensive themes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The @humanevolvd Twitter account appears to be a single individual rather than a team, with limited posting history beyond the token launch. There's no Telegram group linked on DexScreener, no Discord server, and no detailed roadmap or whitepaper. This is a pure meme launch — the token's value proposition is its name and the community that forms around it, not any utility or technical innovation."
+    },
+    {
+      "type": "heading",
+      "text": "Red Flags Check"
+    },
+    {
+      "type": "redFlags",
+      "flags": [
+        "Mint authority: Disabled ✅ — no risk of infinite supply inflation",
+        "Freeze authority: Disabled ✅ — tokens cannot be frozen in holders' wallets",
+        "Dev wallet: 0.2% ✅ — one of the lowest we've tracked. Minimal insider risk",
+        "Top holders: 12.4% ✅ — healthy distribution across the holder base",
+        "Sniper %: 0.2% ✅ — very low, suggesting organic launch without coordinated frontrunning",
+        "Bot holders: 19.5% ⚠️ — moderate. Nearly 1 in 5 holders are flagged as bot wallets, though this is within normal range for Solana meme coins",
+        "Buy ratio: 47.2% ⚠️ — slightly sell-dominant, which could indicate early profit-taking or a natural correction forming after the initial pump",
+        "No Telegram/Discord: ⚠️ — limited community infrastructure for sustaining momentum",
+        "Single dev with no team visibility: ⚠️ — anonymous developer with minimal social presence"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The audit profile is remarkably clean by pump.fun standards. The combination of disabled authorities, negligible dev wallet, low sniper rate, and high organic score is a configuration we rarely see — most tokens that achieve this level of distribution have either been trading for weeks or have established community management. World Peace achieved it in 4 hours, which is either a sign of exceptional organic demand or a sophisticated launch strategy that mimics organic patterns."
+    },
+    {
+      "type": "heading",
+      "text": "The Organic Signal"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jupiter's organic score is perhaps the single most important metric for evaluating runner-radar tokens, and World Peace's 84.5 deserves detailed explanation. The score ranges from 0 to 100 and measures the proportion of trading activity coming from verified organic wallets — accounts with established transaction histories, diverse token interactions, and patterns consistent with human traders rather than automated scripts."
+    },
+    {
+      "type": "paragraph",
+      "text": "An 84.5 organic score places World Peace in the 'high' category, meaning Jupiter's algorithms believe roughly 85% of the trading activity is from real users. For context, most pump.fun graduates that hit Runners land in the 60-80 range, with scores above 80 being relatively uncommon and scores above 90 being exceptional. The high organic score combined with zero KOL support creates an unusual profile: this appears to be genuine retail discovery without the usual CT amplification pipeline."
+    },
+    {
+      "type": "paragraph",
+      "text": "The practical implication for traders: high organic scores correlate with more sustainable price action in the first 48 hours post-graduation. Tokens with sub-60 organic scores tend to see sharp dumps within 12-24 hours as bots exit their positions. Tokens above 80 tend to have more gradual price discovery, though they're not immune to severe corrections — the meme coin market can reverse any token regardless of its organic profile."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict"
+    },
+    {
+      "type": "verdict",
+      "rating": "speculative",
+      "emoji": "🟡",
+      "text": "World Peace is a textbook 'clean runner' — the kind of Jupiter graduation that on-chain analysts point to when arguing that organic demand still exists in the pump.fun ecosystem. The numbers are genuinely impressive: 84.5 organic score, 0.2% dev wallet, 0.2% sniper rate, 12.4% top holder concentration, $2.43M volume in 4 hours. These are audit metrics that most established meme coins with weeks of trading history don't achieve. The absence of KOL support is simultaneously the bull case (undiscovered, early, room for CT to amplify) and the bear case (no social infrastructure to sustain momentum, could fade into obscurity)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The play: Watch the next 12-24 hours for CT pickup. If even one mid-tier KOL (50K+ followers) calls World Peace, the thin but healthy liquidity and strong organic base could produce significant price action. If 24 hours pass with continued KOL silence and the volume starts declining, this likely follows the fate of most clean-but-unloved Pump.fun graduates: a slow fade toward the $200-500K mcap range where it either finds a sustainable floor or bleeds out entirely. The peace branding gives it cultural durability that most random-name tokens lack, but cultural durability and price sustainability are different conversations in meme coin markets."
+    },
+    {
+      "type": "heading",
+      "text": "FAQ"
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What does it mean to be on Jupiter's Runners list?",
+          "answer": "Jupiter's Runners list highlights tokens that have recently graduated from launchpads like Pump.fun and are showing strong organic trading momentum. It's Jupiter's way of surfacing tokens that their algorithm identifies as having genuine trading activity rather than artificial volume."
+        },
+        {
+          "question": "What is a Jupiter organic score?",
+          "answer": "The organic score (0-100) measures the proportion of trading activity from verified real wallets versus bots. World Peace scored 84.5 (high), meaning roughly 85% of its trading is from genuine users. Scores above 80 are relatively uncommon among Pump.fun graduates."
+        },
+        {
+          "question": "Why is zero KOL support significant?",
+          "answer": "Most tokens that hit Jupiter's Runners have at least 2-3 CT influencer mentions. A runner achieving $2.43M volume with zero KOL calls suggests genuine grassroots discovery. It means the token is undiscovered by CT's amplification pipeline, which creates both upside potential (if discovered) and downside risk (no social infrastructure to sustain momentum)."
+        },
+        {
+          "question": "Is the 0.2% dev wallet safe?",
+          "answer": "A 0.2% dev wallet is extremely low — one of the lowest we've tracked on a Jupiter runner. It significantly reduces the risk of a dev dump crashing the price. However, it doesn't eliminate other risks: the dev could control other wallets, and the token still faces standard meme coin volatility."
+        },
+        {
+          "question": "Should I buy World Peace?",
+          "answer": "This is a 4-hour-old meme coin with no roadmap, no team, and no utility. The clean audit profile reduces some risks but doesn't eliminate the fundamental reality: most Pump.fun graduates trend toward zero regardless of their organic scores. Only trade with capital you can afford to lose entirely."
+        }
+      ]
+    }
+  ],
+  "id": "world-peace-jupiter-runner-solana-organic-pump-fun-no-kol"
+}

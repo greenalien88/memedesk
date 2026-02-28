@@ -601,6 +601,9 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                     <p className="text-sm text-white/70">{block.watch}</p>
                   </div>
                 )}
+                {block.text && !block.bull && !block.bear && !block.watch && (
+                  <p className="text-sm leading-relaxed text-white/80">{block.text}</p>
+                )}
               </div>
             );
           }

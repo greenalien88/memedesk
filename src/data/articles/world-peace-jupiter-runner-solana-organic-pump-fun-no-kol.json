@@ -177,9 +177,12 @@
     },
     {
       "type": "verdict",
-      "rating": "speculative",
+      "rating": "yellow",
       "emoji": "🟡",
-      "text": "World Peace is a textbook 'clean runner' — the kind of Jupiter graduation that on-chain analysts point to when arguing that organic demand still exists in the pump.fun ecosystem. The numbers are genuinely impressive: 84.5 organic score, 0.2% dev wallet, 0.2% sniper rate, 12.4% top holder concentration, $2.43M volume in 4 hours. These are audit metrics that most established meme coins with weeks of trading history don't achieve. The absence of KOL support is simultaneously the bull case (undiscovered, early, room for CT to amplify) and the bear case (no social infrastructure to sustain momentum, could fade into obscurity)."
+      "label": "Speculative",
+      "bull": "A textbook clean runner — 84.5 organic score, 0.2% dev wallet, 0.2% sniper rate, 12.4% top holder concentration, and $2.43M volume in under 4 hours. These are audit metrics most established meme coins with weeks of trading history don't achieve. The absence of KOL support makes this undiscovered territory with real room for CT to amplify.",
+      "bear": "No social infrastructure means no one is actively sustaining momentum. No Telegram, no Discord, anonymous dev with no track record. Without a community or KOL picking it up, this could fade as quickly as it pumped. Bot holders at 19.5% and a sell-dominant buy ratio suggest early holders are already taking profit.",
+      "watch": "Whether any tier-1 or tier-2 KOL picks this up in the next 24-48h. That's the only catalyst that turns a clean runner into a sustained move."
     },
     {
       "type": "paragraph",

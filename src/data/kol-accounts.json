@@ -20,5 +20,13 @@
   { "handle": "ramonos",         "name": "ramonos",         "tier": 1, "weight": 9  },
   { "handle": "CryptoLucie",     "name": "Crypto Lucie",    "tier": 2, "weight": 6  },
   { "handle": "atoms_res",       "name": "atoms_res",       "tier": 2, "weight": 6  },
-  { "handle": "JWanderKing",     "name": "JWanderKing",     "tier": 2, "weight": 6  }
+  { "handle": "JWanderKing",     "name": "JWanderKing",     "tier": 2, "weight": 6  },
+  { "handle": "SHOCKEDJS",       "name": "SHOCKEDJS",        "tier": 1, "weight": 9  },
+  { "handle": "WhiteWhaleLabs",  "name": "White Whale Labs",  "tier": 2, "weight": 6  },
+  { "handle": "mellometrics",    "name": "mellometrics",      "tier": 2, "weight": 6  },
+  { "handle": "WatcherChase",    "name": "WatcherChase",      "tier": 2, "weight": 7  },
+  { "handle": "itspyrored",      "name": "itspyrored",        "tier": 2, "weight": 6  },
+  { "handle": "badattrading_",   "name": "badattrading",      "tier": 2, "weight": 6  },
+  { "handle": "ashrobin",        "name": "ashrobin",          "tier": 2, "weight": 7  },
+  { "handle": "kantolabs",       "name": "Kanto Labs",        "tier": 2, "weight": 6  }
 ]

@@ -198,8 +198,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     '@type': 'FAQPage',
     mainEntity: faqBlock.items.map((faq: any) => ({
       '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+      name: faq.question || faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer || faq.a },
     })),
   } : null;
 
@@ -390,8 +390,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <div className="space-y-4">
                   {(block.items || []).map((faq: any, j: number) => (
                     <div key={j} className="rounded-xl border border-white/10 bg-white/5 p-4">
-                      <h3 className="mb-2 text-sm font-bold text-white">{faq.question}</h3>
-                      <p className="text-sm leading-relaxed text-white/70">{faq.answer}</p>
+                      <h3 className="mb-2 text-sm font-bold text-white">{faq.question || faq.q}</h3>
+                      <p className="text-sm leading-relaxed text-white/70">{faq.answer || faq.a}</p>
                     </div>
                   ))}
                 </div>

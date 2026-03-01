@@ -232,20 +232,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What's driving the war meme meta on Solana?",
-          "a": "Global geopolitical tensions — Iran sanctions, Middle Eastern escalation, NATO budget debates — are being financialized by Crypto Twitter into tradeable meme tokens. $WAR was the first mover, and derivative tokens like WARBROS, BELLATOR, and ARMY GANG are riding the same narrative wave."
+          "question": "What's driving the war meme meta on Solana?",
+          "answer": "Global geopolitical tensions — Iran sanctions, Middle Eastern escalation, NATO budget debates — are being financialized by Crypto Twitter into tradeable meme tokens. $WAR was the first mover, and derivative tokens like WARBROS, BELLATOR, and ARMY GANG are riding the same narrative wave."
         },
         {
-          "q": "Which war-themed token has the most volume?",
-          "a": "BELLATOR leads with $4.8M in 24-hour volume, followed by WARBROS ($1M) and ARMY GANG ($635K). Combined, the war meta generated over $6.5M in trading volume in the last 24 hours."
+          "question": "Which war-themed token has the most volume?",
+          "answer": "BELLATOR leads with $4.8M in 24-hour volume, followed by WARBROS ($1M) and ARMY GANG ($635K). Combined, the war meta generated over $6.5M in trading volume in the last 24 hours."
         },
         {
-          "q": "Are war meme tokens safe to trade?",
-          "a": "No meme token is 'safe.' All four tokens in this meta have under $50K in liquidity, meaning exit liquidity is extremely thin. Price swings of 50%+ in either direction should be expected. None of these tokens have audit reports, locked liquidity guarantees, or doxxed teams."
+          "question": "Are war meme tokens safe to trade?",
+          "answer": "No meme token is 'safe.' All four tokens in this meta have under $50K in liquidity, meaning exit liquidity is extremely thin. Price swings of 50%+ in either direction should be expected. None of these tokens have audit reports, locked liquidity guarantees, or doxxed teams."
         },
         {
-          "q": "How long will the war meta last?",
-          "a": "Historical Solana meme metas last 2-8 weeks depending on catalyst strength. The war meta's lifespan is tied to real-world geopolitical headlines. If tensions persist through March, the narrative has runway. If headlines shift, expect a rapid unwind."
+          "question": "How long will the war meta last?",
+          "answer": "Historical Solana meme metas last 2-8 weeks depending on catalyst strength. The war meta's lifespan is tied to real-world geopolitical headlines. If tensions persist through March, the narrative has runway. If headlines shift, expect a rapid unwind."
         }
       ]
     }

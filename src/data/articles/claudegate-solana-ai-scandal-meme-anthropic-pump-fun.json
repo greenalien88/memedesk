@@ -169,20 +169,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What is ClaudeGate?",
-          "a": "ClaudeGate ($CLAUDEGATE) is a Solana meme token launched via Pump.fun that references the recent wave of drama around Anthropic's Claude AI — including its Pentagon rejection, #1 App Store ranking, and the exposure of Chinese AI companies stealing its technology through 16 million API queries."
+          "question": "What is ClaudeGate?",
+          "answer": "ClaudeGate ($CLAUDEGATE) is a Solana meme token launched via Pump.fun that references the recent wave of drama around Anthropic's Claude AI — including its Pentagon rejection, #1 App Store ranking, and the exposure of Chinese AI companies stealing its technology through 16 million API queries."
         },
         {
-          "q": "Why did ClaudeGate pump so hard?",
-          "a": "Three overlapping catalysts: (1) Claude hit #1 on Apple's free apps chart after the Pentagon banned it, (2) Anthropic exposed DeepSeek, Moonshot AI, and MiniMax for industrial-scale API theft, and (3) the 'gate' scandal suffix resonated with Crypto Twitter's love of drama-driven trading. Combined, these created a perfect storm for a culture-moment meme token."
+          "question": "Why did ClaudeGate pump so hard?",
+          "answer": "Three overlapping catalysts: (1) Claude hit #1 on Apple's free apps chart after the Pentagon banned it, (2) Anthropic exposed DeepSeek, Moonshot AI, and MiniMax for industrial-scale API theft, and (3) the 'gate' scandal suffix resonated with Crypto Twitter's love of drama-driven trading. Combined, these created a perfect storm for a culture-moment meme token."
         },
         {
-          "q": "Is ClaudeGate safe to trade?",
-          "a": "No. With only $29K in liquidity, ClaudeGate is extremely volatile and thin. Large sells can crash the price instantly. It's a day-trading vehicle, not an investment. The token has no utility, no team, and no roadmap — it exists purely as a speculative play on the Claude news cycle."
+          "question": "Is ClaudeGate safe to trade?",
+          "answer": "No. With only $29K in liquidity, ClaudeGate is extremely volatile and thin. Large sells can crash the price instantly. It's a day-trading vehicle, not an investment. The token has no utility, no team, and no roadmap — it exists purely as a speculative play on the Claude news cycle."
         },
         {
-          "q": "Will there be more Claude-themed tokens?",
-          "a": "Almost certainly. If the Anthropic story continues to develop (legal action against Chinese companies, congressional hearings), expect multiple derivative tokens to launch. ClaudeGate's first-mover advantage in volume and name recognition gives it an edge, but new entrants could fragment the liquidity."
+          "question": "Will there be more Claude-themed tokens?",
+          "answer": "Almost certainly. If the Anthropic story continues to develop (legal action against Chinese companies, congressional hearings), expect multiple derivative tokens to launch. ClaudeGate's first-mover advantage in volume and name recognition gives it an edge, but new entrants could fragment the liquidity."
         }
       ]
     }

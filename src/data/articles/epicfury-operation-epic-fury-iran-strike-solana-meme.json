@@ -178,20 +178,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What is Operation Epic Fury?",
-          "a": "Operation Epic Fury is the codename for U.S.-Israel coordinated military strikes against Iranian nuclear and military infrastructure, launched on Saturday evening UTC. The operation triggered $521M in crypto liquidations and spawned multiple war and peace-themed meme tokens on Solana."
+          "question": "What is Operation Epic Fury?",
+          "answer": "Operation Epic Fury is the codename for U.S.-Israel coordinated military strikes against Iranian nuclear and military infrastructure, launched on Saturday evening UTC. The operation triggered $521M in crypto liquidations and spawned multiple war and peace-themed meme tokens on Solana."
         },
         {
-          "q": "Why did $EPICFURY pump to $9M?",
-          "a": "The token launched within hours of the military operation making headlines, capitalizing on the intense attention and trading activity around the Iran strikes. Its name is the literal operation codename, giving it first-mover advantage as the 'official' meme for the event. The 63% buy ratio suggests ongoing accumulation."
+          "question": "Why did $EPICFURY pump to $9M?",
+          "answer": "The token launched within hours of the military operation making headlines, capitalizing on the intense attention and trading activity around the Iran strikes. Its name is the literal operation codename, giving it first-mover advantage as the 'official' meme for the event. The 63% buy ratio suggests ongoing accumulation."
         },
         {
-          "q": "What about the peace tokens?",
-          "a": "$Peace (World Peace) is the largest peace-themed derivative at $1M mcap and +3308%. However, most peace tokens — including The Peace Prophecy (-95%) and Peace Pippin (-94%) — have already crashed, suggesting the market is pricing in escalation rather than resolution."
+          "question": "What about the peace tokens?",
+          "answer": "$Peace (World Peace) is the largest peace-themed derivative at $1M mcap and +3308%. However, most peace tokens — including The Peace Prophecy (-95%) and Peace Pippin (-94%) — have already crashed, suggesting the market is pricing in escalation rather than resolution."
         },
         {
-          "q": "How long will geopolitical meme tokens last?",
-          "a": "Their lifespan is tied directly to the news cycle. If the Iran situation escalates (retaliation, UN sessions, further strikes), expect sustained volume. If it de-escalates quickly, the tokens will bleed. The war meta has been active for over a week on Solana, suggesting some baseline demand for geopolitical speculation."
+          "question": "How long will geopolitical meme tokens last?",
+          "answer": "Their lifespan is tied directly to the news cycle. If the Iran situation escalates (retaliation, UN sessions, further strikes), expect sustained volume. If it de-escalates quickly, the tokens will bleed. The war meta has been active for over a week on Solana, suggesting some baseline demand for geopolitical speculation."
         }
       ]
     }

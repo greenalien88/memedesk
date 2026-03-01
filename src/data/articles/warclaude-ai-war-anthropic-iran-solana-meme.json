@@ -170,20 +170,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What is WarClaude?",
-          "a": "WarClaude ($WARCLAUDE) is a Solana meme token launched via swarms.world that combines two narratives: Anthropic's Claude AI safety drama (Pentagon ban, Chinese espionage, refusal to permit autonomous killing) and the U.S.-Israel Operation Epic Fury military strikes on Iran. It exists at the intersection of AI and warfare as a commentary/speculation vehicle."
+          "question": "What is WarClaude?",
+          "answer": "WarClaude ($WARCLAUDE) is a Solana meme token launched via swarms.world that combines two narratives: Anthropic's Claude AI safety drama (Pentagon ban, Chinese espionage, refusal to permit autonomous killing) and the U.S.-Israel Operation Epic Fury military strikes on Iran. It exists at the intersection of AI and warfare as a commentary/speculation vehicle."
         },
         {
-          "q": "Why did WarClaude pump 979%?",
-          "a": "Two converging catalysts: (1) Anthropic's Claude AI dominating tech headlines with its Pentagon rejection, App Store surge, and Chinese theft scandal, and (2) Operation Epic Fury triggering $521M in crypto liquidations. WarClaude captured both audiences by fusing the narratives into a single ticker."
+          "question": "Why did WarClaude pump 979%?",
+          "answer": "Two converging catalysts: (1) Anthropic's Claude AI dominating tech headlines with its Pentagon rejection, App Store surge, and Chinese theft scandal, and (2) Operation Epic Fury triggering $521M in crypto liquidations. WarClaude captured both audiences by fusing the narratives into a single ticker."
         },
         {
-          "q": "Is WarClaude safe to trade?",
-          "a": "No. With $24K in liquidity and a $46K market cap, WarClaude is an extreme micro-cap play. A single moderate sell order could crash the price dramatically. This is strictly a narrative speculation trade with high risk of total loss."
+          "question": "Is WarClaude safe to trade?",
+          "answer": "No. With $24K in liquidity and a $46K market cap, WarClaude is an extreme micro-cap play. A single moderate sell order could crash the price dramatically. This is strictly a narrative speculation trade with high risk of total loss."
         },
         {
-          "q": "How does WarClaude compare to ClaudeGate and EpicFury?",
-          "a": "ClaudeGate ($12.5M volume) is the pure AI play. EpicFury ($9M mcap) is the pure war play. WarClaude ($46K mcap, $278K volume) is the micro-cap intersection bet — higher risk but positioned to benefit from catalysts in both narratives simultaneously."
+          "question": "How does WarClaude compare to ClaudeGate and EpicFury?",
+          "answer": "ClaudeGate ($12.5M volume) is the pure AI play. EpicFury ($9M mcap) is the pure war play. WarClaude ($46K mcap, $278K volume) is the micro-cap intersection bet — higher risk but positioned to benefit from catalysts in both narratives simultaneously."
         }
       ]
     }

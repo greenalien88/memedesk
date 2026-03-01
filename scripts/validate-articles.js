@@ -81,6 +81,29 @@ for (const file of files) {
     articleErrors.push('body must be a non-empty array');
   }
 
+  // FAQ block validation — field names must be question/answer not q/a
+  if (Array.isArray(article.body)) {
+    const faqBlocks = article.body.filter(b => b.type === 'faq');
+    for (const faqBlock of faqBlocks) {
+      if (!Array.isArray(faqBlock.items) || faqBlock.items.length === 0) {
+        articleWarnings.push('faq block has no items');
+        continue;
+      }
+      for (let idx = 0; idx < faqBlock.items.length; idx++) {
+        const item = faqBlock.items[idx];
+        if (item.q !== undefined || item.a !== undefined) {
+          articleErrors.push(`faq.items[${idx}] uses shorthand "q"/"a" — must be "question"/"answer"`);
+        }
+        if (!item.question && !item.q) {
+          articleErrors.push(`faq.items[${idx}] missing "question" field`);
+        }
+        if (!item.answer && !item.a) {
+          articleErrors.push(`faq.items[${idx}] missing "answer" field`);
+        }
+      }
+    }
+  }
+
   if (articleErrors.length > 0) {
     console.error(`❌ ${file}:`);
     articleErrors.forEach(e => console.error(`   • ${e}`));

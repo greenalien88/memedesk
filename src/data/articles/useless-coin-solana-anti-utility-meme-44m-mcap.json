@@ -177,20 +177,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What is USELESS COIN?",
-          "a": "USELESS COIN ($USELESS) is a Solana-based meme token launched via letsbonk.fun approximately 294 days ago. It has no utility, no roadmap, no staking, and no governance — by design. The token's entire premise is that it's 'useless,' which has become its defining narrative and brand identity."
+          "question": "What is USELESS COIN?",
+          "answer": "USELESS COIN ($USELESS) is a Solana-based meme token launched via letsbonk.fun approximately 294 days ago. It has no utility, no roadmap, no staking, and no governance — by design. The token's entire premise is that it's 'useless,' which has become its defining narrative and brand identity."
         },
         {
-          "q": "Why does USELESS COIN have a $44M market cap?",
-          "a": "Despite (or because of) its lack of utility, USELESS has built a sustained community and trading base over 10 months. Its anti-utility narrative resonates in a market fatigued by fake roadmaps and rug pulls. The OKX listing has also expanded its buyer base beyond on-chain natives."
+          "question": "Why does USELESS COIN have a $44M market cap?",
+          "answer": "Despite (or because of) its lack of utility, USELESS has built a sustained community and trading base over 10 months. Its anti-utility narrative resonates in a market fatigued by fake roadmaps and rug pulls. The OKX listing has also expanded its buyer base beyond on-chain natives."
         },
         {
-          "q": "Is USELESS COIN safe to buy?",
-          "a": "No meme token is 'safe' to buy. While USELESS has better liquidity ($1.4M) and longevity (294 days) than most meme tokens, it has no fundamental value by its own admission. Price is entirely driven by speculative demand, which can evaporate at any time."
+          "question": "Is USELESS COIN safe to buy?",
+          "answer": "No meme token is 'safe' to buy. While USELESS has better liquidity ($1.4M) and longevity (294 days) than most meme tokens, it has no fundamental value by its own admission. Price is entirely driven by speculative demand, which can evaporate at any time."
         },
         {
-          "q": "Where can you trade USELESS COIN?",
-          "a": "USELESS COIN is available on OKX (centralized exchange) and through Solana DEXes including Jupiter and Raydium. The primary trading pair is on DexScreener via the letsbonk.fun launchpad."
+          "question": "Where can you trade USELESS COIN?",
+          "answer": "USELESS COIN is available on OKX (centralized exchange) and through Solana DEXes including Jupiter and Raydium. The primary trading pair is on DexScreener via the letsbonk.fun launchpad."
         }
       ]
     }

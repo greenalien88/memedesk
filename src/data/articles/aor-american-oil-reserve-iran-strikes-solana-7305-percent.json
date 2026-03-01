@@ -166,20 +166,20 @@
       "type": "faq",
       "items": [
         {
-          "q": "What is American Oil Reserve ($AOR)?",
-          "a": "AOR is a Solana meme token that financializes energy supply fear following the U.S.-Israel Operation Epic Fury strikes on Iran. Named to evoke the Strategic Petroleum Reserve, it serves as a speculative proxy for oil disruption sentiment in the crypto market."
+          "question": "What is American Oil Reserve ($AOR)?",
+          "answer": "AOR is a Solana meme token that financializes energy supply fear following the U.S.-Israel Operation Epic Fury strikes on Iran. Named to evoke the Strategic Petroleum Reserve, it serves as a speculative proxy for oil disruption sentiment in the crypto market."
         },
         {
-          "q": "Why did $AOR pump 7,305%?",
-          "a": "Operation Epic Fury targeted Iranian infrastructure including oil-related assets. Iran produces 3.2M barrels/day as OPEC's third-largest producer. The token captured energy supply fear that traditional oil markets couldn't price over the weekend (futures markets were closed)."
+          "question": "Why did $AOR pump 7,305%?",
+          "answer": "Operation Epic Fury targeted Iranian infrastructure including oil-related assets. Iran produces 3.2M barrels/day as OPEC's third-largest producer. The token captured energy supply fear that traditional oil markets couldn't price over the weekend (futures markets were closed)."
         },
         {
-          "q": "Is $AOR backed by real oil?",
-          "a": "No. $AOR is a meme token with no underlying asset, no reserves, and no team obligations. It's purely a speculative vehicle for trading sentiment around oil supply disruption. It is not an oil ETF, commodity derivative, or any form of asset-backed token."
+          "question": "Is $AOR backed by real oil?",
+          "answer": "No. $AOR is a meme token with no underlying asset, no reserves, and no team obligations. It's purely a speculative vehicle for trading sentiment around oil supply disruption. It is not an oil ETF, commodity derivative, or any form of asset-backed token."
         },
         {
-          "q": "How does $AOR compare to other war meme tokens?",
-          "a": "$AOR has the deepest liquidity ($188K vs $20-50K for most war memes) and highest buy ratio (67%) in the current geopolitical cycle. Its commodity-narrative angle differentiates it from pure military memes (EpicFury) and AI-war mashups (WarClaude)."
+          "question": "How does $AOR compare to other war meme tokens?",
+          "answer": "$AOR has the deepest liquidity ($188K vs $20-50K for most war memes) and highest buy ratio (67%) in the current geopolitical cycle. Its commodity-narrative angle differentiates it from pure military memes (EpicFury) and AI-war mashups (WarClaude)."
         }
       ]
     }

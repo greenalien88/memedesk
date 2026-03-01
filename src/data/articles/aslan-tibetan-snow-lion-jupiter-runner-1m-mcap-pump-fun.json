@@ -1,0 +1,215 @@
+{
+  "id": "aslan-tibetan-snow-lion-jupiter-runner-1m-mcap-pump-fun",
+  "slug": "aslan-tibetan-snow-lion-jupiter-runner-1m-mcap-pump-fun",
+  "headline": "$Aslan Hits Jupiter's Runners at $1M Market Cap with 85.6 Organic Score — Snow Lion or Paper Tiger?",
+  "subheadline": "A Tibetan Snow Lion-themed token graduated from Pump.fun and hit Jupiter's Runners list with $4.38M in volume, 3,341 holders, and one of the highest organic scores this week. Here's what the data says.",
+  "publishedAt": "2026-03-01T18:05:53+08:00",
+  "updatedAt": "2026-03-01T18:00:00+08:00",
+  "author": "MemeDesk Signal Desk",
+  "heroImage": "/images/articles/aslan-tibetan-snow-lion-jupiter-runner-1m-mcap-pump-fun.webp",
+  "articleType": "runner-radar",
+  "category": "market-pulse",
+  "chain": "SOL",
+  "tags": [
+    "aslan",
+    "solana",
+    "jupiter-runners",
+    "pump-fun",
+    "runner-radar"
+  ],
+  "signalRating": "speculative",
+  "signalEmoji": "🟡",
+  "signalLabel": "Snow Lion Prowls Jupiter",
+  "tokenData": {
+    "name": "The Tibetan Snow Lion",
+    "symbol": "Aslan",
+    "price": "$0.00104",
+    "marketCap": "$1.04M",
+    "ath": null,
+    "athDrop": null,
+    "recentAction": "+7,674% since launch with $4.38M volume and 66,030 transactions in 6 hours"
+  },
+  "runnerStats": {
+    "mcap": "$1.04M",
+    "mcapRaw": 1042645,
+    "vol24h": "$4.38M",
+    "vol24hRaw": 4375002,
+    "holders": 3341,
+    "organicScore": 85.6,
+    "organicScoreLabel": "high",
+    "priceChange24h": "+7674.1%",
+    "snapshotAt": "2026-03-01T10:00:06Z"
+  },
+  "sourcePost": {
+    "platform": "twitter",
+    "url": "https://x.com/Meehan1x/status/2027950174216097826",
+    "text": "The Tibetan Snow Lion — $Aslan on Solana",
+    "timestamp": "2026-03-01T04:00:00Z",
+    "engagement": {
+      "replies": 0,
+      "reposts": 0,
+      "likes": 0,
+      "views": 0
+    }
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "At approximately 3:55 AM UTC on March 1st, a token called The Tibetan Snow Lion ($Aslan) graduated from Pump.fun and landed on Jupiter's Runners list — the curated spotlight for newly launched Solana tokens showing genuine trading momentum. Six hours later, it's sitting at $1.04 million market cap with $4.38 million in 24-hour volume, 3,341 holders, and an organic score of 85.6 out of 100."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a market saturated with war memes, AI tokens, and geopolitical derivatives — all spawned by today's Operation Epic Fury and ClaudeGate headlines — $Aslan stands out precisely because it has nothing to do with any of that. It's a mythological animal meme in a sea of political noise. And Jupiter's algorithm thinks the trading is real."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "Runner alert: $Aslan (The Tibetan Snow Lion) hit Jupiter's Runners list with an 85.6/100 organic score — one of the highest this week",
+        "The numbers: $1.04M market cap, $4.38M volume, 3,341 holders, 66,030 transactions in 6 hours",
+        "The audit: Mint and freeze authority disabled, top holders at 17.6%, sniper percentage at just 0.5% — clean launch profile",
+        "The concern: 10 dev migrations/mints flagged, 28.5% bot holder count, and zero established KOL backing"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "From Pump.fun to Runners: The Graduation Story"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Tibetan Snow Lion graduated from Pump.fun's bonding curve at 3:55 AM UTC — the middle of the night for most Western traders, but prime time for Asian markets. The timing matters: tokens that graduate during Asian trading hours often build an initial holder base from a different demographic than the typical CT-driven Western launches, which can create a more geographically distributed (and therefore more resilient) holder base."
+    },
+    {
+      "type": "paragraph",
+      "text": "The name itself is layered. 'Aslan' is immediately recognizable to anyone who grew up with C.S. Lewis's The Chronicles of Narnia — the great lion, a symbol of power, wisdom, and sacrifice. But the token's full name, 'The Tibetan Snow Lion,' adds a different cultural dimension. The snow lion is one of the Four Dignities of Tibetan Buddhism, representing fearlessness and unconditional cheerfulness. It appears on the Tibetan flag and has deep significance in Himalayan culture."
+    },
+    {
+      "type": "paragraph",
+      "text": "For meme token markets, this kind of cultural depth is unusual. Most Pump.fun launches are named after the day's trending headline (see: every Iran/war/oil token launched today). $Aslan's mythological grounding gives it a narrative that doesn't expire with the news cycle — it's not tied to a specific event that loses relevance in 24 hours. Whether that translates to sustained trading interest is the million-dollar question (literally, at its current market cap)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Within 6 hours of graduation, $Aslan accumulated 66,030 transactions across 3,341 unique holders. That's roughly 183 transactions per minute — a velocity that caught Jupiter's Runners algorithm, which specifically looks for organic trading patterns as opposed to bot-driven wash trading."
+    },
+    {
+      "type": "heading",
+      "text": "The Numbers: What $4.38M Volume Looks Like at $1M Cap"
+    },
+    {
+      "type": "paragraph",
+      "text": "The volume-to-market-cap ratio of 4.2:1 is healthy but not extreme. For comparison, some of the war meme tokens we covered earlier today had ratios of 36:1 (BELLATOR) and 38:1 (ClaudeGate). $Aslan's more moderate ratio suggests organic accumulation rather than frantic day-trading — people are buying and holding, not churning."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 57.1% buy ratio at 66,030 transactions tells a clear story: net accumulation. Every transaction window has more buyers than sellers, which at 6 hours old indicates the token hasn't entered its distribution phase yet. Early holders aren't dumping — they're sitting, which is either conviction or illiquidity-forced holding (with $252K in liquidity, it's likely a mix of both)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Liquidity at $252K is the strongest metric in $Aslan's profile. This is deeper than most tokens that hit Jupiter's Runners — substantially deeper than the $29K (ClaudeGate) or $24K (WarClaude) pools we've seen on today's trending tokens. $252K means the token can absorb $5-10K sells without catastrophic slippage, which makes it tradeable for more than just micro-positions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The +7,674% gain from launch price is dramatic but expected for a Pump.fun graduation that hits Runners. The bonding curve mechanism means early buyers get in at fractional prices, and the graduation itself represents a significant price level. What matters more than the percentage is the trajectory since graduation — and the -7% hourly change at time of scan suggests the initial euphoria is cooling into a consolidation phase."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Calling It: The KOL Landscape"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is where $Aslan's profile gets interesting — and concerning."
+    },
+    {
+      "type": "paragraph",
+      "text": "The token's social link points to a tweet from @Meehan1x, an account with no established presence in Crypto Twitter's meme token ecosystem. A search for KOL calls on $Aslan returns nothing from the usual suspects — no Ansem, no Murad, no mid-tier CT accounts with 10K+ followers amplifying the token. At time of writing, $Aslan appears to be running entirely on organic discovery rather than influencer-driven FOMO."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a double-edged signal. On the positive side, organic growth without KOL backing means the price isn't being propped up by someone with a vested interest in pumping and dumping. The 3,341 holders found this token through Jupiter's interface, DexScreener trending, or word-of-mouth — not because a 500K-follower account told them to ape. Organic discovery often produces more durable holder bases because the buyers are self-selected rather than herd-driven."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the negative side, the absence of KOL attention means there's no influencer infrastructure sustaining the narrative. When the initial momentum fades — and it always fades — there's no one with a large platform creating content to reignite interest. The token lives and dies by its own trading momentum and the stickiness of its cultural concept."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a mid-tier CT account (50K-200K followers) picks up $Aslan in the next 12-24 hours, the dynamics could shift dramatically. A single viral thread about the 'Snow Lion that conquered Jupiter's Runners' could drive a second wave of volume. But that's speculation, not data."
+    },
+    {
+      "type": "heading",
+      "text": "Who's Behind It: Dev Profile and Red Flags"
+    },
+    {
+      "type": "paragraph",
+      "text": "The audit data reveals a mixed but generally positive security profile."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the clean side: mint authority is disabled (no new tokens can be created), freeze authority is disabled (holdings can't be frozen by the developer), and the sniper percentage is just 0.5% — meaning almost no coordinated bot sniping occurred at launch. For a Pump.fun token, this is about as clean as it gets on the security fundamentals."
+    },
+    {
+      "type": "paragraph",
+      "text": "The concerning flags: 10 dev migrations and 10 dev mints are flagged in the audit. Dev migrations can indicate wallet reshuffling — the developer moving tokens between wallets, which sometimes (but not always) signals intent to distribute through multiple addresses to obscure concentration. Ten migrations is notable and worth monitoring."
+    },
+    {
+      "type": "paragraph",
+      "text": "Top holder concentration at 17.6% is moderate. It means the top wallets control about one-sixth of the supply — enough to influence price if they coordinate, but not so concentrated that a single dump would be catastrophic. For a 6-hour-old Pump.fun graduation, 17.6% is actually lower than average."
+    },
+    {
+      "type": "paragraph",
+      "text": "The bot holder count at 28.5% is the most concerning metric. Nearly a third of holders are identified as bots, which inflates the 3,341 holder count. The 'real' holder base is likely closer to 2,400 — still substantial, but the gap between reported and actual holders is worth noting."
+    },
+    {
+      "type": "heading",
+      "text": "The Organic Signal: What 85.6 Actually Means"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jupiter's organic score is the platform's proprietary measure of how 'real' a token's trading activity is. It evaluates transaction patterns, holder distribution, volume consistency, and other on-chain signals to distinguish between genuine market interest and artificial manipulation."
+    },
+    {
+      "type": "paragraph",
+      "text": "An 85.6/100 score labeled 'high' puts $Aslan in the top tier of Jupiter Runners. For context, most Pump.fun graduations that hit Runners score between 40-70. Anything above 80 suggests that Jupiter's algorithm has high confidence the trading is driven by real human decisions rather than bot scripts or wash trading."
+    },
+    {
+      "type": "paragraph",
+      "text": "This doesn't mean the token is a good investment — organic score measures trading authenticity, not investment quality. A token can have perfect organic scores and still go to zero if the narrative doesn't sustain. But it does mean that the $4.38M in volume and 66,030 transactions represent real market interest, not artificial inflation."
+    },
+    {
+      "type": "paragraph",
+      "text": "The combination of high organic score + low sniper percentage + disabled mint/freeze authority + $252K liquidity creates a profile that's unusually clean for the current Pump.fun ecosystem. Whether the market recognizes and rewards that cleanliness is another question entirely."
+    },
+    {
+      "type": "heading",
+      "text": "Verdict: 🟡 Speculative"
+    },
+    {
+      "type": "paragraph",
+      "text": "$Aslan (The Tibetan Snow Lion) has one of the cleanest launch profiles we've seen on Jupiter's Runners this week. The 85.6 organic score, disabled mint/freeze authority, 0.5% sniper rate, and $252K liquidity all point to a token that's doing things right mechanically. The cultural narrative — rooted in mythology rather than today's headlines — gives it a shelf life that most geopolitical meme tokens can't match."
+    },
+    {
+      "type": "paragraph",
+      "text": "But this is still a 6-hour-old Pump.fun token with zero established KOL backing, 28.5% bot holders, and 10 dev migrations that warrant watching. The -7% hourly decline suggests the initial pump is cooling, and without a KOL catalyst to reignite momentum, the token needs to prove it can sustain interest on narrative alone. The snow lion is prowling — whether it roars or fades depends on the next 24 hours."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "What is $Aslan (The Tibetan Snow Lion)?",
+          "answer": "$Aslan is a Solana meme token that graduated from Pump.fun and hit Jupiter's Runners list on March 1, 2026. Named after both the Narnia lion and the Tibetan Buddhist Snow Lion (a symbol of fearlessness), it combines mythological branding with strong on-chain metrics: $1.04M market cap, $4.38M volume, and an 85.6/100 organic score."
+        },
+        {
+          "question": "What does the 85.6 organic score mean?",
+          "answer": "Jupiter's organic score measures how authentic a token's trading activity is, ranging from 0-100. An 85.6 'high' rating means Jupiter's algorithm has high confidence that the trading volume comes from real human traders rather than bots or wash trading. It does not indicate investment quality — just trading authenticity."
+        },
+        {
+          "question": "Is $Aslan safe to buy?",
+          "answer": "No meme token is 'safe.' While $Aslan has a cleaner security profile than most (disabled mint/freeze, low sniper rate), it's still a 6-hour-old token with 28.5% bot holders, 10 dev migrations, and zero KOL backing. The $252K liquidity provides better exit options than most micro-caps, but extreme volatility should be expected."
+        },
+        {
+          "question": "Who is behind $Aslan?",
+          "answer": "The token's social presence links to @Meehan1x on Twitter, who is not an established CT figure. The developer has disabled mint and freeze authority (positive signs), but the 10 dev wallet migrations warrant monitoring. No doxxed team, no website, no Telegram community has been identified."
+        }
+      ]
+    }
+  ]
+}

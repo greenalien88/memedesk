@@ -1,0 +1,171 @@
+{
+  "id": "axiom-zachxbt-insider-trading-broox-bauer-exposed",
+  "slug": "axiom-zachxbt-insider-trading-broox-bauer-exposed",
+  "articleType": "degen-forensics",
+  "category": "autopsy",
+  "heroImage": "/images/articles/axiom-zachxbt-insider-trading-broox-bauer-exposed.webp",
+  "headline": "ZachXBT Blows Up Axiom: The Trading Terminal That Was Watching Your Private Wallets",
+  "subheadline": "A senior BD employee used Axiom's internal tools to spy on private wallet data, map KOL accumulation, and front-run trades — for at least 10 months. Then insiders made $1.2M betting on the expose itself.",
+  "signalRating": "shill",
+  "signalEmoji": "🔴",
+  "signalLabel": "Insider Ring Confirmed",
+  "publishedAt": "2026-03-01T12:00:00Z",
+  "author": "MemeDesk Editorial",
+  "tags": [
+    "Axiom",
+    "ZachXBT",
+    "Insider Trading",
+    "Degen Forensics",
+    "Broox Bauer",
+    "Polymarket",
+    "Meme Trading",
+    "Solana"
+  ],
+  "chain": "SOL",
+  "sourcePost": {
+    "platform": "twitter",
+    "url": "https://x.com/zachxbt/status/2027016064534757659",
+    "text": "1/ Meet @WheresBroox (Broox Bauer), a senior BD employee at @AxiomExchange who abused internal access tools to track private wallets and trade ahead of users for at least 10 months.",
+    "timestamp": "2026-02-26T14:25:00Z"
+  },
+  "tokenData": {
+    "symbol": "AXIOM",
+    "name": "Axiom Exchange (Platform)",
+    "price": "N/A",
+    "marketCap": "$390M+ revenue generated",
+    "ath": "60%+ meme trading market share",
+    "athDrop": "N/A",
+    "recentAction": "Senior employee exposed by ZachXBT for 10-month insider trading operation using internal admin tools"
+  },
+  "walletData": {
+    "address": "WheresBroox primary wallet (on-chain)",
+    "label": "Broox Bauer (@WheresBroox) — Axiom BD",
+    "action": "Mapped private wallets of KOLs, front-ran memecoin accumulation positions",
+    "txHash": null,
+    "value": "~$400K alleged insider profits"
+  },
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Axiom runs roughly 60% of all meme token trading volume. Your swaps, your limit orders, your private accumulation wallets — all routing through one platform. And for at least 10 months, a senior employee was on the inside, building a map of every wallet that mattered. On February 26, 2026, ZachXBT dropped the investigation CT had been waiting for — and it hit harder than anyone expected."
+    },
+    {
+      "type": "quickTake",
+      "bullets": [
+        "Broox Bauer (@WheresBroox), Axiom's senior BD employee in New York, used internal admin tools to look up private wallet connections for prominent traders and KOLs — by referral code, wallet address, or user ID",
+        "The group compiled KOL wallet addresses into Google Sheets and used the data to track accumulation before public token calls — the blueprint for systematic front-running",
+        "Polymarket meta-scandal: $1.2M collected by suspected insiders who bet on the expose before it dropped — insiders making money on a bet about insider trading"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "The Evidence"
+    },
+    {
+      "type": "paragraph",
+      "text": "ZachXBT's investigation didn't rely on vibes. It came with receipts: audio recordings, internal dashboard screenshots, on-chain wallet analysis, and independent confirmation from named victims."
+    },
+    {
+      "type": "paragraph",
+      "text": "In recorded calls, a person identified as Bauer describes the operation in his own words. He claims he can track \"any Axiom user\" and \"find out anything to do with that person\" using internal systems. He describes starting small — researching 10 to 20 wallets — and deliberately scaling up slowly \"so it does not look that suspicious.\" He outlines rules for requesting lookups and offers to share full wallet lists with associates."
+    },
+    {
+      "type": "paragraph",
+      "text": "Screenshots from April and August 2025 show internal Axiom dashboards displaying private wallet connections for traders identified as \"Jerry\" and \"Monix.\" The dashboards show linked addresses, registration data, and wallet histories — the kind of data that should never leave Axiom's servers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The group's target profile was specific: traders known for accumulating large memecoin positions through private wallets before publicly promoting tokens to followers. By identifying previously undisclosed wallets, the group could front-run the pump. Several people named in the leaked material independently confirmed to ZachXBT that the wallet data was accurate."
+    },
+    {
+      "type": "paragraph",
+      "text": "Beyond Bauer, the investigation named other Axiom employees and associates — Ryan (Ryucio), Gowno (Seb), and a moderator known as Mystery — as involved in or aware of the lookup activity."
+    },
+    {
+      "type": "heading",
+      "text": "Following the Money"
+    },
+    {
+      "type": "paragraph",
+      "text": "On-chain analysis linked Bauer's primary wallet and related addresses to heavy memecoin trading over the same period the internal tool abuse was occurring. Funds were traced flowing to multiple centralized exchange deposit wallets. ZachXBT added a notable caveat: without access to Axiom's internal logs, establishing high-confidence specific insider trades from on-chain data alone is difficult. What's clear is the mechanism existed — and was actively used."
+    },
+    {
+      "type": "paragraph",
+      "text": "The total alleged insider profits from trading: approximately $400,000. Small compared to Axiom's $390M+ in platform revenue, but that's not the point. The point is systematic surveillance of private wallet data — a violation that's nearly impossible to protect against on-chain."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then there's the Polymarket layer — and this one gets dark. Before ZachXBT's report dropped, a Polymarket market asking \"which crypto company will ZachXBT expose next?\" had accumulated over $30M in trading volume. Axiom eventually moved to frontrunner at 35% odds before the reveal. Two wallets placed nearly $60,000 in bets on Axiom just hours before the report published — turning it into $109,000. A trader called \"predictorxyz\" wagered $65,800 when odds were below 14% and walked away with more than $411,000. Onchain researcher Defioasis analyzed the top 10 profitable wallets and concluded 8 are likely insider addresses — wallets that traded only this single market and collectively pocketed $1.2M. Insiders made money on a bet about insider trading. The recursion is nauseating."
+    },
+    {
+      "type": "heading",
+      "text": "The Pattern: Fast Growth, No Guardrails"
+    },
+    {
+      "type": "paragraph",
+      "text": "Axiom was founded in 2024, joined Y Combinator's Winter 2025 cohort, and rapidly captured dominant market share in the meme trading terminal space. That velocity comes with a cost: governance structures that don't scale with user trust. ZachXBT specifically called out the access control failure — business development staff could view full wallet histories, linked accounts, and nicknames. BD. Not security. Not compliance. BD."
+    },
+    {
+      "type": "paragraph",
+      "text": "The case potentially falls under SDNY jurisdiction since Bauer is New York-based, adding a layer of legal exposure that doesn't typically accompany crypto drama."
+    },
+    {
+      "type": "paragraph",
+      "text": "This isn't an isolated bad actor story. It's a structural story about what happens when a platform becomes too dominant too fast and fails to implement basic principle of least privilege. When one platform controls 60% of meme trading volume and any BD employee can pull full wallet histories on demand, the breach was a matter of when, not if."
+    },
+    {
+      "type": "heading",
+      "text": "CT Is Still Digging"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ZachXBT report was the opening shot, not the closing one. Accounts across CT — including @MidCurveMortal, @tier1haterr, and @retardmode — have been active in the hours and days since the expose dropped, surfacing additional wallet connections and corroborating details. This is the characteristic pattern of a ZachXBT drop: the initial thread sets the frame, and the CT forensics community fills in the margins. Expect more wallets, more connections, and more names to surface before this story closes."
+    },
+    {
+      "type": "heading",
+      "text": "What This Means for Anyone Who Used Axiom"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you've traded on Axiom — especially if you used private or separate wallets for accumulation strategies — your data may have been mapped. The attack vector here wasn't a hack of your on-chain address. It was the platform's internal database. No amount of wallet hygiene protects you from a BD employee with admin access and a Google Sheet."
+    },
+    {
+      "type": "paragraph",
+      "text": "Axiom's statement after the report called the situation \"shocking and disappointing,\" said it had removed access to the tools involved, and launched an internal investigation. That's the floor, not the ceiling — and the community knows it. Whether users stay, migrate to competing terminals, or demand third-party audits of access controls will shape whether Axiom retains its dominant position or hands market share to competitors."
+    },
+    {
+      "type": "paragraph",
+      "text": "The bear case for Axiom: trust is the product. If users can't trust that their private accumulation strategies are private from the platform itself, the value proposition collapses. Competitors are already watching."
+    },
+    {
+      "type": "verdict",
+      "rating": "🔴",
+      "text": "Confirmed insider ring. The on-chain evidence, audio recordings, and independent wallet confirmations make this one of the most documented cases of platform-level data abuse in meme trading history. Axiom's 60% market share is now a liability until they demonstrate material changes to access controls — public, auditable changes. The Polymarket meta-scandal adds another layer of institutional rot. CT is still digging. This isn't over."
+    },
+    {
+      "type": "faq",
+      "items": [
+        {
+          "question": "Was my wallet exposed if I traded on Axiom?",
+          "answer": "Potentially. ZachXBT's investigation focused on traders with high-value accumulation patterns, but the internal tools gave broad access by wallet address, referral code, or user ID. If you used Axiom with linked accounts, your wallet associations may have been part of the data that was queried."
+        },
+        {
+          "question": "What should traders do now?",
+          "answer": "At minimum: assume any wallet linked to your Axiom account has been potentially mapped. Use fresh unlinked wallets for accumulation strategies going forward. Monitor if Axiom publishes an independent access control audit — that's the real signal of remediation, not the press statement."
+        },
+        {
+          "question": "What happened to Broox Bauer?",
+          "answer": "Axiom said it removed access and is investigating. No public confirmation of termination or legal action at time of publication. ZachXBT noted the case may fall under SDNY jurisdiction given Bauer's New York location, but no charges have been announced."
+        },
+        {
+          "question": "How is this different from a regular exchange data breach?",
+          "answer": "This wasn't a hack — it was authorized access being misused by an insider. That makes it harder to detect and harder to defend against. The data wasn't leaked by an external attacker; it was voluntarily queried by someone with legitimate system access and shared with a trading group. Classic insider threat, not a technical breach."
+        },
+        {
+          "question": "Why does the Polymarket angle matter?",
+          "answer": "Because it means multiple people had advance knowledge of ZachXBT's investigation target and monetized that knowledge before the public knew. If Polymarket insiders profited from foreknowledge of the Axiom expose, it raises the question: who leaked the tip, and what was the chain of information? It layers a second insider trading event onto the first."
+        }
+      ]
+    }
+  ]
+}
